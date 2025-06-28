@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/luxe9.png";
 import kaarigar1 from "./photos/luxe1.jpg";
-import kaarigar2 from "./photos/luxe2.jpg";
-import kaarigar3 from "./photos/luxe3.jpg";
+import kaarigar2 from "./photos/luxe2.png";
+import kaarigar3 from "./photos/luxe3.png";
 
-import Img5 from "./photos/luxe5.jpg";
-import Img6 from "./photos/luxe6.jpg";
-import Img7 from "./photos/luxe7.jpg";
-import Img8 from "./photos/luxe8.jpg";
+import Img5 from "./photos/luxe5.png";
+import Img6 from "./photos/luxe6.png";
+import Img7 from "./photos/luxe7.png";
+import Img8 from "./photos/luxe8.png";
 import Img9 from "./photos/luxe9.png";
 import Img11 from "./photos/luxe10.jpeg";
 import Img12 from "./photos/luxe11.jpeg";
@@ -41,7 +41,6 @@ function TiltCard({ children }) {
     </div>
   );
 }
-
 
 const originals = [
   {
@@ -127,8 +126,6 @@ const originals = [
   },
 ];
 
-
-
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -145,7 +142,7 @@ const Gaadi = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
