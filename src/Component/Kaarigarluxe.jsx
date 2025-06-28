@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/luxe8.png";
-import kaarigar1 from "./photos/luxe1.jpg";
+import kaarigar1 from "./photos/luxe8.jpg";
 import kaarigar2 from "./photos/luxe2.png";
 import kaarigar3 from "./photos/luxe3.png";
 
