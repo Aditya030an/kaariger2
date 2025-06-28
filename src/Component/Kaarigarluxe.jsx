@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/luxe8.png";
-import kaarigar1 from "./photos/luxe8.jpg";
+import kaarigar1 from "./photos/luxe2.png";
 import kaarigar2 from "./photos/luxe2.png";
 import kaarigar3 from "./photos/luxe3.png";
 
 import Img5 from "./photos/luxe5.png";
 import Img6 from "./photos/luxe6.png";
 import Img7 from "./photos/luxe7.png";
-import Img8 from "./photos/luxe8.png";
-import Img9 from "./photos/luxe8.png";
+import Img8 from "./photos/luxe2.png";
+import Img9 from "./photos/luxe2.png";
 import Img11 from "./photos/luxe10.jpeg";
 import Img12 from "./photos/luxe11.jpeg";
 
