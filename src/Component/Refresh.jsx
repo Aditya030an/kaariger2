@@ -1,11 +1,8 @@
-
-
-
 import { motion } from "framer-motion";
-import jua from './photos/jua3.png';
-import cinema from './photos/cinema.jpg';
-import music from './photos/music.png';
-import canvas from './photos/canvas.png';
+import jua from "./photos/jua3.png";
+import cinema from "./photos/cinema.jpg";
+import music from "./photos/music.png";
+import canvas from "./photos/canvas.png";
 
 const newReleases = [
   {
@@ -48,15 +45,15 @@ const newReleases = [
 
 export default function NewReleases() {
   return (
-    <section className="py-20 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6]">
-      <div className="max-w-6xl mx-auto px-6">
-      <h2 className="text-5xl font-bold font-[Amita] text-center text-[#3a2e1f] mb-14">
-  ‘ताज़ा माल’ – Our Fresh Releases
-</h2>
+    <section className="py-10 md:py-20 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6]">
+      <div className="w-full md:max-w-6xl mx-auto px-3 md:px-6 ">
+        <h2 className="text-3xl md:text-5xl font-bold font-[Amita] text-center text-[#3a2e1f] mb-7 md:mb-14">
+          ‘ताज़ा माल’ – Our Fresh Releases
+        </h2>
 
         {/* Horizontal Scroll Container */}
-        <div className="overflow-x-auto">
-          <div className="flex gap-10 w-max pr-6">
+        <div className="overflow-x-auto ">
+          <div className="flex gap-2 md:gap-10 w-max  md:pr-6">
             {newReleases.map((item, index) => (
               <motion.div
                 key={index}
@@ -64,14 +61,14 @@ export default function NewReleases() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="relative bg-[#fff9f2] border-4 border-[#d2b48c] rounded-[2rem] shadow-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-all min-w-[340px] max-w-[340px]"
+                className="relative bg-[#fff9f2] border-4 border-[#d2b48c] rounded-[2rem] shadow-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-all min-w-[250px] md:min-w-[340px] max-w-[250px] md:max-w-[340px]"
               >
                 <img
                   src="/brushstroke.svg"
                   className="absolute top-0 right-0 w-20 opacity-30 pointer-events-none"
                   alt=""
                 />
-                <div className="h-80 w-full overflow-hidden rounded-t-[1.6rem] border-b-4 border-[#d2b48c] relative">
+                <div className="h-40 md:h-80 w-full overflow-hidden rounded-t-[1.6rem] border-b-4 border-[#d2b48c] relative">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -81,9 +78,13 @@ export default function NewReleases() {
                     {item.category}
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-serif font-bold text-[#3e2c1b] mb-2">{item.title}</h3>
-                  <p className="text-sm text-[#5c4631] leading-relaxed">{item.snippet}</p>
+                <div className="p-3 md:p-6">
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-[#3e2c1b] md:mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-[#5c4631] leading-relaxed">
+                    {item.snippet}
+                  </p>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

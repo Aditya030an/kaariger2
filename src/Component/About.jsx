@@ -47,7 +47,7 @@ export default function AboutPremium() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center bg-[#f9f5f0] overflow-hidden px-6 py-20"
+      className="relative  md:min-h-screen flex items-center justify-center bg-[#f9f5f0] overflow-hidden px-6 py-20 "
     //   style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       {/* Floating Paint Effect */}
@@ -67,7 +67,7 @@ export default function AboutPremium() {
           <img
             src={cinema}
             alt="Art Studio Showcase"
-            className="object-cover w-full h-[500px] hover:scale-105 transition-transform duration-[1.2s] ease-in-out"
+            className="object-cover w-full h-[250px] md:h-[500px] hover:scale-105 transition-transform duration-[1.2s] ease-in-out"
           />
 
           <div className="absolute inset-0 bg-gradient-to-tr from-[#e9dccb55] to-[#ffffff22] backdrop-blur-[4px] rounded-[3rem]"></div>
@@ -75,16 +75,16 @@ export default function AboutPremium() {
 
         {/* Text Side */}
         <div ref={textRef} className="text-[#382619]">
-          <h2 className="text-6xl lg:text-7xl font-[Amita] mb-8 leading-tight">
+          <h2 className="text-3xl md:text-6xl lg:text-7xl font-[Amita] mb-4 md:mb-8 leading-tight">
           Hello Art Premi’s…. 
           </h2>
-          <p className="text-lg lg:text-xl leading-relaxed font-light tracking-wide mb-6 text-[#5c4430]">
+          <p className="text-md md:text-lg lg:text-xl leading-relaxed font-light tracking-wide mb-3 md:mb-6 text-[#5c4430]">
           Kaarigar and Co. stands for raw creativity and constant evolution.
           Every piece here is part of a journey: growing, learning, and staying true to the soul of the craft. Hoping to make your spaces lively and soulful one art piece at a time…..
           </p>
          
 
-          <button className="mt-8 inline-block bg-[#3a2e1f] hover:bg-[#2a2217] text-white px-6 py-3 rounded-full text-md shadow-lg tracking-wide transition-all duration-300">
+          <button className="mt-3 md:mt-8 inline-block bg-[#3a2e1f] hover:bg-[#2a2217] text-white px-6 py-3 rounded-full text-md shadow-lg tracking-wide transition-all duration-300">
             Visit Our World →
           </button>
         </div>

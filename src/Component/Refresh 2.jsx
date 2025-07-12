@@ -48,7 +48,7 @@ const newReleases = [
 
 export default function NewReleases() {
   return (
-    <section className="py-20 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6]">
+    <section className="py-20 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6] ">
       <div className="max-w-6xl mx-auto px-6">
       <h2 className="text-5xl font-bold font-[Amita] text-center text-[#3a2e1f] mb-14">
   ‘ताज़ा माल’ – Our Fresh Releases

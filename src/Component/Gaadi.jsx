@@ -43,7 +43,6 @@ function TiltCard({ children }) {
   );
 }
 
-
 const originals = [
   {
     id: 1,
@@ -140,8 +139,6 @@ const originals = [
   },
 ];
 
-
-
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -158,7 +155,7 @@ const Gaadi = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
@@ -172,7 +169,7 @@ const Gaadi = ({ cart, setCart }) => {
     }
   };
   return (
-    <section className="relative overflow-hidden min-h-screen bg-white py-20 px-6 md:px-16">
+    <section className="relative overflow-hidden min-h-screen bg-white py-10 md:py-20 px-6 md:px-16">
       {/* Background Image (light, low opacity, no blur) */}
       <div className="absolute inset-0">
         <img
@@ -184,7 +181,7 @@ const Gaadi = ({ cart, setCart }) => {
       </div>
 
       {/* Heading */}
-      <div className="relative z-10 text-center mb-20">
+      <div className="relative z-10 text-center mb-10 md:mb-20">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -192,7 +189,7 @@ const Gaadi = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
-          <span className="block w-20 h-1  mx-auto mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
+          <span className="block w-20 h-1  mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
           मोटर Premi
         </motion.h2>
         <motion.p
@@ -207,7 +204,7 @@ const Gaadi = ({ cart, setCart }) => {
       </div>
 
       {/* Product Cards Grid */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-10  lg:gap-14">
         {originals.map((product, index) => (
           <motion.div
             key={product?.id}
@@ -221,9 +218,9 @@ const Gaadi = ({ cart, setCart }) => {
               <a
                 href={product?.link}
                 onClick={() => setSelectedProduct(product)}
-                className="group block bg-white shadow-lg border border-gray-200 rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-5"
+                className="group block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
               >
-                <div className="relative overflow-hidden rounded-2xl h-72 flex items-center justify-center">
+                <div className="relative overflow-hidden rounded-2xl h-48 md:h-72 flex items-center justify-center">
                   <motion.img
                     src={product?.image}
                     alt={product?.title}

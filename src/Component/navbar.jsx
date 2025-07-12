@@ -12,20 +12,22 @@ import {
 import { Link } from "react-router-dom";
 import logo from "./photos/logo.jpeg";
 import Jua from "./photos/Jua.jpg";
+import Img1 from "./photos/pencil.jpeg";
 import Madira from "./photos/madira1.png";
-import music from "./photos/music.png";
+// import music from "./photos/music.png";
 import cinema from "./photos/cinema.jpg";
 import baklol from "./photos/baklol.png";
 import canvas from "./photos/bg1.jpeg";
+import Img4 from "./photos/motor3.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
   { name: "The Poker Parlour", image: Jua, link: "/Juapremi" },
-  { name: "Burnout Boulevard", image: Madira, link: "/Gaadi" },
-  { name: "Madira Premi", image: music, link: "/Madira" },
+  { name: "Burnout Boulevard", image:Img4 , link: "/Gaadi" },
+  { name: "Madira Premi", image: Madira, link: "/Madira" },
   { name: "Cinema Premi", image: cinema, link: "/Cinemapremi" },
   { name: "Aesthetics premi", image: baklol, link: "/Aestheticspremi" },
-  { name: "Pencil Poetry", image: Jua, link: "/Pencilpremi" },
+  { name: "Pencil Poetry", image: Img1, link: "/Pencilpremi" },
   
 ];
 
@@ -61,8 +63,8 @@ const Navbar = ({cart}) => {
           </div>
 
           {/* Brand Name */}
-          <div className="hidden md:flex flex-col items-center text-center">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-[Amita] font-semibold tracking-widest uppercase">
+          <div className="flex flex-col items-center text-center">
+            <h1 className="text-sm sm:text-2xl md:text-4xl lg:text-5xl font-[Amita] font-semibold tracking-widest uppercase">
               Kaarigar & Co.
             </h1>
             <p className="text-xs font-[Amita] tracking-wider">

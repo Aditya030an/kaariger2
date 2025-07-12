@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import carsoul from './photos/slide.png';
-import carsoul1 from './photos/slide6.png';
-import carsoul2 from './photos/slide2.png';
-import carsoul3 from './photos/slide4.png';
-import carsoul4 from './photos/slide3.jpeg';
-import carsoul5 from './photos/slide7.png';
-import carsoul6 from './photos/slide8.png';
+import carsoul from "./photos/slide.png";
+import carsoul1 from "./photos/slide6.png";
+import carsoul2 from "./photos/slide2.png";
+import carsoul3 from "./photos/slide4.png";
+import carsoul4 from "./photos/slide3.jpeg";
+import carsoul5 from "./photos/slide7.png";
+import carsoul6 from "./photos/slide8.png";
 import madira1 from "./photos/madira2.png";
 import jua from "./photos/jua2.png";
 import pencil from "./photos/pencil2.jpeg";
@@ -20,7 +20,15 @@ import Refresh from "./Refresh";
 import About from "./About";
 import USP from "./USP";
 
-const images = [carsoul, carsoul1, carsoul2, carsoul6, carsoul4, carsoul5, carsoul3];
+const images = [
+  carsoul,
+  carsoul1,
+  carsoul2,
+  carsoul6,
+  carsoul4,
+  carsoul5,
+  carsoul3,
+];
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -65,13 +73,16 @@ const Home = () => {
       />
 
       {/* Carousel */}
-      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
+      <div className="relative w-full h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((src, index) => (
-            <div key={index} className="w-full h-full flex-none">
+            <div
+              key={index}
+              className="w-full h-full md:w-full md:h-full flex-none"
+            >
               <img
                 src={src}
                 alt={`slide-${index}`}
@@ -85,7 +96,7 @@ const Home = () => {
           {images.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
+              className={`w-2 md:w-3 h-2 md:h-3 rounded-full cursor-pointer transition-colors duration-300 ${
                 index === currentIndex ? "bg-white" : "bg-gray-500"
               }`}
               onClick={() => setCurrentIndex(index)}
@@ -117,7 +128,7 @@ const Home = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-contain"
+                  className="w-full h-52 sm:h-72 md:h-80 lg:h-96 object-contain"
                 />
               </div>
               <h3 className="text-center font-[Amita] mt-4 text-base sm:text-lg font-semibold tracking-wide text-gray-800">

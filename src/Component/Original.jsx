@@ -141,7 +141,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-screen bg-black py-20 px-6 md:px-16">
+    <section className="relative overflow-hidden min-h-screen bg-black py-10 md:py-20 px-6 md:px-16">
       {/* Blurred background image */}
       <div className="absolute inset-0">
         <img
@@ -153,7 +153,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
       </div>
 
       {/* Heading */}
-      <div className="relative z-10 text-center mb-20">
+      <div className="relative z-10 text-center mb-10 md:mb-20">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -161,7 +161,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-5xl md:text-7xl font-[Amita] text-white leading-tight tracking-wider"
         >
-          <span className="block w-20 h-1 mx-auto mb-6 bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 rounded-full"></span>
+          <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 rounded-full"></span>
           Kaarigar Original
         </motion.h2>
         <motion.p
@@ -176,7 +176,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
       </div>
 
       {/* Products Grid */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-10 lg:gap-14">
         {originals.map((product, index) => (
           <motion.div
             key={product?.id}
@@ -189,14 +189,14 @@ const KaarigarOriginal = ({ cart, setCart }) => {
             <TiltCard>
               <a
                 href={product?.link}
-                className="group block bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-5"
+                className="group block bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-2 md:p-5"
                 onClick={() => setSelectedProduct(product)}
               >
                 <div className="overflow-hidden rounded-2xl">
                   <motion.img
                     src={product?.image}
                     alt={product?.title}
-                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>

@@ -1,9 +1,9 @@
-import React from 'react';
+
 import bgImg from './photos/cinema.jpg'; // Replace with your actual background image
 
 const Bestseller = () => {
   return (
-    <section className="relative bg-white py-14 px-4 md:px-12 overflow-hidden">
+    <section className="relative bg-white py-14 px-4 md:px-12 overflow-hidden ">
       {/* Background Image Layer */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center filter blur-sm brightness-75"
@@ -27,9 +27,9 @@ const Bestseller = () => {
             <img
               src={bgImg}
               alt="Cinema Art"
-              className="w-full h-[350px] object-cover rounded-t-2xl"
+              className="w-full h-[200px] md:h-[350px] object-cover rounded-t-2xl"
             />
-            <div className="p-5 text-center">
+            <div className="p-2 md:p-5 text-center">
               <h3 className="text-lg font-[Amita] font-semibold mb-1 text-gray-800">Classic Cinema</h3>
               <p className="text-sm font-[Amita] text-gray-500 mb-2">Canvas Print | By Kaarigar&co</p>
               <div className="text-center mt-2">
