@@ -22,11 +22,11 @@ import Img14 from "./photos/Artifacts12.jpg";
 import Img16 from "./photos/Artifacts14.jpg";
 import Img17 from "./photos/Artifacts15.jpg";
 import Img18 from "./photos/Artifacts16.jpg";
-import Img19 from "./photos/Artifacts22.jpg";
-import Img20 from "./photos/Artifacts23.jpg";
-import Img21 from "./photos/Artifacts24.jpg";
-import Img22 from "./photos/Artifacts25.jpg";
-import Img23 from "./photos/Artifacts26.jpg";
+import Img19 from "./photos/artifacts22.jpg";
+import Img20 from "./photos/artifacts23.jpg";
+import Img21 from "./photos/artifacts24.jpg";
+import Img22 from "./photos/artifacts25.jpg";
+import Img23 from "./photos/artifacts26.jpg";
 import Img24 from "./photos/artifacts29.png";
 
 import Img25 from "./photos/artifacts30.png";
