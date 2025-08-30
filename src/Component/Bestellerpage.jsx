@@ -189,6 +189,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
   product={selectedProduct}
   onClose={() => setSelectedProduct(null)}
   onAddToCart={handleAddToCart}
+  category="bestseller"
 />
 
       )}

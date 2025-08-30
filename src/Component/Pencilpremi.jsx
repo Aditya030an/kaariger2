@@ -235,6 +235,7 @@ const Pencilpremi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="pencilpremi"
         />
       )}
     </section>

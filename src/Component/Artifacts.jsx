@@ -1,34 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import bgImg from "./photos/Cinema2.jpeg";
-import kaarigar1 from "./photos/Cinema.jpeg";
-import kaarigar2 from "./photos/Cinema1.jpeg";
-import kaarigar3 from "./photos/Cinema2.jpeg";
-import Img4 from "./photos/Cinema3.jpeg";
-import Img5 from "./photos/Cinema4.jpeg";
-import Img6 from "./photos/Cinema5.jpeg";
-import Img7 from "./photos/Cinema6.jpeg";
-import Img8 from "./photos/Cinema7.jpeg";
-import Img9 from "./photos/Cinema8.jpeg";
-import Img10 from "./photos/Cinema9.jpeg";
-import Img11 from "./photos/Cinema10.jpeg";
+import bgImg from "./photos/Artifacts2.jpg";
 
-import Img13 from "./photos/Cinema12.jpg";
-import Img14 from "./photos/Cinema13.jpg";
-import Img15 from "./photos/Cinema14.jpg";
-import Img16 from "./photos/Cinema15.jpg";
-import Img17 from "./photos/Cinema16.jpg";
-import Img18 from "./photos/Cinema17.jpg";
-import Img19 from "./photos/Cinema18.jpg";
-import Img20 from "./photos/Cinema19.jpg";
-import Img21 from "./photos/Cinema20.jpg";
-import Img22 from "./photos/Cinema21.jpg";
-import Img23 from "./photos/Cinema22.jpg";
-import Img24 from "./photos/Cinema23.jpg";
-import Img25 from "./photos/Cinema24.jpg";
+import Img1 from "./photos/Artifacts.jpg";
+import Img3 from "./photos/Artifacts1.jpg";
+import Img4 from "./photos/Artifacts2.jpg";
+import Img5 from "./photos/Artifact3.png";
+import Img6 from "./photos/Artifacts4.png";
+import Img7 from "./photos/Artifacts5.png";
+import Img8 from "./photos/Artifacts6.jpg";
 
 
+import Img9 from "./photos/Artifacts7.jpg";
+import Img10 from "./photos/Artifacts8.jpg";
+import Img11 from "./photos/Artifacts9.jpg";
+import Img12 from "./photos/Artifacts10.jpg";
+import Img13 from "./photos/Artifacts11.jpg";
+import Img14 from "./photos/Artifacts12.jpg";
+
+import Img16 from "./photos/Artifacts14.jpg";
+import Img17 from "./photos/Artifacts15.jpg";
+import Img18 from "./photos/Artifacts16.jpg";
+import Img19 from "./photos/Artifacts22.jpg";
+import Img20 from "./photos/Artifacts23.jpg";
+import Img21 from "./photos/Artifacts24.jpg";
+import Img22 from "./photos/Artifacts25.jpg";
+import Img23 from "./photos/Artifacts26.jpg";
+import Img24 from "./photos/artifacts29.png";
+
+import Img25 from "./photos/artifacts30.png";
 import ProductCart from "./ProductCard";
 
 // TiltCard component
@@ -55,168 +56,182 @@ function TiltCard({ children }) {
 }
 
 const originals = [
+    {
+        id: 1,
+        title: "Artifacts",
+        image: Img1,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },                  
+
+    {
+        id: 2,
+        title: "Artifacts",
+        image: Img3,
+        basePrice: 1000,
+        link: "/Artifacts",
+    }, 
+    {
+        id: 3,
+        title: "Artifacts",
+        image: Img4,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },
+    {
+        id: 4,
+        title: "Artifacts",
+        image: Img5,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },
+    {
+        id: 5,
+        title: "Artifacts",
+        image: Img6,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },
+    {
+        id: 6,
+        title: "Artifacts",
+        image: Img7,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },
+    {
+        id: 7,
+        title: "Artifacts",
+        image: Img8,
+        basePrice: 1000,
+        link: "/Artifacts",
+    },
+
+    {
+      id: 8,
+      title: "Artifacts",
+      image: Img9,
+      basePrice: 1000,
+      link: "/Artifacts",
+  },                  
+
   {
-    id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
-    basePrice: 7999,
-    image: kaarigar1,
-    link: "#",
+      id: 9,
+      title: "Artifacts",
+      image: Img10,
+      basePrice: 1000,
+      link: "/Artifacts",
+  }, 
+  {
+      id: 10,
+      title: "Artifacts",
+      image: Img11,
+      basePrice: 1000,
+      link: "/Artifacts",
   },
   {
-    id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
-    basePrice: 6499,
-    image: kaarigar2,
-    link: "#",
+      id: 11,
+      title: "Artifacts",
+      image: Img12,
+      basePrice: 1000,
+      link: "/Artifacts",
   },
   {
-    id: 3,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: kaarigar3,
-    link: "#",
+      id: 12,
+      title: "Artifacts",
+      image: Img13,
+      basePrice: 1000,
+      link: "/Artifacts",
   },
   {
-    id: 4,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img4,
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img5,
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img6,
-    link: "#",
-  },
-  {
-    id: 7,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img7,
-    link: "#",
-  },
-  {
-    id: 8,
-    title: "Crimson Threads | Canvas Abstract",
-    basePrice: 7999,
-    image: Img8,
-    link: "#",
-  },
-  {
-    id: 9,
-    title: "Ethereal Touch | Fine Original",
-    basePrice: 7499,
-    image: Img9,
-    link: "#",
-  },
-  {
-    id: 10,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img10,
-    link: "#",
-  },
-  {
-    id: 11,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img11,
-    link: "#",
+      id: 13,
+      title: "Artifacts",
+      image: Img14,
+      basePrice: 1000,
+      link: "/Artifacts",
   },
 
   {
-    id: 13,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: Img13,
-    link: "#",
-  },
-  {
     id: 14,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img14,
-    link: "#",
-  },
-  {
-    id: 15,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img15,
-    link: "#",
-  },
-  {
-    id: 16,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
+    title: "Artifacts",
     image: Img16,
-    link: "#",
-  },
-  {
-    id: 17,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
+    basePrice: 1000,
+    link: "/Artifacts",
+},
+{
+    id: 15,
+    title: "Artifacts",
     image: Img17,
-    link: "#",
-  },
-  {
-    id: 18,
-    title: "Crimson Threads | Canvas Abstract",
-    basePrice: 7999,
+    basePrice: 1000,
+    link: "/Artifacts",
+},
+{
+    id: 16,
+    title: "Artifacts",
     image: Img18,
-    link: "#",
-  },
-  {
-    id: 19,
-    title: "Ethereal Touch | Fine Original",
-    basePrice: 7499,
-    image: Img19,
-    link: "#",
-  },
-  {
-    id: 20,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img20,
-    link: "#",
+    basePrice: 1000,
+    link: "/Artifacts",
+},
+{
+  id: 17,
+  title: "Artifacts",
+  image: Img19,
+  basePrice: 1000,
+  link: "/Artifacts",
+},
+
+{
+id: 18,
+title: "Artifacts",
+image: Img20,
+basePrice: 1000,
+link: "/Artifacts",
+},
+{
+id: 19,
+title: "Artifacts",
+image: Img21,
+basePrice: 1000,
+link: "/Artifacts",
+},
+{
+id: 20,
+title: "Artifacts",
+image: Img22,
+basePrice: 1000,
+link: "/Artifacts",
+},
+{
+  id: 21,
+  title: "Artifacts",
+  image: Img23,
+  basePrice: 1000,
+  link: "/Artifacts",
   },
   {
     id: 21,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img21,
-    link: "#",
-  },
-  {
-    id: 22,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img22,
-    link: "#",
-  },
-  {
-    id: 23,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: Img23,
-    link: "#",
-  },
-  {
-    id: 24,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
+    title: "Artifacts",
     image: Img24,
-    link: "#",
-  },
+    basePrice: 1000,
+    link: "/Artifacts",
+    },
+  
+    {
+      id: 21,
+      title: "Artifacts",
+      image: Img25,
+      basePrice: 1000,
+      link: "/Artifacts",
+      },
+    
+    
+  
+  
+
+
+
+
+
 ];
 
 const fadeInUp = {
@@ -224,7 +239,7 @@ const fadeInUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const Cinemapremi = ({ cart, setCart }) => {
+const Painting = ({ cart, setCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleAddToCart = (product) => {
@@ -271,7 +286,7 @@ const Cinemapremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-          Cinema Premi
+          Artifacts
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -339,11 +354,18 @@ const Cinemapremi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="cinemapremi"
+          category="artifacts"
         />
       )}
     </section>
   );
 };
 
-export default Cinemapremi;
+export default Painting;
+
+
+
+
+
+
+

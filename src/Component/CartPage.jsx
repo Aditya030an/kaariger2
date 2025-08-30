@@ -6,8 +6,25 @@ const CartPage = ({ cart, setCart }) => {
 
   console.log("card inside cartPage", cart);
 
+  const frames = [
+    { name: "No Frame", color: "bg-transparent", borderColor: "transparent" },
+    { name: "Matte Black", color: "bg-black", borderColor: "#000000" },
+    { name: "White", color: "bg-white border", borderColor: "#ffffff" },
+    { name: "Cream", color: "bg-[#f5f5f5] border", borderColor: "#f5f5f5" },
+    { name: "Oak", color: "bg-yellow-700", borderColor: "#b45309" },
+    { name: "Walnut", color: "bg-amber-950", borderColor: "#451a03" },
+  ];
+
   // Increase quantity
-  const increaseQty = (id, price, height, width, artType , media, selectedFrame) => {
+  const increaseQty = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    media,
+    selectedFrame
+  ) => {
     const updated = cart?.map((item) =>
       item.id === id &&
       item?.price === price &&
@@ -23,7 +40,15 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Decrease quantity
-  const decreaseQty = (id, price, height, width, artType, media, selectedFrame) => {
+  const decreaseQty = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    media,
+    selectedFrame
+  ) => {
     const updated = cart
       ?.map((item) =>
         item.id === id &&
@@ -41,7 +66,15 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Remove item
-  const removeItem = (id , price, height, width, artType, media, selectedFrame) => {
+  const removeItem = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    media,
+    selectedFrame
+  ) => {
     const updated = cart?.filter(
       (item) =>
         item.id !== id &&
@@ -54,7 +87,6 @@ const CartPage = ({ cart, setCart }) => {
     );
     setCart(updated);
   };
-
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -75,6 +107,15 @@ const CartPage = ({ cart, setCart }) => {
                     src={item?.image}
                     alt={item?.title}
                     className="w-24 h-24 object-contain rounded"
+                    style={{
+                      border:
+                        item?.selectedFrame === "No Frame"
+                          ? "none"
+                          : `6px solid ${
+                              frames.find((f) => f.name === item?.selectedFrame)
+                                ?.borderColor || "#000"
+                            }`,
+                    }}
                   />
                   <div>
                     <h2 className="text-lg font-semibold">{item?.title}</h2>
@@ -100,7 +141,7 @@ const CartPage = ({ cart, setCart }) => {
                             item?.price,
                             item?.height,
                             item?.width,
-                            item?.artType , 
+                            item?.artType,
                             item?.media,
                             item?.selectedFrame
                           )
@@ -117,7 +158,7 @@ const CartPage = ({ cart, setCart }) => {
                             item?.price,
                             item?.height,
                             item?.width,
-                            item?.artType ,
+                            item?.artType,
                             item?.media,
                             item?.selectedFrame
                           )

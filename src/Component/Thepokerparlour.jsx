@@ -4,14 +4,15 @@ import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Jua.jpg";
 import kaarigar1 from "./photos/Jua.jpg";
 import kaarigar2 from "./photos/jua2.png";
-import kaarigar3 from "./photos/jua2.png";
+
 import Img4 from "./photos/jua3.png";
 import Img5 from "./photos/jua4.png";
 import Img6 from "./photos/jua5.png";
 import Img7 from "./photos/jua6.png";
 import Img8 from "./photos/juapremi.png";
-
+import Img9 from "./photos/poker.jpeg";
 import ProductCart from "./ProductCard";
+
 
 // TiltCard
 function TiltCard({ children }) {
@@ -52,13 +53,7 @@ const originals = [
     image: kaarigar2,
     link: "#",
   },
-  {
-    id: 3,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: kaarigar3,
-    link: "#",
-  },
+
   {
     id: 4,
     title: "Handcrafted Dreams | Original Artwork",
@@ -94,6 +89,13 @@ const originals = [
     image: Img8,
     link: "#",
   },
+  {
+    id: 9,
+    title: "Soulful Symphony | Canvas Masterpiece",
+    basePrice: 6499,
+    image: Img9,
+    link: "#",
+  },
 ];
 
 const fadeInUp = {
@@ -101,7 +103,7 @@ const fadeInUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const Juapremi = ({ cart, setCart }) => {
+const Thepokerparlour = ({ cart, setCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleAddToCart = (product) => {
@@ -149,7 +151,7 @@ const Juapremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-white leading-tight tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 rounded-full"></span>
-          Jua Premi
+          The Poker Parlour
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -219,10 +221,11 @@ const Juapremi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="thepokerparlour"
         />
       )}
     </section>
   );
 };
 
-export default Juapremi;
+export default Thepokerparlour;

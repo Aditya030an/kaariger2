@@ -259,6 +259,7 @@ const Gaadi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="kaarigar"
         />
       )}
     </section>

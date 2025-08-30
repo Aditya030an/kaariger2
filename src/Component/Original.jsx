@@ -232,6 +232,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="original"
         />
       )}
     </section>

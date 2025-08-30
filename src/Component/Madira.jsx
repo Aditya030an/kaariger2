@@ -196,6 +196,7 @@ const Madira = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="madira"
         />
       )}
     </section>

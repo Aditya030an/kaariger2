@@ -15,7 +15,7 @@ import Bestsellerpage from "./Component/Bestellerpage.jsx";
 import CartPage from "./Component/CartPage.jsx"
 import Gaadi from "./Component/Gaadi.jsx"
 import Cursor from './Component/Cursor.jsx';
-import Juapremi from "./Component/Juapremi.jsx"
+import Thepokerparlour from "./Component/Thepokerparlour.jsx"
 import Madira from './Component/Madira.jsx';
 import Aestheticspremi from "./Component/Aestheticspremi.jsx"
 // import Journey from "./Component/Journey.jsx"
@@ -24,7 +24,9 @@ import Contact from './Component/Contact.jsx';
 import Cinemapremi from "./Component/Cinemapremi.jsx"
 import Pencilpremi from "./Component/Pencilpremi.jsx"
 import Kaarigarluxe from './Component/Kaarigarluxe.jsx';
-
+import Painting from './Component/Painting.jsx';
+import Poster from './Component/Poster.jsx';
+import Artifacts from './Component/Artifacts.jsx';
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [cart, setCart] = useState(() => {
@@ -62,15 +64,17 @@ const App = () => {
             <Route path="/Original" element={<Original cart={cart} setCart={setCart} />} />
             <Route path="/Gaadi" element={<Gaadi cart={cart} setCart={setCart} />} />
             <Route path="/Cursor" element={<Cursor />} />
-            <Route path="/Juapremi" element={<Juapremi cart={cart} setCart={setCart}/>} />
+            <Route path="/Thepokerparlour" element={<Thepokerparlour cart={cart} setCart={setCart}/>} />
             <Route path="/Madira" element={<Madira cart={cart} setCart={setCart}/>} />
             <Route path="/Aestheticspremi" element={<Aestheticspremi cart={cart} setCart={setCart}/>} />
-            {/* <Route path="/Journey" element={<Journey />} /> */}
+            <Route path="/Painting" element={<Painting />} />
             <Route path="/Slide" element={<Slide />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Pencilpremi" element={<Pencilpremi cart={cart} setCart={setCart}/>} />
             <Route path="/Cinemapremi" element={<Cinemapremi cart={cart} setCart={setCart}/>} />
             <Route path="/Kaarigarluxe" element={<Kaarigarluxe cart={cart} setCart={setCart}/>} />
+            <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} />
+            <Route path="/Artifacts" element={<Artifacts cart={cart} setCart={setCart}/>} />
           </Routes>
           <Footer />
         </Router>

@@ -228,6 +228,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
+          category="aestheticspremi"
         />
       )}
     </section>

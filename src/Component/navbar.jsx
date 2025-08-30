@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import {
-  FaHeart,
-  FaSearch,
+
   FaShoppingCart,
   FaUser,
   FaBars,
@@ -22,7 +21,7 @@ import Img4 from "./photos/motor3.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { name: "The Poker Parlour", image: Jua, link: "/Juapremi" },
+  { name: "The Poker Parlour", image: Jua, link: "/Thepokerparlour" },
   { name: "Burnout Boulevard", image:Img4 , link: "/Gaadi" },
   { name: "Madira Premi", image: Madira, link: "/Madira" },
   { name: "Cinema Premi", image: cinema, link: "/Cinemapremi" },
@@ -75,9 +74,7 @@ const Navbar = ({cart}) => {
           {/* Icons + Hamburger */}
           <div className="flex items-center gap-4 text-xl">
             <div className="hidden md:flex gap-4">
-              <FaSearch className="cursor-pointer hover:scale-105 transition-transform" />
-              <FaUser className="cursor-pointer hover:scale-105 transition-transform" />
-              <FaHeart className="cursor-pointer hover:scale-105 transition-transform" />
+             
               <button
                 onClick={() => navigate("/cart")}
                 className="relative cursor-pointer"
