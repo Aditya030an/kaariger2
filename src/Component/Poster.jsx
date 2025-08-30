@@ -14,7 +14,7 @@ import Img9 from "./photos/Cinema8.jpeg";
 import kaarigar33 from "./photos/madira2.png";
 import Img11 from "./photos/Cinema10.jpeg";
 
-import Img13 from "./photos/Cinema12.jpg";
+import Img13 from "./photos/cinema12.jpg";
 import Img14 from "./photos/Cinema13.jpg";
 import Img15 from "./photos/Cinema14.jpg";
 import Img16 from "./photos/Cinema15.jpg";
