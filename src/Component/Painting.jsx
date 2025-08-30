@@ -32,7 +32,7 @@ import bgImg from "./photos/motor6.jpeg";
 
 
 import Img255 from "./photos/best11.jpeg";
-import Img245 from "./photos/Cinema.jpg";
+import Img245 from "./photos/cinema.jpg";
 import motor1 from "./photos/motor.png";
 import motor2 from "./photos/motor1.png";
 import motor3 from "./photos/moto2.png";
