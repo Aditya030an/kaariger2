@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="text-center md:text-left max-w-md">
             <img src={logo} alt="Logo" className="w-36 mb-6 mx-auto md:mx-0" />
             <p className="text-sm font-light leading-relaxed text-gray-600">
-              "Every brushstroke tells a story. Every detail crafted with soul. Our art isn't just visual, it's an experience."
+              "Every brushstroke tells a story. Every detail crafted with soul."
             </p>
           </div>
 

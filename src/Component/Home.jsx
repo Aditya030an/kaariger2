@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import carsoul from "./photos/slide.png";
 import carsoul1 from "./photos/slide6.png";
 import carsoul2 from "./photos/slide2.png";
@@ -30,19 +30,19 @@ import Artifacts from "./photos/Artifact3.png";
 const items = [ 
   {
     title: "Handmade Paintings",
-    category: "Handmade Paintings",
+    // category: "Handmade Paintings",
     image: lux,
     link: "/Painting", // Update to actual route
   },
   {
     title: "Posters",
-    category: "Posters",
+    // category: "Posters",
     image: Cinema,
     link: "/Poster", // Update to actual route
   },
   {
     title: "Artifacts",
-    category: "Artifacts",
+    // category: "Artifacts",
     image: Artifacts,
     link: "/Artifacts", // Update to actual route
   },
@@ -156,6 +156,26 @@ const Home = () => {
     ))}
   </div>
 
+  {/* Left Arrow */}
+  <button
+    onClick={() =>
+      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+    }
+    className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+  >
+    <FaChevronLeft size={24} />
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    onClick={() =>
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+    }
+    className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+  >
+    <FaChevronRight size={24} />
+  </button>
+
   {/* Dots */}
   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
     {images.map((_, index) => (
@@ -175,7 +195,7 @@ const Home = () => {
       <div className="px-6 py-20 bg-[#f9f4ec]">
       <h2 className="text-center text-4xl md:text-5xl font-serif font-bold mb-16 tracking-tight">
 
-        <span className="text-gray-700 font-[Amita]"> – Watch You Looking For?</span>
+        <span className="text-gray-700 font-[Amita]"> – WatchU Looking For?</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
@@ -208,7 +228,7 @@ const Home = () => {
     whileTap={{ scale: 0.95 }}
     className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
   >
-    Explore Piece <ArrowRight size={16} />
+    Explore  <ArrowRight size={16} />
   </motion.button>
 </Link>
             </div>
@@ -228,6 +248,15 @@ const Home = () => {
 
 
 
+
+
+
+
+      {/* Other Sections */}
+      <Bestseller />
+      <Refresh />
+      
+      <About />
 
 
       {/* Art Gallery Section */}
@@ -272,10 +301,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Other Sections */}
-      <Bestseller />
-      <Refresh />
-      <About />
+
+
       <USP />
 
       {/* WhatsApp Floating Button */}
