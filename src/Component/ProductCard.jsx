@@ -33,6 +33,8 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   const [selectedFrame, setSelectedFrame] = useState("Matte Black");
   const [customWidth, setCustomWidth] = useState("");
   const [customHeight, setCustomHeight] = useState("");
+  const [mainImage, setMainImage] = useState(product?.image);
+
 
   const frames = [
     { name: "Matte Black", color: "bg-black", borderColor: "#000000" },
@@ -116,24 +118,45 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Left Side */}
           <div className="flex-1 flex flex-col items-center gap-6">
-            <div className="relative bg-gray-100 rounded-md w-full flex items-center justify-center p-4">
-              <img
-                src={product?.image}
-                alt={product?.name}
-                className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-cover"
-                style={{
-                  border: `${getFrameWidth()} solid ${getFrameBorderColor()}`,
-                  borderRadius:
-                    artType === "frame" && selectedFrame !== "No Frame"
-                      ? "4px"
-                      : "0px",
-                  boxShadow:
-                    artType === "frame" && selectedFrame !== "No Frame"
-                      ? "0 4px 12px rgba(0,0,0,0.15)"
-                      : "none",
-                  transition: "all 0.3s ease",
-                }}
-              />
+            {/* Preview Section */}
+            <div className="flex w-full gap-4">
+              {/* Thumbnails List */}
+              <div className="flex flex-col gap-3 w-20">
+                {[product?.image, product?.wallImage]
+                  .filter(Boolean)
+                  .map((img, index) => (
+                    <img
+                      key={index}
+                      src={img}
+                      alt={`Thumbnail ${index + 1}`}
+                      className={`w-16 h-16 object-cover rounded border cursor-pointer ${
+                        img === mainImage ? "border-2 border-black" : "border"
+                      }`}
+                      onClick={() => setMainImage(img)}
+                    />
+                  ))}
+              </div>
+
+              {/* Main Preview */}
+              <div className="flex-1 flex items-center justify-center bg-gray-100 rounded-md p-4">
+                <img
+                  src={mainImage}
+                  alt="Main Preview"
+                  className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-cover"
+                  style={{
+                    border: `${getFrameWidth()} solid ${getFrameBorderColor()}`,
+                    borderRadius:
+                      artType === "frame" && selectedFrame !== "No Frame"
+                        ? "4px"
+                        : "0px",
+                    boxShadow:
+                      artType === "frame" && selectedFrame !== "No Frame"
+                        ? "0 4px 12px rgba(0,0,0,0.15)"
+                        : "none",
+                    transition: "all 0.3s ease",
+                  }}
+                />
+              </div>
             </div>
 
             <h2 className="text-2xl font-serif font-bold text-center">

@@ -30,57 +30,62 @@ import Img24 from "./photos/cinema23.jpg";
 import Img25 from "./photos/cinema24.jpg";
 import Img26 from "./photos/posters.jpg";
 
+import Img255 from "./photos/best11.jpeg";
+import Img245 from "./photos/cinema.jpg";
+import motor1 from "./photos/motor.png";
+import motor2 from "./photos/motor1.png";
+import motor3 from "./photos/moto2.png";
+import motor4 from "./photos/motor3.png";
+import motor5 from "./photos/motor4.png";
+import motor6 from "./photos/motor5.jpeg";
+import motor7 from "./photos/motor6.jpeg";
+import motor8 from "./photos/motor7.jpeg";
+import motor9 from "./photos/motor8.jpeg";
+import motor10 from "./photos/motor9.jpeg";
+import motor11 from "./photos/motor10.jpeg";
+import motor112 from "./photos/painting115.jpg";
+import motor111 from "./photos/motor115.jpg";
+import motor13 from "./photos/motor12.jpeg";
 
+import pencil12 from "./photos/best1.jpeg";
+import pencil1 from "./photos/pencil.jpeg";
+import pencil2 from "./photos/penci3.png";
+import pencil3 from "./photos/pencil.png";
+import pencil4 from "./photos/pencil2.jpeg";
+import pencil5 from "./photos/pencil4.jpeg";
+import pencil6 from "./photos/pencil44.png";
+import pencil7 from "./photos/pencil5.jpeg";
+import pencil8 from "./photos/pencil6.jpeg";
+import pencil9 from "./photos/pencil7.jpeg";
+import pencil10 from "./photos/pencil8.jpeg";
+import pencil11 from "./photos/pencil9.jpeg";
 
+import Aesthetics from "./photos/Aestheticspremi.jpeg";
+import Aesthetics1 from "./photos/Aestheticspremi2.jpeg";
+import Aesthetics2 from "./photos/Aestheticspremi3.jpeg";
+import Aesthetics3 from "./photos/Aestheticspremi5.jpeg";
+import Aesthetics4 from "./photos/Aestheticspremi6.jpeg";
+import Aesthetics5 from "./photos/Aestheticspremi4.jpeg";
 
-// import motor1 from "./photos/motor.png";
-// import motor2 from "./photos/motor1.png";
-// import motor3 from "./photos/moto2.png";
-// import motor4 from "./photos/motor3.png";
-// import motor5 from "./photos/motor4.png";
-// import motor6 from "./photos/motor5.jpeg";
-// import motor7 from "./photos/motor6.jpeg";
-// import motor8 from "./photos/motor7.jpeg";
-// import motor9 from "./photos/motor8.jpeg";
-// import motor10 from "./photos/motor9.jpeg";
-// import motor11 from "./photos/motor10.jpeg";
+import Aesthetics6 from "./photos/Aestheticspremi7.jpeg";
+import Aesthetics7 from "./photos/Aestheticspremi9.jpeg";
 
-// import motor13 from "./photos/motor12.jpeg";
+import jua1 from "./photos/Jua.jpg";
+import jua2 from "./photos/jua2.png";
 
+import jua3 from "./photos/jua3.png";
+import jua4 from "./photos/jua4.png";
+import jua5 from "./photos/jua5.png";
+import jua6 from "./photos/jua6.png";
+import jua7 from "./photos/juapremi.png";
+import jua8 from "./photos/poker.jpeg";
 
-// import pencil1 from "./photos/pencil.jpeg";
-// import pencil2 from "./photos/penci3.png";
-// import pencil3 from "./photos/pencil.png";
-// import pencil4 from "./photos/pencil2.jpeg";
-// import pencil5 from "./photos/pencil4.jpeg";
-// import pencil6 from "./photos/pencil44.png";
-// import pencil7 from "./photos/pencil5.jpeg";
-// import pencil8 from "./photos/pencil6.jpeg";
-// import pencil9 from "./photos/pencil7.jpeg";
-// import pencil10 from "./photos/pencil8.jpeg";
-// import pencil11 from "./photos/pencil9.jpeg";
- 
+import madira1 from "./photos/madira1.png";
+import madira2 from "./photos/madira3.png";
+import madira3 from "./photos/madira2.png";
+import madira4 from "./photos/madira4.png";
 
-
-// import jua1 from "./photos/Jua.jpg";
-// import jua2 from "./photos/jua2.png";
-
-// import jua3 from "./photos/jua3.png";
-// import jua4 from "./photos/jua4.png";
-// import jua5 from "./photos/jua5.png";
-// import jua6 from "./photos/jua6.png";
-// import jua7 from "./photos/juapremi.png";
-// import jua8 from "./photos/poker.jpeg";
-
-
-
-
-// import madira1 from "./photos/madira1.png";
-// import madira2 from "./photos/madira3.png";
-// import madira3 from "./photos/madira2.png";
-// import madira4 from "./photos/madira4.png";
-
-// import madira5 from "./photos/madira5.png";
+import madira5 from "./photos/madira5.png";
 
 import ProductCart from "./ProductCard";
 
@@ -107,7 +112,191 @@ function TiltCard({ children }) {
   );
 }
 
+// const originals = [
+
+//   {
+//     id: 1,
+//     title: "Handcrafted Dreams | Original Artwork",
+//     basePrice: 7999,
+//     image: kaarigar1,
+//     link: "#",
+//   },
+//   {
+//     id: 2,
+//     title: "Soulful Symphony | Canvas Masterpiece",
+//     basePrice: 6499,
+//     image: kaarigar2,
+//     link: "#",
+//   },
+//   {
+//     id: 3,
+//     title: "Mystic Reflections | Paper Original",
+//     basePrice: 7299,
+//     image: kaarigar33,
+//     link: "#",
+//   },
+//   {
+//     id: 3,
+//     title: "Mystic Reflections | Paper Original",
+//     basePrice: 7299,
+//     image: kaarigar3,
+//     link: "#",
+//   },
+//   {
+//     id: 4,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img4,
+//     link: "#",
+//   },
+//   {
+//     id: 5,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img5,
+//     link: "#",
+//   },
+//   {
+//     id: 6,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img6,
+//     link: "#",
+//   },
+//   {
+//     id: 7,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img7,
+//     link: "#",
+//   },
+//   {
+//     id: 8,
+//     title: "Crimson Threads | Canvas Abstract",
+//     basePrice: 7999,
+//     image: Img8,
+//     link: "#",
+//   },
+//   {
+//     id: 9,
+//     title: "Ethereal Touch | Fine Original",
+//     basePrice: 7499,
+//     image: Img9,
+//     link: "#",
+//   },
+
+//   {
+//     id: 11,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img11,
+//     link: "#",
+//   },
+
+//   {
+//     id: 13,
+//     title: "Mystic Reflections | Paper Original",
+//     basePrice: 7299,
+//     image: Img13,
+//     link: "#",
+//   },
+//   {
+//     id: 14,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img14,
+//     link: "#",
+//   },
+//   {
+//     id: 15,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img15,
+//     link: "#",
+//   },
+//   {
+//     id: 16,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img16,
+//     link: "#",
+//   },
+//   {
+//     id: 17,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img17,
+//     link: "#",
+//   },
+//   {
+//     id: 18,
+//     title: "Crimson Threads | Canvas Abstract",
+//     basePrice: 7999,
+//     image: Img18,
+//     link: "#",
+//   },
+//   {
+//     id: 19,
+//     title: "Ethereal Touch | Fine Original",
+//     basePrice: 7499,
+//     image: Img19,
+//     link: "#",
+//   },
+//   {
+//     id: 20,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img20,
+//     link: "#",
+//   },
+//   {
+//     id: 21,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img21,
+//     link: "#",
+//   },
+//   {
+//     id: 22,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img22,
+//     link: "#",
+//   },
+//   {
+//     id: 23,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img23,
+//     link: "#",
+//   },
+//   {
+//     id: 24,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img24,
+//     link: "#",
+//   },
+
+//   {
+//     id: 25,
+//     title: "Twilight Reverie | Exclusive Paper",
+//     basePrice: 7399,
+//     image: Img25,
+//     link: "#",
+//   },
+//   {
+//     id: 26,
+//     title: "Golden Horizon | Limited Series",
+//     basePrice: 8599,
+//     image: Img26,
+//     link: "#",
+//   },
+
+// ];
+
 const originals = [
+  // ---------------- Originals ----------------
   {
     id: 1,
     title: "Handcrafted Dreams | Original Artwork",
@@ -130,55 +319,54 @@ const originals = [
     link: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
   },
   {
-    id: 4,
+    id: 5,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img4,
     link: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img5,
     link: "#",
   },
   {
-    id: 6,
+    id: 7,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img6,
     link: "#",
   },
   {
-    id: 7,
+    id: 8,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img7,
     link: "#",
   },
   {
-    id: 8,
+    id: 9,
     title: "Crimson Threads | Canvas Abstract",
     basePrice: 7999,
     image: Img8,
     link: "#",
   },
   {
-    id: 9,
+    id: 10,
     title: "Ethereal Touch | Fine Original",
     basePrice: 7499,
     image: Img9,
     link: "#",
   },
-
   {
     id: 11,
     title: "Golden Horizon | Limited Series",
@@ -186,418 +374,162 @@ const originals = [
     image: Img11,
     link: "#",
   },
-
   {
-    id: 13,
+    id: 12,
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: Img13,
     link: "#",
   },
   {
-    id: 14,
+    id: 13,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img14,
     link: "#",
   },
   {
-    id: 15,
+    id: 14,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img15,
     link: "#",
   },
   {
-    id: 16,
+    id: 15,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img16,
     link: "#",
   },
   {
-    id: 17,
+    id: 16,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img17,
     link: "#",
   },
   {
-    id: 18,
+    id: 17,
     title: "Crimson Threads | Canvas Abstract",
     basePrice: 7999,
     image: Img18,
     link: "#",
   },
   {
-    id: 19,
+    id: 18,
     title: "Ethereal Touch | Fine Original",
     basePrice: 7499,
     image: Img19,
     link: "#",
   },
   {
-    id: 20,
+    id: 19,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img20,
     link: "#",
   },
   {
-    id: 21,
+    id: 20,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img21,
     link: "#",
   },
   {
-    id: 22,
+    id: 21,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img22,
     link: "#",
   },
   {
-    id: 23,
+    id: 22,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img23,
     link: "#",
   },
   {
-    id: 24,
+    id: 23,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img24,
     link: "#",
   },
-
   {
-    id: 25,
+    id: 24,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img25,
     link: "#",
   },
   {
-    id: 26,
+    id: 25,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img26,
     link: "#",
   },
 
-  // {
-  //   id: 25,
-  //   title: "Handcrafted Dreams | Original Artwork",
-  //   basePrice: 7999,
-  //   image: motor1,
-  //   link: "#",
-  // },
-  // {
-  //   id: 26,
-  //   title: "Soulful Symphony | Canvas Masterpiece",
-  //   basePrice: 6499,
-  //   image: motor2,
-  //   link: "#",
-  // },
-  // {
-  //   id: 27,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //   image: motor3,
-  //   link: "#",
-  // },
-  // {
-  //   id: 28,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: motor4,
-  //   link: "#",
-  // },
-  // {
-  //   id: 29,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: motor5,
-  //   link: "#",
-  // },
-  // {
-  //   id: 30,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: motor6,
-  //   link: "#",
-  // },
-  // {
-  //   id: 31,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: motor7,
-  //   link: "#",
-  // },
-  // {
-  //   id: 32,
-  //   title: "Crimson Threads | Canvas Abstract",
-  //   basePrice: 7999,
-  //   image: motor8,
-  //   link: "#",
-  // },
-  // {
-  //   id: 33,
-  //   title: "Ethereal Touch | Fine Original",
-  //   basePrice: 7499,
-  //   image: motor9,
-  //   link: "#",
-  // },
-  // {
-  //   id: 34,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: motor10,
-  //   link: "#",
-  // },
-  // {
-  //   id: 36,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: motor11,
-  //   link: "#",
-  // },
+  // ---------------- Motor ----------------
+  // { id: 26, title: "Motor Artwork", image: motor1, link: "#" },
+  // { id: 27, title: "Motor Artwork", image: motor2, link: "#" },
+  { id: 28, title: "Motor Artwork", image: motor3, link: "#" },
+  { id: 29, title: "Motor Artwork", image: motor4, link: "#" },
+  { id: 30, title: "Motor Artwork", image: motor5, link: "#" },
+  { id: 31, title: "Motor Artwork", image: motor6,wallImage:motor1, link: "#" },
+  { id: 32, title: "Motor Artwork", image: motor7, link: "#" },
+  { id: 33, title: "Motor Artwork", image: motor8,wallImage:motor2, link: "#" },
+  { id: 34, title: "Motor Artwork", image: motor9, link: "#" },
+  { id: 35, title: "Motor Artwork", image: motor10, link: "#" },
+  { id: 36, title: "Motor Artwork", image: motor11, link: "#" },
+  { id: 37, title: "Motor Artwork", image: motor112, link: "#" },
+  { id: 38, title: "Motor Artwork", image: motor111, link: "#" },
+  { id: 39, title: "Motor Artwork", image: motor13, link: "#" },
 
-  // {
-  //   id: 37,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //       image: motor13,
-  //   link: "#",
-  // },
-  // {
-  //   id: 38,
-  //   title: "Handcrafted Dreams | Original Artwork",
-  //   basePrice: 7999,
-  //   image: jua1,
-  //   link: "#",
-  // },
-  // {
-  //   id: 39,
-  //   title: "Soulful Symphony | Canvas Masterpiece",
-  //   basePrice: 6499,
-  //   image: jua2,
-  //   link: "#",
-  // },
-  // {
-  //   id: 40,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //   image: pencil1,
-  //   link: "#",
-  // },
-  // {
-  //   id: 41,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //   image: pencil2,
-  //   link: "#",
-  // },
-  // {
-  //   id: 42,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //   image: pencil3,
-  //   link: "#",
-  // },
-  // {
-  //   id: 43,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil4,
-  //   link: "#",
-  // },
-  // {
-  //   id: 44,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: pencil5,
-  //   link: "#",
-  // },
-  // {
-  //   id: 45,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil6,
-  //   link: "#",
-  // },
-  // {
-  //   id: 46,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: pencil7,
-  //   link: "#",
-  // },
-  // {
-  //   id: 47,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil10,
-  //   link: "#",
-  // },
-  // {
-  //   id: 48,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: pencil11,
-  //   link: "#",
-  // },
+  // ---------------- Pencil ----------------
+  { id: 40, title: "Pencil Artwork", image: pencil12, link: "#" },
+  { id: 41, title: "Pencil Artwork", image: pencil1,wallImage:pencil2 ,  link: "#" },
+  // { id: 42, title: "Pencil Artwork", image: pencil2, link: "#" },
+  // { id: 43, title: "Pencil Artwork", image: pencil3, link: "#" },
+  { id: 44, title: "Pencil Artwork", image: pencil4, wallImage:pencil3, link: "#" },
+  { id: 45, title: "Pencil Artwork", image: pencil5, wallImage:pencil6 , link: "#" },
+  // { id: 46, title: "Pencil Artwork", image: pencil6, link: "#" },
+  { id: 47, title: "Pencil Artwork", image: pencil7, link: "#" },
+  { id: 48, title: "Pencil Artwork", image: pencil8, link: "#" },
+  { id: 49, title: "Pencil Artwork", image: pencil9, link: "#" },
+  { id: 50, title: "Pencil Artwork", image: pencil10, link: "#" },
+  { id: 51, title: "Pencil Artwork", image: pencil11, link: "#" },
 
-  // {
-  //   id: 49,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //       image: pencil8,
-  //   link: "#",
-  // },
-  // {
-  //   id: 50,
-  //   title: "Handcrafted Dreams | Original Artwork",
-  //   basePrice: 7999,
-  //   image: pencil9,
-  //   link: "#",
-  // },
-  // {
-  //   id: 51,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil4,
-  //   link: "#",
-  // },
-  // {
-  //   id: 52,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: pencil5,
-  //   link: "#",
-  // },
-  // {
-  //   id: 53,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil6,
-  //   link: "#",
-  // },
-  // {
-  //   id: 54,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil4,
-  //   link: "#",
-  // },
-  // {
-  //   id: 55      ,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: pencil5,
-  //   link: "#",
-  // },
-  // {
-  //   id: 56,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: pencil6,
-  //   link: "#",
-  // },
+  // ---------------- Aesthetics ----------------
+  { id: 52, title: "Aesthetic Premium", image: Aesthetics, link: "#" },
+  { id: 53, title: "Aesthetic Premium", image: Aesthetics1, link: "#" },
+  { id: 54, title: "Aesthetic Premium", image: Aesthetics2, link: "#" },
+  { id: 55, title: "Aesthetic Premium", image: Aesthetics3, link: "#" },
+  { id: 56, title: "Aesthetic Premium", image: Aesthetics4, link: "#" },
+  { id: 57, title: "Aesthetic Premium", image: Aesthetics5, link: "#" },
+  { id: 58, title: "Aesthetic Premium", image: Aesthetics6, link: "#" },
+  { id: 59, title: "Aesthetic Premium", image: Aesthetics7, link: "#" },
 
+  // ---------------- Jua ----------------
+  { id: 60, title: "Jua Collection", image: jua1, link: "#" },
+  { id: 61, title: "Jua Collection", image: jua2, link: "#" },
+  { id: 62, title: "Jua Collection", image: jua3, link: "#" },
+  { id: 63, title: "Jua Collection", image: jua4, link: "#" },
+  { id: 64, title: "Jua Collection", image: jua5, link: "#" },
+  { id: 65, title: "Jua Collection", image: jua6, link: "#" },
+  { id: 66, title: "Jua Collection", image: jua7, link: "#" },
+  { id: 67, title: "Jua Collection", image: jua8, link: "#" },
 
-
-  // {
-  //   id: 57,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: jua3,
-  //   link: "#",
-  // },
-  // {
-  //   id: 58,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: jua4,
-  //   link: "#",
-  // },
-  // {
-  //   id: 59,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: jua5,
-  //   link: "#",
-  // },
-  // {
-  //   id: 60,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: jua6,
-  //   link: "#",
-  // },
-  // {
-  //   id: 61,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: jua7,
-  //   link: "#",
-  // },
-  // {
-  //   id: 62  ,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: jua8,
-  //   link: "#",
-  // },
-
-
-
-
-
-  // {
-  //   id: 63,
-  //   title: "Handcrafted Dreams | Original Artwork",
-  //   basePrice: 7999,
-  //   image: madira1,
-  //   link: "#",
-  // },
-  // {
-  //   id: 64,
-  //   title: "Soulful Symphony | Canvas Masterpiece",
-  //   basePrice: 6499,
-  //   image: madira2,
-  //   link: "#",
-  // },
-  // {
-  //   id: 65,
-  //   title: "Mystic Reflections | Paper Original",
-  //   basePrice: 7299,
-  //   image: madira3,
-  //   link: "#",
-  // },
-  // {
-  //   id: 66,
-  //   title: "Twilight Reverie | Exclusive Paper",
-  //   basePrice: 7399,
-  //   image: madira4,
-  //   link: "#",
-  // },
-  // {
-  //         id: 67,
-  //   title: "Golden Horizon | Limited Series",
-  //   basePrice: 8599,
-  //   image: madira5,
-  //   link: "#",
-  // },
-
-
-
-
-
+  // ---------------- Madira ----------------
+  { id: 68, title: "Madira Artwork", image: madira1, link: "#" },
+  { id: 69, title: "Madira Artwork", image: madira2,wallImage:madira5 ,  link: "#" },
+  { id: 70, title: "Madira Artwork", image: madira3, link: "#" },
+  { id: 71, title: "Madira Artwork", image: madira4, link: "#" },
+  // { id: 72, title: "Madira Artwork", image: madira5, link: "#" },
 ];
-
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -615,7 +547,7 @@ const Painting = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
@@ -726,10 +658,3 @@ const Painting = ({ cart, setCart }) => {
 };
 
 export default Painting;
-
-
-
-
-
-
-

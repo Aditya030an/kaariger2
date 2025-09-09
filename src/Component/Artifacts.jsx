@@ -58,94 +58,94 @@ function TiltCard({ children }) {
 const originals = [
     {
         id: 1,
-        title: "Artifacts",
+        title: "Fisherman incense holder clay ",
         image: Img1,
-        basePrice: 1000,
+        basePrice: 2000,
         link: "/Artifacts",
     },                  
 
     {
         id: 2,
-        title: "Artifacts",
+        title: "Hip doggy jewellery /Key pot clay",
         image: Img3,
-        basePrice: 1000,
+        basePrice: 3500,
         link: "/Artifacts",
     }, 
     {
         id: 3,
-        title: "Artifacts",
+        title: "Samurai Incense holder Clay",
         image: Img4,
-        basePrice: 1000,
+        basePrice: 2000,
         link: "/Artifacts",
     },
     {
         id: 4,
-        title: "Artifacts",
+        title: "ACE CENTRE TABLE",
         image: Img5,
-        basePrice: 1000,
+        basePrice: 30000,
         link: "/Artifacts",
     },
     {
         id: 5,
-        title: "Artifacts",
+        title: "⁠ ⁠Cards Wall Clock",
         image: Img6,
-        basePrice: 1000,
+        basePrice: 1500,
         link: "/Artifacts",
     },
     {
         id: 6,
-        title: "Artifacts",
+        title: "⁠⁠SUITS SERVING PLATTERS Clay",
         image: Img7,
-        basePrice: 1000,
+        basePrice: 3000,
         link: "/Artifacts",
     },
     {
         id: 7,
-        title: "Artifacts",
+        title: "NEAT TAP",
         image: Img8,
-        basePrice: 1000,
+        basePrice: 2500,
         link: "/Artifacts",
     },
 
     {
       id: 8,
-      title: "Artifacts",
+      title: " ⁠Grande arena",
       image: Img9,
-      basePrice: 1000,
+      basePrice: 50000,
       link: "/Artifacts",
   },                  
 
   {
       id: 9,
-      title: "Artifacts",
+      title: "⁠⁠Giveth-Taketh incense holder  Clay",
       image: Img10,
-      basePrice: 1000,
+      basePrice: 3000,
       link: "/Artifacts",
   }, 
   {
       id: 10,
-      title: "Artifacts",
+      title: "laundy basket ball hoop",
       image: Img11,
-      basePrice: 1000,
+      basePrice:6000,
       link: "/Artifacts",
   },
   {
       id: 11,
-      title: "Artifacts",
+      title: "Laundry Basketball Bin",
       image: Img12,
-      basePrice: 1000,
+      basePrice: 4000,
       link: "/Artifacts",
   },
   {
       id: 12,
-      title: "Artifacts",
+      title: "F1 Fender Stand Wooden",
       image: Img13,
-      basePrice: 1000,
+      basePrice: 10000,
       link: "/Artifacts",
   },
   {
       id: 13,
-      title: "Artifacts",
+      title: "Chakhna Pallete 1pc",
       image: Img14,
       basePrice: 1000,
       link: "/Artifacts",
@@ -153,74 +153,55 @@ const originals = [
 
   {
     id: 14,
-    title: "Artifacts",
+    title: "Casettee Centre Table",
     image: Img16,
-    basePrice: 1000,
+    basePrice: 40000,
     link: "/Artifacts",
 },
-{
-    id: 15,
-    title: "Artifacts",
-    image: Img17,
-    basePrice: 1000,
-    link: "/Artifacts",
-},
+// {
+//     id: 15,
+//     title: "Artifacts",
+//     image: Img17,
+//     basePrice: 1000,
+//     link: "/Artifacts",
+// },
 {
     id: 16,
-    title: "Artifacts",
+    title: " ⁠⁠BOOMBOX SHELF Table ",
     image: Img18,
-    basePrice: 1000,
+    basePrice: 30000,
     link: "/Artifacts",
 },
 {
   id: 17,
-  title: "Artifacts",
+  title: "⁠⁠Faceoff Serving platter clay (1pc)",
   image: Img19,
-  basePrice: 1000,
+  basePrice: 30000,
   link: "/Artifacts",
 },
 
 {
 id: 18,
-title: "Artifacts",
+title: "Humané Centre Table",
 image: Img20,
-basePrice: 1000,
+basePrice: 30000,
 link: "/Artifacts",
 },
 {
 id: 19,
-title: "Artifacts",
+title: "Glitch clock Clay",
 image: Img21,
-basePrice: 1000,
+basePrice: 2500,
 link: "/Artifacts",
 },
-{
-id: 20,
-title: "Artifacts",
-image: Img22,
-basePrice: 1000,
-link: "/Artifacts",
-},
-{
-  id: 21,
-  title: "Artifacts",
-  image: Img23,
-  basePrice: 1000,
-  link: "/Artifacts",
-  },
-  {
-    id: 21,
-    title: "Artifacts",
-    image: Img24,
-    basePrice: 1000,
-    link: "/Artifacts",
-    },
+
+
   
     {
       id: 21,
-      title: "Artifacts",
+      title: "Retrovision Table centre",
       image: Img25,
-      basePrice: 1000,
+      basePrice: 25000,
       link: "/Artifacts",
       },
     
@@ -286,7 +267,7 @@ const Painting = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-          Artifacts
+          Artifacts and Furniture pieces
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}

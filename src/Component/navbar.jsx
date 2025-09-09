@@ -21,12 +21,10 @@ import Img4 from "./photos/motor3.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { name: "The Poker Parlour", image: Jua, link: "/Thepokerparlour" },
-  { name: "Burnout Boulevard", image:Img4 , link: "/Gaadi" },
-  { name: "Madira Premi", image: Madira, link: "/Madira" },
-  { name: "Cinema Premi", image: cinema, link: "/Cinemapremi" },
-  { name: "Aesthetics premi", image: baklol, link: "/Aestheticspremi" },
-  { name: "Pencil Poetry", image: Img1, link: "/Pencilpremi" },
+  { name: "Painting", image: Jua, link: "/Painting" },
+  { name: "Posters", image:Img4 , link: "/Poster" },
+  { name: " Artifacts and Furniture pieces", image: Madira, link: "/Artifacts" },
+
   
 ];
 
@@ -133,11 +131,7 @@ const Navbar = ({cart}) => {
                             alt={category.name}
                             className="w-full h-full object-cover"
                           />
-                          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                            <span className="text-white text-[10px] font-bold text-center">
-                              {category.name}
-                            </span>
-                          </div>
+                        
                         </div>
                         <span className="text-gray-800 text-sm font-semibold">
                           {category.name}
@@ -149,9 +143,7 @@ const Navbar = ({cart}) => {
               )}
             </div>
 
-            <a href="/Original" className="cursor-pointer hover:underline">
-              Kaarigar Original
-            </a>
+           
             <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
               Kaarigar Luxe
             </a>

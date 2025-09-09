@@ -121,20 +121,20 @@ function TiltCard({ children }) {
 
 const originals = [
   
-  {
-    id: 25,
-    title: "Handcrafted Dreams | Original Artwork",
-    basePrice: 7999,
-    image: motor1,
-    link: "#",
-  },
-  {
-    id: 26,
-    title: "Soulful Symphony | Canvas Masterpiece",
-    basePrice: 6499,
-    image: motor2,
-    link: "#",
-  },
+  // {
+  //   id: 25,
+  //   title: "Handcrafted Dreams | Original Artwork",
+  //   basePrice: 7999,
+  //   image: motor1,
+  //   link: "#",
+  // },
+  // {
+  //   id: 26,
+  //   title: "Soulful Symphony | Canvas Masterpiece",
+  //   basePrice: 6499,
+  //   image: motor2,
+  //   link: "#",
+  // },
 
   {
     id: 25,
@@ -185,6 +185,7 @@ const originals = [
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: motor6,
+    wallImage: motor1,
     link: "#",
   },
   {
@@ -199,6 +200,7 @@ const originals = [
     title: "Crimson Threads | Canvas Abstract",
     basePrice: 7999,
     image: motor8,
+    wallImage: motor2,
     link: "#",
   },
   {
@@ -257,6 +259,7 @@ const originals = [
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: pencil1,
+    wallImage: pencil2,
     link: "#",
   },
   {
@@ -266,25 +269,26 @@ const originals = [
     image: pencil12,
     link: "#",
   },
-  {
-    id: 41,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: pencil2,
-    link: "#",
-  },
-  {
-    id: 42,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: pencil3,
-    link: "#",
-  },
+  // {
+  //   id: 41,
+  //   title: "Mystic Reflections | Paper Original",
+  //   basePrice: 7299,
+  //   image: pencil2,
+  //   link: "#",
+  // },
+  // {
+  //   id: 42,
+  //   title: "Mystic Reflections | Paper Original",
+  //   basePrice: 7299,
+  //   image: pencil3,
+  //   link: "#",
+  // },
   {
     id: 43,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: pencil4,
+    wallImage: pencil3,
     link: "#",
   },
   {
@@ -292,15 +296,16 @@ const originals = [
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: pencil5,
+    wallImage:pencil6,
     link: "#",
   },
-  {
-    id: 45,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: pencil6,
-    link: "#",
-  },
+  // {
+  //   id: 45,
+  //   title: "Twilight Reverie | Exclusive Paper",
+  //   basePrice: 7399,
+  //   image: pencil6,
+  //   link: "#",
+  // },
   {
     id: 46,
     title: "Golden Horizon | Limited Series",
@@ -342,6 +347,7 @@ const originals = [
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: pencil4,
+    wallImage: pencil3,
     link: "#",
   },
   {
@@ -349,20 +355,22 @@ const originals = [
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: pencil5,
+    wallImage:pencil6,
     link: "#",
   },
-  {
-    id: 53,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: pencil6,
-    link: "#",
-  },
+  // {
+  //   id: 53,
+  //   title: "Twilight Reverie | Exclusive Paper",
+  //   basePrice: 7399,
+  //   image: pencil6,
+  //   link: "#",
+  // },
   {
     id: 54,
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: pencil4,
+    wallImage:pencil5,
     link: "#",
   },
   {
@@ -370,15 +378,16 @@ const originals = [
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: pencil5,
+    wallImage:pencil6,
     link: "#",
   },
-  {
-    id: 56,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: pencil6,
-    link: "#",
-  },
+  // {
+  //   id: 56,
+  //   title: "Twilight Reverie | Exclusive Paper",
+  //   basePrice: 7399,
+  //   image: pencil6,
+  //   link: "#",
+  // },
 
   // {
   //   id: 1,
@@ -596,6 +605,7 @@ const originals = [
     title: "Soulful Symphony | Canvas Masterpiece",
     basePrice: 6499,
     image: madira2,
+    wallImage:madira5,
     link: "#",
   },
   {
@@ -612,13 +622,13 @@ const originals = [
     image: madira4,
     link: "#",
   },
-  {
-          id: 67,
-    title: "Golden Horizon | Limited Series",
-    basePrice: 8599,
-    image: madira5,
-    link: "#",
-  },
+  // {
+  //         id: 67,
+  //   title: "Golden Horizon | Limited Series",
+  //   basePrice: 8599,
+  //   image: madira5,
+  //   link: "#",
+  // },
 
 
 
