@@ -46,6 +46,8 @@ import motor11 from "./photos/motor10.jpeg";
 import motor112 from "./photos/painting115.jpg";
 import motor111 from "./photos/motor115.jpg";
 import motor13 from "./photos/motor12.jpeg";
+import motor32 from "./photos/motor32.jpeg";
+import motor55 from "./photos/motor44.jpeg";
 
 import pencil12 from "./photos/best1.jpeg";
 import pencil1 from "./photos/pencil.jpeg";
@@ -304,11 +306,23 @@ const originals = [
     image: kaarigar1,
     link: "#",
   },
+  { id: 38, title: "Motor Artwork", image: motor111, link: "#" },
+  { id: 71, title: "Madira Artwork", image: madira4, link: "#" },
   {
     id: 2,
     title: "Soulful Symphony | Canvas Masterpiece",
     basePrice: 6499,
     image: kaarigar2,
+    link: "#",
+  },
+  { id: 67, title: "Jua Collection", image: jua8, link: "#" },
+  { id: 52, title: "Aesthetic Premium", image: Aesthetics, link: "#" },
+
+  {
+    id: 45,
+    title: "Pencil Artwork",
+    image: pencil5,
+    wallImage: pencil6,
     link: "#",
   },
   {
@@ -318,11 +332,30 @@ const originals = [
     image: kaarigar33,
     link: "#",
   },
+  { id: 61, title: "Jua Collection", image: jua2, link: "#" },
+
+  { id: 39, title: "Motor Artwork", image: motor13, link: "#" },
+  {
+    id: 69,
+    title: "Madira Artwork",
+    image: madira2,
+    wallImage: madira5,
+    link: "#",
+  },
   {
     id: 4,
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: kaarigar3,
+    link: "#",
+  },
+  { id: 53, title: "Aesthetic Premium", image: Aesthetics1, link: "#" },
+  { id: 62, title: "Jua Collection", image: jua3, link: "#" },
+  {
+    id: 33,
+    title: "Motor Artwork",
+    image: motor8,
+    wallImage: motor2,
     link: "#",
   },
   {
@@ -333,12 +366,22 @@ const originals = [
     link: "#",
   },
   {
+    id: 44,
+    title: "Pencil Artwork",
+    image: pencil4,
+    wallImage: pencil3,
+    link: "#",
+  },
+
+  {
     id: 6,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img5,
     link: "#",
   },
+  { id: 68, title: "Madira Artwork", image: madira1, link: "#" },
+
   {
     id: 7,
     title: "Twilight Reverie | Exclusive Paper",
@@ -346,6 +389,7 @@ const originals = [
     image: Img6,
     link: "#",
   },
+  { id: 54, title: "Aesthetic Premium", image: Aesthetics2, link: "#" },
   {
     id: 8,
     title: "Golden Horizon | Limited Series",
@@ -354,17 +398,35 @@ const originals = [
     link: "#",
   },
   {
+    id: 29,
+    title: "Motor Artwork",
+    image: motor32,
+    wallImage: motor4,
+    link: "#",
+  },
+
+  {
     id: 9,
     title: "Crimson Threads | Canvas Abstract",
     basePrice: 7999,
     image: Img8,
     link: "#",
   },
+  { id: 51, title: "Pencil Artwork", image: pencil11, link: "#" },
   {
     id: 10,
     title: "Ethereal Touch | Fine Original",
     basePrice: 7499,
     image: Img9,
+    link: "#",
+  },
+  { id: 66, title: "Jua Collection", image: jua7, link: "#" },
+
+  {
+    id: 31,
+    title: "Motor Artwork",
+    image: motor6,
+    wallImage: motor1,
     link: "#",
   },
   {
@@ -374,11 +436,22 @@ const originals = [
     image: Img11,
     link: "#",
   },
+  { id: 56, title: "Aesthetic Premium", image: Aesthetics4, link: "#" },
+  { id: 40, title: "Pencil Artwork", image: pencil12, link: "#" },
+
   {
     id: 12,
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: Img13,
+    link: "#",
+  },
+  { id: 50, title: "Pencil Artwork", image: pencil10, link: "#" },
+  {
+    id: 30,
+    title: "Motor Artwork",
+    image: motor55,
+    wallImage: motor5,
     link: "#",
   },
   {
@@ -388,11 +461,22 @@ const originals = [
     image: Img14,
     link: "#",
   },
+  { id: 35, title: "Motor Artwork", image: motor10, link: "#" },
+  { id: 59, title: "Aesthetic Premium", image: Aesthetics7, link: "#" },
+  { id: 65, title: "Jua Collection", image: jua6, link: "#" },
+
   {
     id: 14,
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img15,
+    link: "#",
+  },
+  {
+    id: 41,
+    title: "Pencil Artwork",
+    image: pencil1,
+    wallImage: pencil2,
     link: "#",
   },
   {
@@ -402,6 +486,7 @@ const originals = [
     image: Img16,
     link: "#",
   },
+  { id: 28, title: "Motor Artwork", image: motor3, link: "#" },
   {
     id: 16,
     title: "Golden Horizon | Limited Series",
@@ -416,6 +501,8 @@ const originals = [
     image: Img18,
     link: "#",
   },
+  { id: 55, title: "Aesthetic Premium", image: Aesthetics3, link: "#" },
+
   {
     id: 18,
     title: "Ethereal Touch | Fine Original",
@@ -423,6 +510,12 @@ const originals = [
     image: Img19,
     link: "#",
   },
+  { id: 49, title: "Pencil Artwork", image: pencil9, link: "#" },
+  { id: 58, title: "Aesthetic Premium", image: Aesthetics6, link: "#" },
+
+  { id: 64, title: "Jua Collection", image: jua5, link: "#" },
+
+  { id: 36, title: "Motor Artwork", image: motor11, link: "#" },
   {
     id: 19,
     title: "Twilight Reverie | Exclusive Paper",
@@ -437,6 +530,7 @@ const originals = [
     image: Img21,
     link: "#",
   },
+  { id: 37, title: "Motor Artwork", image: motor112, link: "#" },
   {
     id: 21,
     title: "Twilight Reverie | Exclusive Paper",
@@ -444,6 +538,8 @@ const originals = [
     image: Img22,
     link: "#",
   },
+  { id: 48, title: "Pencil Artwork", image: pencil8, link: "#" },
+
   {
     id: 22,
     title: "Golden Horizon | Limited Series",
@@ -451,6 +547,7 @@ const originals = [
     image: Img23,
     link: "#",
   },
+  { id: 32, title: "Motor Artwork", image: motor7, link: "#" },
   {
     id: 23,
     title: "Golden Horizon | Limited Series",
@@ -458,6 +555,10 @@ const originals = [
     image: Img24,
     link: "#",
   },
+  { id: 47, title: "Pencil Artwork", image: pencil7, link: "#" },
+  { id: 63, title: "Jua Collection", image: jua4, link: "#" },
+
+  { id: 34, title: "Motor Artwork", image: motor9, link: "#" },
   {
     id: 24,
     title: "Twilight Reverie | Exclusive Paper",
@@ -465,6 +566,10 @@ const originals = [
     image: Img25,
     link: "#",
   },
+
+  { id: 70, title: "Madira Artwork", image: madira3, link: "#" },
+  { id: 57, title: "Aesthetic Premium", image: Aesthetics5, link: "#" },
+
   {
     id: 25,
     title: "Golden Horizon | Limited Series",
@@ -472,62 +577,25 @@ const originals = [
     image: Img26,
     link: "#",
   },
+  { id: 60, title: "Jua Collection", image: jua1, link: "#" },
 
   // ---------------- Motor ----------------
   // { id: 26, title: "Motor Artwork", image: motor1, link: "#" },
   // { id: 27, title: "Motor Artwork", image: motor2, link: "#" },
-  { id: 28, title: "Motor Artwork", image: motor3, link: "#" },
-  { id: 29, title: "Motor Artwork", image: motor4, link: "#" },
-  { id: 30, title: "Motor Artwork", image: motor5, link: "#" },
-  { id: 31, title: "Motor Artwork", image: motor6,wallImage:motor1, link: "#" },
-  { id: 32, title: "Motor Artwork", image: motor7, link: "#" },
-  { id: 33, title: "Motor Artwork", image: motor8,wallImage:motor2, link: "#" },
-  { id: 34, title: "Motor Artwork", image: motor9, link: "#" },
-  { id: 35, title: "Motor Artwork", image: motor10, link: "#" },
-  { id: 36, title: "Motor Artwork", image: motor11, link: "#" },
-  { id: 37, title: "Motor Artwork", image: motor112, link: "#" },
-  { id: 38, title: "Motor Artwork", image: motor111, link: "#" },
-  { id: 39, title: "Motor Artwork", image: motor13, link: "#" },
 
   // ---------------- Pencil ----------------
-  { id: 40, title: "Pencil Artwork", image: pencil12, link: "#" },
-  { id: 41, title: "Pencil Artwork", image: pencil1,wallImage:pencil2 ,  link: "#" },
+
   // { id: 42, title: "Pencil Artwork", image: pencil2, link: "#" },
   // { id: 43, title: "Pencil Artwork", image: pencil3, link: "#" },
-  { id: 44, title: "Pencil Artwork", image: pencil4, wallImage:pencil3, link: "#" },
-  { id: 45, title: "Pencil Artwork", image: pencil5, wallImage:pencil6 , link: "#" },
+
   // { id: 46, title: "Pencil Artwork", image: pencil6, link: "#" },
-  { id: 47, title: "Pencil Artwork", image: pencil7, link: "#" },
-  { id: 48, title: "Pencil Artwork", image: pencil8, link: "#" },
-  { id: 49, title: "Pencil Artwork", image: pencil9, link: "#" },
-  { id: 50, title: "Pencil Artwork", image: pencil10, link: "#" },
-  { id: 51, title: "Pencil Artwork", image: pencil11, link: "#" },
 
   // ---------------- Aesthetics ----------------
-  { id: 52, title: "Aesthetic Premium", image: Aesthetics, link: "#" },
-  { id: 53, title: "Aesthetic Premium", image: Aesthetics1, link: "#" },
-  { id: 54, title: "Aesthetic Premium", image: Aesthetics2, link: "#" },
-  { id: 55, title: "Aesthetic Premium", image: Aesthetics3, link: "#" },
-  { id: 56, title: "Aesthetic Premium", image: Aesthetics4, link: "#" },
-  { id: 57, title: "Aesthetic Premium", image: Aesthetics5, link: "#" },
-  { id: 58, title: "Aesthetic Premium", image: Aesthetics6, link: "#" },
-  { id: 59, title: "Aesthetic Premium", image: Aesthetics7, link: "#" },
 
   // ---------------- Jua ----------------
-  { id: 60, title: "Jua Collection", image: jua1, link: "#" },
-  { id: 61, title: "Jua Collection", image: jua2, link: "#" },
-  { id: 62, title: "Jua Collection", image: jua3, link: "#" },
-  { id: 63, title: "Jua Collection", image: jua4, link: "#" },
-  { id: 64, title: "Jua Collection", image: jua5, link: "#" },
-  { id: 65, title: "Jua Collection", image: jua6, link: "#" },
-  { id: 66, title: "Jua Collection", image: jua7, link: "#" },
-  { id: 67, title: "Jua Collection", image: jua8, link: "#" },
 
   // ---------------- Madira ----------------
-  { id: 68, title: "Madira Artwork", image: madira1, link: "#" },
-  { id: 69, title: "Madira Artwork", image: madira2,wallImage:madira5 ,  link: "#" },
-  { id: 70, title: "Madira Artwork", image: madira3, link: "#" },
-  { id: 71, title: "Madira Artwork", image: madira4, link: "#" },
+
   // { id: 72, title: "Madira Artwork", image: madira5, link: "#" },
 ];
 const fadeInUp = {

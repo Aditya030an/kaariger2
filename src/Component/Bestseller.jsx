@@ -13,7 +13,7 @@ const Bestseller = () => {
       <div className="relative z-10">
         <h2 className="text-3xl md:text-5xl font-[Amita] font-bold text-white text-center mb-2">
           <span className="inline-block w-12 h-[2px] bg-white mr-3 align-middle" />
-          ताज़ा, ट्रेंडी ,टॉप - Our bestsellers
+          ट्रेंडी ,टॉप - Our bestsellers
           <span className="inline-block w-12 h-[2px] bg-white ml-3 align-middle" />
         </h2>
 

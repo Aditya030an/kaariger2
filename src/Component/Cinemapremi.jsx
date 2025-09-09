@@ -271,7 +271,7 @@ const Cinemapremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-          Cinema Premi
+         Cinema Solace
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}

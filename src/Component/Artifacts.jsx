@@ -28,8 +28,10 @@ import Img21 from "./photos/artifacts24.jpg";
 import Img22 from "./photos/artifacts25.jpg";
 import Img23 from "./photos/artifacts26.jpg";
 import Img24 from "./photos/artifacts29.png";
-
 import Img25 from "./photos/artifacts30.png";
+import Img26 from "./photos/artifacts31.jpg";
+import music from "./photos/music.png";
+
 import ProductCart from "./ProductCard";
 
 // TiltCard component
@@ -61,7 +63,7 @@ const originals = [
         title: "Fisherman incense holder clay ",
         image: Img1,
         basePrice: 2000,
-        link: "/Artifacts",
+        link: "#",
     },                  
 
     {
@@ -69,42 +71,42 @@ const originals = [
         title: "Hip doggy jewellery /Key pot clay",
         image: Img3,
         basePrice: 3500,
-        link: "/Artifacts",
+        link: "#",
     }, 
     {
         id: 3,
         title: "Samurai Incense holder Clay",
         image: Img4,
         basePrice: 2000,
-        link: "/Artifacts",
+        link: "#",
     },
     {
         id: 4,
         title: "ACE CENTRE TABLE",
         image: Img5,
         basePrice: 30000,
-        link: "/Artifacts",
+        link: "#",
     },
     {
         id: 5,
         title: "⁠ ⁠Cards Wall Clock",
         image: Img6,
         basePrice: 1500,
-        link: "/Artifacts",
+        link: "#",
     },
     {
         id: 6,
         title: "⁠⁠SUITS SERVING PLATTERS Clay",
         image: Img7,
         basePrice: 3000,
-        link: "/Artifacts",
+        link: "#",
     },
     {
         id: 7,
         title: "NEAT TAP",
         image: Img8,
         basePrice: 2500,
-        link: "/Artifacts",
+        link: "#",
     },
 
     {
@@ -112,7 +114,7 @@ const originals = [
       title: " ⁠Grande arena",
       image: Img9,
       basePrice: 50000,
-      link: "/Artifacts",
+      link:"#",
   },                  
 
   {
@@ -120,35 +122,35 @@ const originals = [
       title: "⁠⁠Giveth-Taketh incense holder  Clay",
       image: Img10,
       basePrice: 3000,
-      link: "/Artifacts",
+      link: "#",
   }, 
   {
       id: 10,
       title: "laundy basket ball hoop",
       image: Img11,
       basePrice:6000,
-      link: "/Artifacts",
+      link: "#",
   },
   {
       id: 11,
       title: "Laundry Basketball Bin",
       image: Img12,
       basePrice: 4000,
-      link: "/Artifacts",
+      link: "#",
   },
   {
       id: 12,
       title: "F1 Fender Stand Wooden",
       image: Img13,
       basePrice: 10000,
-      link: "/Artifacts",
+      link: "#",
   },
   {
       id: 13,
       title: "Chakhna Pallete 1pc",
       image: Img14,
       basePrice: 1000,
-      link: "/Artifacts",
+      link: "#",
   },
 
   {
@@ -156,28 +158,28 @@ const originals = [
     title: "Casettee Centre Table",
     image: Img16,
     basePrice: 40000,
-    link: "/Artifacts",
+    link: "#",
 },
 // {
 //     id: 15,
 //     title: "Artifacts",
 //     image: Img17,
 //     basePrice: 1000,
-//     link: "/Artifacts",
+//     link: "#",
 // },
 {
     id: 16,
     title: " ⁠⁠BOOMBOX SHELF Table ",
-    image: Img18,
+    image: music,
     basePrice: 30000,
-    link: "/Artifacts",
+    link: "#",
 },
 {
   id: 17,
   title: "⁠⁠Faceoff Serving platter clay (1pc)",
   image: Img19,
   basePrice: 30000,
-  link: "/Artifacts",
+  link: "#",
 },
 
 {
@@ -185,14 +187,14 @@ id: 18,
 title: "Humané Centre Table",
 image: Img20,
 basePrice: 30000,
-link: "/Artifacts",
+link: "#",
 },
 {
 id: 19,
 title: "Glitch clock Clay",
 image: Img21,
 basePrice: 2500,
-link: "/Artifacts",
+link: "#",
 },
 
 
@@ -202,7 +204,15 @@ link: "/Artifacts",
       title: "Retrovision Table centre",
       image: Img25,
       basePrice: 25000,
-      link: "/Artifacts",
+      link: "#",
+      },
+    
+    {
+      id: 22,
+      title: "Mr. Funny  Pants 3 pc set(clay)",
+      image: Img26,
+      basePrice: 7500,
+      link: "#",
       },
     
     
@@ -233,7 +243,6 @@ const Painting = ({ cart, setCart }) => {
         item.image === product?.image &&
         item.width === product?.width &&
         item.height === product?.height  &&
-        item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
     if (existing) {
@@ -267,7 +276,7 @@ const Painting = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-          Artifacts and Furniture pieces
+          Artifacts & Furniture Pieces
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}

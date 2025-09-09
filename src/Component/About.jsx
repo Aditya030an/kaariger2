@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import bg from "./photos/canvas.png"; // Optional background
 import jua from './photos/jua2.png';
 import cinema from './photos/cinema.jpg';
+import logo from "./photos/logo.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +66,7 @@ export default function AboutPremium() {
           className="relative overflow-hidden rounded-[3rem] shadow-2xl border-4 border-white"
         >
           <img
-            src={cinema}
+            src={logo}
             alt="Art Studio Showcase"
             className="object-cover w-full h-[250px] md:h-[500px] hover:scale-105 transition-transform duration-[1.2s] ease-in-out"
           />

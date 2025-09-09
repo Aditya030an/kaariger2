@@ -22,8 +22,8 @@ const CartPage = ({ cart, setCart }) => {
     height,
     width,
     artType,
-    media,
-    selectedFrame
+    selectedFrame,
+    category
   ) => {
     const updated = cart?.map((item) =>
       item.id === id &&
@@ -31,8 +31,8 @@ const CartPage = ({ cart, setCart }) => {
       item?.height === height &&
       item?.width === width &&
       item?.artType === artType &&
-      item?.media === media &&
-      item?.selectedFrame === selectedFrame
+      item?.selectedFrame === selectedFrame &&
+      item?.category === category
         ? { ...item, quantity: item?.quantity + 1 }
         : item
     );
@@ -46,8 +46,8 @@ const CartPage = ({ cart, setCart }) => {
     height,
     width,
     artType,
-    media,
-    selectedFrame
+    selectedFrame,
+    category
   ) => {
     const updated = cart
       ?.map((item) =>
@@ -56,8 +56,8 @@ const CartPage = ({ cart, setCart }) => {
         item?.height === height &&
         item?.width === width &&
         item?.artType === artType &&
-        item?.media === media &&
-        item?.selectedFrame === selectedFrame
+        item?.selectedFrame === selectedFrame &&
+        item?.category === category
           ? { ...item, quantity: item?.quantity - 1 }
           : item
       )
@@ -66,24 +66,27 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Remove item
+  // Remove item
   const removeItem = (
     id,
     price,
     height,
     width,
     artType,
-    media,
-    selectedFrame
+    selectedFrame,
+    category
   ) => {
     const updated = cart?.filter(
       (item) =>
-        item.id !== id &&
-        item?.price !== price &&
-        item?.height !== height &&
-        item?.width !== width &&
-        item?.artType !== artType &&
-        item?.media !== media &&
-        item?.selectedFrame !== selectedFrame
+        !(
+          item.id === id &&
+          item.price === price &&
+          item.height === height &&
+          item.width === width &&
+          item.artType === artType &&
+          item.selectedFrame === selectedFrame &&
+          item.category === category
+        )
     );
     setCart(updated);
   };
@@ -124,12 +127,9 @@ const CartPage = ({ cart, setCart }) => {
                       {item?.artType}
                     </p>
                     <p className="text-gray-700 text-sm capitalize">
-                      Media: {item?.media} | Frame: {item?.selectedFrame}
+                      Category: {item?.category} | Frame: {item?.selectedFrame}
                     </p>
 
-                    <p className="text-sm text-gray-500">
-                      Base Price: ₹{item?.basePrice?.toLocaleString()}
-                    </p>
                     <p className="text-sm text-gray-500">
                       Final Price: ₹{item?.price?.toLocaleString()}
                     </p>
@@ -142,8 +142,8 @@ const CartPage = ({ cart, setCart }) => {
                             item?.height,
                             item?.width,
                             item?.artType,
-                            item?.media,
-                            item?.selectedFrame
+                            item?.selectedFrame,
+                            item.category
                           )
                         }
                         className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
@@ -159,8 +159,8 @@ const CartPage = ({ cart, setCart }) => {
                             item?.height,
                             item?.width,
                             item?.artType,
-                            item?.media,
-                            item?.selectedFrame
+                            item?.selectedFrame,
+                            item.category
                           )
                         }
                         className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
@@ -181,8 +181,8 @@ const CartPage = ({ cart, setCart }) => {
                       item.height,
                       item.width,
                       item.artType,
-                      item.media,
-                      item.selectedFrame
+                      item.selectedFrame,
+                      item.category
                     )
                   }
                   className="mt-4 md:mt-0 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"

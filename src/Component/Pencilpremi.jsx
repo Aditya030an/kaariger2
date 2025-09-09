@@ -44,8 +44,9 @@ const originals = [
     id: 1,
     title: "Sunset Whispers | Framed Edition",
     basePrice: 8199,
-    image: Img3,
-    hoverImage: Img4, // NEW IMAGE shown on hover
+    image: Img4,
+    wallImage:Img3,
+    hoverImage: Img3, // NEW IMAGE shown on hover
     link: "#",
   },
 
@@ -54,6 +55,7 @@ const originals = [
     title: "Sunset Whispers | Framed Edition",
     basePrice: 8199,
     image: Img1,
+    wallImage:Img2,
     hoverImage: Img2, // NEW IMAGE shown on hover
     link: "#",
   },
@@ -62,6 +64,7 @@ const originals = [
     title: "Bohemian Mirage | Canvas Fine Art",
     basePrice: 6799,
     image: Img5,
+    wallImage:Img6,
     hoverImage: Img6, // <-- hover image for id 5
     link: "#",
   },

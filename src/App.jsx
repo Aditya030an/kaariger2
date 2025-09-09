@@ -27,6 +27,8 @@ import Kaarigarluxe from './Component/Kaarigarluxe.jsx';
 import Painting from './Component/Painting.jsx';
 import Poster from './Component/Poster.jsx';
 import Artifacts from './Component/Artifacts.jsx';
+import WhatsAppButton from "./Component/WhatsAppButton"; 
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [cart, setCart] = useState(() => {
@@ -59,24 +61,27 @@ const App = () => {
             <Route path="/About" element={<About />} />
             <Route path="/USPSection" element={<USPSection />} />
             <Route path="/Landing" element={<Landing />} />
+            <Route path="/Cursor" element={<Cursor />} />
+            <Route path="/Slide" element={<Slide />} />
+            <Route path="/Contact" element={<Contact />} />
+            
             <Route path="/Bestsellerpage" element={<Bestsellerpage cart={cart} setCart={setCart} />} />
             <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
             <Route path="/Original" element={<Original cart={cart} setCart={setCart} />} />
             <Route path="/Gaadi" element={<Gaadi cart={cart} setCart={setCart} />} />
-            <Route path="/Cursor" element={<Cursor />} />
             <Route path="/Thepokerparlour" element={<Thepokerparlour cart={cart} setCart={setCart}/>} />
             <Route path="/Madira" element={<Madira cart={cart} setCart={setCart}/>} />
             <Route path="/Aestheticspremi" element={<Aestheticspremi cart={cart} setCart={setCart}/>} />
-            <Route path="/Painting" element={<Painting />} />
-            <Route path="/Slide" element={<Slide />} />
-            <Route path="/Contact" element={<Contact />} />
             <Route path="/Pencilpremi" element={<Pencilpremi cart={cart} setCart={setCart}/>} />
             <Route path="/Cinemapremi" element={<Cinemapremi cart={cart} setCart={setCart}/>} />
             <Route path="/Kaarigarluxe" element={<Kaarigarluxe cart={cart} setCart={setCart}/>} />
+
+            <Route path="/Painting" element={<Painting cart={cart} setCart={setCart} />} />
             <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} />
             <Route path="/Artifacts" element={<Artifacts cart={cart} setCart={setCart}/>} />
           </Routes>
           <Footer />
+          <WhatsAppButton/>
         </Router>
       )}
     </div>

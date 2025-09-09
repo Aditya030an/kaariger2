@@ -26,12 +26,13 @@ import About from "./About";
 import USP from "./USP";
 import lux from "./photos/luxe7.png";
 import Cinema from "./photos/Cinema5.jpeg";
-import Artifacts from "./photos/Artifact3.png";
-const items = [ 
+// import Artifacts from "./photos/Artifact3.png";
+import Artifacts from "./photos/artifacts23.jpg";
+const items = [
   {
     title: "Handmade Paintings",
     // category: "Handmade Paintings",
-    image: lux,
+    image: cinema,
     link: "/Painting", // Update to actual route
   },
   {
@@ -46,10 +47,8 @@ const items = [
     image: Artifacts,
     link: "/Artifacts", // Update to actual route
   },
-
 ];
 const images = [
-
   carsoul8,
   carsoul,
   carsoul1,
@@ -135,129 +134,115 @@ const Home = () => {
         </div>
       </div> */}
 
+      <div className="relative w-full h-[100vh] overflow-hidden bg-black">
+        <div
+          className="flex transition-transform duration-700 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((src, index) => (
+            <div
+              key={index}
+              className="w-full h-full flex-none flex items-center justify-center"
+            >
+              <img
+                src={src}
+                alt={`slide-${index}`}
+                className="max-w-screen w-full max-h-full object-cover transition-transform duration-700 ease-in-out"
+              />
+            </div>
+          ))}
+        </div>
 
+        {/* Left Arrow */}
+        <button
+          onClick={() =>
+            setCurrentIndex((prev) =>
+              prev === 0 ? images.length - 1 : prev - 1
+            )
+          }
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+        >
+          <FaChevronLeft size={24} />
+        </button>
 
-<div className="relative w-full h-[100vh] overflow-hidden bg-black">
-  <div
-    className="flex transition-transform duration-700 ease-in-out h-full"
-    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-  >
-    {images.map((src, index) => (
-      <div
-        key={index}
-        className="w-full h-full flex-none flex items-center justify-center"
-      >
-        <img
-          src={src}
-          alt={`slide-${index}`}
-          className="max-w-screen w-full max-h-full object-cover transition-transform duration-700 ease-in-out"
-        />
+        {/* Right Arrow */}
+        <button
+          onClick={() =>
+            setCurrentIndex((prev) =>
+              prev === images.length - 1 ? 0 : prev + 1
+            )
+          }
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+        >
+          <FaChevronRight size={24} />
+        </button>
+
+        {/* Dots */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
+                index === currentIndex ? "bg-white" : "bg-gray-500"
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-
-  {/* Left Arrow */}
-  <button
-    onClick={() =>
-      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
-    }
-    className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
-  >
-    <FaChevronLeft size={24} />
-  </button>
-
-  {/* Right Arrow */}
-  <button
-    onClick={() =>
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
-    }
-    className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
-  >
-    <FaChevronRight size={24} />
-  </button>
-
-  {/* Dots */}
-  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-    {images.map((_, index) => (
-      <div
-        key={index}
-        className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
-          index === currentIndex ? "bg-white" : "bg-gray-500"
-        }`}
-        onClick={() => setCurrentIndex(index)}
-      />
-    ))}
-  </div>
-</div>
-
-
 
       <div className="px-6 py-20 bg-[#f9f4ec]">
-      <h2 className="text-center text-4xl md:text-5xl font-serif font-bold mb-16 tracking-tight">
+        <h2 className="text-center text-4xl md:text-5xl font-serif font-bold mb-16 tracking-tight">
+          <span className="text-gray-700 font-[Amita]">
+            {" "}
+            – Watchu Looking For?
+          </span>
+        </h2>
 
-        <span className="text-gray-700 font-[Amita]"> – WatchU Looking For?</span>
-      </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {items.map((item, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -10, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 200 }}
+              className="rounded-2xl bg-white/70 shadow-xl backdrop-blur-md overflow-hidden group hover:shadow-2xl duration-300"
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-        {items.map((item, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ y: -10, scale: 1.01 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="rounded-2xl bg-white/70 shadow-xl backdrop-blur-md overflow-hidden group hover:shadow-2xl duration-300"
-          >
-            <div className="aspect-[4/3] overflow-hidden">
-  <img
-    src={item.image}
-    alt={item.title}
-    className="w-full h-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105"
-  />
-</div>
+              <div className="p-6">
+                <span className="inline-block bg-gray-200 text-gray-700 text-xs font-mono px-3 py-1 rounded-full mb-4">
+                  {item.category}
+                </span>
+                <h3 className="text-xl font-semibold font-serif text-gray-900 leading-snug">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 mt-2">{item.description}</p>
 
-            <div className="p-6">
-              <span className="inline-block bg-gray-200 text-gray-700 text-xs font-mono px-3 py-1 rounded-full mb-4">
-                {item.category}
-              </span>
-              <h3 className="text-xl font-semibold font-serif text-gray-900 leading-snug">
-                {item.title}
-              </h3>
-              <p className="text-sm text-gray-600 mt-2">{item.description}</p>
-
-              <Link to={item.link}>
-  <motion.button
-    whileTap={{ scale: 0.95 }}
-    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
-  >
-    Explore  <ArrowRight size={16} />
-  </motion.button>
-</Link>
-            </div>
-          </motion.div>
-        ))}
+                <Link to={item.link}>
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
+                  >
+                    Explore <ArrowRight size={16} />
+                  </motion.button>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Other Sections */}
       <Bestseller />
       <Refresh />
-      
-      <About />
 
+      <About />
 
       {/* Art Gallery Section */}
       <div className="bg-[#fefefe] py-12 px-4 sm:px-6 md:px-12">
@@ -301,19 +286,17 @@ const Home = () => {
         </div>
       </div>
 
-
-
       <USP />
 
       {/* WhatsApp Floating Button */}
-      <a
+      {/* <a
         href="https://wa.me/919999999999"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-green-500 text-white p-5 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
       >
         <FaWhatsapp size={32} className="animate-wavy" />
-      </a>
+      </a> */}
     </div>
   );
 };

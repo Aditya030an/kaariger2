@@ -1,14 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaInstagram, FaFacebookF, FaTwitter, FaDribbble } from 'react-icons/fa';
-import logo from './photos/logo.jpeg'; // Replace with your logo path
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaTwitter,
+  FaDribbble,
+} from "react-icons/fa";
+import logo from "./photos/logo.jpeg"; // Replace with your logo path
 
 const Footer = () => {
   return (
     <motion.footer
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5, ease: 'easeOut' }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
       viewport={{ once: true }}
       className="relative w-full overflow-hidden bg-gradient-to-br from-[#fdfcfb] to-[#e2d1c3] text-gray-800 py-24 px-6 md:px-20"
     >
@@ -49,35 +54,64 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Explore</h5>
             <ul className="text-sm space-y-2 text-gray-600">
-              <li className="hover:text-black cursor-pointer transition">Gallery</li>
-              <li className="hover:text-black cursor-pointer transition">Best Sellers</li>
-              <li className="hover:text-black cursor-pointer transition">Custom Orders</li>
+              <li className="hover:text-black cursor-pointer transition">
+                Gallery
+              </li>
+              <li className="hover:text-black cursor-pointer transition">
+                Best Sellers
+              </li>
+              <li className="hover:text-black cursor-pointer transition">
+                Custom Orders
+              </li>
             </ul>
           </div>
 
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Company</h5>
             <ul className="text-sm space-y-2 text-gray-600">
-              <li className="hover:text-black cursor-pointer transition">About Us</li>
-              <li className="hover:text-black cursor-pointer transition">Careers</li>
-              <li className="hover:text-black cursor-pointer transition">Press</li>
+              <li className="hover:text-black cursor-pointer transition">
+                About Us
+              </li>
+              <li className="hover:text-black cursor-pointer transition">
+                Careers
+              </li>
+              <li className="hover:text-black cursor-pointer transition">
+                Press
+              </li>
             </ul>
           </div>
 
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Follow Us</h5>
             <div className="flex justify-center md:justify-start gap-5 text-lg text-gray-600">
-              <a href="#" className="hover:text-black transition"><FaInstagram /></a>
-              <a href="#" className="hover:text-black transition"><FaFacebookF /></a>
-              <a href="#" className="hover:text-black transition"><FaTwitter /></a>
-              <a href="#" className="hover:text-black transition"><FaDribbble /></a>
+              <a
+                href="https://www.instagram.com/kaarigarandcoo?igsh=MTcxOXZhaDNtYjNwMw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-black transition"
+              >
+                <FaInstagram />
+              </a>
+
+              <a href="#" className="hover:text-black transition">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="hover:text-black transition">
+                <FaTwitter />
+              </a>
+              <a href="#" className="hover:text-black transition">
+                <FaDribbble />
+              </a>
             </div>
           </div>
         </div>
 
         {/* Bottom Note */}
         <div className="mt-20 text-center text-xs text-gray-500">
-          <span>© {new Date().getFullYear()} Kaarigar Studios · Crafted with Soul & Motion.</span>
+          <span>
+            © {new Date().getFullYear()} Kaarigar Studios · Crafted with Soul &
+            Motion.
+          </span>
         </div>
       </div>
     </motion.footer>

@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { IoArrowBack, IoClose } from "react-icons/io5";
 
 const pricingPerInch = {
-  frame: 45,
-  print: 10,
-  canvas: 20,
-  paper: 15,
+  // frame: 45,
+  // print: 10,
+  // canvas: 20,
+  // paper: 15,
+  handMade: 25,
+  print: 7,
 };
 
 const categoryPrice = {
@@ -27,14 +29,12 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   console.log("product", product);
   console.log("category", category);
   const productName = product?.title?.split(" | ")[0] || "Product";
-  const [artType, setArtType] = useState("frame");
+  const [artType, setArtType] = useState("handMade");
   const [price, setPrice] = useState(0);
-  const [media, setMedia] = useState("canvas");
   const [selectedFrame, setSelectedFrame] = useState("Matte Black");
   const [customWidth, setCustomWidth] = useState("");
   const [customHeight, setCustomHeight] = useState("");
   const [mainImage, setMainImage] = useState(product?.image);
-
 
   const frames = [
     { name: "Matte Black", color: "bg-black", borderColor: "#000000" },
@@ -56,18 +56,31 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
       const area = width * height;
 
       // Base rate from art type + media
-      let rate = pricingPerInch[artType] + pricingPerInch[media];
+      let rate;
+      if (category === "kaarigarluxe") {
+        if (artType === "handMade") {
+          rate = 40;
+        } else {
+          rate = 10;
+        }
+      } else {
+        if (artType === "handMade") {
+          rate = 25;
+        } else {
+          rate = 7;
+        }
+      }
 
       // If category has price > 0, add it per inch
-      if (categoryPrice[category] > 0) {
-        rate += categoryPrice[category];
-      }
+      // if (categoryPrice[category] > 0) {
+      //   rate += categoryPrice[category];
+      // }
 
       setPrice(area * rate);
     } else {
       setPrice(0);
     }
-  }, [artType, media, customWidth, customHeight, category]);
+  }, [artType, customWidth, customHeight, category]);
 
   const handleAdd = () => {
     if (!customWidth || !customHeight) return;
@@ -80,10 +93,10 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
       width,
       height,
       artType,
-      media,
       selectedFrame,
       price,
       isCustomSize: true,
+      category,
     };
     onAddToCart(cartItem);
     onClose();
@@ -97,7 +110,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   };
 
   const getFrameWidth = () => {
-    if (selectedFrame === "No Frame" || artType !== "frame") return "0px";
+    if (selectedFrame === "No Frame") return "0px";
     return "20px";
   };
 
@@ -111,8 +124,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           <IoArrowBack size={18} /> Back
         </button>
 
-        <h4 className="text-[18px] text-gray-600 font-mono font-light text-center">
-          Art Paint Decor Object Mixed Media Art Gallery Walls Custom Framing
+        <h4 className="text-2xl font-serif font-bold text-center">
+          {/* Art Paint Decor Object Mixed Media Art Gallery Walls Custom Framing */}
+          {productName}
         </h4>
 
         <div className="flex flex-col md:flex-row gap-8">
@@ -144,39 +158,45 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   alt="Main Preview"
                   className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-cover"
                   style={{
-                    border: `${getFrameWidth()} solid ${getFrameBorderColor()}`,
+                    border:
+                      mainImage === product?.wallImage ||
+                      selectedFrame === "No Frame"
+                        ? "0px solid transparent"
+                        : `${getFrameWidth()} solid ${getFrameBorderColor()}`,
                     borderRadius:
-                      artType === "frame" && selectedFrame !== "No Frame"
-                        ? "4px"
-                        : "0px",
+                      mainImage === product?.wallImage ||
+                      selectedFrame === "No Frame"
+                        ? "0px"
+                        : "4px",
                     boxShadow:
-                      artType === "frame" && selectedFrame !== "No Frame"
-                        ? "0 4px 12px rgba(0,0,0,0.15)"
-                        : "none",
+                      mainImage === product?.wallImage ||
+                      selectedFrame === "No Frame"
+                        ? "none"
+                        : "0 4px 12px rgba(0,0,0,0.15)",
                     transition: "all 0.3s ease",
                   }}
                 />
               </div>
             </div>
 
-            <h2 className="text-2xl font-serif font-bold text-center">
+            {/* <h2 className="text-2xl font-serif font-bold text-center">
               {productName}
-            </h2>
+            </h2> */}
 
             <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-2">
-              <div className="flex flex-col gap-1 text-base">
+              {/* <div className="flex flex-col gap-1 text-base">
                 <span className="font-semibold">Best Price:</span>
                 <p>
                   ₹
                   {product?.bestPrice?.toLocaleString() ||
                     product?.basePrice?.toLocaleString()}
                 </p>
-              </div>
-              <div className="flex flex-col gap-1 text-base">
-                <span className="font-semibold">
+              </div> */}
+              <div className="w-full flex items-center justify-between gap-1 text-base">
+                <span className="font-medium text-lg">
                   Price After Size Selection:
                 </span>
-                <p>₹{price?.toLocaleString()}</p>
+                <p className="text-xl  font-semibold text-center">₹ {price?.toLocaleString()}</p>
               </div>
             </div>
           </div>
@@ -184,54 +204,23 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           {/* Right Side */}
           <div className="flex-1 flex flex-col gap-6">
             {/* Frame or Print */}
-            <div>
-              <h3 className="text-xl font-serif font-bold mb-2">
-                Choose Framed or Print
-              </h3>
-              <div className="flex flex-col sm:flex-row gap-3 w-full">
-                <button
-                  onClick={() => setArtType("frame")}
-                  className={`border px-4 py-3 w-full rounded font-medium ${
-                    artType === "frame" ? "bg-zinc-700 text-white" : "bg-white"
-                  }`}
-                >
-                  Framed Art
-                </button>
-                <button
-                  onClick={() => setArtType("print")}
-                  className={`border px-4 py-3 w-full rounded font-medium ${
-                    artType === "print" ? "bg-zinc-700 text-white" : "bg-white"
-                  }`}
-                >
-                  Print
-                </button>
-              </div>
-            </div>
 
-            {/* Media */}
-            <div>
-              <h3 className="text-xl font-serif font-bold mb-2">
-                Choose a Media
-              </h3>
-              <div className="flex flex-col sm:flex-row gap-3 w-full">
-                <button
-                  onClick={() => setMedia("canvas")}
-                  className={`border px-4 py-3 w-full rounded font-medium ${
-                    media === "canvas" ? "bg-zinc-700 text-white" : "bg-white"
-                  }`}
-                >
-                  Canvas
-                </button>
-                <button
-                  onClick={() => setMedia("paper")}
-                  className={`border px-4 py-3 w-full rounded font-medium ${
-                    media === "paper" ? "bg-zinc-700 text-white" : "bg-white"
-                  }`}
-                >
-                  Paper
-                </button>
-              </div>
-            </div>
+            <button
+              onClick={() => setArtType("handMade")}
+              className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
+                artType === "handMade" ? "bg-zinc-700 text-white" : "bg-white"
+              }`}
+            >
+              Handmade
+            </button>
+            <button
+              onClick={() => setArtType("print")}
+              className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
+                artType === "print" ? "bg-zinc-700 text-white" : "bg-white"
+              }`}
+            >
+              Print
+            </button>
 
             {/* Frame Style */}
             <div>

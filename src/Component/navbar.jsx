@@ -21,9 +21,9 @@ import Img4 from "./photos/motor3.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { name: "Painting", image: Jua, link: "/Painting" },
+  { name: "Paintings", image: Jua, link: "/Painting" },
   { name: "Posters", image:Img4 , link: "/Poster" },
-  { name: " Artifacts and Furniture pieces", image: Madira, link: "/Artifacts" },
+  { name: " Artifacts & Furniture Pieces", image: Madira, link: "/Artifacts" },
 
   
 ];
@@ -152,7 +152,7 @@ const Navbar = ({cart}) => {
               The Journey
             </a> */}
             <a href="/Contact" className="cursor-pointer hover:underline">
-              CONTACT
+              Contact
             </a>
           </div>
         </div>

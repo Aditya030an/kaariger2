@@ -1,6 +1,3 @@
-
-
-
 // import { motion } from "framer-motion";
 // import { useEffect } from "react";
 
@@ -101,10 +98,8 @@
 
 // export default Contact;
 
-
-
 import { motion } from "framer-motion";
-import { ShoppingBag, ArrowRight } from "lucide-react";
+import { ShoppingBag, ArrowRight, Phone, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -119,17 +114,30 @@ const Contact = () => {
             className="text-4xl md:text-5xl font-semibold font-[sansation] leading-tight"
           >
             Let’s talk <br />
-            <span className="text-neutral-500 font-[sansation] font-light">we’re here to help.</span>
+            <span className="text-neutral-500 font-[sansation] font-light">
+              we’re here to help.
+            </span>
           </motion.h1>
 
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex items-center gap-3 text-sm font-[sansation] text-neutral-600"
+            className="flex flex-col gap-3 text-sm font-[sansation] text-neutral-600"
           >
-            <ShoppingBag size={20} />
-            Order Issues · Delivery · Partnerships
+            <div className="flex items-center gap-3">
+              <ShoppingBag size={20} />
+              Order Issues · Delivery · Partnerships
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone size={20} />
+              +91 99934 52192
+            </div>
+            <div className="flex items-center gap-3">
+              <Mail size={20} />
+              Thekaarigarandco@gmail.com
+            </div>
           </motion.div>
         </div>
 
@@ -140,11 +148,18 @@ const Contact = () => {
           transition={{ delay: 0.5 }}
           className="relative mt-16 bg-white border border-gray-200 shadow-xl rounded-2xl p-6 max-w-sm"
         >
-          <p className="text-lg font-medium font-[sansation]">Having trouble with a recent order?</p>
-          <p className="text-sm font-[sansation] text-gray-500 mt-2">Let us know your order ID and we'll get it sorted fast.</p>
+          <p className="text-lg font-medium font-[sansation]">
+            Having trouble with a recent order?
+          </p>
+          <p className="text-sm font-[sansation] text-gray-500 mt-2">
+            Let us know your order ID and we'll get it sorted fast.
+          </p>
           <button className="mt-4 font-[sansation] text-black font-semibold flex items-center gap-2 group">
             Track Order
-            <ArrowRight className="group-hover:translate-x-1 transition-transform duration-200" size={16} />
+            <ArrowRight
+              className="group-hover:translate-x-1 transition-transform duration-200"
+              size={16}
+            />
           </button>
         </motion.div>
       </div>
@@ -158,7 +173,9 @@ const Contact = () => {
           className="w-full max-w-xl space-y-8"
         >
           <div>
-            <label className="block text-sm font-[sansation] mb-1">Full Name</label>
+            <label className="block text-sm font-[sansation] mb-1">
+              Full Name
+            </label>
             <input
               type="text"
               placeholder="John Doe"
@@ -166,7 +183,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block font-[sansation] text-sm mb-1">Email Address</label>
+            <label className="block font-[sansation] text-sm mb-1">
+              Email Address
+            </label>
             <input
               type="email"
               placeholder="you@example.com"
@@ -174,7 +193,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block font-[sansation] text-sm mb-1">Message</label>
+            <label className="block font-[sansation] text-sm mb-1">
+              Message
+            </label>
             <textarea
               rows="4"
               placeholder="Tell us what's going on..."
@@ -186,7 +207,7 @@ const Contact = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full bg-black text-white py-3  font-[sansation] rounded-xl transition-all hover:shadow-lg"
+            className="w-full bg-black text-white py-3 font-[sansation] rounded-xl transition-all hover:shadow-lg"
           >
             Send Message
           </motion.button>

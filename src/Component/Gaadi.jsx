@@ -18,6 +18,8 @@ import Img13 from "./photos/motor12.jpeg";
 import Img44 from "./photos/motor32.jpeg";
 import Img55 from "./photos/motor44.jpeg";
 
+
+
 import ProductCart from "./ProductCard";
 
 // TiltCard component
@@ -48,14 +50,18 @@ const originals = [
     id: 1,
     title: "Handcrafted Dreams | Original Artwork",
     basePrice: 7999,
-    image: kaarigar1,
+    image:Img6,
+    wallImage: kaarigar1,
+    hoverImage: kaarigar1,
     link: "#",
   },
   {
     id: 2,
     title: "Soulful Symphony | Canvas Masterpiece",
     basePrice: 6499,
-    image: kaarigar2,
+    image:Img8,
+    wallImage: kaarigar2,
+    hoverImage: kaarigar2,
     link: "#",
   },
   {
@@ -69,25 +75,27 @@ const originals = [
     id: 4,
     title: "Sunset Whispers | Framed Edition",
     basePrice: 8199,
-    image: Img4,
-    hoverImage: Img44, // NEW IMAGE shown on hover
+    image: Img44,
+    wallImage:Img4,
+    hoverImage: Img4, // NEW IMAGE shown on hover
     link: "#",
   },
   {
     id: 5,
     title: "Bohemian Mirage | Canvas Fine Art",
     basePrice: 6799,
-    image: Img5,
-    hoverImage: Img55, // <-- hover image for id 5
+    image: Img55,
+    wallImage:Img5,
+    hoverImage: Img5, // <-- hover image for id 5
     link: "#",
   },
-  {
-    id: 6,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Img6,
-    link: "#",
-  },
+  // {
+  //   id: 6,
+  //   title: "Twilight Reverie | Exclusive Paper",
+  //   basePrice: 7399,
+  //   image: Img6,
+  //   link: "#",
+  // },
   {
     id: 7,
     title: "Golden Horizon | Limited Series",
@@ -95,13 +103,13 @@ const originals = [
     image: Img7,
     link: "#",
   },
-  {
-    id: 8,
-    title: "Crimson Threads | Canvas Abstract",
-    basePrice: 7999,
-    image: Img8,
-    link: "#",
-  },
+  // {
+  //   id: 8,
+  //   title: "Crimson Threads | Canvas Abstract",
+  //   basePrice: 7999,
+  //   image: Img8,
+  //   link: "#",
+  // },
   {
     id: 9,
     title: "Ethereal Touch | Fine Original",

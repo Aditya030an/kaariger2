@@ -9,13 +9,21 @@ import kaarigar3 from "./photos/luxe3.png";
 import Img5 from "./photos/luxe5.png";
 import Img6 from "./photos/luxe6.png";
 import Img7 from "./photos/luxe7.png";
-import Img8 from "./photos/luxe1.png";
-import Img9 from "./photos/luxe2.png";
+
 import Img11 from "./photos/luxe10.jpeg";
 import Img12 from "./photos/luxe11.jpeg";
 
 import Img44 from "./photos/luxe13.jpeg";
 import Img55 from "./photos/luxe14.jpeg";
+import Img15 from "./photos/luxe15.png";
+import Img16 from "./photos/luxe16.png";
+import Img17 from "./photos/luxe17.png";
+import Img18 from "./photos/luxe18.png";
+import Img19 from "./photos/luxe19.png";
+import Img20 from "./photos/luxe20.jpg";
+import Img21 from "./photos/luxe21.png";
+import Img22 from "./photos/luxe23.jpg";
+import Img23 from "./photos/luxe24.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -55,6 +63,8 @@ const originals = [
     title: "Soulful Symphony | Canvas Masterpiece",
     basePrice: 6499,
     image: kaarigar2,
+    wallImage:Img19,
+    hoverImage: Img19,
     link: "#",
   },
   {
@@ -62,6 +72,8 @@ const originals = [
     title: "Mystic Reflections | Paper Original",
     basePrice: 7299,
     image: kaarigar3,
+    wallImage:Img18,
+    hoverImage: Img18,
     link: "#",
   },
 
@@ -70,7 +82,8 @@ const originals = [
     title: "Bohemian Mirage | Canvas Fine Art",
     basePrice: 6799,
     image: Img5,
-    hoverImage: Img55, // <-- hover image for id 5
+    wallImage: Img15, 
+    hoverImage: Img15, // <-- hover image for id 5
     link: "#",
   },
   {
@@ -78,6 +91,8 @@ const originals = [
     title: "Twilight Reverie | Exclusive Paper",
     basePrice: 7399,
     image: Img6,
+    wallImage:Img16,
+    hoverImage: Img16,
     link: "#",
   },
   {
@@ -85,22 +100,24 @@ const originals = [
     title: "Golden Horizon | Limited Series",
     basePrice: 8599,
     image: Img7,
+    wallImage:Img17,
+    hoverImage: Img17,
     link: "#",
   },
-  {
-    id: 8,
-    title: "Crimson Threads | Canvas Abstract",
-    basePrice: 7999,
-    image: Img8,
-    link: "#",
-  },
-  {
-    id: 9,
-    title: "Ethereal Touch | Fine Original",
-    basePrice: 7499,
-    image: Img9,
-    link: "#",
-  },
+  // {
+  //   id: 8,
+  //   title: "Crimson Threads | Canvas Abstract",
+  //   basePrice: 7999,
+  //   image: Img8,
+  //   link: "#",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Ethereal Touch | Fine Original",
+  //   basePrice: 7499,
+  //   image: Img9,
+  //   link: "#",
+  // },
 
   {
     id: 11,
@@ -118,12 +135,43 @@ const originals = [
     link: "#",
   },
   {
-    id: 13,
+    id: 14,
     title: "Ethereal Touch | Fine Original",
     basePrice: 7499,
     image: Img44,
     link: "#",
   },
+  {
+    id: 15,
+    title: "Ethereal Touch | Fine Original",
+    basePrice: 7499,
+    image: Img20,
+    wallImage:Img21,
+    hoverImage: Img21,
+    link: "#",
+  },
+  {
+    id: 16,
+    title: "Ethereal Touch | Fine Original",
+    basePrice: 7499,
+    image: Img55,
+    link: "#",
+  },
+  {
+    id: 17,
+    title: "Ethereal Touch | Fine Original",
+    basePrice: 7499,
+    image: Img22,
+    link: "#",
+  },
+  {
+    id: 18,
+    title: "Ethereal Touch | Fine Original",
+    basePrice: 7499,
+    image: Img23,
+    link: "#",
+  },
+  
 ];
 
 const fadeInUp = {
@@ -143,7 +191,6 @@ const Gaadi = ({ cart, setCart }) => {
         item.image === product?.image &&
         item.width === product?.width &&
         item.height === product?.height &&
-        item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
     if (existing) {
@@ -259,7 +306,7 @@ const Gaadi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="kaarigar"
+          category="kaarigarluxe"
         />
       )}
     </section>

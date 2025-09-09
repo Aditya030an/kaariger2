@@ -48,6 +48,7 @@ const originals = [
     title: "Soulful Symphony | Canvas Masterpiece",
     basePrice: 6499,
     image: kaarigar2,
+    wallImage:Img6,
     link: "#",
   },
   {
@@ -65,13 +66,13 @@ const originals = [
     link: "#",
   },
 
-  {
-    id: 6,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: Img6,
-    link: "#",
-  },
+  // {
+  //   id: 6,
+  //   title: "Mystic Reflections | Paper Original",
+  //   basePrice: 7299,
+  //   image: Img6,
+  //   link: "#",
+  // },
 ];
 
 const fadeInUp = {
