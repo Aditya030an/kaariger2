@@ -203,6 +203,7 @@ const originals = [
       id: 17,
       title: "Ethereal Touch ",
       basePrice: 7499,
+      image: Img44,
       wallImage: Img44,
       link: "#",
     },
