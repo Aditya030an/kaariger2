@@ -203,7 +203,6 @@ const originals = [
       id: 17,
       title: "Ethereal Touch ",
       basePrice: 7499,
-      image: Img44,
       wallImage: Img44,
       link: "#",
     },
@@ -327,7 +326,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
               >
                 <div className="overflow-hidden rounded-2xl">
                   <motion.img
-                    src={product?.image}
+                    src={product?.image || product?.wallImage}
                     alt={product?.title}
                     className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     whileHover={{ scale: 1.1 }}
