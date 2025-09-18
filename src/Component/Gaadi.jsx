@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/slide3.jpeg";
 import kaarigar1 from "./photos/motor.png";
@@ -12,13 +13,12 @@ import Img7 from "./photos/motor6.jpeg";
 import Img8 from "./photos/motor7.jpeg";
 import Img9 from "./photos/motor8.jpeg";
 import Img10 from "./photos/motor9.jpeg";
+import Img14 from "./photos/motor13.png";
 import Img11 from "./photos/motor10.jpeg";
 import Img12 from "./photos/motor11.jpeg";
 import Img13 from "./photos/motor12.jpeg";
 import Img44 from "./photos/motor32.jpeg";
 import Img55 from "./photos/motor44.jpeg";
-
-
 
 import ProductCart from "./ProductCard";
 
@@ -48,99 +48,100 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "Beyond Miles ",
     basePrice: 7999,
-    image:Img6,
+    image: Img6,
     wallImage: kaarigar1,
     hoverImage: kaarigar1,
     link: "#",
   },
   {
     id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "Peak Bliss  ",
     basePrice: 6499,
-    image:Img8,
+    image: Img8,
     wallImage: kaarigar2,
     hoverImage: kaarigar2,
     link: "#",
   },
   {
     id: 3,
-    title: "Mystic Reflections | Paper Original",
+    title: "The Final Lap ",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
   },
   {
     id: 4,
-    title: "Sunset Whispers | Framed Edition",
+    title: "The Quiet Coast ",
     basePrice: 8199,
     image: Img44,
-    wallImage:Img4,
+    wallImage: Img4,
     hoverImage: Img4, // NEW IMAGE shown on hover
     link: "#",
   },
   {
     id: 5,
-    title: "Bohemian Mirage | Canvas Fine Art",
+    title: "Claws Of Velocity",
     basePrice: 6799,
     image: Img55,
-    wallImage:Img5,
+    wallImage: Img5,
     hoverImage: Img5, // <-- hover image for id 5
     link: "#",
   },
   // {
   //   id: 6,
-  //   title: "Twilight Reverie | Exclusive Paper",
+  //   title: "Twilight Reverie ",
   //   basePrice: 7399,
   //   image: Img6,
   //   link: "#",
   // },
   {
     id: 7,
-    title: "Golden Horizon | Limited Series",
+    title: "Scarlet Velocity ",
     basePrice: 8599,
     image: Img7,
     link: "#",
   },
   // {
   //   id: 8,
-  //   title: "Crimson Threads | Canvas Abstract",
+  //   title: "Crimson Threads ",
   //   basePrice: 7999,
   //   image: Img8,
   //   link: "#",
   // },
   {
     id: 9,
-    title: "Ethereal Touch | Fine Original",
+    title: "Vroom Town ",
     basePrice: 7499,
     image: Img9,
     link: "#",
   },
   {
     id: 10,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Born Reckless ",
     basePrice: 7399,
     image: Img10,
+    wallImage:Img14,
     link: "#",
   },
   {
     id: 11,
-    title: "Golden Horizon | Limited Series",
+    title: "Noir Elan ",
     basePrice: 8599,
     image: Img11,
     link: "#",
   },
   {
     id: 12,
-    title: "Crimson Threads | Canvas Abstract",
+    title: "Crimson Threads ",
     basePrice: 7999,
     image: Img12,
     link: "#",
   },
   {
     id: 13,
-    title: "Ethereal Touch | Fine Original",
+    title: "Retro Motion ",
     basePrice: 7499,
     image: Img13,
     link: "#",
@@ -252,12 +253,18 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

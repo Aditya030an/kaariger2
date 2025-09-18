@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/pencil4.jpeg";
 import Img1 from "./photos/pencil.jpeg";
@@ -9,6 +10,7 @@ import Img4 from "./photos/pencil2.jpeg";
 import Img5 from "./photos/pencil4.jpeg";
 import Img6 from "./photos/pencil44.png";
 import Img7 from "./photos/pencil5.jpeg";
+import Img12 from "./photos/pencil10.png";
 import Img8 from "./photos/pencil6.jpeg";
 import Img9 from "./photos/pencil7.jpeg";
 import Img10 from "./photos/pencil8.jpeg";
@@ -42,63 +44,64 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Sunset Whispers | Framed Edition",
+    title: "Guardians Of The Green ",
     basePrice: 8199,
     image: Img4,
-    wallImage:Img3,
+    wallImage: Img3,
     hoverImage: Img3, // NEW IMAGE shown on hover
     link: "#",
   },
 
   {
     id: 4,
-    title: "Sunset Whispers | Framed Edition",
+    title: "The Monochrome Lady. ",
     basePrice: 8199,
     image: Img1,
-    wallImage:Img2,
+    wallImage: Img2,
     hoverImage: Img2, // NEW IMAGE shown on hover
     link: "#",
   },
   {
     id: 5,
-    title: "Bohemian Mirage | Canvas Fine Art",
+    title: "Hustle, Bustle And Rain  ",
     basePrice: 6799,
     image: Img5,
-    wallImage:Img6,
+    wallImage: Img6,
     hoverImage: Img6, // <-- hover image for id 5
     link: "#",
   },
   {
     id: 7,
-    title: "Golden Horizon | Limited Series",
+    title: "The Many ",
     basePrice: 8599,
     image: Img7,
+    wallImage:Img12,
     link: "#",
   },
   {
     id: 8,
-    title: "Crimson Threads | Canvas Abstract",
+    title: "A Morning Street ",
     basePrice: 7999,
     image: Img8,
     link: "#",
   },
   {
     id: 9,
-    title: "Ethereal Touch | Fine Original",
+    title: "The Evening Sip ",
     basePrice: 7499,
     image: Img9,
     link: "#",
   },
   {
     id: 10,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "The Intentional Splash ",
     basePrice: 7399,
     image: Img10,
     link: "#",
   },
   {
     id: 11,
-    title: "Golden Horizon | Limited Series",
+    title: "⁠The Good Card ",
     basePrice: 8599,
     image: Img11,
     link: "#",
@@ -211,12 +214,18 @@ const Pencilpremi = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

@@ -79,16 +79,16 @@ const uspData = [
   {
     icon: <FaGlobe className="text-4xl text-blue-500" />,
     title: "Global Reach",
-    description: "We’re delivering worldwide with our delivery partners making sure prompt and door to door delivery"
+    description: "We’re delivering worldwide with our delivery partners making sure prompt and door to door delivery."
   },
   {
     icon: <FaSmile className="text-4xl text-green-500" />,
-    title: "⁠Original handmade Art",
+    title: "⁠Original Handmade Art",
     description: "All our paintings and art pieces are handmade and unique to give your space a unique touch."
   },
   {
     icon: <FaUserTie className="text-4xl text-yellow-500" />,
-    title: "⁠limited availability",
+    title: "⁠Limited Availability",
     description: "We make sure to keep the Art limited to certain pieces only so that your collection is unique and your neighbour can’t buy the same art piece."
   },
   {

@@ -90,7 +90,8 @@ export default function NewReleases() {
                     whileTap={{ scale: 0.95 }}
                     className="mt-4 inline-block bg-[#6a4e3a] text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-[#5a4031] transition-all duration-300"
                   >
-                    Explore Piece →
+                    {/* Explore Piece → */}
+                    Buy Now →
                   </motion.button>
                 </div>
               </motion.div>

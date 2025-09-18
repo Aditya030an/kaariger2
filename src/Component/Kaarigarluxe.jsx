@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/luxe8.png";
 import kaarigar1 from "./photos/luxe1.png";
@@ -24,6 +25,9 @@ import Img20 from "./photos/luxe20.jpg";
 import Img21 from "./photos/luxe21.png";
 import Img22 from "./photos/luxe23.jpg";
 import Img23 from "./photos/luxe24.jpg";
+import Img24 from "./photos/luxe25.png";
+import Img25 from "./photos/luxe26.png";
+
 
 import ProductCart from "./ProductCard";
 
@@ -53,67 +57,67 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "Handcrafted Dreams ",
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
   },
   {
     id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "Soulful Symphony ",
     basePrice: 6499,
     image: kaarigar2,
-    wallImage:Img19,
+    wallImage: Img19,
     hoverImage: Img19,
     link: "#",
   },
   {
     id: 3,
-    title: "Mystic Reflections | Paper Original",
+    title: "Mystic Reflections ",
     basePrice: 7299,
     image: kaarigar3,
-    wallImage:Img18,
+    wallImage: Img18,
     hoverImage: Img18,
     link: "#",
   },
 
   {
     id: 5,
-    title: "Bohemian Mirage | Canvas Fine Art",
+    title: "Bohemian Mirage ",
     basePrice: 6799,
     image: Img5,
-    wallImage: Img15, 
+    wallImage: Img15,
     hoverImage: Img15, // <-- hover image for id 5
     link: "#",
   },
   {
     id: 6,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img6,
-    wallImage:Img16,
+    wallImage: Img16,
     hoverImage: Img16,
     link: "#",
   },
   {
     id: 7,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img7,
-    wallImage:Img17,
+    wallImage: Img17,
     hoverImage: Img17,
     link: "#",
   },
   // {
   //   id: 8,
-  //   title: "Crimson Threads | Canvas Abstract",
+  //   title: "Crimson Threads ",
   //   basePrice: 7999,
   //   image: Img8,
   //   link: "#",
   // },
   // {
   //   id: 9,
-  //   title: "Ethereal Touch | Fine Original",
+  //   title: "Ethereal Touch ",
   //   basePrice: 7499,
   //   image: Img9,
   //   link: "#",
@@ -121,7 +125,7 @@ const originals = [
 
   {
     id: 11,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img11,
     link: "#",
@@ -129,49 +133,50 @@ const originals = [
 
   {
     id: 13,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img12,
     link: "#",
   },
   {
     id: 14,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
-    image: Img44,
+    wallImage: Img44,
     link: "#",
   },
   {
     id: 15,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img20,
-    wallImage:Img21,
+    wallImage: Img21,
     hoverImage: Img21,
     link: "#",
   },
   {
     id: 16,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img55,
     link: "#",
   },
   {
     id: 17,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img22,
+    wallImage:Img24,
     link: "#",
   },
   {
     id: 18,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img23,
+    wallImage:Img25,
     link: "#",
   },
-  
 ];
 
 const fadeInUp = {
@@ -256,7 +261,7 @@ const Gaadi = ({ cart, setCart }) => {
               >
                 <div className="relative overflow-hidden rounded-2xl h-72 flex items-center justify-center">
                   <motion.img
-                    src={product?.image}
+                    src={product?.image || product?.wallImage}
                     alt={product?.title}
                     className={`absolute w-full h-full transition-opacity duration-700 ease-out 
       ${
@@ -278,12 +283,18 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

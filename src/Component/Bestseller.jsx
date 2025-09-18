@@ -1,7 +1,7 @@
 
 import bgImg from './photos/cinema.jpg'; // Replace with your actual background image
 
-const Bestseller = () => {
+const  Bestseller = () => {
   return (
     <section className="relative bg-white py-14 px-4 md:px-12 overflow-hidden ">
       {/* Background Image Layer */}

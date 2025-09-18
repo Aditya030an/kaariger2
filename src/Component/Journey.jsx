@@ -54,9 +54,9 @@ const AboutUs = () => {
               transition={{ duration: 0.3 }}
               className="relative p-8 rounded-3xl bg-white shadow-xl border-2 border-[#e5e5e5] hover:shadow-2xl"
             >
-              <div className="text-5xl mb-4">{card.icon}</div>
-              <h3 className="text-2xl font-medium text-black">{card.title}</h3>
-              <p className="text-lg text-gray-700 mt-4">{card.description}</p>
+              <div className="text-5xl mb-4">{card?.icon}</div>
+              <h3 className="text-2xl font-medium text-black">{card?.title}</h3>
+              <p className="text-lg text-gray-700 mt-4">{card?.description}</p>
             </motion.div>
           ))}
         </div>

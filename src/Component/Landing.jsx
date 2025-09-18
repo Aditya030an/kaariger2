@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
-import jua from './photos/jua2.png';
+// import jua from './photos/jua2.png';
+import jua from './photos/jua6.png';
 
 const Landing = () => {
   useEffect(() => {

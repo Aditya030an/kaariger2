@@ -70,6 +70,7 @@ const App = () => {
             <Route path="/Original" element={<Original cart={cart} setCart={setCart} />} />
             <Route path="/Gaadi" element={<Gaadi cart={cart} setCart={setCart} />} />
             <Route path="/Thepokerparlour" element={<Thepokerparlour cart={cart} setCart={setCart}/>} />
+            <Route path="/Juapremi" element={<Thepokerparlour cart={cart} setCart={setCart}/>} />
             <Route path="/Madira" element={<Madira cart={cart} setCart={setCart}/>} />
             <Route path="/Aestheticspremi" element={<Aestheticspremi cart={cart} setCart={setCart}/>} />
             <Route path="/Pencilpremi" element={<Pencilpremi cart={cart} setCart={setCart}/>} />

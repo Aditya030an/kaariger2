@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/madira5.png";
 import kaarigar1 from "./photos/madira1.png";
@@ -38,29 +39,29 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "The Double Pour ",
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
   },
   {
     id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "The Spirit Of Life. ",
     basePrice: 6499,
     image: kaarigar2,
-    wallImage:Img6,
+    wallImage: Img6,
     link: "#",
   },
   {
     id: 3,
-    title: "Mystic Reflections | Paper Original",
+    title: "Into The Pure ",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
   },
   {
     id: 4,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "⁠The Cheers Edition  ",
     basePrice: 7999,
     image: Img4,
     link: "#",
@@ -68,7 +69,7 @@ const originals = [
 
   // {
   //   id: 6,
-  //   title: "Mystic Reflections | Paper Original",
+  //   title: "Mystic Reflections ",
   //   basePrice: 7299,
   //   image: Img6,
   //   link: "#",
@@ -170,12 +171,18 @@ const Madira = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-400 font-semibold text-lg">
+                  {/* <p className="text-teal-400 font-semibold text-lg">
                    ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
+                  </p> */}
+                  {/* <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

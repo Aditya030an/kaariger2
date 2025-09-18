@@ -25,8 +25,9 @@ const CartPage = ({ cart, setCart }) => {
     selectedFrame,
     category
   ) => {
+
     const updated = cart?.map((item) =>
-      item.id === id &&
+      item?.id === id &&
       item?.price === price &&
       item?.height === height &&
       item?.width === width &&
@@ -51,7 +52,7 @@ const CartPage = ({ cart, setCart }) => {
   ) => {
     const updated = cart
       ?.map((item) =>
-        item.id === id &&
+        item?.id === id &&
         item?.price === price &&
         item?.height === height &&
         item?.width === width &&
@@ -112,7 +113,7 @@ const CartPage = ({ cart, setCart }) => {
                     className="w-24 h-24 object-contain rounded"
                     style={{
                       border:
-                        item?.selectedFrame === "No Frame"
+                        item?.selectedFrame === "No Frame" || item?.category === "artifacts"
                           ? "none"
                           : `6px solid ${
                               frames.find((f) => f.name === item?.selectedFrame)
@@ -121,14 +122,31 @@ const CartPage = ({ cart, setCart }) => {
                     }}
                   />
                   <div>
-                    <h2 className="text-lg font-semibold">{item?.title}</h2>
+                    {item?.category !== "poster" && (
+                      <h2 className="text-lg font-semibold">{item?.title}</h2>
+                    )}
+                    <div className="flex items-center justify-start gap-2">
+                      {item?.category !== "artifacts" && (
+                        <p className="text-gray-700 text-sm capitalize">
+                          Size: {item?.width}" x {item?.height}" | 
+                        </p>
+                      )}
+                      <p className="text-gray-700 text-sm capitalize">
+                        Type: {item?.artType}
+                      </p>
+                    </div>
+                    {
+                      item?.category !== "artifacts" &&
                     <p className="text-gray-700 text-sm capitalize">
-                      Size: {item?.width}" x {item?.height}" | Type:{" "}
-                      {item?.artType}
+                      Frame: {item?.selectedFrame}
                     </p>
+                    }
+                    {
+                      item?.category === "artifacts" && item?.title === "Glitch Clock (Clay)" &&
                     <p className="text-gray-700 text-sm capitalize">
-                      Category: {item?.category} | Frame: {item?.selectedFrame}
+                      Clock Color: {item?.selectedFrame}
                     </p>
+                    }
 
                     <p className="text-sm text-gray-500">
                       Final Price: ₹{item?.price?.toLocaleString()}

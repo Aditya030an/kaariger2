@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import { useNavigate } from "react-router-dom";
 import bgImg from "./photos/cinema.jpg";
@@ -32,67 +33,73 @@ function TiltCard({ children }) {
   return <div ref={tiltRef}>{children}</div>;
 }
 
-
-
 // --- Products list with base price (for reference)
 const products = [
-  { id: 1, title: "Fibers | wall art on paper", basePrice: 5220, image: Img1 },
+  {
+    id: 1,
+    title: "Whispers Of A Bloom | Wall Art On Paper",
+    basePrice: 5220,
+    image: Img1,
+  },
   {
     id: 2,
-    title: "Wonder At Night | wall art on canvas",
+    title: "Wonder At Night | Wall Art On Canvas",
     basePrice: 3240,
-    image: Img2,
+    // image: Img2,
+    wallImage: Img2,
   },
   {
     id: 3,
-    title: "Mona Lisa Modern | wall art on canvas",
+    title: "Mona Lisa Modern | Wall Art On Canvas",
     basePrice: 2220,
     image: Img3,
   },
   {
     id: 4,
-    title: "Vibrant Abstract | wall art on paper",
+    title: "Vibrant Abstract | Wall Art On Paper",
     basePrice: 4890,
-    image: Img4,
+    // image: Img4,
+    wallImage: Img4,
   },
   {
     id: 5,
-    title: "Golden Sunrise | wall art on canvas",
+    title: "Golden Sunrise | Wall Art On Canvas",
     basePrice: 6120,
     image: Img5,
   },
   {
     id: 6,
-    title: "Mystic Mountains | wall art on paper",
+    title: "Mystic Mountains | Wall Art On Paper",
     basePrice: 4550,
-    image: Img6,
+    // image: Img6,
+    wallImage: Img6,
   },
   {
     id: 7,
-    title: "Urban Jungle | wall art on canvas",
+    title: "Urban Jungle | Wall Art On Canvas",
     basePrice: 3999,
     image: Img7,
   },
   {
     id: 8,
-    title: "Ocean Dreams | wall art on paper",
+    title: "Ocean Dreams | Wall Art On Paper",
     basePrice: 5999,
     image: Img8,
   },
   {
     id: 9,
-    title: "Color Burst | wall art on canvas",
+    title: "Ace Centre Table | Wall Art On Canvas",
     basePrice: 3400,
     image: Img9,
   },
   {
     id: 10,
-    title: "Pastel Skies | wall art on paper",
+    title: "The Quiet Coast  | Wall Art On Paper",
     basePrice: 2999,
-    image: Img10,
+    // image: Img10,
+    wallImage: Img10,
   },
 ];
-
 
 const Bestsellerpage = ({ cart, setCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -108,7 +115,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
         item.width === product?.width &&
         item.height === product?.height &&
         item.media === product?.media &&
-        item.selectedFrame === product?.selectedFrame 
+        item.selectedFrame === product?.selectedFrame
     );
     if (existing) {
       const updated = cart.map((item) =>
@@ -130,11 +137,11 @@ const Bestsellerpage = ({ cart, setCart }) => {
           transition={{ duration: 1 }}
           className="relative z-10"
         >
-          <h1 className="text-4xl md:text-6xl font-[Amita] text-white mb-4 leading-tight text-shadow-lg">
-            <span className="inline-block w-16 h-1 bg-teal-500 rounded-full mb-2"></span>
-            <br />
-            ताज़ा, ट्रेंडी, टॉप - Our Bestsellers
-          </h1>
+          <h2 className="text-3xl md:text-5xl font-[Amita] font-bold text-white text-center mb-2">
+            <span className="inline-block w-12 h-[2px] bg-white mr-3 align-middle" />
+            ट्रेंडी ,टॉप - Our bestsellers
+            <span className="inline-block w-12 h-[2px] bg-white ml-3 align-middle" />
+          </h2>
         </motion.div>
         <motion.div
           className="absolute inset-0 bg-cover bg-center opacity-10 filter blur-lg"
@@ -163,7 +170,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
                   onClick={() => setSelectedProduct(product)}
                 >
                   <img
-                    src={product?.image}
+                    src={product?.image || product?.wallImage}
                     alt={product?.title}
                     className="w-full h-64 object-contain"
                   />
@@ -171,10 +178,16 @@ const Bestsellerpage = ({ cart, setCart }) => {
                     <h3 className="text-lg font-[Amita] font-semibold text-gray-800">
                       {product?.title}
                     </h3>
-                    <p className="text-teal-500 font-bold">
+                    {/* <p className="text-teal-500 font-bold">
                       Starts at ₹{product?.basePrice}
-                    </p>
-                    <p className="text-gray-500 text-sm">Click to Customize</p>
+                    </p> */}
+                    {/* <p className="text-gray-500 text-sm">Click to Customize</p> */}
+                    <motion.button
+                                        whileTap={{ scale: 0.95 }}
+                                        className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                                      >
+                                        Buy Now <ArrowRight size={16} />
+                                      </motion.button>
                   </div>
                 </div>
               </TiltCard>
@@ -185,13 +198,12 @@ const Bestsellerpage = ({ cart, setCart }) => {
 
       {/* Product Modal */}
       {selectedProduct && (
-       <ProductCart
-  product={selectedProduct}
-  onClose={() => setSelectedProduct(null)}
-  onAddToCart={handleAddToCart}
-  category="bestseller"
-/>
-
+        <ProductCart
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          onAddToCart={handleAddToCart}
+          category="bestseller"
+        />
       )}
     </section>
   );

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Artifacts2.jpg";
+import { ArrowRight } from "lucide-react";
 
 import Img1 from "./photos/Artifacts.jpg";
 import Img3 from "./photos/Artifacts1.jpg";
@@ -11,10 +12,9 @@ import Img6 from "./photos/Artifacts4.png";
 import Img7 from "./photos/Artifacts5.png";
 import Img8 from "./photos/Artifacts6.jpg";
 
-
 import Img9 from "./photos/Artifacts7.jpg";
 import Img10 from "./photos/Artifacts8.jpg";
-import Img11 from "./photos/Artifacts9.jpg";
+import Img11 from "./photos/Artifacts9.jpeg";
 import Img12 from "./photos/Artifacts10.jpg";
 import Img13 from "./photos/Artifacts11.jpg";
 import Img14 from "./photos/Artifacts12.jpg";
@@ -58,99 +58,99 @@ function TiltCard({ children }) {
 }
 
 const originals = [
-    {
-        id: 1,
-        title: "Fisherman incense holder clay ",
-        image: Img1,
-        basePrice: 2000,
-        link: "#",
-    },                  
-
-    {
-        id: 2,
-        title: "Hip doggy jewellery /Key pot clay",
-        image: Img3,
-        basePrice: 3500,
-        link: "#",
-    }, 
-    {
-        id: 3,
-        title: "Samurai Incense holder Clay",
-        image: Img4,
-        basePrice: 2000,
-        link: "#",
-    },
-    {
-        id: 4,
-        title: "ACE CENTRE TABLE",
-        image: Img5,
-        basePrice: 30000,
-        link: "#",
-    },
-    {
-        id: 5,
-        title: "⁠ ⁠Cards Wall Clock",
-        image: Img6,
-        basePrice: 1500,
-        link: "#",
-    },
-    {
-        id: 6,
-        title: "⁠⁠SUITS SERVING PLATTERS Clay",
-        image: Img7,
-        basePrice: 3000,
-        link: "#",
-    },
-    {
-        id: 7,
-        title: "NEAT TAP",
-        image: Img8,
-        basePrice: 2500,
-        link: "#",
-    },
-
-    {
-      id: 8,
-      title: " ⁠Grande arena",
-      image: Img9,
-      basePrice: 50000,
-      link:"#",
-  },                  
+  {
+    id: 1,
+    title: "Fisherman Incense Holder (Clay) ",
+    image: Img1,
+    basePrice: 2000,
+    link: "#",
+  },
 
   {
-      id: 9,
-      title: "⁠⁠Giveth-Taketh incense holder  Clay",
-      image: Img10,
-      basePrice: 3000,
-      link: "#",
-  }, 
-  {
-      id: 10,
-      title: "laundy basket ball hoop",
-      image: Img11,
-      basePrice:6000,
-      link: "#",
+    id: 2,
+    title: "Hip Doggy Jewellery /Key Pot (Clay)",
+    image: Img3,
+    basePrice: 3500,
+    link: "#",
   },
   {
-      id: 11,
-      title: "Laundry Basketball Bin",
-      image: Img12,
-      basePrice: 4000,
-      link: "#",
+    id: 3,
+    title: "Samurai Incense Holder (Clay)",
+    image: Img4,
+    basePrice: 2000,
+    link: "#",
   },
   {
-      id: 12,
-      title: "F1 Fender Stand Wooden",
-      image: Img13,
-      basePrice: 10000,
-      link: "#",
+    id: 4,
+    title: "Ace Centre Table ",
+    image: Img5,
+    basePrice: 30000,
+    link: "#",
   },
   {
-      id: 13,
-      title: "Chakhna Pallete 1pc",
-      image: Img14,
-      basePrice: 1000,
-      link: "#",
+    id: 5,
+    title: "⁠ ⁠Cards Wall Clock",
+    image: Img6,
+    basePrice: 1500,
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "⁠⁠Suits Serving Platters (Clay)",
+    image: Img7,
+    basePrice: 3000,
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "Neat Tap ",
+    image: Img8,
+    basePrice: 2500,
+    link: "#",
+  },
+
+  {
+    id: 8,
+    title: " ⁠Grande Arena",
+    image: Img9,
+    basePrice: 50000,
+    link: "#",
+  },
+
+  {
+    id: 9,
+    title: "⁠⁠Giveth-Taketh Incense Holder (Clay)",
+    image: Img10,
+    basePrice: 3000,
+    link: "#",
+  },
+  {
+    id: 10,
+    title: "Laundy Basket Ball Hoop",
+    image: Img11,
+    basePrice: 6000,
+    link: "#",
+  },
+  {
+    id: 11,
+    title: "Laundry Basketball Bin",
+    image: Img12,
+    basePrice: 4000,
+    link: "#",
+  },
+  {
+    id: 12,
+    title: "F1 Fender Stand Wooden",
+    image: Img13,
+    basePrice: 10000,
+    link: "#",
+  },
+  {
+    id: 13,
+    title: "Chakhna Pallete 1pc",
+    image: Img14,
+    basePrice: 1000,
+    link: "#",
   },
 
   {
@@ -159,70 +159,73 @@ const originals = [
     image: Img16,
     basePrice: 40000,
     link: "#",
-},
-// {
-//     id: 15,
-//     title: "Artifacts",
-//     image: Img17,
-//     basePrice: 1000,
-//     link: "#",
-// },
-{
+  },
+  // {
+  //     id: 15,
+  //     title: "Artifacts",
+  //     image: Img17,
+  //     basePrice: 1000,
+  //     link: "#",
+  // },
+  {
     id: 16,
-    title: " ⁠⁠BOOMBOX SHELF Table ",
+    title: " ⁠⁠Boombox Shelf Table ",
     image: music,
     basePrice: 30000,
     link: "#",
-},
-{
-  id: 17,
-  title: "⁠⁠Faceoff Serving platter clay (1pc)",
-  image: Img19,
-  basePrice: 30000,
-  link: "#",
-},
+  },
+  {
+    id: 17,
+    title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+    image: Img19,
+    basePrice: 30000,
+    link: "#",
+  },
+  {
+    id: 18,
+    title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
+    image: Img19,
+    basePrice: 30000,
+    link: "#",
+  },
 
-{
-id: 18,
-title: "Humané Centre Table",
-image: Img20,
-basePrice: 30000,
-link: "#",
-},
-{
-id: 19,
-title: "Glitch clock Clay",
-image: Img21,
-basePrice: 2500,
-link: "#",
-},
+  {
+    id: 19,
+    title: "Humané Centre Table",
+    image: Img20,
+    basePrice: 30000,
+    link: "#",
+  },
+  {
+    id: 20,
+    title: "Glitch Clock (Clay)",
+    image: Img21,
+    basePrice: 2500,
+    link: "#",
+  },
 
+  {
+    id: 21,
+    title: "Retrovision Table Centre",
+    image: Img25,
+    basePrice: 25000,
+    link: "#",
+  },
 
-  
-    {
-      id: 21,
-      title: "Retrovision Table centre",
-      image: Img25,
-      basePrice: 25000,
-      link: "#",
-      },
-    
-    {
-      id: 22,
-      title: "Mr. Funny  Pants 3 pc set(clay)",
-      image: Img26,
-      basePrice: 7500,
-      link: "#",
-      },
-    
-    
-  
-  
-
-
-
-
-
+  {
+    id: 22,
+    title: "Mr. Funny  Pants 3pc Set (Clay)",
+    image: Img26,
+    basePrice: 7500,
+    link: "#",
+  },
+  {
+    id: 23,
+    title: "Mr. Funny  Pants 1pc Set (Clay)",
+    image: Img26,
+    basePrice: 7500,
+    link: "#",
+  },
 ];
 
 const fadeInUp = {
@@ -242,7 +245,7 @@ const Painting = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.selectedFrame === product?.selectedFrame
     );
     if (existing) {
@@ -285,7 +288,7 @@ const Painting = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6 font-[Amita] text-lg md:text-2xl font-light"
         >
-          For the love of roaring engines, smokin tires and sheer power.
+          Curated statement pieces where design meets craftsmanship.
         </motion.p>
       </div>
 
@@ -317,12 +320,18 @@ const Painting = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>
@@ -352,10 +361,3 @@ const Painting = ({ cart, setCart }) => {
 };
 
 export default Painting;
-
-
-
-
-
-
-

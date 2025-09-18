@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import bg from "./photos/canvas.png"; // Optional background
-import jua from './photos/jua2.png';
+// import jua from './photos/jua2.png';
 import cinema from './photos/cinema.jpg';
 import logo from "./photos/logo.jpeg";
 
@@ -52,27 +52,21 @@ export default function AboutPremium() {
     //   style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       {/* Floating Paint Effect */}
-      <img
-        src={jua}
-        className="absolute top-0 left-0 w-64 opacity-20 z-0 rotate-[25deg] pointer-events-none"
+      {/* <img
+        src={logo}
+        className="absolute top-4 left-0  w-36 md:w-64 opacity-20 z-0 rotate-[25deg] pointer-events-none"
         alt="Paint Stroke"
-      />
+      /> */}
 
       {/* Content */}
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-16 relative z-10">
         {/* Image Side */}
-        <div
-          ref={imageRef}
-          className="relative overflow-hidden rounded-[3rem] shadow-2xl border-4 border-white"
-        >
+        
           <img
             src={logo}
             alt="Art Studio Showcase"
-            className="object-cover w-full h-[250px] md:h-[500px] hover:scale-105 transition-transform duration-[1.2s] ease-in-out"
+            className="object-contain w-full h-[250px] md:h-[500px] hover:scale-105 transition-transform duration-[1.2s] ease-in-out"
           />
-
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#e9dccb55] to-[#ffffff22] backdrop-blur-[4px] rounded-[3rem]"></div>
-        </div>
 
         {/* Text Side */}
         <div ref={textRef} className="text-[#382619]">
@@ -85,9 +79,9 @@ export default function AboutPremium() {
           </p>
          
 
-          <button className="mt-3 md:mt-8 inline-block bg-[#3a2e1f] hover:bg-[#2a2217] text-white px-6 py-3 rounded-full text-md shadow-lg tracking-wide transition-all duration-300">
+          {/* <button className="mt-3 md:mt-8 inline-block bg-[#3a2e1f] hover:bg-[#2a2217] text-white px-6 py-3 rounded-full text-md shadow-lg tracking-wide transition-all duration-300">
             Visit Our World →
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

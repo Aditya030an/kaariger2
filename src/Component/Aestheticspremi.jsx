@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { frame, motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/madira5.png";
-import kaarigar1 from "./photos/Aestheticspremi.jpeg";
+// import kaarigar1 from "./photos/Aestheticspremi.jpeg";
 import kaarigar2 from "./photos/Aestheticspremi2.jpeg";
 import kaarigar3 from "./photos/Aestheticspremi3.jpeg";
 import Img4 from "./photos/Aestheticspremi5.jpeg";
@@ -12,11 +13,30 @@ import Img6 from "./photos/Aestheticspremi4.jpeg";
 import Img8 from "./photos/Aestheticspremi7.jpeg";
 import Img9 from "./photos/Aestheticspremi9.jpeg";
 
-import { IoArrowBack } from "react-icons/io5";
-import { CiHeart } from "react-icons/ci";
-import { GoShareAndroid } from "react-icons/go";
-import { BsPinAngle } from "react-icons/bs";
-import { PiMagnifyingGlassPlusThin } from "react-icons/pi";
+import Img1 from "./photos/luxe1.png";
+import Img2 from "./photos/luxe2.png";
+import Img3 from "./photos/luxe3.png";
+
+import Img10 from "./photos/luxe5.png";
+import Img11 from "./photos/luxe6.png";
+import Img7 from "./photos/luxe7.png";
+
+import Img13 from "./photos/luxe10.jpeg";
+import Img12 from "./photos/luxe11.jpeg";
+
+import Img44 from "./photos/luxe13.jpeg";
+import Img55 from "./photos/luxe14.jpeg";
+import Img15 from "./photos/luxe15.png";
+import Img16 from "./photos/luxe16.png";
+import Img17 from "./photos/luxe17.png";
+import Img18 from "./photos/luxe18.png";
+import Img19 from "./photos/luxe19.png";
+import Img20 from "./photos/luxe20.jpg";
+import Img21 from "./photos/luxe21.png";
+import Img22 from "./photos/luxe23.jpg";
+import Img23 from "./photos/luxe24.jpg";
+import Img24 from "./photos/luxe25.png";
+import Img25 from "./photos/luxe26.png";
 
 import ProductCart from "./ProductCard";
 
@@ -47,43 +67,36 @@ function TiltCard({ children }) {
 // Products
 const originals = [
   {
-    id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
-    basePrice: 7999,
-    image: kaarigar1,
-    link: "#",
-  },
-  {
     id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "Secrets Of India ",
     basePrice: 6499,
     image: kaarigar2,
     link: "#",
   },
   {
     id: 3,
-    title: "Mystic Reflections | Paper Original",
+    title: "Sweet Soltitude ",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
   },
   {
     id: 4,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "⁠Old Man’s Friend ",
     basePrice: 7999,
     image: Img4,
     link: "#",
   },
   {
     id: 5,
-    title: "Mystic Reflections | Paper Original",
+    title: " ⁠Colours Of Caffeine  ",
     basePrice: 7299,
     image: Img5,
     link: "#",
   },
   {
     id: 6,
-    title: "Mystic Reflections | Paper Original",
+    title: "Mrs. Bijou ",
     basePrice: 7299,
     image: Img6,
     link: "#",
@@ -91,18 +104,140 @@ const originals = [
 
   {
     id: 9,
-    title: "Mystic Reflections | Paper Original",
+    title: "Colours Of The Mind ",
     basePrice: 7299,
     image: Img8,
     link: "#",
   },
   {
     id: 8,
-    title: "Mystic Reflections | Paper Original",
+    title: "⁠Pouring Stories ",
     basePrice: 7299,
     image: Img9,
     link: "#",
   },
+   {
+      id: 9,
+      title: "Handcrafted Dreams ",
+      basePrice: 7999,
+      image: Img1,
+      link: "#",
+    },
+    {
+      id: 10,
+      title: "Soulful Symphony ",
+      basePrice: 6499,
+      image: Img2,
+      wallImage: Img19,
+      hoverImage: Img19,
+      link: "#",
+    },
+    {
+      id: 11,
+      title: "Mystic Reflections ",
+      basePrice: 7299,
+      image: Img3,
+      wallImage: Img18,
+      hoverImage: Img18,
+      link: "#",
+    },
+  
+    {
+      id: 12,
+      title: "Bohemian Mirage ",
+      basePrice: 6799,
+      image: Img10,
+      wallImage: Img15,
+      hoverImage: Img15, // <-- hover image for id 5
+      link: "#",
+    },
+    {
+      id: 13,
+      title: "Twilight Reverie ",
+      basePrice: 7399,
+      image: Img11,
+      wallImage: Img16,
+      hoverImage: Img16,
+      link: "#",
+    },
+    {
+      id: 14,
+      title: "Golden Horizon ",
+      basePrice: 8599,
+      image: Img7,
+      wallImage: Img17,
+      hoverImage: Img17,
+      link: "#",
+    },
+    // {
+    //   id: 8,
+    //   title: "Crimson Threads ",
+    //   basePrice: 7999,
+    //   image: Img8,
+    //   link: "#",
+    // },
+    // {
+    //   id: 9,
+    //   title: "Ethereal Touch ",
+    //   basePrice: 7499,
+    //   image: Img9,
+    //   link: "#",
+    // },
+  
+    {
+      id: 15,
+      title: "Golden Horizon ",
+      basePrice: 8599,
+      image: Img13,
+      link: "#",
+    },
+  
+    {
+      id: 16,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      image: Img12,
+      link: "#",
+    },
+    {
+      id: 17,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      wallImage: Img44,
+      link: "#",
+    },
+    {
+      id: 18,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      image: Img20,
+      wallImage: Img21,
+      hoverImage: Img21,
+      link: "#",
+    },
+    {
+      id: 19,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      image: Img55,
+      link: "#",
+    },
+    {
+      id: 20,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      image: Img22,
+      wallImage: Img24,
+      link: "#",
+    },
+    {
+      id: 21,
+      title: "Ethereal Touch ",
+      basePrice: 7499,
+      image: Img23,
+      wallImage: Img25,
+      link: "#",
+    },
 ];
 
 const fadeInUp = {
@@ -159,7 +294,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-white leading-tight tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 rounded-full"></span>
-          Aesthetics Premi
+         Aesthetic Corner 
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -201,12 +336,18 @@ const Aestheticspremi = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-400 font-semibold text-lg">
+                  {/* <p className="text-teal-400 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
+                  </p> */}
+                  {/* <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

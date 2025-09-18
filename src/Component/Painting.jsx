@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/motor6.jpeg";
 // import kaarigar1 from "./photos/Cinema.jpeg";
@@ -38,9 +39,10 @@ import motor7 from "./photos/motor6.jpeg";
 import motor8 from "./photos/motor7.jpeg";
 import motor9 from "./photos/motor8.jpeg";
 import motor10 from "./photos/motor9.jpeg";
+import motor12 from "./photos/motor13.png";
 import motor11 from "./photos/motor10.jpeg";
 import motor112 from "./photos/painting115.jpg";
-import motor111 from "./photos/motor115.jpg";
+
 import motor13 from "./photos/motor12.jpeg";
 import motor32 from "./photos/motor32.jpeg";
 import motor55 from "./photos/motor44.jpeg";
@@ -53,14 +55,16 @@ import pencil4 from "./photos/pencil2.jpeg";
 import pencil5 from "./photos/pencil4.jpeg";
 import pencil6 from "./photos/pencil44.png";
 import pencil7 from "./photos/pencil5.jpeg";
+import pencil13 from "./photos/pencil10.png";
 import pencil8 from "./photos/pencil6.jpeg";
 import pencil9 from "./photos/pencil7.jpeg";
 import pencil10 from "./photos/pencil8.jpeg";
 import pencil11 from "./photos/pencil9.jpeg";
 
-import Artifacts1 from "./photos/artifacts32.jpg";
 
-import Aesthetics from "./photos/Aestheticspremi.jpeg";
+import Artifacts1 from "./photos/artifacts32.jpg";
+import Artifacts2 from "./photos/artifacts33.png";
+
 import Aesthetics1 from "./photos/Aestheticspremi2.jpeg";
 import Aesthetics2 from "./photos/Aestheticspremi3.jpeg";
 import Aesthetics3 from "./photos/Aestheticspremi5.jpeg";
@@ -71,11 +75,10 @@ import Aesthetics6 from "./photos/Aestheticspremi7.jpeg";
 import Aesthetics7 from "./photos/Aestheticspremi9.jpeg";
 
 import jua1 from "./photos/Jua.jpg";
-import jua2 from "./photos/jua2.png";
 
 import jua3 from "./photos/jua3.png";
 import jua4 from "./photos/jua4.png";
-import jua5 from "./photos/jua5.png";
+
 import jua6 from "./photos/jua6.png";
 import jua7 from "./photos/juapremi.png";
 import jua8 from "./photos/poker.jpeg";
@@ -114,148 +117,143 @@ function TiltCard({ children }) {
 
 const originals = [
   {
-    id: 66,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
+    id: 1,
+    title: " Colours Of The Mind ",
+    // basePrice: ,
     image: Aesthetics6,
     link: "#",
   },
   {
-    id: 67,
-    title: "Golden Horizon | Limited Series",
+    id: 2,
+    title: "⁠Pouring Stories ",
     basePrice: 8599,
     image: Aesthetics7,
     link: "#",
   },
   {
-    id: 27,
-    title: "Mystic Reflections | Paper Original",
+    id: 3,
+    title: "The Final Lap ",
     basePrice: 7299,
     image: motor3,
     link: "#",
   },
 
   {
-    id: 1,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 4,
+    title: "The Quiet Coast ",
     basePrice: 7399,
     image: Img255,
     link: "#",
   },
   {
-    id: 28,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 5,
+    title: "Claws Of Velocity ",
     basePrice: 7399,
     image: motor32,
     wallImage: motor4,
     link: "#",
   },
   {
-    id: 29,
-    title: "Golden Horizon | Limited Series",
+    id: 6,
+    title: "Metre Down ",
     basePrice: 8599,
     image: motor55,
     wallImage: motor5,
     link: "#",
   },
   {
-    id: 30,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 7,
+    title: " Beyond Miles ",
     basePrice: 7399,
     image: motor6,
     wallImage: motor1,
     link: "#",
   },
   {
-    id: 65,
-    title: "Mystic Reflections | Paper Original",
+    id: 8,
+    title: " Into The Pour ",
     basePrice: 7299,
     image: madira3,
     link: "#",
   },
   {
-    id: 66,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 9,
+    title: " ⁠The Cheers Edition ",
     basePrice: 7399,
     image: madira4,
     link: "#",
   },
   {
-    id: 31,
-    title: "Golden Horizon | Limited Series",
+    id: 10,
+    title: "Scarlet Velocity ",
     basePrice: 8599,
     image: motor7,
     link: "#",
   },
 
   {
-    id: 34,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 11,
+    title: "Born Reckless ",
     basePrice: 7399,
     image: motor10,
+    wallImage: motor12,
     link: "#",
   },
   {
-    id: 38,
-    title: "Handcrafted Dreams | Original Artwork",
+    id: 12,
+    title: "The Last Bet ",
     basePrice: 7999,
     image: jua1,
     link: "#",
   },
   {
-    id: 39,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    id: 13,
+    title: "A Deep Breath ",
     basePrice: 6499,
     image: Img245,
     link: "#",
   },
   {
-    id: 40,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: jua2,
-    link: "#",
-  },
-  {
-    id: 63,
-    title: "Handcrafted Dreams | Original Artwork",
+    id: 15,
+    title: "⁠Old Man’s Friend",
     basePrice: 7999,
     image: Aesthetics3,
     link: "#",
   },
 
   {
-    id: 41,
-    title: "Mystic Reflections | Paper Original",
+    id: 16,
+    title: "The Monochrome Lady. ",
     basePrice: 7299,
     image: pencil1,
     wallImage: pencil2,
     link: "#",
   },
   {
-    id: 41,
-    title: "Mystic Reflections | Paper Original",
+    id: 17,
+    title: "Echoes Of The Forest ",
     basePrice: 7299,
     image: Artifacts1,
+    wallImage: Artifacts2,
     link: "#",
   },
   // {
   //   id: 42,
-  //   title: "Mystic Reflections | Paper Original",
+  //   title: "Mystic Reflections ",
   //   basePrice: 7299,
   //   image: pencil3,
   //   link: "#",
   // },
   {
-    id: 42,
-    title: "Mystic Reflections | Paper Original",
+    id: 18,
+    title: "Whispers Of A Bloom ",
     basePrice: 7299,
     image: pencil12,
     link: "#",
   },
   {
-    id: 43,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 19,
+    title: "Guardians Of The Green ",
     basePrice: 7399,
     image: pencil4,
     wallImage: pencil3,
@@ -263,194 +261,174 @@ const originals = [
   },
   // {
   //   id: 45,
-  //   title: "Twilight Reverie | Exclusive Paper",
+  //   title: "Twilight Reverie ",
   //   basePrice: 7399,
   //   image: pencil6,
   //   link: "#",
   // },
   {
-    id: 46,
-    title: "Golden Horizon | Limited Series",
+    id: 20,
+    title: "The Many ",
     basePrice: 8599,
     image: pencil7,
+    wallImage:pencil13,
     link: "#",
   },
 
   {
-    id: 50,
-    title: "Handcrafted Dreams | Original Artwork",
+    id: 21,
+    title: "The Evening Sip ",
     basePrice: 7999,
     image: pencil9,
     link: "#",
   },
   {
-    id: 26,
-    title: "Soulful Symphony | Canvas Masterpiece",
-    basePrice: 6499,
-    image: motor111,
-    link: "#",
-  },
-  {
-    id: 36,
-    title: "Golden Horizon | Limited Series",
+    id: 23,
+    title: "Noir Elan ",
     basePrice: 8599,
     image: motor11,
     link: "#",
   },
 
   {
-    id: 37,
-    title: "Mystic Reflections | Paper Original",
+    id: 24,
+    title: "Retro Motion ",
     basePrice: 7299,
     image: motor13,
     link: "#",
   },
   {
-    id: 61,
-    title: "Golden Horizon | Limited Series",
+    id: 25,
+    title: "Secrets Of India ",
     basePrice: 8599,
     image: Aesthetics1,
     link: "#",
   },
   {
-    id: 48,
-    title: "Golden Horizon | Limited Series",
+    id: 26,
+    title: "⁠The Good Card  ",
     basePrice: 8599,
     image: pencil11,
     link: "#",
   },
 
   {
-    id: 57,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 27,
+    title: "The Ring Master ",
     basePrice: 7399,
     image: jua3,
     link: "#",
   },
   {
-    id: 58,
-    title: "Golden Horizon | Limited Series",
+    id: 28,
+    title: "Your Majesty ",
     basePrice: 8599,
     image: jua4,
     link: "#",
   },
 
   {
-    id: 25,
-    title: "Handcrafted Dreams | Original Artwork",
+    id: 29,
+    title: "The Midnight Cadillac ",
     basePrice: 7999,
     image: motor112,
     link: "#",
   },
   {
-    id: 49,
-    title: "Mystic Reflections | Paper Original",
+    id: 30,
+    title: "A Morning Street ",
     basePrice: 7299,
     image: pencil8,
     link: "#",
   },
   {
-    id: 61,
-    title: "Golden Horizon | Limited Series",
+    id: 31,
+    title: " ⁠The Parliament ",
     basePrice: 8599,
     image: jua7,
     link: "#",
   },
   {
-    id: 62,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 32,
+    title: " ⁠Velvet Wager ",
     basePrice: 7399,
     image: jua8,
     link: "#",
   },
 
   {
-    id: 63,
-    title: "Handcrafted Dreams | Original Artwork",
+    id: 33,
+    title: "The Double Pour ",
     basePrice: 7999,
     image: madira1,
     link: "#",
   },
   {
-    id: 64,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    id: 34,
+    title: "The Spirit Of Life. ",
     basePrice: 6499,
     image: madira2,
     wallImage: madira5,
     link: "#",
   },
 
-  {
-    id: 59,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: jua5,
-    link: "#",
-  },
-  {
-    id: 68,
-    title: "Twilight Reverie | Exclusive Paper",
-    basePrice: 7399,
-    image: Aesthetics,
-    link: "#",
-  },
 
   {
-    id: 62,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 37,
+    title: "Sweet Soltitude ",
     basePrice: 7399,
     image: Aesthetics2,
     link: "#",
   },
 
   {
-    id: 64,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    id: 38,
+    title: " ⁠Colours Of Caffeine  ",
     basePrice: 6499,
     image: Aesthetics4,
     link: "#",
   },
   {
-    id: 44,
-    title: "Golden Horizon | Limited Series",
+    id: 39,
+    title: "Hustle, Bustle And Rain ",
     basePrice: 8599,
     image: pencil5,
     wallImage: pencil6,
     link: "#",
   },
   {
-    id: 60,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 40,
+    title: "Face Down, Crown Up ",
     basePrice: 7399,
     image: jua6,
     link: "#",
   },
   {
-    id: 65,
-    title: "Mystic Reflections | Paper Original",
+    id: 41,
+    title: "Mrs. Bijou ",
     basePrice: 7299,
     image: Aesthetics5,
     link: "#",
   },
   {
-    id: 47,
-    title: "Twilight Reverie | Exclusive Paper",
+    id: 42,
+    title: "The Intentional Splash ",
     basePrice: 7399,
     image: pencil10,
     link: "#",
   },
 
   {
-    id: 32,
-    title: "Crimson Threads | Canvas Abstract",
+    id: 43,
+    title: "Peak Bliss ",
     basePrice: 7999,
     image: motor8,
     wallImage: motor2,
     link: "#",
   },
   {
-    id: 33,
-    title: "Ethereal Touch | Fine Original",
+    id: 44,
+    title: "Vroom Town ",
     basePrice: 7499,
     image: motor9,
     link: "#",
@@ -520,7 +498,7 @@ const Painting = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6 font-[Amita] text-lg md:text-2xl font-light"
         >
-          For the love of roaring engines, smokin tires and sheer power.
+          Exquisite one-of-a-kind artworks that add timeless elegance to your space.
         </motion.p>
       </div>
 
@@ -552,12 +530,18 @@ const Painting = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

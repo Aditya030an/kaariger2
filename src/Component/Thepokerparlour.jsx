@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Jua.jpg";
 import kaarigar1 from "./photos/Jua.jpg";
-import kaarigar2 from "./photos/jua2.png";
+
 
 import Img4 from "./photos/jua3.png";
 import Img5 from "./photos/jua4.png";
-import Img6 from "./photos/jua5.png";
+// import Img6 from "./photos/jua5.png";
 import Img7 from "./photos/jua6.png";
 import Img8 from "./photos/juapremi.png";
 import Img9 from "./photos/poker.jpeg";
@@ -41,57 +42,50 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "The Last Bet ",
     basePrice: 7999,
     image: kaarigar1,
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
-    basePrice: 6499,
-    image: kaarigar2,
     link: "#",
   },
 
   {
     id: 4,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "The Ring Master ",
     basePrice: 7999,
     image: Img4,
     link: "#",
   },
   {
     id: 5,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "Your Majesty ",
     basePrice: 6499,
     image: Img5,
     link: "#",
   },
-  {
-    id: 6,
-    title: "Mystic Reflections | Paper Original",
-    basePrice: 7299,
-    image: Img6,
-    link: "#",
-  },
+  // {
+  //   id: 6,
+  //   title: "Suits Serving Platters ",
+  //   basePrice: 7299,
+  //   image: Img6,
+  //   link: "#",
+  // },
   {
     id: 7,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "Face Down, Crown Up ",
     basePrice: 7999,
     image: Img7,
     link: "#",
   },
   {
     id: 8,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: " ⁠The Parliament ",
     basePrice: 6499,
     image: Img8,
     link: "#",
   },
   {
     id: 9,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "⁠Velvet Wager ",
     basePrice: 6499,
     image: Img9,
     link: "#",
@@ -193,12 +187,18 @@ const Thepokerparlour = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-400 font-semibold text-lg">
+                  {/* <p className="text-teal-400 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
+                  </p> */}
+                  {/* <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Buy Now <ArrowRight size={16} />
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

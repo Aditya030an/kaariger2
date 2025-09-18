@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Cinema2.jpeg";
 import kaarigar1 from "./photos/Cinema.jpeg";
@@ -27,7 +28,6 @@ import Img22 from "./photos/cinema21.jpg";
 import Img23 from "./photos/cinema22.jpg";
 import Img24 from "./photos/cinema23.jpg";
 import Img25 from "./photos/cinema24.jpg";
-
 
 import ProductCart from "./ProductCard";
 
@@ -57,77 +57,77 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams | Original Artwork",
+    title: "Handcrafted Dreams ",
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
   },
   {
     id: 2,
-    title: "Soulful Symphony | Canvas Masterpiece",
+    title: "Soulful Symphony ",
     basePrice: 6499,
     image: kaarigar2,
     link: "#",
   },
   {
     id: 3,
-    title: "Mystic Reflections | Paper Original",
+    title: "Mystic Reflections ",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
   },
   {
     id: 4,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img4,
     link: "#",
   },
   {
     id: 5,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img5,
     link: "#",
   },
   {
     id: 6,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img6,
     link: "#",
   },
   {
     id: 7,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img7,
     link: "#",
   },
   {
     id: 8,
-    title: "Crimson Threads | Canvas Abstract",
+    title: "Crimson Threads ",
     basePrice: 7999,
     image: Img8,
     link: "#",
   },
   {
     id: 9,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img9,
     link: "#",
   },
   {
     id: 10,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img10,
     link: "#",
   },
   {
     id: 11,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img11,
     link: "#",
@@ -135,84 +135,84 @@ const originals = [
 
   {
     id: 13,
-    title: "Mystic Reflections | Paper Original",
+    title: "Mystic Reflections ",
     basePrice: 7299,
     image: Img13,
     link: "#",
   },
   {
     id: 14,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img14,
     link: "#",
   },
   {
     id: 15,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img15,
     link: "#",
   },
   {
     id: 16,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img16,
     link: "#",
   },
   {
     id: 17,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img17,
     link: "#",
   },
   {
     id: 18,
-    title: "Crimson Threads | Canvas Abstract",
+    title: "Crimson Threads ",
     basePrice: 7999,
     image: Img18,
     link: "#",
   },
   {
     id: 19,
-    title: "Ethereal Touch | Fine Original",
+    title: "Ethereal Touch ",
     basePrice: 7499,
     image: Img19,
     link: "#",
   },
   {
     id: 20,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img20,
     link: "#",
   },
   {
     id: 21,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img21,
     link: "#",
   },
   {
     id: 22,
-    title: "Twilight Reverie | Exclusive Paper",
+    title: "Twilight Reverie ",
     basePrice: 7399,
     image: Img22,
     link: "#",
   },
   {
     id: 23,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img23,
     link: "#",
   },
   {
     id: 24,
-    title: "Golden Horizon | Limited Series",
+    title: "Golden Horizon ",
     basePrice: 8599,
     image: Img24,
     link: "#",
@@ -236,7 +236,7 @@ const Cinemapremi = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
@@ -271,7 +271,7 @@ const Cinemapremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-         Cinema Solace
+          Cinema Solace
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -312,12 +312,18 @@ const Cinemapremi = ({ cart, setCart }) => {
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <p className="text-teal-600 font-semibold text-lg">
+                  {/* <p className="text-teal-600 font-semibold text-lg">
                     ₹ {product?.basePrice}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
+                  </p> */}
+                  {/* <p className="text-gray-500 text-sm mt-1">
                     Exclusive Originals
-                  </p>
+                  </p> */}
+                  <motion.button
+                                      whileTap={{ scale: 0.95 }}
+                                      className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                                    >
+                                      Buy Now <ArrowRight size={16} />
+                                    </motion.button>
                 </div>
               </a>
             </TiltCard>

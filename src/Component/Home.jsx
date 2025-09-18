@@ -28,6 +28,7 @@ import lux from "./photos/luxe7.png";
 import Cinema from "./photos/Cinema5.jpeg";
 // import Artifacts from "./photos/Artifact3.png";
 import Artifacts from "./photos/artifacts23.jpg";
+import Img12 from "./photos/motor11.jpeg";
 const items = [
   {
     title: "Handmade Paintings",
@@ -81,10 +82,13 @@ const Home = () => {
   const collections = [
     { title: "Madira Premi", image: madira1, link: "/Madira" },
     { title: "The Poker Parlour", image: jua, link: "/Juapremi" },
-    { title: "Aesthetic premi", image: cinema, link: "/Aestheticspremi" },
+    { title: "Aesthetic Corner", image: cinema, link: "/Aestheticspremi" },
     { title: "Pencil Poetry", image: pencil, link: "/Pencilpremi" },
-    { title: "Baklol premi", image: baklol, link: "/Cinemapremi" },
-    { title: "Burnout Boulevard", image: madira1, link: "/Gaadi" },
+    { title: "Cinema Solace",
+      // title: "Baklol Premi",
+      
+      image: baklol, link: "/Cinemapremi" },
+    { title: "Burnout Boulevard", image:Img12, link: "/Gaadi" },
   ];
 
   return (
@@ -134,7 +138,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className="relative w-full h-[100vh] overflow-hidden bg-black">
+      <div className="relative w-full h-[60vh] md:h-[100vh] overflow-hidden bg-black">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -147,7 +151,7 @@ const Home = () => {
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="max-w-screen w-full max-h-full object-cover transition-transform duration-700 ease-in-out"
+                className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
