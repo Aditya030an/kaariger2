@@ -122,10 +122,10 @@ const CartPage = ({ cart, setCart }) => {
                     }}
                   />
                   <div>
-                    {item?.category !== "poster" && (
+                    {item?.category !== "poster" && item?.category !== "cinemapremi" && (
                       <h2 className="text-lg font-semibold">{item?.title}</h2>
                     )}
-                    <div className="flex items-center justify-start gap-2">
+                    <div className="flex items-center justify-start flex-wrap gap-2">
                       {item?.category !== "artifacts" && (
                         <p className="text-gray-700 text-sm capitalize">
                           Size: {item?.width}" x {item?.height}" | 

@@ -222,7 +222,7 @@ const Pencilpremi = ({ cart, setCart }) => {
                   </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

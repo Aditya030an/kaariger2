@@ -4,16 +4,12 @@ import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import { useNavigate } from "react-router-dom";
 import bgImg from "./photos/cinema.jpg";
-import Img1 from "./photos/best1.jpeg";
-import Img2 from "./photos/best2.jpeg";
-import Img3 from "./photos/best3.jpeg";
-import Img4 from "./photos/best4.jpeg";
-import Img5 from "./photos/best5.jpeg";
-import Img6 from "./photos/best6.jpeg";
-import Img7 from "./photos/best7.jpeg";
-import Img8 from "./photos/best8.png";
-import Img9 from "./photos/best9.png";
-import Img10 from "./photos/best11.jpeg";
+import Img1 from "./photos/cinema.jpg";
+import Img2 from "./photos/artifacts23.jpg";
+import Img3 from "./photos/luxe23.jpg";
+import Img_3 from "./photos/luxe25.png";
+import Img4 from "./photos/madira1.png";
+import Img5 from "./photos/artifacts30.png";
 
 import ProductCart from "./ProductCard";
 
@@ -35,69 +31,29 @@ function TiltCard({ children }) {
 
 // --- Products list with base price (for reference)
 const products = [
-  {
-    id: 1,
-    title: "Whispers Of A Bloom | Wall Art On Paper",
-    basePrice: 5220,
-    image: Img1,
-  },
+  { id: 1, title: "Classic Cinema", basePrice: 7499, image: Img1, link: "#" },
   {
     id: 2,
-    title: "Wonder At Night | Wall Art On Canvas",
-    basePrice: 3240,
-    // image: Img2,
-    wallImage: Img2,
+    title: "Humané Centre Table",
+    basePrice: 30000,
+    image: Img2,
+    link: "#",
   },
   {
     id: 3,
-    title: "Mona Lisa Modern | Wall Art On Canvas",
-    basePrice: 2220,
+    title: "Pop Goes The Orange",
+    basePrice: 7499,
     image: Img3,
+    wallImage: Img_3,
+    link: "#",
   },
-  {
-    id: 4,
-    title: "Vibrant Abstract | Wall Art On Paper",
-    basePrice: 4890,
-    // image: Img4,
-    wallImage: Img4,
-  },
+  { id: 4, title: "The Double Pour", basePrice: 7999, image: Img4, link: "#" },
   {
     id: 5,
-    title: "Golden Sunrise | Wall Art On Canvas",
-    basePrice: 6120,
+    title: "Retrovision Table Centre",
+    basePrice: 25000,
     image: Img5,
-  },
-  {
-    id: 6,
-    title: "Mystic Mountains | Wall Art On Paper",
-    basePrice: 4550,
-    // image: Img6,
-    wallImage: Img6,
-  },
-  {
-    id: 7,
-    title: "Urban Jungle | Wall Art On Canvas",
-    basePrice: 3999,
-    image: Img7,
-  },
-  {
-    id: 8,
-    title: "Ocean Dreams | Wall Art On Paper",
-    basePrice: 5999,
-    image: Img8,
-  },
-  {
-    id: 9,
-    title: "Ace Centre Table | Wall Art On Canvas",
-    basePrice: 3400,
-    image: Img9,
-  },
-  {
-    id: 10,
-    title: "The Quiet Coast  | Wall Art On Paper",
-    basePrice: 2999,
-    // image: Img10,
-    wallImage: Img10,
+    link: "#",
   },
 ];
 
@@ -183,11 +139,11 @@ const Bestsellerpage = ({ cart, setCart }) => {
                     </p> */}
                     {/* <p className="text-gray-500 text-sm">Click to Customize</p> */}
                     <motion.button
-                                        whileTap={{ scale: 0.95 }}
-                                        className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
-                                      >
-                                        Buy Now <ArrowRight size={16} />
-                                      </motion.button>
+                      whileTap={{ scale: 0.95 }}
+                      className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
+                    >
+                      Buy Now <ArrowRight size={16} />
+                    </motion.button>
                   </div>
                 </div>
               </TiltCard>

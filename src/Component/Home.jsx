@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { useState, useEffect } from "react";
+// import { FaWhatsapp } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import carsoul from "./photos/slide.png";
 import carsoul1 from "./photos/slide6.png";
@@ -11,11 +11,13 @@ import carsoul6 from "./photos/slide8.png";
 
 import carsoul8 from "./photos/slidenew1.png";
 import madira1 from "./photos/madira2.png";
-import jua from "./photos/jua2.png";
+// import jua from "./photos/jua2.png";
+import Img9 from "./photos/poker.jpeg";
+import Img24 from "./photos/cinema21.jpg";
 import pencil from "./photos/pencil2.jpeg";
 import cinema from "./photos/cinema.jpg";
-import baklol from "./photos/baklol.png";
-import bgImg from "./photos/madira2.png";
+// import baklol from "./photos/baklol.png";
+// import bgImg from "./photos/madira2.png";
 import brush from "./photos/paint.png";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -24,7 +26,7 @@ import Bestseller from "./Bestseller";
 import Refresh from "./Refresh";
 import About from "./About";
 import USP from "./USP";
-import lux from "./photos/luxe7.png";
+// import lux from "./photos/luxe7.png";
 import Cinema from "./photos/Cinema5.jpeg";
 // import Artifacts from "./photos/Artifact3.png";
 import Artifacts from "./photos/artifacts23.jpg";
@@ -60,7 +62,7 @@ const images = [
   carsoul3,
 ];
 
-const Home = () => {
+const Home = ({cart , setCart}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
@@ -81,13 +83,13 @@ const Home = () => {
 
   const collections = [
     { title: "Madira Premi", image: madira1, link: "/Madira" },
-    { title: "The Poker Parlour", image: jua, link: "/Juapremi" },
+    { title: "The Poker Parlour", image: Img9, link: "/Juapremi" },
     { title: "Aesthetic Corner", image: cinema, link: "/Aestheticspremi" },
     { title: "Pencil Poetry", image: pencil, link: "/Pencilpremi" },
     { title: "Cinema Solace",
       // title: "Baklol Premi",
       
-      image: baklol, link: "/Cinemapremi" },
+      image: Img24, link: "/Cinemapremi" },
     { title: "Burnout Boulevard", image:Img12, link: "/Gaadi" },
   ];
 
@@ -243,7 +245,7 @@ const Home = () => {
       </div>
 
       {/* Other Sections */}
-      <Bestseller />
+      <Bestseller cart={cart} setCart={setCart}/>
       <Refresh />
 
       <About />

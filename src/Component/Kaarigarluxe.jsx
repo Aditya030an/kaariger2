@@ -57,14 +57,14 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Handcrafted Dreams ",
+    title: "Moonlight Reverie",
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
   },
   {
     id: 2,
-    title: "Soulful Symphony ",
+    title: "Wings And Woods",
     basePrice: 6499,
     image: kaarigar2,
     wallImage: Img19,
@@ -73,7 +73,7 @@ const originals = [
   },
   {
     id: 3,
-    title: "Mystic Reflections ",
+    title: "Serenity ",
     basePrice: 7299,
     image: kaarigar3,
     wallImage: Img18,
@@ -83,7 +83,7 @@ const originals = [
 
   {
     id: 5,
-    title: "Bohemian Mirage ",
+    title: "Luna Femme ",
     basePrice: 6799,
     image: Img5,
     wallImage: Img15,
@@ -92,7 +92,7 @@ const originals = [
   },
   {
     id: 6,
-    title: "Twilight Reverie ",
+    title: "Silvara ",
     basePrice: 7399,
     image: Img6,
     wallImage: Img16,
@@ -101,7 +101,7 @@ const originals = [
   },
   {
     id: 7,
-    title: "Golden Horizon ",
+    title: "Trinity Of Grace ",
     basePrice: 8599,
     image: Img7,
     wallImage: Img17,
@@ -125,7 +125,7 @@ const originals = [
 
   {
     id: 11,
-    title: "Golden Horizon ",
+    title: "Vyom ",
     basePrice: 8599,
     image: Img11,
     link: "#",
@@ -133,21 +133,21 @@ const originals = [
 
   {
     id: 13,
-    title: "Ethereal Touch ",
+    title: "Beyond The Veil ",
     basePrice: 7499,
     image: Img12,
     link: "#",
   },
   {
     id: 14,
-    title: "Ethereal Touch ",
+    title: "The Tangerine ",
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
   },
   {
     id: 15,
-    title: "Ethereal Touch ",
+    title: "Life's Imbalance ",
     basePrice: 7499,
     image: Img20,
     wallImage: Img21,
@@ -156,14 +156,14 @@ const originals = [
   },
   {
     id: 16,
-    title: "Ethereal Touch ",
+    title: "Gift Of A New Day ",
     basePrice: 7499,
     image: Img55,
     link: "#",
   },
   {
     id: 17,
-    title: "Ethereal Touch ",
+    title: "Pop Goes The Orange ",
     basePrice: 7499,
     image: Img22,
     wallImage:Img24,
@@ -171,7 +171,7 @@ const originals = [
   },
   {
     id: 18,
-    title: "Ethereal Touch ",
+    title: "Living Life",
     basePrice: 7499,
     image: Img23,
     wallImage:Img25,
@@ -243,7 +243,7 @@ const Gaadi = ({ cart, setCart }) => {
       </div>
 
       {/* Product Cards Grid */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
         {originals.map((product, index) => (
           <motion.div
             key={product?.id}
@@ -291,7 +291,7 @@ const Gaadi = ({ cart, setCart }) => {
                   </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

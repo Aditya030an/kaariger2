@@ -293,7 +293,7 @@ const Painting = ({ cart, setCart }) => {
       </div>
 
       {/* Product Cards Grid */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-10 lg:gap-14">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7 sm:gap-10 lg:gap-14">
         {originals.map((product, index) => (
           <motion.div
             key={product?.id}
@@ -309,11 +309,12 @@ const Painting = ({ cart, setCart }) => {
                 href={product?.link}
                 className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
               >
-                <div className="relative overflow-hidden rounded-2xl h-48 md:h-72 flex items-center justify-center">
-                  <img
-                    src={product?.image}
+                <div className="overflow-hidden rounded-2xl">
+                  <motion.img
+                    src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
+                    whileHover={{ scale: 1.1 }}
                   />
                 </div>
                 <div className="p-4 text-center">
@@ -328,7 +329,7 @@ const Painting = ({ cart, setCart }) => {
                   </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

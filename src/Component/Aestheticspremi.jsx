@@ -118,14 +118,14 @@ const originals = [
   },
    {
       id: 9,
-      title: "Handcrafted Dreams ",
+      title: "Moonlight Reverie ",
       basePrice: 7999,
       image: Img1,
       link: "#",
     },
     {
       id: 10,
-      title: "Soulful Symphony ",
+      title: "Wings And Woods ",
       basePrice: 6499,
       image: Img2,
       wallImage: Img19,
@@ -134,7 +134,7 @@ const originals = [
     },
     {
       id: 11,
-      title: "Mystic Reflections ",
+      title: "Serenity ",
       basePrice: 7299,
       image: Img3,
       wallImage: Img18,
@@ -144,7 +144,7 @@ const originals = [
   
     {
       id: 12,
-      title: "Bohemian Mirage ",
+      title: "Luna Femme ",
       basePrice: 6799,
       image: Img10,
       wallImage: Img15,
@@ -153,7 +153,7 @@ const originals = [
     },
     {
       id: 13,
-      title: "Twilight Reverie ",
+      title: "Silvara ",
       basePrice: 7399,
       image: Img11,
       wallImage: Img16,
@@ -162,7 +162,7 @@ const originals = [
     },
     {
       id: 14,
-      title: "Golden Horizon ",
+      title: "Trinity Of Grace  ",
       basePrice: 8599,
       image: Img7,
       wallImage: Img17,
@@ -186,7 +186,7 @@ const originals = [
   
     {
       id: 15,
-      title: "Golden Horizon ",
+      title: "Vyom  ",
       basePrice: 8599,
       image: Img13,
       link: "#",
@@ -194,21 +194,21 @@ const originals = [
   
     {
       id: 16,
-      title: "Ethereal Touch ",
+      title: "Beyond The Veil",
       basePrice: 7499,
       image: Img12,
       link: "#",
     },
     {
       id: 17,
-      title: "Ethereal Touch ",
+      title: "The Tangerine ",
       basePrice: 7499,
       wallImage: Img44,
       link: "#",
     },
     {
       id: 18,
-      title: "Ethereal Touch ",
+      title: "Life's Imbalance ",
       basePrice: 7499,
       image: Img20,
       wallImage: Img21,
@@ -217,14 +217,14 @@ const originals = [
     },
     {
       id: 19,
-      title: "Ethereal Touch ",
+      title: "Gift Of A New Day ",
       basePrice: 7499,
       image: Img55,
       link: "#",
     },
     {
       id: 20,
-      title: "Ethereal Touch ",
+      title: "Pop Goes The Orange ",
       basePrice: 7499,
       image: Img22,
       wallImage: Img24,
@@ -232,7 +232,7 @@ const originals = [
     },
     {
       id: 21,
-      title: "Ethereal Touch ",
+      title: "Living Life ",
       basePrice: 7499,
       image: Img23,
       wallImage: Img25,
@@ -326,9 +326,9 @@ const Aestheticspremi = ({ cart, setCart }) => {
               >
                 <div className="overflow-hidden rounded-2xl">
                   <motion.img
-                    src={product?.image}
+                    src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>
@@ -344,7 +344,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
                   </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

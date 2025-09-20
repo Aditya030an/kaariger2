@@ -519,13 +519,14 @@ const Painting = ({ cart, setCart }) => {
                 onClick={() => setSelectedProduct(product)}
                 className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
               >
-                <div className="relative overflow-hidden rounded-2xl h-48 md:h-72 flex items-center justify-center">
-                  <img
-                    src={product?.image}
-                    alt={product?.title}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <div className="overflow-hidden rounded-2xl">
+                                  <motion.img
+                                    src={product?.image || product?.wallImage}
+                                    alt={product?.title}
+                                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
+                                    whileHover={{ scale: 1.1 }}
+                                  />
+                                </div>
                 <div className="p-4 text-center">
                   <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
                     {product?.title}
@@ -538,7 +539,7 @@ const Painting = ({ cart, setCart }) => {
                   </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-red-600 px-5 py-2.5 rounded-full shadow hover:bg-red-800 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

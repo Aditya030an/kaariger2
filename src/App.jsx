@@ -55,7 +55,7 @@ const App = () => {
         <Router>
           <Navbar cart={cart}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
             <Route path="/Bestseller" element={<Bestseller />} /> 
             <Route path="/Refresh" element={<Refresh />} />
             <Route path="/About" element={<About />} />

@@ -1,13 +1,5 @@
-
-
 import { useState } from "react";
-import {
-
-  FaShoppingCart,
-  FaUser,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "./photos/logo.jpeg";
 import Jua from "./photos/Jua.jpg";
@@ -22,13 +14,11 @@ import { useNavigate } from "react-router-dom";
 
 const categories = [
   { name: "Paintings", image: Jua, link: "/Painting" },
-  { name: "Posters", image:Img4 , link: "/Poster" },
+  { name: "Posters", image: Img4, link: "/Poster" },
   { name: " Artifacts & Furniture Pieces", image: Madira, link: "/Artifacts" },
-
-  
 ];
 
-const Navbar = ({cart}) => {
+const Navbar = ({ cart }) => {
   const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -72,7 +62,6 @@ const Navbar = ({cart}) => {
           {/* Icons + Hamburger */}
           <div className="flex items-center gap-4 text-xl">
             <div className="hidden md:flex gap-4">
-             
               <button
                 onClick={() => navigate("/cart")}
                 className="relative cursor-pointer"
@@ -131,7 +120,6 @@ const Navbar = ({cart}) => {
                             alt={category.name}
                             className="w-full h-full object-cover"
                           />
-                        
                         </div>
                         <span className="text-gray-800 text-sm font-semibold">
                           {category.name}
@@ -143,11 +131,10 @@ const Navbar = ({cart}) => {
               )}
             </div>
 
-           
             <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
               Kaarigar Luxe
             </a>
-          
+
             {/* <a href="/Journey" className="cursor-pointer hover:underline">
               The Journey
             </a> */}
@@ -160,7 +147,7 @@ const Navbar = ({cart}) => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="flex flex-col px-6 py-4 space-y-4 bg-white font-[Amita] md:hidden">
-            <Link to="/" className="cursor-pointer hover:underline">
+            <Link to="/" onClick={()=>setMobileMenuOpen(false)} className="cursor-pointer hover:underline">
               Home
             </Link>
             <div>
@@ -194,13 +181,24 @@ const Navbar = ({cart}) => {
             <a href="/Original" className="cursor-pointer hover:underline">
               Kaarigar Original
             </a>
-          
+
             <a href="/Journey" className="cursor-pointer hover:underline">
               The Journey
             </a>
             <a href="/Contact" className="cursor-pointer hover:underline">
-              CONTACT
+              Contact
             </a>
+
+            <button
+              onClick={() => {navigate("/cart"); setMobileMenuOpen(false)}}
+              className="relative cursor-pointer flex items-center justify-between"
+            >
+              <p>Cart</p>
+              <FaShoppingCart />
+              <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                {cart.reduce((sum, item) => sum + item.quantity, 0)}
+              </span>
+            </button>
           </div>
         )}
       </nav>

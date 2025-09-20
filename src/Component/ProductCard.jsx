@@ -140,7 +140,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
         >
           <IoArrowBack size={18} /> Back
         </button>
-        {category !== "poster" && (
+        {category !== "poster" && category !== "cinemapremi" && (
           <h4 className="text-2xl font-serif font-bold text-center">
             {/* Art Paint Decor Object Mixed Media Art Gallery Walls Custom Framing */}
             {productName}
@@ -151,9 +151,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           {/* Left Side */}
           <div className="flex-1 flex flex-col items-center gap-6">
             {/* Preview Section */}
-            <div className="flex w-full gap-4">
+            <div className="flex flex-col-reverse md:flex-row w-full lg:gap-4">
               {/* Thumbnails List */}
-              <div className="flex flex-col gap-3 w-20">
+              <div className="flex md:flex-col gap-3 w-40 md:w-20">
                 {[product?.image, product?.wallImage]
                   .filter(Boolean)
                   .map((img, index) => (
@@ -170,7 +170,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
               </div>
 
               {/* Main Preview */}
-              <div className="flex-1 flex items-center justify-center bg-gray-100 rounded-md p-4">
+              <div className="flex-1 flex items-center justify-center  rounded-md p-4">
                 <img
                   src={mainImage}
                   alt="Main Preview"
@@ -269,7 +269,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                 </div>
               </div>
             )}
-            {category !== "artifacts" && (
+            {category !== "artifacts" || mainImage === product?.wallImage && (
               <div>
                 <h3 className="text-xl font-serif font-bold">Frame Style</h3>
                 <p className="text-sm text-gray-500 mb-2">
