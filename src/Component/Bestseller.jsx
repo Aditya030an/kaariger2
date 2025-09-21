@@ -89,35 +89,29 @@ const Bestseller = ({ cart, setCart }) => {
       <div className="relative z-10"  onClick={() => navigate("/Bestsellerpage")}>
         <h2 className="text-3xl md:text-5xl font-[Amita] font-bold text-white text-center mb-2">
           <span className="inline-block w-12 h-[2px] bg-white mr-3 align-middle" />
-          ट्रेंडी ,टॉप - Our bestsellers
+          ट्रेंडी ,टॉप - Our Bestsellers
           <span className="inline-block w-12 h-[2px] bg-white ml-3 align-middle" />
         </h2>
 
-        <p className="text-center text-white font-[Amita] text-sm md:text-base mb-10">
-          Get your hands on our bestseller you can’t say no
-        </p>
-
         {/* Card wrapper - whole div clickable */}
-        <div className="flex justify-start">
+        <div className="flex justify-start ">
           <div
-            className="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl cursor-pointer"
+            className="w-full max-w-[200px] md:max-w-[350px] bg-white bg-opacity-90 rounded-[8px] md:rounded-2xl shadow-lg overflow-hidden hover:shadow-xl cursor-pointer"
             onClick={(e) => {
               setSelectedProduct(images[currentIndex]);
               e.stopPropagation(); // 👈 prevent card redirect
             }}
           >
             <img
-              src={images[currentIndex].image}
-              alt={images[currentIndex].title}
-              className="w-full h-[200px] md:h-[350px] object-cover rounded-t-2xl"
+              src={images[currentIndex]?.image}
+              alt={images[currentIndex]?.title}
+              className="w-full h-[200px] md:h-[350px] object-contain lg:object-cover  "
             />
-            <div className="p-2 md:p-5 text-center">
-              <h3 className="text-lg font-[Amita] font-semibold mb-1 text-gray-800">
-                {images[currentIndex].title}
+            <div className="py-2 md:py-5 text-center">
+              <h3 className="text-[12px] md:text-lg font-[Amita] font-semibold mb-1 text-gray-800">
+                {images[currentIndex]?.title}
               </h3>
-              <p className="text-sm font-[Amita] text-gray-500 mb-2">
-                Canvas Print | By Kaarigar&co
-              </p>
+              
               <div className="text-center mt-2">
                 <a
                   onClick={(e) => {
@@ -125,10 +119,10 @@ const Bestseller = ({ cart, setCart }) => {
                     e.stopPropagation(); // 👈 prevent card redirect
                   }}
                   href="/#"
-                  className="group relative inline-flex items-center justify-center px-6 py-2 font-[Amita] text-gray-800 border border-gray-800 rounded-full overflow-hidden transition-all duration-300 hover:text-white"
+                  className="group relative inline-flex items-center justify-center px-4 md:px-6 py-1 md:py-2 font-[Amita] text-gray-800 border border-gray-800 rounded-full overflow-hidden transition-all duration-300 hover:text-white"
                 >
                   <span className="absolute inset-0 w-full h-full bg-gray-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                  <span className="relative z-10 flex items-center gap-4">
+                  <span className="relative z-10 flex text-[12px] md:text-[16px] items-center gap-1 md:gap-4">
                     Buy Now <ArrowRight size={16} />
                   </span>
                 </a>
@@ -136,18 +130,19 @@ const Bestseller = ({ cart, setCart }) => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Left Arrow */}
-        <button
-          onClick={(e) => {
-            setCurrentIndex((prev) =>
-              prev === 0 ? images.length - 1 : prev - 1
+      {/* Left Arrow */}
+      <button
+        onClick={(e) => {
+          setCurrentIndex((prev) =>
+            prev === 0 ? images.length - 1 : prev - 1
             );
             e.stopPropagation(); // 👈 stop redirect
           }}
-          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+          className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-gray-800/80 hover:bg-white/40 text-white p-1 md:p-3 rounded-full z-10 transition"
         >
-          <FaChevronLeft size={24} />
+          <FaChevronLeft className="text-[12px] md:text-[24px]" />
         </button>
 
         {/* Right Arrow */}
@@ -158,17 +153,17 @@ const Bestseller = ({ cart, setCart }) => {
             );
             e.stopPropagation(); // 👈 stop redirect
           }}
-          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+          className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-gray-800/80 hover:bg-white/40 text-white p-1 md:p-3 rounded-full z-10 transition"
         >
-          <FaChevronRight size={24} />
+          <FaChevronRight className="text-[12px] md:text-[24px]" />
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+        <div className="absolute bottom-1 md:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 md:space-x-3 z-10">
           {images.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
+              className={`w-1 md:w-3 h-1 md:h-3 rounded-full cursor-pointer transition-colors duration-300 ${
                 index === currentIndex ? "bg-white" : "bg-gray-500"
               }`}
               onClick={(e) => {
@@ -178,7 +173,7 @@ const Bestseller = ({ cart, setCart }) => {
             />
           ))}
         </div>
-      </div>
+      
 
       {/* Product Modal */}
       {selectedProduct && (

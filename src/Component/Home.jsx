@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import carsoul from "./photos/slide.png";
 import carsoul1 from "./photos/slide6.png";
-import carsoul2 from "./photos/slide2.png";
+// import carsoul2 from "./photos/slide2.png";
+import carsoul2 from "./photos/slide2.jpg";
+// import carsoul2 from "./photos/slide_2.png";
 import carsoul3 from "./photos/slide4.png";
 import carsoul4 from "./photos/slide3.jpeg";
 import carsoul5 from "./photos/slide7.png";
@@ -107,40 +109,7 @@ const Home = ({cart , setCart}) => {
         }}
       />
 
-      {/* Carousel */}
-      {/* <div className="relative w-full h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
-        <div
-          className="flex transition-transform duration-700 ease-in-out h-full"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((src, index) => (
-            <div
-              key={index}
-              className="w-full h-full md:w-full md:h-full flex-none"
-            >
-              <img
-                src={src}
-                alt={`slide-${index}`}
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-          ))}
-        </div>
-
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              className={`w-2 md:w-3 h-2 md:h-3 rounded-full cursor-pointer transition-colors duration-300 ${
-                index === currentIndex ? "bg-white" : "bg-gray-500"
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
-        </div>
-      </div> */}
-
-      <div className="relative w-full h-[60vh] md:h-[100vh] overflow-hidden bg-black">
+      <div className="relative w-full sm:h-[60vh] md:h-[100vh] overflow-hidden bg-black">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -153,7 +122,7 @@ const Home = ({cart , setCart}) => {
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
+                className="w-full h-full object-contain md:object-cover transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
@@ -166,9 +135,9 @@ const Home = ({cart , setCart}) => {
               prev === 0 ? images.length - 1 : prev - 1
             )
           }
-          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+          className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-1 md:p-3 rounded-full z-10 transition"
         >
-          <FaChevronLeft size={24} />
+          <FaChevronLeft className="text-[12px] md:text-[24px]" />
         </button>
 
         {/* Right Arrow */}
@@ -178,17 +147,17 @@ const Home = ({cart , setCart}) => {
               prev === images.length - 1 ? 0 : prev + 1
             )
           }
-          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10 transition"
+          className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-1 md:p-3 rounded-full z-10 transition"
         >
-          <FaChevronRight size={24} />
+          <FaChevronRight className="text-[12px] md:text-[24px]" />
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+        <div className="absolute bottom-1 md:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1 md:space-x-3 z-10">
           {images.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
+              className={`w-1 md:w-3 h-1 md:h-3 rounded-full cursor-pointer transition-colors duration-300 ${
                 index === currentIndex ? "bg-white" : "bg-gray-500"
               }`}
               onClick={() => setCurrentIndex(index)}

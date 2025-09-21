@@ -94,7 +94,7 @@ const CartPage = ({ cart, setCart }) => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold mb-6">🛒 Your Cart</h1>
+      <h1 className="text-xl md:text-3xl font-bold mb-6">🛒 Your Cart</h1>
 
       {cart?.length === 0 ? (
         <p className="text-gray-700">Your cart is empty.</p>
@@ -104,9 +104,9 @@ const CartPage = ({ cart, setCart }) => {
             {cart?.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow flex flex-col md:flex-row items-center justify-between"
+                className="bg-white p-2 md:p-4 rounded-lg shadow flex flex-col md:flex-row items-center justify-between"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col md:flex-row items-center gap-4">
                   <img
                     src={item?.image}
                     alt={item?.title}

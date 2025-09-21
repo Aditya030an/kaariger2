@@ -61,7 +61,6 @@ import pencil9 from "./photos/pencil7.jpeg";
 import pencil10 from "./photos/pencil8.jpeg";
 import pencil11 from "./photos/pencil9.jpeg";
 
-
 import Artifacts1 from "./photos/artifacts32.jpg";
 import Artifacts2 from "./photos/artifacts33.png";
 
@@ -91,6 +90,7 @@ import madira4 from "./photos/madira4.png";
 import madira5 from "./photos/madira5.png";
 
 import ProductCart from "./ProductCard";
+import Card from "./Card";
 
 // TiltCard component
 function TiltCard({ children }) {
@@ -271,7 +271,7 @@ const originals = [
     title: "The Many ",
     basePrice: 8599,
     image: pencil7,
-    wallImage:pencil13,
+    wallImage: pencil13,
     link: "#",
   },
 
@@ -371,7 +371,6 @@ const originals = [
     wallImage: madira5,
     link: "#",
   },
-
 
   {
     id: 37,
@@ -498,7 +497,8 @@ const Painting = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6 font-[Amita] text-lg md:text-2xl font-light"
         >
-          Exquisite one-of-a-kind artworks that add timeless elegance to your space.
+          Exquisite one-of-a-kind artworks that add timeless elegance to your
+          space.
         </motion.p>
       </div>
 
@@ -514,32 +514,27 @@ const Painting = ({ cart, setCart }) => {
             transition={{ delay: index * 0.2 }}
           >
             <TiltCard>
+              {/* <Card product={product} onClick={() => setSelectedProduct(product)} /> */}
               <a
                 href={product?.link}
                 onClick={() => setSelectedProduct(product)}
                 className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
               >
                 <div className="overflow-hidden rounded-2xl">
-                                  <motion.img
-                                    src={product?.image || product?.wallImage}
-                                    alt={product?.title}
-                                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
-                                    whileHover={{ scale: 1.1 }}
-                                  />
-                                </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
+                  <motion.img
+                    src={product?.image || product?.wallImage}
+                    alt={product?.title}
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
+                    whileHover={{ scale: 1.1 }}
+                  />
+                </div>
+                <div className="pt-4 text-center">
+                  <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  {/* <p className="text-teal-600 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-500 text-sm mt-1">
-                    Exclusive Originals
-                  </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

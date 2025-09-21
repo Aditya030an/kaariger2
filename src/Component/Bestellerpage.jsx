@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import  { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
-import { useNavigate } from "react-router-dom";
 import bgImg from "./photos/cinema.jpg";
 import Img1 from "./photos/cinema.jpg";
 import Img2 from "./photos/artifacts23.jpg";
@@ -12,6 +11,7 @@ import Img4 from "./photos/madira1.png";
 import Img5 from "./photos/artifacts30.png";
 
 import ProductCart from "./ProductCard";
+
 
 // --- VanillaTilt Wrapper
 function TiltCard({ children }) {
@@ -95,7 +95,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
         >
           <h2 className="text-3xl md:text-5xl font-[Amita] font-bold text-white text-center mb-2">
             <span className="inline-block w-12 h-[2px] bg-white mr-3 align-middle" />
-            ट्रेंडी ,टॉप - Our bestsellers
+            ट्रेंडी ,टॉप - Our Bestsellers
             <span className="inline-block w-12 h-[2px] bg-white ml-3 align-middle" />
           </h2>
         </motion.div>
@@ -111,7 +111,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
 
       {/* Product Grid */}
       <div className="px-4 md:px-12 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {products.map((product, index) => (
             <motion.div
               key={product?.id}
@@ -121,31 +121,31 @@ const Bestsellerpage = ({ cart, setCart }) => {
               transition={{ delay: index * 0.1, duration: 0.6 }}
             >
               <TiltCard>
-                <div
-                  className="bg-white bg-opacity-80 rounded-2xl overflow-hidden shadow hover:shadow-2xl transition-all cursor-pointer"
+                <a
                   onClick={() => setSelectedProduct(product)}
+                  href={product?.link}
+                  className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
                 >
-                  <img
-                    src={product?.image || product?.wallImage}
-                    alt={product?.title}
-                    className="w-full h-64 object-contain"
-                  />
-                  <div className="p-4 text-center">
-                    <h3 className="text-lg font-[Amita] font-semibold text-gray-800">
+                  <div className="overflow-hidden rounded-2xl">
+                    <motion.img
+                      src={product?.image || product?.wallImage}
+                      alt={product?.title}
+                      className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
+                      whileHover={{ scale: 1.1 }}
+                    />
+                  </div>
+                  <div className="pt-4 text-center">
+                    <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                       {product?.title}
                     </h3>
-                    {/* <p className="text-teal-500 font-bold">
-                      Starts at ₹{product?.basePrice}
-                    </p> */}
-                    {/* <p className="text-gray-500 text-sm">Click to Customize</p> */}
                     <motion.button
                       whileTap={{ scale: 0.95 }}
-                      className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
+                      className="inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                     >
                       Buy Now <ArrowRight size={16} />
                     </motion.button>
                   </div>
-                </div>
+                </a>
               </TiltCard>
             </motion.div>
           ))}

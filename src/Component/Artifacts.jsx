@@ -33,6 +33,7 @@ import Img26 from "./photos/artifacts31.jpg";
 import music from "./photos/music.png";
 
 import ProductCart from "./ProductCard";
+import Card from "./Card";
 
 // TiltCard component
 function TiltCard({ children }) {
@@ -304,37 +305,8 @@ const Painting = ({ cart, setCart }) => {
             transition={{ delay: index * 0.2 }}
           >
             <TiltCard>
-              <a
-                onClick={() => setSelectedProduct(product)}
-                href={product?.link}
-                className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
-              >
-                <div className="overflow-hidden rounded-2xl">
-                  <motion.img
-                    src={product?.image || product?.wallImage}
-                    alt={product?.title}
-                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
-                    whileHover={{ scale: 1.1 }}
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
-                    {product?.title}
-                  </h3>
-                  {/* <p className="text-teal-600 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-500 text-sm mt-1">
-                    Exclusive Originals
-                  </p> */}
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
-                  >
-                    Buy Now <ArrowRight size={16} />
-                  </motion.button>
-                </div>
-              </a>
+              <Card product={product} onClick={() => setSelectedProduct(product)} />
+             
             </TiltCard>
           </motion.div>
         ))}

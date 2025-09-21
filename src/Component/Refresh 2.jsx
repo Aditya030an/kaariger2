@@ -75,7 +75,7 @@ export default function NewReleases() {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="object-cover h-full w-full"
+                    className="object-contain h-full w-full"
                   />
                   <div className="absolute bottom-4 left-4 bg-[#f4e2d8] text-[#513d2c] font-mono text-xs px-3 py-1 rounded-full shadow">
                     {item.category}
@@ -87,7 +87,7 @@ export default function NewReleases() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-4 inline-block bg-[#6a4e3a] text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-[#5a4031] transition-all duration-300"
+                    className="mt-2 inline-block bg-[#6a4e3a] text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-[#5a4031] transition-all duration-300"
                   >
                     Explore Piece →
                   </motion.button>

@@ -259,15 +259,15 @@ const Gaadi = ({ cart, setCart }) => {
                 onClick={() => setSelectedProduct(product)}
                 className="group block bg-white shadow-lg border border-gray-200 rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-5"
               >
-                <div className="relative overflow-hidden rounded-2xl h-72 flex items-center justify-center">
+                <div className="relative overflow-hidden rounded-2xl h-48 md:h-72 flex items-center justify-center">
                   <motion.img
                     src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className={`absolute w-full h-full transition-opacity duration-700 ease-out 
+                    className={`absolute w-full h-48 md:h-72 transition-opacity duration-700 ease-out 
       ${
         product?.hoverImage
           ? "group-hover:opacity-0 object-contain"
-          : "object-cover"
+          : "object-contain"
       }`}
                   />
 
@@ -275,23 +275,17 @@ const Gaadi = ({ cart, setCart }) => {
                     <motion.img
                       src={product?.hoverImage}
                       alt={`${product?.title} Hover`}
-                      className="absolute w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out"
+                      className="absolute w-full h-48 md:h-72 object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out"
                     />
                   )}
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
+                <div className="pt-4 text-center">
+                  <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  {/* <p className="text-teal-600 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-500 text-sm mt-1">
-                    Exclusive Originals
-                  </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className=" inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

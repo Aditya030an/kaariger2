@@ -305,23 +305,14 @@ const Cinemapremi = ({ cart, setCart }) => {
                   <motion.img
                     src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>
-                <div className="p-4 text-center">
-                  {/* <h3 className="text-xl font-[Amita] font-bold text-gray-800 mb-2">
-                    {product?.title}
-                  </h3> */}
-                  {/* <p className="text-teal-600 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-500 text-sm mt-1">
-                    Exclusive Originals
-                  </p> */}
+                <div className="pt-4 text-center">
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className="inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>

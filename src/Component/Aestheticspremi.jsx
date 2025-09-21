@@ -39,6 +39,7 @@ import Img24 from "./photos/luxe25.png";
 import Img25 from "./photos/luxe26.png";
 
 import ProductCart from "./ProductCard";
+import Card from "./Card";
 
 // TiltCard
 function TiltCard({ children }) {
@@ -319,7 +320,8 @@ const Aestheticspremi = ({ cart, setCart }) => {
             transition={{ delay: index * 0.3 }}
           >
             <TiltCard>
-              <a
+              <Card product={product} onClick={() => setSelectedProduct(product)} />
+              {/* <a
                 href={product?.link}
                 onClick={() => setSelectedProduct(product)}
                 className="group block bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-2 md:p-5"
@@ -328,28 +330,22 @@ const Aestheticspremi = ({ cart, setCart }) => {
                   <motion.img
                     src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out "
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-[Amita] font-bold text-white mb-2">
+                <div className="pt-4 text-center">
+                  <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  {/* <p className="text-teal-400 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
-                    Exclusive Originals
-                  </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
+                    className=" inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>
                 </div>
-              </a>
+              </a> */}
             </TiltCard>
           </motion.div>
         ))}

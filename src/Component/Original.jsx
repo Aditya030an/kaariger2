@@ -192,23 +192,17 @@ const KaarigarOriginal = ({ cart, setCart }) => {
                   <motion.img
                     src={product?.image}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-xl font-[Amita] font-bold text-white mb-2">
+                <div className="pt-4 text-center">
+                  <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  {/* <p className="text-teal-400 font-semibold text-lg">
-                    ₹ {product?.basePrice}
-                  </p> */}
-                  {/* <p className="text-gray-400 text-xs mt-2 uppercase tracking-wide">
-                    Exclusive Originals
-                  </p> */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
                   >
                     Buy Now <ArrowRight size={16} />
                   </motion.button>
