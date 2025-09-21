@@ -105,7 +105,7 @@ const Bestseller = ({ cart, setCart }) => {
             <img
               src={images[currentIndex]?.image}
               alt={images[currentIndex]?.title}
-              className="w-full h-[200px] md:h-[350px] object-contain lg:object-cover  "
+              className="w-full h-[200px] md:h-[350px] object-contain  "
             />
             <div className="py-2 md:py-5 text-center">
               <h3 className="text-[12px] md:text-lg font-[Amita] font-semibold mb-1 text-gray-800">
