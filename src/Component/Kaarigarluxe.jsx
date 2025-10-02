@@ -32,6 +32,9 @@ import Img26 from "./photos/img8.jpg";
 import Img27 from "./photos/img9.jpg";
 import Img28 from "./photos/img10.jpg";
 import Img29 from "./photos/img11.jpg";
+import Img30 from "./photos/artifacts46.jpg";
+import Img31 from "./photos/artifacts47.png";
+import Img32 from "./photos/artifacts48.png";
 
 import ProductCart from "./ProductCard";
 
@@ -211,6 +214,17 @@ const originals = [
     resizeOption: false,
     frameOption: false,
   },
+   {
+      id: 28,
+      title: "Modern Relic",
+      image: Img30,
+      wallImage:Img31,
+      moreImage:Img32,
+      basePrice: 16000,
+      link: "#",
+       resizeOption: false,
+    frameOption: false,
+    },
 ];
 
 const fadeInUp = {

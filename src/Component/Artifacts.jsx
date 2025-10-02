@@ -44,6 +44,9 @@ import Img37 from "./photos/artifacts42.png";
 import Img38 from "./photos/artifacts43.png";
 import Img39 from "./photos/artifacts44.png";
 import Img40 from "./photos/artifacts45.png";
+import Img41 from "./photos/artifacts46.jpg";
+import Img42 from "./photos/artifacts47.png";
+import Img43 from "./photos/artifacts48.png";
 
 
 
@@ -290,6 +293,15 @@ const originals = [
     image: Img33,
     wallImage:Img34,
     basePrice: 27000,
+    link: "#",
+  },
+  {
+    id: 28,
+    title: "Modern Relic",
+    image: Img41,
+    wallImage:Img42,
+    moreImage:Img43,
+    basePrice: 16000,
     link: "#",
   },
   
