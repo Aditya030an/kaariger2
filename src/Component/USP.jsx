@@ -130,7 +130,7 @@ export default function USPSection() {
         <p className="text-gray-500 max-w-xl mx-auto">
           The features that set us apart and make your experience memorable.
         </p>
-      </div>
+      </div> 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
         {uspData.map((usp, index) => (

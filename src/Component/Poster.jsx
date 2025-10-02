@@ -67,7 +67,6 @@ import pencil9 from "./photos/pencil7.jpeg";
 import pencil10 from "./photos/pencil8.jpeg";
 import pencil11 from "./photos/pencil9.jpeg";
 
-
 import Aesthetics1 from "./photos/Aestheticspremi2.jpeg";
 import Aesthetics2 from "./photos/Aestheticspremi3.jpeg";
 import Aesthetics3 from "./photos/Aestheticspremi5.jpeg";
@@ -118,189 +117,6 @@ function TiltCard({ children }) {
   );
 }
 
-// const originals = [
-
-//   {
-//     id: 1,
-//     title: "Handcrafted Dreams ",
-//     basePrice: 7999,
-//     image: kaarigar1,
-//     link: "#",
-//   },
-//   {
-//     id: 2,
-//     title: "Soulful Symphony ",
-//     basePrice: 6499,
-//     image: kaarigar2,
-//     link: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Mystic Reflections ",
-//     basePrice: 7299,
-//     image: kaarigar33,
-//     link: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Mystic Reflections ",
-//     basePrice: 7299,
-//     image: kaarigar3,
-//     link: "#",
-//   },
-//   {
-//     id: 4,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img4,
-//     link: "#",
-//   },
-//   {
-//     id: 5,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img5,
-//     link: "#",
-//   },
-//   {
-//     id: 6,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img6,
-//     link: "#",
-//   },
-//   {
-//     id: 7,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img7,
-//     link: "#",
-//   },
-//   {
-//     id: 8,
-//     title: "Crimson Threads ",
-//     basePrice: 7999,
-//     image: Img8,
-//     link: "#",
-//   },
-//   {
-//     id: 9,
-//     title: "Ethereal Touch ",
-//     basePrice: 7499,
-//     image: Img9,
-//     link: "#",
-//   },
-
-//   {
-//     id: 11,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img11,
-//     link: "#",
-//   },
-
-//   {
-//     id: 13,
-//     title: "Mystic Reflections ",
-//     basePrice: 7299,
-//     image: Img13,
-//     link: "#",
-//   },
-//   {
-//     id: 14,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img14,
-//     link: "#",
-//   },
-//   {
-//     id: 15,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img15,
-//     link: "#",
-//   },
-//   {
-//     id: 16,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img16,
-//     link: "#",
-//   },
-//   {
-//     id: 17,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img17,
-//     link: "#",
-//   },
-//   {
-//     id: 18,
-//     title: "Crimson Threads ",
-//     basePrice: 7999,
-//     image: Img18,
-//     link: "#",
-//   },
-//   {
-//     id: 19,
-//     title: "Ethereal Touch ",
-//     basePrice: 7499,
-//     image: Img19,
-//     link: "#",
-//   },
-//   {
-//     id: 20,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img20,
-//     link: "#",
-//   },
-//   {
-//     id: 21,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img21,
-//     link: "#",
-//   },
-//   {
-//     id: 22,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img22,
-//     link: "#",
-//   },
-//   {
-//     id: 23,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img23,
-//     link: "#",
-//   },
-//   {
-//     id: 24,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img24,
-//     link: "#",
-//   },
-
-//   {
-//     id: 25,
-//     title: "Twilight Reverie ",
-//     basePrice: 7399,
-//     image: Img25,
-//     link: "#",
-//   },
-//   {
-//     id: 26,
-//     title: "Golden Horizon ",
-//     basePrice: 8599,
-//     image: Img26,
-//     link: "#",
-//   },
-
-// ];
-
 const originals = [
   // ---------------- Originals ----------------
   {
@@ -317,13 +133,6 @@ const originals = [
     image: kaarigar2,
     link: "#",
   },
-  // {
-  //   id: 3,
-  //   title: "Mystic Reflections ",
-  //   basePrice: 7299,
-  //   image: kaarigar33,
-  //   link: "#",
-  // },
   {
     id: 4,
     title: "Mystic Reflections ",
@@ -478,38 +287,84 @@ const originals = [
     image: Img26,
     link: "#",
   },
-  { id: 51, title: "Pencil Artwork", image: pencil11, link: "#" },
+  {
+    id: 51,
+    title: "Pencil Artwork",
+    image: pencil11,
+    link: "#",
+    height: 30,
+    width: 25,
+  },
 
-  { id: 71, title: "Madira Artwork", image: madira4, link: "#" },
-  { id: 67, title: "Jua Collection", image: jua8, link: "#" },
-
+  {
+    id: 71,
+    title: "Madira Artwork",
+    image: madira4,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
+  {
+    id: 67,
+    title: "Jua Collection",
+    image: jua8,
+    link: "#",
+    height: 40,
+    width: 25,
+  },
 
   {
     id: 45,
-    title: "Pencil Artwork",
+    title: "Hustle, Bustle And Rain ",
     image: pencil5,
     wallImage: pencil6,
     link: "#",
+    height: 35,
+    width: 18,
   },
 
-
-  { id: 39, title: "Motor Artwork", image: motor13, link: "#" },
+  {
+    id: 39,
+    title: "Motor Artwork",
+    image: motor13,
+    link: "#",
+    height: 40,
+    width: 25,
+  },
   {
     id: 69,
     title: "Madira Artwork",
     image: madira2,
     wallImage: madira5,
     link: "#",
+    height: 30,
+    width: 30,
   },
 
-  { id: 53, title: "Aesthetic Premium", image: Aesthetics1, link: "#" },
-  { id: 62, title: "Jua Collection", image: jua3, link: "#" },
+  {
+    id: 53,
+    title: "Aesthetic Premium",
+    image: Aesthetics1,
+    link: "#",
+    height: 30,
+    width: 25,
+  },
+  {
+    id: 62,
+    title: "THe Ring Master",
+    image: jua3,
+    link: "#",
+    height: 25,
+    width: 25,
+  },
   {
     id: 33,
     title: "Motor Artwork",
     image: motor8,
     wallImage: motor2,
     link: "#",
+    height: 35,
+    width: 18,
   },
 
   {
@@ -518,99 +373,157 @@ const originals = [
     image: pencil4,
     wallImage: pencil3,
     link: "#",
+    height: 25,
+    width: 20,
   },
 
   { id: 68, title: "Madira Artwork", image: madira1, link: "#" },
 
-  { id: 54, title: "Aesthetic Premium", image: Aesthetics2, link: "#" },
+  {
+    id: 54,
+    title: "Aesthetic Premium",
+    image: Aesthetics2,
+    link: "#",
+    height: 30,
+    width: 25,
+  },
 
   {
     id: 29,
-    title: "Motor Artwork",
+    title: "Claws Of Velocity",
     image: motor32,
     wallImage: motor4,
     link: "#",
+    height: 36,
+    width: 25,
   },
 
-  { id: 66, title: "Jua Collection", image: jua7, link: "#" },
+  {
+    id: 66,
+    title: " ⁠The Parliament ",
+    basePrice: 8599,
+    image: jua7,
+    link: "#",
+    height: 35,
+    width: 35,
+  },
 
   {
     id: 31,
-    title: "Motor Artwork",
+    title: " Beyond Miles ",
     image: motor6,
     wallImage: motor1,
     link: "#",
+    height: 25,
+    width: 25,
   },
 
-  { id: 56, title: "Aesthetic Premium", image: Aesthetics4, link: "#" },
-  { id: 40, title: "Pencil Artwork", image: pencil12, link: "#" },
+  {
+    id: 56,
+    title: " ⁠Colours Of Caffeine  ",
+    image: Aesthetics4,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
+  {
+    id: 40,
+    title: "Whispers Of A Bloom  ",
+    image: pencil12,
+    link: "#",
+    height: 25,
+    width: 25,
+  },
 
-  { id: 50, title: "Pencil Artwork", image: pencil10, link: "#" },
+  {
+    id: 50,
+    title: "The Intentional Splash ",
+    image: pencil10,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
   {
     id: 30,
-    title: "Motor Artwork",
+    title: "Metre Down ",
     image: motor55,
     wallImage: motor5,
     link: "#",
+     height:36,
+    width:25,
   },
 
-  { id: 35, title: "Motor Artwork", image: motor10, wallImage:motor12, link: "#" },
-  { id: 59, title: "Aesthetic Premium", image: Aesthetics7, link: "#" },
-  { id: 65, title: "Jua Collection", image: jua6, link: "#" },
+  {
+    id: 35,
+    title: "Born Reckless ",
+    image: motor10,
+    wallImage: motor12,
+    link: "#",
+      height:20,
+    width:15,
+  },
+  { id: 59, title: "⁠Pouring Stories ", image: Aesthetics7, link: "#" , height: 36,
+    width: 25, },
+  { id: 65, title: "Face Down, Crown Up", image: jua6, link: "#" ,   height: 40,
+    width: 25, },
 
   {
     id: 41,
-    title: "Pencil Artwork",
+    title: "The Monochrome Lady.",
     image: pencil1,
     wallImage: pencil2,
     link: "#",
+    height:30,
+    width:20
   },
 
-  { id: 28, title: "Motor Artwork", image: motor3, link: "#" },
+  { id: 28, title: "The Final Lap", image: motor3, link: "#" ,  height: 25,
+    width: 25, },
 
-  { id: 55, title: "Aesthetic Premium", image: Aesthetics3, link: "#" },
+  { id: 55, title: "Old Men's Friend", image: Aesthetics3, link: "#" , height: 20,
+    width: 15, },
 
-  { id: 49, title: "Pencil Artwork", image: pencil9, link: "#" },
-  { id: 58, title: "Aesthetic Premium", image: Aesthetics6, link: "#" },
+  { id: 49, title: "The Evening Sip ", image: pencil9, link: "#" ,  height: 25,
+    width: 20, },
+  { id: 58, title: "Colours of The Mind", image: Aesthetics6, link: "#" ,  height: 25,
+    width: 18, },
 
   // { id: 64, title: "Jua Collection", image: jua5, link: "#" },
 
-  { id: 36, title: "Motor Artwork", image: motor11, link: "#" },
+  { id: 36, title: "Noir Elan", image: motor11, link: "#" ,  height: 30,
+    width: 20, },
 
-  { id: 37, title: "Motor Artwork", image: motor112, link: "#" },
+  { id: 37, title: "The Midnight Cadillac", image: motor112, link: "#" , height:25 , width:25, },
 
-  { id: 48, title: "Pencil Artwork", image: pencil8, link: "#" },
+  { id: 48, title: "The Morning Street", image: pencil8, link: "#" , height: 35,
+    width: 20, },
 
-  { id: 32, title: "Motor Artwork", image: motor7, link: "#" },
+  { id: 32, title: "Scarlet Velocity", image: motor7, link: "#" , height: 30,
+    width: 18, },
 
-  { id: 47, title: "Pencil Artwork", image: pencil7, wallImage:pencil13 ,  link: "#" },
-  { id: 63, title: "Jua Collection", image: jua4, link: "#" },
+  {
+    id: 47,
+    title: "The Many",
+    image: pencil7,
+    wallImage: pencil13,
+    link: "#",
+     height: 30,
+    width: 20,
+  },
+  { id: 63, title: "Your Majesty ", image: jua4, link: "#",   height: 30,
+    width: 25, },
 
-  { id: 34, title: "Motor Artwork", image: motor9, link: "#" },
+  { id: 34, title: "Vroom Town", image: motor9, link: "#" ,  height: 35,
+    width: 20, },
 
-  { id: 70, title: "Madira Artwork", image: madira3, link: "#" },
-  { id: 57, title: "Aesthetic Premium", image: Aesthetics5, link: "#" },
+  { id: 70, title: "Into The Pour ", image: madira3, link: "#" ,  height: 30,
+    width: 20,
+ },
+  { id: 57, title: "Mrs. Bijou", image: Aesthetics5, link: "#" ,   height: 25,
+    width: 18, },
 
-  { id: 60, title: "Jua Collection", image: jua1, link: "#" },
-
-  // ---------------- Motor ----------------
-  // { id: 26, title: "Motor Artwork", image: motor1, link: "#" },
-  // { id: 27, title: "Motor Artwork", image: motor2, link: "#" },
-
-  // ---------------- Pencil ----------------
-
-  // { id: 42, title: "Pencil Artwork", image: pencil2, link: "#" },
-  // { id: 43, title: "Pencil Artwork", image: pencil3, link: "#" },
-
-  // { id: 46, title: "Pencil Artwork", image: pencil6, link: "#" },
-
-  // ---------------- Aesthetics ----------------
-
-  // ---------------- Jua ----------------
-
-  // ---------------- Madira ----------------
-
-  // { id: 72, title: "Madira Artwork", image: madira5, link: "#" },
+  { id: 60, title: "The Last Bet", image: jua1, link: "#" ,  height: 40,
+    width: 30, },
 ];
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -673,7 +586,8 @@ const Painting = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6 font-[Amita] text-lg md:text-2xl font-light"
         >
-          Museum-grade, high-quality prints that bring striking visuals with lasting brilliance.
+          Museum-grade, high-quality prints that bring striking visuals with
+          lasting brilliance.
         </motion.p>
       </div>
 
@@ -695,19 +609,21 @@ const Painting = ({ cart, setCart }) => {
                 className="block bg-white shadow-lg border border-gray-200 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#38b2ac] transition-all duration-700 p-2 md:p-5"
               >
                 <div className="overflow-hidden rounded-2xl">
-                                  <motion.img
-                                    src={product?.image || product?.wallImage}
-                                    alt={product?.title}
-                                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
-                                    whileHover={{ scale: 1.1 }}
-                                  />
-                                </div>
+                  <motion.img
+                    src={product?.image || product?.wallImage}
+                    alt={product?.title}
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
+                    whileHover={{ scale: 1.1 }}
+                  />
+                </div>
                 <div className="pt-4 text-center">
                   <motion.button
+                    whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
                   >
-                    Buy Now <ArrowRight size={16} />
+                    {/* Explore Piece → */}
+                    Buy Now →
                   </motion.button>
                 </div>
               </a>

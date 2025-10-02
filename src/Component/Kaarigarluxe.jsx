@@ -28,6 +28,10 @@ import Img23 from "./photos/luxe24.jpg";
 import Img24 from "./photos/luxe25.png";
 import Img25 from "./photos/luxe26.png";
 
+import Img26 from "./photos/img8.jpg";
+import Img27 from "./photos/img9.jpg";
+import Img28 from "./photos/img10.jpg";
+import Img29 from "./photos/img11.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -177,6 +181,36 @@ const originals = [
     wallImage:Img25,
     link: "#",
   },
+  {
+    id: 19,
+    title: "Euphoria",
+    basePrice: 7499,
+    wallImage: Img26,
+    link: "#",
+  },
+  {
+    id: 20,
+    title: "Trilogue(Set of 3 )",
+    basePrice: 7499,
+    image: Img27,
+    wallImage: Img28,
+    link: "#",
+      paintFixPrice : 6000,
+    handmadeFixPrice : 16500,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 21,
+    title: "Timeless Peaks (Set of 3)",
+    basePrice: 7499,
+    wallImage: Img29,
+    link: "#",
+      paintFixPrice : 6000,
+    handmadeFixPrice : 16000,
+    resizeOption: false,
+    frameOption: false,
+  },
 ];
 
 const fadeInUp = {
@@ -283,12 +317,14 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    className=" inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
-                  >
-                    Buy Now <ArrowRight size={16} />
-                  </motion.button>
+                   <motion.button
+                                      whileHover={{ scale: 1.05 }}
+                                      whileTap={{ scale: 0.95 }}
+                                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                                    >
+                                      {/* Explore Piece → */}
+                                      Buy Now →
+                                    </motion.button>
                 </div>
               </a>
             </TiltCard>

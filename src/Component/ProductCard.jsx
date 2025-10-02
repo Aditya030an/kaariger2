@@ -32,8 +32,8 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   const [artType, setArtType] = useState("print");
   const [price, setPrice] = useState(0);
   const [selectedFrame, setSelectedFrame] = useState("Matte Black");
-  const [customWidth, setCustomWidth] = useState("");
-  const [customHeight, setCustomHeight] = useState("");
+  const [customWidth, setCustomWidth] = useState(product?.height || "");
+  const [customHeight, setCustomHeight] = useState(product?.width || "");
   const [mainImage, setMainImage] = useState(
     product?.image || product?.wallImage
   );
@@ -57,6 +57,13 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   ];
 
   useEffect(() => {
+    if (
+      product?.handmadeOption !== undefined &&
+      product.handmadeOption === true
+    ) {
+      setArtType("handMade");
+    }
+
     if (customWidth && customHeight) {
       const width = parseFloat(customWidth);
       const height = parseFloat(customHeight);
@@ -78,32 +85,40 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
         }
       }
 
-      // If category has price > 0, add it per inch
-      // if (categoryPrice[category] > 0) {
-      //   rate += categoryPrice[category];
-      // }
-
       setPrice(area * rate);
-    } else if(category === "artifacts"){
-      setPrice(product?.basePrice || 24000)
-    }
-    
-    else {
+    } else if (category === "artifacts" || product?.resizeOption === false) {
+      setPrice(product?.basePrice || 24000);
+    } else {
       setPrice(0);
+    }
+
+    if (
+      product?.handmadeFixPrice !== undefined ||
+      product?.paintFixPrice !== undefined
+    ) {
+      if (artType === "handMade") {
+        setPrice(product?.handmadeFixPrice);
+      } else {
+        setPrice(product?.paintFixPrice);
+      }
     }
   }, [artType, customWidth, customHeight, category]);
 
   const handleAdd = () => {
-    if(category !== "artifacts"){
+    if (category !== "artifacts" && product?.resizeOption === undefined) {
       if (!customWidth || !customHeight) return;
     }
 
-    if(category === "artifacts"){
-      setPrice(product?.basePrice || 24000)
+    if (category === "artifacts") {
+      setPrice(product?.basePrice || 24000);
     }
 
-    const width = ( parseFloat(customWidth) || 0);
-    const height = (parseFloat(customHeight) || 0);
+    if (product?.resizeOption === false) {
+      setPrice(product?.basePrice);
+    }
+
+    const width = parseFloat(customWidth) || 0;
+    const height = parseFloat(customHeight) || 0;
 
     const cartItem = {
       ...product,
@@ -128,7 +143,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
   const getFrameWidth = () => {
     if (selectedFrame === "No Frame") return "0px";
-    return "20px";
+    return "10px";
   };
 
   return (
@@ -154,14 +169,14 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
             <div className="flex flex-col-reverse md:flex-row w-full lg:gap-4">
               {/* Thumbnails List */}
               <div className="flex md:flex-col gap-3 w-40 md:w-20">
-                {[product?.image, product?.wallImage]
+                {[product?.image, product?.wallImage , product?.moreImage]
                   .filter(Boolean)
                   .map((img, index) => (
                     <img
                       key={index}
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className={`w-16 h-16 object-cover rounded border cursor-pointer ${
+                      className={`w-16 h-16 object-contain rounded border cursor-pointer ${
                         img === mainImage ? "border-2 border-black" : "border"
                       }`}
                       onClick={() => setMainImage(img)}
@@ -174,21 +189,27 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                 <img
                   src={mainImage}
                   alt="Main Preview"
-                  className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-cover"
+                  className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-contain border-2 border-solid border-red-800"
                   style={{
                     border:
                       mainImage === product?.wallImage ||
-                      selectedFrame === "No Frame" || category === "artifacts"
+                      mainImage === product?.moreImage ||
+                      selectedFrame === "No Frame" ||
+                      category === "artifacts"
                         ? "0px solid transparent"
                         : `${getFrameWidth()} solid ${getFrameBorderColor()}`,
                     borderRadius:
-                      mainImage === product?.wallImage ||
-                      selectedFrame === "No Frame" || category === "artifacts"
+                      mainImage === product?.wallImage || 
+                      mainImage === product?.moreImage || 
+                      selectedFrame === "No Frame" ||
+                      category === "artifacts"
                         ? "0px"
                         : "4px",
                     boxShadow:
                       mainImage === product?.wallImage ||
-                      selectedFrame === "No Frame" || category === "artifacts"
+                      mainImage === product?.moreImage ||
+                      selectedFrame === "No Frame" ||
+                      category === "artifacts"
                         ? "none"
                         : "0 4px 12px rgba(0,0,0,0.15)",
                     transition: "all 0.3s ease",
@@ -197,79 +218,90 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
               </div>
             </div>
 
-            {/* <h2 className="text-2xl font-serif font-bold text-center">
-              {productName}
-            </h2> */}
-{
-  category !== "artifacts" && 
-            <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-2">
-              {/* <div className="flex flex-col gap-1 text-base">
-                <span className="font-semibold">Best Price:</span>
-                <p>
-                  ₹
-                  {product?.bestPrice?.toLocaleString() ||
-                    product?.basePrice?.toLocaleString()}
-                </p>
-              </div> */}
-              <div className="w-full flex items-center justify-between gap-1 text-base">
-                <span className="font-medium text-lg">
-                  Price After Size Selection:
-                </span>
-                <p className="text-xl  font-semibold text-center">
-                  ₹ {category === "artifacts" ? (product?.basePrice?.toLocaleString() || 24000000) : price?.toLocaleString()}
-                </p>
-              </div>
-            </div>
-}
+            {category !== "artifacts" &&
+              (product?.resizeOption !== undefined
+                ? product.resizeOption === true
+                : true) && (
+                <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-2">
+                  <div className="w-full flex items-center justify-between gap-1 text-base">
+                    <span className="font-medium text-lg">
+                      Price After Size Selection:
+                    </span>
+                    <p className="text-xl  font-semibold text-center">
+                      ₹{" "}
+                      {product?.resizeOption === false
+                        ? product?.basePrice?.toLocaleString()
+                        : null}
+                      {category === "artifacts"
+                        ? product?.basePrice?.toLocaleString() || 24000
+                        : price?.toLocaleString()}
+                    </p>
+                  </div>
+                </div>
+              )}
           </div>
 
           {/* Right Side */}
           <div className="flex-1 flex flex-col gap-6">
             {/* Frame or Print */}
-            {(category !== "artifacts" && category !== "poster") && (
-              <button
-                onClick={() => setArtType("handMade")}
-                className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
-                  artType === "handMade" ? "bg-zinc-700 text-white" : "bg-white"
-                }`}
-              >
-                Handmade
-              </button>
-            )}
-            {category !== "artifacts" && (
-              <button
-                onClick={() => setArtType("print")}
-                className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
-                  artType === "print" ? "bg-zinc-700 text-white" : "bg-white"
-                }`}
-              >
-                Print
-              </button>
-            )}
-            {category === "artifacts" && productName === "Glitch Clock (Clay)" && (
-              <div>
-                <p className="text-sm text-gray-500 mb-2">
-                  Selected Clock Color: {selectedFrame}
-                </p>
-                <div className="flex gap-3 flex-wrap">
-                  {clockColor.map((frame) => (
-                    <button
-                      key={frame?.name}
-                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 flex items-center justify-center
+            {/* Handmade Button */}
+            {category !== "artifacts" &&
+              category !== "poster" &&
+              (product?.handmadeOption !== undefined
+                ? product.handmadeOption === true
+                : true) && (
+                <button
+                  onClick={() => setArtType("handMade")}
+                  className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
+                    artType === "handMade"
+                      ? "bg-zinc-700 text-white"
+                      : "bg-white"
+                  }`}
+                >
+                  Handmade
+                </button>
+              )}
+
+            {/* Print Button */}
+            {category !== "artifacts" &&
+              (product?.paintingOption !== undefined
+                ? product.paintingOption === true
+                : true) && (
+                <button
+                  onClick={() => setArtType("print")}
+                  className={`border px-4 py-6 w-full rounded font-medium cursor-pointer ${
+                    artType === "print" ? "bg-zinc-700 text-white" : "bg-white"
+                  }`}
+                >
+                  Print
+                </button>
+              )}
+
+            {category === "artifacts" &&
+              productName === "Glitch Clock (Clay)" && (
+                <div>
+                  <p className="text-sm text-gray-500 mb-2">
+                    Selected Clock Color: {selectedFrame}
+                  </p>
+                  <div className="flex gap-3 flex-wrap">
+                    {clockColor.map((frame) => (
+                      <button
+                        key={frame?.name}
+                        className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 flex items-center justify-center
         ${frame?.color} 
         ${selectedFrame === frame?.name ? "ring-2 ring-black" : ""}`}
-                      onClick={() => setSelectedFrame(frame?.name)}
-                      title={frame?.name}
-                    >
-                      {frame?.name === "No Frame" && (
-                        <IoClose size={20} className="text-gray-600" />
-                      )}
-                    </button>
-                  ))}
+                        onClick={() => setSelectedFrame(frame?.name)}
+                        title={frame?.name}
+                      >
+                        {frame?.name === "No Frame" && (
+                          <IoClose size={20} className="text-gray-600" />
+                        )}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-            {category !== "artifacts" || mainImage === product?.wallImage && (
+              )}
+            {category !== "artifacts" && mainImage !== product?.wallImage && mainImage !== product?.moreImage && (
               <div>
                 <h3 className="text-xl font-serif font-bold">Frame Style</h3>
                 <p className="text-sm text-gray-500 mb-2">
@@ -294,63 +326,66 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
               </div>
             )}
 
-            {category !== "artifacts" && (
-              <div>
-                <h3 className="text-xl font-serif font-bold mb-2">
-                  Enter Custom Size (Inches)
-                </h3>
-                <div className="grid grid-cols-2 gap-4">
+            {product?.resizeOption === false
+              ? null
+              : category !== "artifacts" && (
                   <div>
-                    <label className="block text-sm font-medium mb-1">
-                      Width
-                    </label>
-                    <input
-                      type="number"
-                      min="1"
-                      max="100"
-                      step="0.01"
-                      value={customWidth}
-                      placeholder="12.00"
-                      onChange={(e) => setCustomWidth(e.target.value)}
-                      className="w-full px-3 py-2 border rounded"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-1">
-                      Height
-                    </label>
-                    <input
-                      type="number"
-                      min="1"
-                      max="100"
-                      step="0.01"
-                      value={customHeight}
-                      placeholder="15.00"
-                      onChange={(e) => setCustomHeight(e.target.value)}
-                      className="w-full px-3 py-2 border rounded"
-                    />
-                  </div>
-                </div>
+                    <h3 className="text-xl font-serif font-bold mb-2">
+                      Enter Custom Size (Inches)
+                    </h3>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium mb-1">
+                          Width
+                        </label>
+                        <input
+                          type="number"
+                          min="1"
+                          max="100"
+                          step="0.01"
+                          value={customWidth}
+                          placeholder="12.00"
+                          onChange={(e) => setCustomWidth(e.target.value)}
+                          className="w-full px-3 py-2 border rounded"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium mb-1">
+                          Height
+                        </label>
+                        <input
+                          type="number"
+                          min="1"
+                          max="100"
+                          step="0.01"
+                          value={customHeight}
+                          placeholder="15.00"
+                          onChange={(e) => setCustomHeight(e.target.value)}
+                          className="w-full px-3 py-2 border rounded"
+                        />
+                      </div>
+                    </div>
 
-                {customWidth && customHeight && (
-                  <div className="mt-3 p-2 bg-gray-50 rounded text-sm">
-                    <p>
-                      <b>Custom Size:</b> {customWidth} × {customHeight} inches
-                    </p>
-                    <p>
-                      <b>Area:</b>{" "}
-                      {(
-                        parseFloat(customWidth) * parseFloat(customHeight)
-                      ).toFixed(2)}{" "}
-                      sq inches
-                    </p>
+                    {customWidth && customHeight && (
+                      <div className="mt-3 p-2 bg-gray-50 rounded text-sm">
+                        <p>
+                          <b>Custom Size:</b> {customWidth} × {customHeight}{" "}
+                          inches
+                        </p>
+                        <p>
+                          <b>Area:</b>{" "}
+                          {(
+                            parseFloat(customWidth) * parseFloat(customHeight)
+                          ).toFixed(2)}{" "}
+                          sq inches
+                        </p>
+                      </div>
+                    )}
                   </div>
                 )}
-              </div>
-            )}
 
             {/* Add to Cart */}
-            {category !== "artifacts" && (
+            {category !== "artifacts" && product?.resizeOption !== false && (
               <button
                 onClick={handleAdd}
                 disabled={!customWidth || !customHeight}
@@ -361,22 +396,22 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   : "Add to Cart"}
               </button>
             )}
-            {category === "artifacts" && (
+            {(category === "artifacts" || product?.resizeOption === false) && (
               <div className="w-full">
-              <div className="w-full flex items-center justify-between gap-1 text-base mb-5">
-                <span className="font-medium text-lg">
-                  Price Of Artifact:
-                </span>
-                <p className="text-xl  font-semibold text-center">
-                  ₹ {price}
-                </p>
-              </div>
-              <button
-                onClick={handleAdd}
-                className="w-full bg-zinc-700 text-white py-3 rounded hover:bg-zinc-800 disabled:bg-gray-300"
-              >
-                Add to Cart
-              </button>
+                <div className="w-full flex items-center justify-between gap-1 text-base mb-5">
+                  <span className="font-medium text-lg">
+                    Price Of Artifact:
+                  </span>
+                  <p className="text-xl  font-semibold text-center">
+                    ₹ {price}
+                  </p>
+                </div>
+                <button
+                  onClick={handleAdd}
+                  className="w-full bg-zinc-700 text-white py-3 rounded hover:bg-zinc-800 disabled:bg-gray-300"
+                >
+                  Add to Cart
+                </button>
               </div>
             )}
           </div>

@@ -1,31 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/motor6.jpeg";
-// import kaarigar1 from "./photos/Cinema.jpeg";
-// import kaarigar2 from "./photos/Cinema1.jpeg";
-// import kaarigar3 from "./photos/Cinema2.jpeg";
-// import Img4 from "./photos/Cinema3.jpeg";
-// import Img5 from "./photos/Cinema4.jpeg";
-// import Img6 from "./photos/Cinema5.jpeg";
-// import Img7 from "./photos/Cinema6.jpeg";
-// import Img8 from "./photos/Cinema7.jpeg";
-// import Img9 from "./photos/Cinema8.jpeg";
-
-// import Img11 from "./photos/Cinema10.jpeg";
-
-// import Img13 from "./photos/Cinema12.jpg";
-// import Img14 from "./photos/Cinema13.jpg";
-// import Img15 from "./photos/Cinema14.jpg";
-// import Img16 from "./photos/Cinema15.jpg";
-// import Img17 from "./photos/Cinema16.jpg";
-// import Img18 from "./photos/Cinema17.jpg";
-// import Img19 from "./photos/Cinema18.jpg";
-// import Img20 from "./photos/Cinema19.jpg";
-// import Img21 from "./photos/Cinema20.jpg";
-// import Img22 from "./photos/Cinema21.jpg";
-// import Img23 from "./photos/Cinema22.jpg";
 
 import Img255 from "./photos/best11.jpeg";
 import Img245 from "./photos/cinema.jpg";
@@ -89,8 +65,15 @@ import madira4 from "./photos/madira4.png";
 
 import madira5 from "./photos/madira5.png";
 
+import Img26 from "./photos/img1.jpg";
+import Img27 from "./photos/img2.jpg";
+import Img28 from "./photos/img3.jpg";
+import Img29 from "./photos/img4.jpg";
+import Img30 from "./photos/img5.jpg";
+import Img31 from "./photos/img6.jpg";
+import Img32 from "./photos/img7.jpg";
+
 import ProductCart from "./ProductCard";
-import Card from "./Card";
 
 // TiltCard component
 function TiltCard({ children }) {
@@ -122,6 +105,8 @@ const originals = [
     // basePrice: ,
     image: Aesthetics6,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 2,
@@ -129,6 +114,8 @@ const originals = [
     basePrice: 8599,
     image: Aesthetics7,
     link: "#",
+    height: 36,
+    width: 25,
   },
   {
     id: 3,
@@ -136,6 +123,8 @@ const originals = [
     basePrice: 7299,
     image: motor3,
     link: "#",
+    height: 25,
+    width: 25,
   },
 
   {
@@ -144,6 +133,8 @@ const originals = [
     basePrice: 7399,
     image: Img255,
     link: "#",
+    height: 30,
+    width: 20,
   },
   {
     id: 5,
@@ -152,6 +143,8 @@ const originals = [
     image: motor32,
     wallImage: motor4,
     link: "#",
+    height: 36,
+    width: 25,
   },
   {
     id: 6,
@@ -160,6 +153,8 @@ const originals = [
     image: motor55,
     wallImage: motor5,
     link: "#",
+    height: 36,
+    width: 25,
   },
   {
     id: 7,
@@ -168,6 +163,8 @@ const originals = [
     image: motor6,
     wallImage: motor1,
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 8,
@@ -175,6 +172,8 @@ const originals = [
     basePrice: 7299,
     image: madira3,
     link: "#",
+    height: 30,
+    width: 20,
   },
   {
     id: 9,
@@ -182,6 +181,8 @@ const originals = [
     basePrice: 7399,
     image: madira4,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 10,
@@ -189,6 +190,8 @@ const originals = [
     basePrice: 8599,
     image: motor7,
     link: "#",
+    height: 30,
+    width: 18,
   },
 
   {
@@ -198,6 +201,8 @@ const originals = [
     image: motor10,
     wallImage: motor12,
     link: "#",
+    height: 20,
+    width: 15,
   },
   {
     id: 12,
@@ -205,6 +210,8 @@ const originals = [
     basePrice: 7999,
     image: jua1,
     link: "#",
+    height: 40,
+    width: 30,
   },
   {
     id: 13,
@@ -212,6 +219,8 @@ const originals = [
     basePrice: 6499,
     image: Img245,
     link: "#",
+    height: 25,
+    width: 20,
   },
   {
     id: 15,
@@ -219,6 +228,8 @@ const originals = [
     basePrice: 7999,
     image: Aesthetics3,
     link: "#",
+    height: 20,
+    width: 15,
   },
 
   {
@@ -228,6 +239,8 @@ const originals = [
     image: pencil1,
     wallImage: pencil2,
     link: "#",
+    height: 30,
+    width: 20,
   },
   {
     id: 17,
@@ -236,6 +249,8 @@ const originals = [
     image: Artifacts1,
     wallImage: Artifacts2,
     link: "#",
+    height: 35,
+    width: 20,
   },
   // {
   //   id: 42,
@@ -250,6 +265,8 @@ const originals = [
     basePrice: 7299,
     image: pencil12,
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 19,
@@ -258,6 +275,8 @@ const originals = [
     image: pencil4,
     wallImage: pencil3,
     link: "#",
+    height: 25,
+    width: 20,
   },
   // {
   //   id: 45,
@@ -273,6 +292,8 @@ const originals = [
     image: pencil7,
     wallImage: pencil13,
     link: "#",
+    height: 30,
+    width: 20,
   },
 
   {
@@ -281,6 +302,8 @@ const originals = [
     basePrice: 7999,
     image: pencil9,
     link: "#",
+    height: 25,
+    width: 20,
   },
   {
     id: 23,
@@ -288,6 +311,8 @@ const originals = [
     basePrice: 8599,
     image: motor11,
     link: "#",
+    height: 30,
+    width: 20,
   },
 
   {
@@ -296,6 +321,8 @@ const originals = [
     basePrice: 7299,
     image: motor13,
     link: "#",
+    height: 40,
+    width: 25,
   },
   {
     id: 25,
@@ -303,6 +330,8 @@ const originals = [
     basePrice: 8599,
     image: Aesthetics1,
     link: "#",
+    height: 30,
+    width: 25,
   },
   {
     id: 26,
@@ -310,6 +339,8 @@ const originals = [
     basePrice: 8599,
     image: pencil11,
     link: "#",
+    height: 30,
+    width: 25,
   },
 
   {
@@ -318,6 +349,8 @@ const originals = [
     basePrice: 7399,
     image: jua3,
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 28,
@@ -325,6 +358,8 @@ const originals = [
     basePrice: 8599,
     image: jua4,
     link: "#",
+    height: 30,
+    width: 25,
   },
 
   {
@@ -333,6 +368,8 @@ const originals = [
     basePrice: 7999,
     image: motor112,
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 30,
@@ -340,6 +377,8 @@ const originals = [
     basePrice: 7299,
     image: pencil8,
     link: "#",
+    height: 35,
+    width: 20,
   },
   {
     id: 31,
@@ -347,6 +386,8 @@ const originals = [
     basePrice: 8599,
     image: jua7,
     link: "#",
+    height: 35,
+    width: 35,
   },
   {
     id: 32,
@@ -354,6 +395,8 @@ const originals = [
     basePrice: 7399,
     image: jua8,
     link: "#",
+    height: 40,
+    width: 25,
   },
 
   {
@@ -370,6 +413,8 @@ const originals = [
     image: madira2,
     wallImage: madira5,
     link: "#",
+    height: 30,
+    width: 30,
   },
 
   {
@@ -378,6 +423,8 @@ const originals = [
     basePrice: 7399,
     image: Aesthetics2,
     link: "#",
+    height: 30,
+    width: 25,
   },
 
   {
@@ -386,6 +433,8 @@ const originals = [
     basePrice: 6499,
     image: Aesthetics4,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 39,
@@ -394,6 +443,8 @@ const originals = [
     image: pencil5,
     wallImage: pencil6,
     link: "#",
+    height: 35,
+    width: 18,
   },
   {
     id: 40,
@@ -401,6 +452,8 @@ const originals = [
     basePrice: 7399,
     image: jua6,
     link: "#",
+    height: 40,
+    width: 25,
   },
   {
     id: 41,
@@ -408,6 +461,8 @@ const originals = [
     basePrice: 7299,
     image: Aesthetics5,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 42,
@@ -415,6 +470,8 @@ const originals = [
     basePrice: 7399,
     image: pencil10,
     link: "#",
+    height: 25,
+    width: 18,
   },
 
   {
@@ -424,6 +481,8 @@ const originals = [
     image: motor8,
     wallImage: motor2,
     link: "#",
+    height: 35,
+    width: 18,
   },
   {
     id: 44,
@@ -431,6 +490,81 @@ const originals = [
     basePrice: 7499,
     image: motor9,
     link: "#",
+    height: 35,
+    width: 20,
+  },
+  {
+    id: 45,
+    title: "Chirps on the wall(Set of 16)",
+    basePrice: 13500,
+    wallImage: Img26,
+    link: "#",
+    handmadeOption: true,
+    paintingOption: false,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 46,
+    title: "Sombra",
+    basePrice: 13500,
+    wallImage: Img27,
+    link: "#",
+  },
+  {
+    id: 47,
+    title: "Beige and Boujee(Set of 9)",
+    basePrice: 13500,
+    wallImage: Img28,
+    link: "#",
+    paintFixPrice : 6000,
+    handmadeFixPrice : 15000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 48,
+    title: "Leaflets (Set of 4)",
+    basePrice: 13500,
+    wallImage: Img29,
+    link: "#",
+    paintFixPrice : 3000,
+    handmadeFixPrice : 6000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 49,
+    title: "Between Two Worlds(Set of 3)",
+    basePrice: 13500,
+    wallImage: Img30,
+    link: "#",
+    paintFixPrice : 4000,
+    handmadeFixPrice : 13500,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 50,
+    title: "Stillness (Set of 6)",
+    basePrice: 13500,
+    wallImage: Img31,
+    link: "#",
+    paintFixPrice : 5000,
+    handmadeFixPrice : 13000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 51,
+    title: "Desert Bloom(Set of 2)",
+    basePrice: 13500,
+    wallImage: Img32,
+    link: "#",
+      paintFixPrice : 4000,
+    handmadeFixPrice : 11000,
+    resizeOption: false,
+    frameOption: false,
   },
 ];
 
@@ -533,10 +667,12 @@ const Painting = ({ cart, setCart }) => {
                     {product?.title}
                   </h3>
                   <motion.button
+                    whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
                   >
-                    Buy Now <ArrowRight size={16} />
+                    {/* Explore Piece → */}
+                    Buy Now →
                   </motion.button>
                 </div>
               </a>

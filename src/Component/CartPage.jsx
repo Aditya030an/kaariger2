@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 const CartPage = ({ cart, setCart }) => {
   const navigate = useNavigate();
 
-  console.log("card inside cartPage", cart);
-
   const frames = [
     { name: "No Frame", color: "bg-transparent", borderColor: "transparent" },
     { name: "Matte Black", color: "bg-black", borderColor: "#000000" },
@@ -16,16 +14,7 @@ const CartPage = ({ cart, setCart }) => {
   ];
 
   // Increase quantity
-  const increaseQty = (
-    id,
-    price,
-    height,
-    width,
-    artType,
-    selectedFrame,
-    category
-  ) => {
-
+  const increaseQty = (id, price, height, width, artType, selectedFrame, category) => {
     const updated = cart?.map((item) =>
       item?.id === id &&
       item?.price === price &&
@@ -41,15 +30,7 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Decrease quantity
-  const decreaseQty = (
-    id,
-    price,
-    height,
-    width,
-    artType,
-    selectedFrame,
-    category
-  ) => {
+  const decreaseQty = (id, price, height, width, artType, selectedFrame, category) => {
     const updated = cart
       ?.map((item) =>
         item?.id === id &&
@@ -67,16 +48,7 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Remove item
-  // Remove item
-  const removeItem = (
-    id,
-    price,
-    height,
-    width,
-    artType,
-    selectedFrame,
-    category
-  ) => {
+  const removeItem = (id, price, height, width, artType, selectedFrame, category) => {
     const updated = cart?.filter(
       (item) =>
         !(
@@ -92,8 +64,13 @@ const CartPage = ({ cart, setCart }) => {
     setCart(updated);
   };
 
+  // Clear all items
+  const clearCart = () => {
+    setCart([]);
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-gray-100 p-4 md:p-6">
       <h1 className="text-xl md:text-3xl font-bold mb-6">🛒 Your Cart</h1>
 
       {cart?.length === 0 ? (
@@ -104,53 +81,62 @@ const CartPage = ({ cart, setCart }) => {
             {cart?.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-2 md:p-4 rounded-lg shadow flex flex-col md:flex-row items-center justify-between"
+                className="bg-white p-3 md:p-4 rounded-lg shadow flex flex-col md:flex-row items-center justify-between"
               >
-                <div className="flex flex-col md:flex-row items-center gap-4">
+                {/* Product Info */}
+                <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
                   <img
-                    src={item?.image}
+                    src={item?.image || item?.wallImage}
                     alt={item?.title}
                     className="w-24 h-24 object-contain rounded"
                     style={{
                       border:
-                        item?.selectedFrame === "No Frame" || item?.category === "artifacts"
+                        item?.selectedFrame === "No Frame" ||
+                        item?.category === "artifacts" ||
+                        item?.image === undefined
                           ? "none"
-                          : `6px solid ${
+                          : `3px solid ${
                               frames.find((f) => f.name === item?.selectedFrame)
                                 ?.borderColor || "#000"
                             }`,
                     }}
                   />
-                  <div>
-                    {item?.category !== "poster" && item?.category !== "cinemapremi" && (
-                      <h2 className="text-lg font-semibold">{item?.title}</h2>
-                    )}
-                    <div className="flex items-center justify-start flex-wrap gap-2">
+                  <div className="flex flex-col">
+                    {item?.category !== "poster" &&
+                      item?.category !== "cinemapremi" && (
+                        <h2 className="text-lg font-semibold">{item?.title}</h2>
+                      )}
+                    <div className="flex items-center flex-wrap gap-2 text-sm">
+                      {item?.category !== "artifacts" &&
+                        item?.resizeOption === undefined && (
+                          <p className="text-gray-700">
+                            Size: {item?.width}" x {item?.height}" |
+                          </p>
+                        )}
                       {item?.category !== "artifacts" && (
-                        <p className="text-gray-700 text-sm capitalize">
-                          Size: {item?.width}" x {item?.height}" | 
+                        <p className="text-gray-700">
+                          Type: {item?.artType}
                         </p>
                       )}
-                      <p className="text-gray-700 text-sm capitalize">
-                        Type: {item?.artType}
-                      </p>
                     </div>
-                    {
-                      item?.category !== "artifacts" &&
-                    <p className="text-gray-700 text-sm capitalize">
-                      Frame: {item?.selectedFrame}
-                    </p>
-                    }
-                    {
-                      item?.category === "artifacts" && item?.title === "Glitch Clock (Clay)" &&
-                    <p className="text-gray-700 text-sm capitalize">
-                      Clock Color: {item?.selectedFrame}
-                    </p>
-                    }
+                    {item?.category !== "artifacts" &&
+                      item?.frameOption === undefined && (
+                        <p className="text-gray-700 text-sm">
+                          Frame: {item?.selectedFrame}
+                        </p>
+                      )}
+                    {item?.category === "artifacts" &&
+                      item?.title === "Glitch Clock (Clay)" && (
+                        <p className="text-gray-700 text-sm">
+                          Clock Color: {item?.selectedFrame}
+                        </p>
+                      )}
 
                     <p className="text-sm text-gray-500">
                       Final Price: ₹{item?.price?.toLocaleString()}
                     </p>
+
+                    {/* Qty Controls */}
                     <div className="flex items-center mt-2 gap-2">
                       <button
                         onClick={() =>
@@ -186,11 +172,14 @@ const CartPage = ({ cart, setCart }) => {
                         +
                       </button>
                     </div>
+
                     <p className="mt-2 text-teal-600 font-semibold">
                       Subtotal: ₹{(item.price * item.quantity).toLocaleString()}
                     </p>
                   </div>
                 </div>
+
+                {/* Remove Button */}
                 <button
                   onClick={() =>
                     removeItem(
@@ -203,7 +192,7 @@ const CartPage = ({ cart, setCart }) => {
                       item.category
                     )
                   }
-                  className="mt-4 md:mt-0 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                  className="mt-4 md:mt-0 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 w-full md:w-auto"
                 >
                   Remove
                 </button>
@@ -211,16 +200,26 @@ const CartPage = ({ cart, setCart }) => {
             ))}
           </div>
 
-          <div className="mt-8 text-right">
-            <h3 className="text-xl font-semibold">
+          {/* Cart Summary */}
+          <div className="mt-8 flex flex-col md:flex-row items-center md:justify-between gap-4">
+            <h3 className="text-lg md:text-xl font-semibold">
               Total: ₹
               {cart
                 .reduce((total, item) => total + item.price * item.quantity, 0)
                 .toLocaleString()}
             </h3>
-            <button className="mt-3 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
-              Proceed to Checkout
-            </button>
+
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <button
+                onClick={clearCart}
+                className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 w-full sm:w-auto"
+              >
+                Clear All
+              </button>
+              <button className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto">
+                Proceed to Checkout
+              </button>
+            </div>
           </div>
         </>
       )}

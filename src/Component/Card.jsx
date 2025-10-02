@@ -6,7 +6,7 @@ const Card = ({ product, onClick }) => {
     <a
       href={product?.link}
       onClick={onClick}
-      className="group block bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-2 md:p-5"
+      className="group block backdrop-blur-xl bg-white border border-white/20 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-2 md:p-5"
     >
       {/* Image */}
       <div className="overflow-hidden rounded-2xl">
@@ -20,15 +20,17 @@ const Card = ({ product, onClick }) => {
 
       {/* Title + Button */}
       <div className="pt-4 text-center">
-        <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
+        <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-black mb-2">
           {product?.title}
         </h3>
         <motion.button
-          whileTap={{ scale: 0.95 }}
-          className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
-        >
-          Buy Now <ArrowRight size={16} />
-        </motion.button>
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                  >
+                    {/* Explore Piece → */}
+                    Buy Now →
+                  </motion.button>
       </div>
     </a>
   );

@@ -10,8 +10,9 @@ import carsoul3 from "./photos/slide4.png";
 import carsoul4 from "./photos/slide3.jpeg";
 import carsoul5 from "./photos/slide7.png";
 import carsoul6 from "./photos/slide8.png";
-
 import carsoul8 from "./photos/slidenew1.png";
+import carsoul7 from "./photos/slide9.png";
+
 import madira1 from "./photos/madira2.png";
 // import jua from "./photos/jua2.png";
 import Img9 from "./photos/poker.jpeg";
@@ -30,27 +31,29 @@ import About from "./About";
 import USP from "./USP";
 // import lux from "./photos/luxe7.png";
 import Cinema from "./photos/Cinema5.jpeg";
-// import Artifacts from "./photos/Artifact3.png";
-import Artifacts from "./photos/artifacts23.jpg";
+import Artifacts from "./photos/Artifacts11.jpg";
+import Furniture from "./photos/artifacts23.jpg";
 import Img12 from "./photos/motor11.jpeg";
 const items = [
   {
-    title: "Handmade Paintings",
-    // category: "Handmade Paintings",
-    image: cinema,
-    link: "/Painting", // Update to actual route
-  },
-  {
-    title: "Posters",
-    // category: "Posters",
-    image: Cinema,
-    link: "/Poster", // Update to actual route
+    title:"Furniture",
+    image:Furniture,
+    link:"/Furniture"
   },
   {
     title: "Artifacts",
-    // category: "Artifacts",
     image: Artifacts,
-    link: "/Artifacts", // Update to actual route
+    link: "/Artifacts", 
+  },
+  {
+    title: "Handmade Paintings",
+    image: cinema,
+    link: "/Painting", 
+  },
+  {
+    title: "Posters",
+    image: Cinema,
+    link: "/Poster", 
   },
 ];
 const images = [
@@ -62,6 +65,7 @@ const images = [
   carsoul4,
   carsoul5,
   carsoul3,
+  carsoul7,
 ];
 
 const Home = ({cart , setCart}) => {
@@ -109,7 +113,7 @@ const Home = ({cart , setCart}) => {
         }}
       />
 
-      <div className="relative w-full sm:h-[60vh] md:h-[100vh] overflow-hidden bg-black">
+      <div className="relative w-full sm:h-[60vh] md:h-[80vh] overflow-hidden bg-black">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -117,12 +121,12 @@ const Home = ({cart , setCart}) => {
           {images.map((src, index) => (
             <div
               key={index}
-              className="w-full h-full flex-none flex items-center justify-center"
+              className="w-full sm:h-[60vh] md:h-[80vh] flex-none flex items-center justify-center"
             >
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full h-full object-contain md:object-cover transition-transform duration-700 ease-in-out"
+                className="w-full sm:h-[60vh] md:h-[80vh] object-contain sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
@@ -166,45 +170,41 @@ const Home = ({cart , setCart}) => {
         </div>
       </div>
 
-      <div className="px-6 py-20 bg-[#f9f4ec]">
-        <h2 className="text-center text-4xl md:text-5xl font-serif font-bold mb-16 tracking-tight">
+      <div className="px-6 py-5 sm:py-20 bg-[#f9f4ec]">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-8 sm:mb-16 tracking-tight">
           <span className="text-gray-700 font-[Amita]">
             {" "}
             – Watchu Looking For?
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 max-w-7xl mx-auto">
           {items.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -10, scale: 1.01 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="rounded-2xl bg-white/70 shadow-xl backdrop-blur-md overflow-hidden group hover:shadow-2xl duration-300"
+              className="rounded-lg md:rounded-2xl bg-white/70  shadow-xl backdrop-blur-md overflow-hidden group hover:shadow-2xl duration-300"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden ">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-fill bg-gray-100 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
-              <div className="p-6">
-                <span className="inline-block bg-gray-200 text-gray-700 text-xs font-mono px-3 py-1 rounded-full mb-4">
-                  {item.category}
-                </span>
-                <h3 className="text-xl font-semibold font-serif text-gray-900 leading-snug">
+              <div className="p-3 lg:p-6">
+                <h3 className="text-[18px] lg:text-[24px] font-semibold font-serif text-gray-900 leading-snug whitespace-nowrap">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 mt-2">{item.description}</p>
-
                 <Link to={item.link}>
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 inline-flex items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
+                    // className="mt-2 inline-flex items-center gap-2 text-white bg-gray-800 px-2 md:px-5 py-2 text-[8px] md:text-[12px] font-semibold rounded-lg shadow hover:bg-black transition-colors"
+                    className="mt-2 inline-flex items-center justify-center w-full gap-2 text-black hover:text-white bg-white border-2 border-solid border-gray-800 px-2 md:px-5 py-2 text-[10px] lg:text-[12px] font-semibold rounded-lg shadow hover:bg-gray-800 transition-colors"
                   >
-                    Explore <ArrowRight size={16} />
+                    Explore <ArrowRight size={12} />
                   </motion.button>
                 </Link>
               </div>
@@ -215,7 +215,7 @@ const Home = ({cart , setCart}) => {
 
       {/* Other Sections */}
       <Bestseller cart={cart} setCart={setCart}/>
-      <Refresh />
+      <Refresh cart={cart} setCart={setCart} />
 
       <About />
 
@@ -232,31 +232,32 @@ const Home = ({cart , setCart}) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
           {collections.map((item, index) => (
-            <div
+            <a
               key={index}
-              className="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+              href={item?.link}
+              className="bg-white rounded-[8px] md:rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="overflow-hidden rounded-lg border border-gray-200 shadow">
+              <div className="overflow-hidden border border-gray-200 shadow">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-52 sm:h-72 md:h-80 lg:h-96 object-contain"
+                  className="w-full h-52 sm:h-72 md:h-80 lg:h-96 object-fill"
                 />
               </div>
-              <h3 className="text-center font-[Amita] mt-4 text-base sm:text-lg font-semibold tracking-wide text-gray-800">
+              <h3 className="text-center font-[Amita] py-2  text-[18px] sm:text-lg md:text-xl lg:text-2xl font-medium  tracking-wide text-gray-800">
                 {item.title}
               </h3>
-              <div className="text-center mt-2">
+              <div className="text-center pb-2 hidden 2xl:block">
                 <a href={item?.link} className="inline-block">
-                  <button className="group relative inline-flex items-center justify-center px-6 py-2 font-[Amita] text-gray-800 border border-gray-800 rounded-full overflow-hidden transition-all duration-300 hover:text-white">
+                  <button className="group relative inline-flex items-center justify-center text-[10px] lg:text-[12px] md:text-[16px] px-4 md:px-5 py-1 md:py-2 font-[Amita] text-gray-800 border border-gray-800 rounded-lg overflow-hidden transition-all duration-300 hover:text-white">
                     <span className="absolute inset-0 w-full h-full bg-gray-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    <span className="relative z-10">EXPLORE</span>
+                    <span className="relative z-10  ">EXPLORE</span>
                   </button>
                 </a>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

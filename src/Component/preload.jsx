@@ -117,7 +117,8 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from './photos/logo.jpeg';
+// import logo from './photos/logo.jpeg';
+import logo from './photos/logo_1.png';
 
 const title = 'KAARIGAR & CO.';
 

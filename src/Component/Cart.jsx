@@ -47,7 +47,7 @@ const Cart = () => {
                 transition={{ delay: i * 0.1 }}
               >
                 <div className="flex items-center gap-6">
-                  <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-xl" />
+                  <img src={item.image || item.wallImage} alt={item.name} className="w-24 h-24 object-cover rounded-xl" />
                   <div>
                     <h3 className="text-lg font-semibold">{item.name}</h3>
                     <p className="text-sm text-gray-600">Qty: {item.quantity}</p>

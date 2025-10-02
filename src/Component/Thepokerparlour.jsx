@@ -5,7 +5,6 @@ import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Jua.jpg";
 import kaarigar1 from "./photos/Jua.jpg";
 
-
 import Img4 from "./photos/jua3.png";
 import Img5 from "./photos/jua4.png";
 // import Img6 from "./photos/jua5.png";
@@ -13,7 +12,6 @@ import Img7 from "./photos/jua6.png";
 import Img8 from "./photos/juapremi.png";
 import Img9 from "./photos/poker.jpeg";
 import ProductCart from "./ProductCard";
-
 
 // TiltCard
 function TiltCard({ children }) {
@@ -46,6 +44,8 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
+    height:40,
+    width:30,
   },
 
   {
@@ -54,6 +54,8 @@ const originals = [
     basePrice: 7999,
     image: Img4,
     link: "#",
+    height:25,
+    width:25,
   },
   {
     id: 5,
@@ -61,6 +63,8 @@ const originals = [
     basePrice: 6499,
     image: Img5,
     link: "#",
+    height:30,
+    width:25,
   },
   // {
   //   id: 6,
@@ -75,6 +79,8 @@ const originals = [
     basePrice: 7999,
     image: Img7,
     link: "#",
+     height:40,
+    width:25,
   },
   {
     id: 8,
@@ -82,6 +88,8 @@ const originals = [
     basePrice: 6499,
     image: Img8,
     link: "#",
+    height:35,
+    width:35,
   },
   {
     id: 9,
@@ -89,6 +97,8 @@ const originals = [
     basePrice: 6499,
     image: Img9,
     link: "#",
+    height: 40,
+    width: 25,
   },
 ];
 
@@ -154,7 +164,8 @@ const Thepokerparlour = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-300 mt-6 text-lg md:text-2xl font-light"
         >
-          Explore the authentic soul of art, handwoven by our finest creators.
+          -We love betting don’t we? One-of-a-kind collection of artpieces for
+          the enthusiasts!
         </motion.p>
       </div>
 
@@ -179,7 +190,7 @@ const Thepokerparlour = ({ cart, setCart }) => {
                   <motion.img
                     src={product?.image}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-48 md:h-72 object-fill group-hover:scale-110 transition-transform duration-700 ease-out"
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>
@@ -187,12 +198,14 @@ const Thepokerparlour = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                  
+
                   <motion.button
+                    whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
                   >
-                    Buy Now <ArrowRight size={16} />
+                    {/* Explore Piece → */}
+                    Buy Now →
                   </motion.button>
                 </div>
               </a>

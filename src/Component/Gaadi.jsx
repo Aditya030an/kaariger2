@@ -54,6 +54,8 @@ const originals = [
     wallImage: kaarigar1,
     hoverImage: kaarigar1,
     link: "#",
+    height:25,
+    width:25,
   },
   {
     id: 2,
@@ -63,6 +65,8 @@ const originals = [
     wallImage: kaarigar2,
     hoverImage: kaarigar2,
     link: "#",
+    height:35,
+    width:18,
   },
   {
     id: 3,
@@ -70,24 +74,30 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
+    height:25,
+    width:25,
   },
   {
     id: 4,
-    title: "The Quiet Coast ",
+    title: "Claws Of Velocity ",
     basePrice: 8199,
     image: Img44,
     wallImage: Img4,
-    hoverImage: Img4, // NEW IMAGE shown on hover
+    hoverImage: Img4, 
     link: "#",
+    height:30,
+    width:20,
   },
   {
     id: 5,
-    title: "Claws Of Velocity",
+    title: "Metre Down ",
     basePrice: 6799,
     image: Img55,
     wallImage: Img5,
     hoverImage: Img5, // <-- hover image for id 5
     link: "#",
+    height:36,
+    width:25,
   },
   // {
   //   id: 6,
@@ -102,6 +112,8 @@ const originals = [
     basePrice: 8599,
     image: Img7,
     link: "#",
+    height:30,
+    width:18,
   },
   // {
   //   id: 8,
@@ -116,6 +128,8 @@ const originals = [
     basePrice: 7499,
     image: Img9,
     link: "#",
+    height:35,
+    width:20,
   },
   {
     id: 10,
@@ -124,6 +138,8 @@ const originals = [
     image: Img10,
     wallImage:Img14,
     link: "#",
+    height:20,
+    width:15,
   },
   {
     id: 11,
@@ -131,6 +147,8 @@ const originals = [
     basePrice: 8599,
     image: Img11,
     link: "#",
+    height:30,
+    width:20,
   },
   {
     id: 12,
@@ -145,6 +163,8 @@ const originals = [
     basePrice: 7499,
     image: Img13,
     link: "#",
+    height:40,
+    width:25,
   },
 ];
 
@@ -208,7 +228,7 @@ const Gaadi = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6  font-[Amita] text-lg md:text-2xl font-light"
         >
-          For the love of roaring engines, smokin tires and sheer power.
+          -Sublime & Timeless pieces, capturing speed,style and soul!
         </motion.p>
       </div>
 
@@ -253,12 +273,14 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    className="inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
-                  >
-                    Buy Now <ArrowRight size={16} />
-                  </motion.button>
+                   <motion.button
+                                      whileHover={{ scale: 1.05 }}
+                                      whileTap={{ scale: 0.95 }}
+                                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                                    >
+                                      {/* Explore Piece → */}
+                                      Buy Now →
+                                    </motion.button>
                 </div>
               </a>
             </TiltCard>

@@ -13,9 +13,11 @@ const newReleases = [
     category: "Canvas Craft",
     image: jua,
     snippet: "Add a burst of color and personality to your studio wall.",
+     height: 25,
+    width: 25,
   },
   {
-    title: "Printable Spring Party Hats",
+    title: "A Deep Breath ",
     category: "Art Printables",
     image: cinema,
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
@@ -33,7 +35,7 @@ const newReleases = [
     snippet: "Bring your walls to life with nostalgic charm.",
   },
   {
-    title: "Floral Sketch Frame",
+    title: "A Deep Breath ",
     category: "Sketch Art",
     image: cinema,
     snippet: "Minimalist and floral, perfect for modern spaces.",

@@ -1,6 +1,5 @@
-import  { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/cinema.jpg";
 import Img1 from "./photos/cinema.jpg";
@@ -11,7 +10,6 @@ import Img4 from "./photos/madira1.png";
 import Img5 from "./photos/artifacts30.png";
 
 import ProductCart from "./ProductCard";
-
 
 // --- VanillaTilt Wrapper
 function TiltCard({ children }) {
@@ -31,10 +29,11 @@ function TiltCard({ children }) {
 
 // --- Products list with base price (for reference)
 const products = [
-  { id: 1, title: "Classic Cinema", basePrice: 7499, image: Img1, link: "#" },
+  { id: 1, title: "A Deep Breath " , category:"handmade", basePrice: 7499, image: Img1, link: "#" },
   {
     id: 2,
     title: "Humané Centre Table",
+    category:"artifacts",
     basePrice: 30000,
     image: Img2,
     link: "#",
@@ -42,15 +41,17 @@ const products = [
   {
     id: 3,
     title: "Pop Goes The Orange",
+    category:"aestheticspremi",
     basePrice: 7499,
     image: Img3,
     wallImage: Img_3,
     link: "#",
   },
-  { id: 4, title: "The Double Pour", basePrice: 7999, image: Img4, link: "#" },
+  { id: 4, title: "The Double Pour",category:"handmade",  basePrice: 7999, image: Img4, link: "#" , height:35 , width:25 },
   {
     id: 5,
     title: "Retrovision Table Centre",
+    category:"artifacts",
     basePrice: 25000,
     image: Img5,
     link: "#",
@@ -139,10 +140,12 @@ const Bestsellerpage = ({ cart, setCart }) => {
                       {product?.title}
                     </h3>
                     <motion.button
+                      whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center gap-2 text-white bg-gray-600 px-5 py-2.5 rounded-full shadow hover:bg-gray-800 transition-colors"
+                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
                     >
-                      Buy Now <ArrowRight size={16} />
+                      {/* Explore Piece → */}
+                      Buy Now →
                     </motion.button>
                   </div>
                 </a>
@@ -158,7 +161,7 @@ const Bestsellerpage = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="bestseller"
+          category={selectedProduct?.category}
         />
       )}
     </section>

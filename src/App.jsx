@@ -27,6 +27,8 @@ import Kaarigarluxe from './Component/Kaarigarluxe.jsx';
 import Painting from './Component/Painting.jsx';
 import Poster from './Component/Poster.jsx';
 import Artifacts from './Component/Artifacts.jsx';
+import Furniture from './Component/Furniture.jsx';
+import ScrollToTopButton from "./Component/ScrollToTopButton.jsx"; 
 import WhatsAppButton from "./Component/WhatsAppButton"; 
 
 const App = () => {
@@ -57,7 +59,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
             <Route path="/Bestseller" element={<Bestseller />} /> 
-            <Route path="/Refresh" element={<Refresh />} />
+            <Route path="/Refresh" element={<Refresh cart={cart} setCart={setCart} />} />
             <Route path="/About" element={<About />} />
             <Route path="/USPSection" element={<USPSection />} />
             <Route path="/Landing" element={<Landing />} />
@@ -80,9 +82,11 @@ const App = () => {
             <Route path="/Painting" element={<Painting cart={cart} setCart={setCart} />} />
             <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} />
             <Route path="/Artifacts" element={<Artifacts cart={cart} setCart={setCart}/>} />
+            <Route path="/Furniture" element={<Furniture cart={cart} setCart={setCart}/>} />
           </Routes>
           <Footer />
           <WhatsAppButton/>
+           <ScrollToTopButton />
         </Router>
       )}
     </div>

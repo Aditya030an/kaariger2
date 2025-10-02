@@ -1,53 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Artifacts2.jpg";
-import { ArrowRight } from "lucide-react";
 
-import Img1 from "./photos/Artifacts.jpg";
-import Img3 from "./photos/Artifacts1.jpg";
-import Img4 from "./photos/Artifacts2.jpg";
-import Img5 from "./photos/Artifact3.png";
-import Img6 from "./photos/Artifacts4.png";
-import Img7 from "./photos/Artifacts5.png";
-import Img8 from "./photos/Artifacts6.jpg";
-
+import Img1 from "./photos/Artifact3.png";
 import Img9 from "./photos/Artifacts7.jpg";
-import Img10 from "./photos/Artifacts8.jpg";
 import Img11 from "./photos/Artifacts9.jpeg";
 import Img12 from "./photos/Artifacts10.jpg";
 import Img13 from "./photos/Artifacts11.jpg";
-import Img14 from "./photos/Artifacts12.jpg";
-
 import Img16 from "./photos/Artifacts14.jpg";
-import Img17 from "./photos/Artifacts15.jpg";
-import Img18 from "./photos/Artifacts16.jpg";
-import Img19 from "./photos/artifacts22.jpg";
 import Img20 from "./photos/artifacts23.jpg";
-import Img21 from "./photos/artifacts24.jpg";
-import Img22 from "./photos/artifacts25.jpg";
-import Img23 from "./photos/artifacts26.jpg";
-import Img24 from "./photos/artifacts29.png";
 import Img25 from "./photos/artifacts30.png";
-import Img26 from "./photos/artifacts31.jpg";
 import Img27 from "./photos/artifacts34.png";
-import Img28 from "./photos/artifacts35.jpg";
-import Img29 from "./photos/artifacts36.png";
-import Img30 from "./photos/artifacts39.jpg";
-import Img31 from "./photos/artifacts38.png";
-import Img32 from "./photos/artifacts37.png";
-import Img33 from "./photos/artifacts28.png";
-import Img34 from "./photos/artifacts27.png";
-import Img35 from "./photos/artifacts40.png";
-import Img36 from "./photos/artifacts41.png";
-import Img37 from "./photos/artifacts42.png";
-import Img38 from "./photos/artifacts43.png";
-import Img39 from "./photos/artifacts44.png";
-import Img40 from "./photos/artifacts45.png";
-
-
-
-
 
 import music from "./photos/music.png";
 
@@ -80,219 +44,71 @@ function TiltCard({ children }) {
 const originals = [
   {
     id: 1,
-    title: "Fisherman Incense Holder (Clay) ",
-    image: Img1,
-    basePrice: 2000,
-    link: "#",
-  },
-
-  {
-    id: 2,
-    title: "Hip Doggy Jewellery /Key Pot (Clay)",
-    image: Img3,
-    basePrice: 3500,
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Samurai Incense Holder (Clay)",
-    image: Img4,
-    basePrice: 2000,
-    link: "#",
-  },
-  {
-    id: 4,
     title: "Ace Centre Table ",
-    image: Img5,
+    image: Img1,
     basePrice: 30000,
     link: "#",
   },
   {
-    id: 5,
-    title: "⁠ ⁠Cards Wall Clock",
-    image: Img6,
-    basePrice: 1500,
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "⁠⁠Suits Serving Platters (Clay)",
-    image: Img7,
-    basePrice: 3000,
-    link: "#",
-  },
-  {
-    id: 7,
-    title: "Neat Tap ",
-    image: Img8,
-    basePrice: 2500,
-    link: "#",
-  },
-
-  {
-    id: 8,
+    id: 2,
     title: " ⁠Grande Arena",
     image: Img9,
     basePrice: 50000,
     link: "#",
   },
-
   {
-    id: 9,
-    title: "⁠⁠Giveth-Taketh Incense Holder (Clay)",
-    image: Img10,
-    basePrice: 3000,
-    link: "#",
-  },
-  {
-    id: 10,
+    id: 3,
     title: "Laundy Basket Ball Hoop",
     image: Img11,
     basePrice: 6000,
     link: "#",
   },
   {
-    id: 11,
+    id: 4,
     title: "Laundry Basketball Bin",
     image: Img12,
     basePrice: 4000,
     link: "#",
   },
   {
-    id: 12,
+    id: 5,
     title: "F1 Fender Stand Wooden",
     image: Img13,
     basePrice: 10000,
     link: "#",
   },
-  {
-    id: 13,
-    title: "Chakhna Pallete 1pc",
-    image: Img14,
-    basePrice: 1000,
-    link: "#",
-  },
 
   {
-    id: 14,
+    id: 6,
     title: "Casettee Centre Table",
     image: Img16,
     basePrice: 40000,
     link: "#",
   },
   {
-      id: 15,
-      title: "Eclipsera Pole (Clay)",
-      image: Img30,
-      wallImage:Img32,
-      moreImage:Img31,
-      basePrice: 35000,
-      link: "#",
-  },
-  {
-    id: 16,
+    id: 7,
     title: " ⁠⁠Boombox Shelf Table ",
     image: music,
     basePrice: 30000,
     link: "#",
   },
-  {
-    id: 17,
-    title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-    image: Img38,
-    basePrice: 10000,
-    link: "#",
-  },
-  {
-    id: 28,
-    title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-    image: Img39,
-    basePrice: 10000,
-    link: "#",
-  },
-  {
-    id: 29,
-    title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-    image: Img40,
-    basePrice: 10000,
-    link: "#",
-  },
-  {
-    id: 18,
-    title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
-    image: Img19,
-    basePrice: 30000,
-    link: "#",
-  },
 
   {
-    id: 19,
+    id: 8,
     title: "Humané Centre Table",
     image: Img20,
     basePrice: 30000,
     link: "#",
   },
-  {
-    id: 20,
-    title: "Glitch Clock (Clay)",
-    image: Img21,
-    basePrice: 2500,
-    link: "#",
-  },
 
   {
-    id: 21,
+    id: 9,
     title: "Retrovision Table Centre",
     image: Img25,
     wallImage: Img27,
     basePrice: 25000,
     link: "#",
   },
-  {
-    id: 22,
-    title: "Mr. Nook",
-    image: Img28,
-    wallImage: Img29,
-    basePrice: 25000,
-    link: "#",
-  },
-  {
-    id: 23,
-    title: "Mr. Funny  Pants 3pc Set (Clay)",
-    image: Img26,
-    basePrice: 7500,
-    link: "#",
-  },
-  {
-    id: 24,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img35,
-    basePrice: 2500,
-    link: "#",
-  },
-  {
-    id: 25,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img36,
-    basePrice: 2500,
-    link: "#",
-  },
-  {
-    id: 26,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img37,
-    basePrice: 2500,
-    link: "#",
-  },
-  {
-    id: 27,
-    title: "The Cardenza Coffee Table",
-    image: Img33,
-    wallImage:Img34,
-    basePrice: 27000,
-    link: "#",
-  },
-  
 ];
 
 const fadeInUp = {
@@ -346,7 +162,7 @@ const Painting = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-gray-900 tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-600 via-teal-400 to-teal-600 rounded-full"></span>
-          Artifacts 
+          Furniture Pieces
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -371,8 +187,10 @@ const Painting = ({ cart, setCart }) => {
             transition={{ delay: index * 0.2 }}
           >
             <TiltCard>
-              <Card product={product} onClick={() => setSelectedProduct(product)} />
-             
+              <Card
+                product={product}
+                onClick={() => setSelectedProduct(product)}
+              />
             </TiltCard>
           </motion.div>
         ))}

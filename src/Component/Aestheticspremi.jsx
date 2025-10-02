@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { frame, motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/madira5.png";
-// import kaarigar1 from "./photos/Aestheticspremi.jpeg";
 import kaarigar2 from "./photos/Aestheticspremi2.jpeg";
 import kaarigar3 from "./photos/Aestheticspremi3.jpeg";
 import Img4 from "./photos/Aestheticspremi5.jpeg";
@@ -37,6 +35,16 @@ import Img22 from "./photos/luxe23.jpg";
 import Img23 from "./photos/luxe24.jpg";
 import Img24 from "./photos/luxe25.png";
 import Img25 from "./photos/luxe26.png";
+import Img26 from "./photos/img1.jpg";
+import Img27 from "./photos/img3.jpg";
+import Img28 from "./photos/img4.jpg";
+import Img29 from "./photos/img5.jpg";
+import Img30 from "./photos/img6.jpg";
+import Img31 from "./photos/img7.jpg";
+import Img32 from "./photos/img8.jpg";
+import Img33 from "./photos/img9.jpg";
+import Img34 from "./photos/img10.jpg";
+import Img35 from "./photos/img11.jpg";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -64,7 +72,6 @@ function TiltCard({ children }) {
   );
 }
 
-
 // Products
 const originals = [
   {
@@ -73,6 +80,8 @@ const originals = [
     basePrice: 6499,
     image: kaarigar2,
     link: "#",
+    height: 30,
+    width: 25,
   },
   {
     id: 3,
@@ -80,6 +89,8 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
+    height: 30,
+    width: 25,
   },
   {
     id: 4,
@@ -87,6 +98,8 @@ const originals = [
     basePrice: 7999,
     image: Img4,
     link: "#",
+    height: 20,
+    width: 15,
   },
   {
     id: 5,
@@ -94,6 +107,8 @@ const originals = [
     basePrice: 7299,
     image: Img5,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 6,
@@ -101,14 +116,18 @@ const originals = [
     basePrice: 7299,
     image: Img6,
     link: "#",
+    height: 25,
+    width: 18,
   },
 
   {
-    id: 9,
+    id: 7,
     title: "Colours Of The Mind ",
     basePrice: 7299,
     image: Img8,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 8,
@@ -116,137 +135,218 @@ const originals = [
     basePrice: 7299,
     image: Img9,
     link: "#",
+    height: 36,
+    width: 25,
   },
-   {
-      id: 9,
-      title: "Moonlight Reverie ",
-      basePrice: 7999,
-      image: Img1,
-      link: "#",
-    },
-    {
-      id: 10,
-      title: "Wings And Woods ",
-      basePrice: 6499,
-      image: Img2,
-      wallImage: Img19,
-      hoverImage: Img19,
-      link: "#",
-    },
-    {
-      id: 11,
-      title: "Serenity ",
-      basePrice: 7299,
-      image: Img3,
-      wallImage: Img18,
-      hoverImage: Img18,
-      link: "#",
-    },
-  
-    {
-      id: 12,
-      title: "Luna Femme ",
-      basePrice: 6799,
-      image: Img10,
-      wallImage: Img15,
-      hoverImage: Img15, // <-- hover image for id 5
-      link: "#",
-    },
-    {
-      id: 13,
-      title: "Silvara ",
-      basePrice: 7399,
-      image: Img11,
-      wallImage: Img16,
-      hoverImage: Img16,
-      link: "#",
-    },
-    {
-      id: 14,
-      title: "Trinity Of Grace  ",
-      basePrice: 8599,
-      image: Img7,
-      wallImage: Img17,
-      hoverImage: Img17,
-      link: "#",
-    },
-    // {
-    //   id: 8,
-    //   title: "Crimson Threads ",
-    //   basePrice: 7999,
-    //   image: Img8,
-    //   link: "#",
-    // },
-    // {
-    //   id: 9,
-    //   title: "Ethereal Touch ",
-    //   basePrice: 7499,
-    //   image: Img9,
-    //   link: "#",
-    // },
-  
-    {
-      id: 15,
-      title: "Vyom  ",
-      basePrice: 8599,
-      image: Img13,
-      link: "#",
-    },
-  
-    {
-      id: 16,
-      title: "Beyond The Veil",
-      basePrice: 7499,
-      image: Img12,
-      link: "#",
-    },
-    {
-      id: 17,
-      title: "The Tangerine ",
-      basePrice: 7499,
-      wallImage: Img44,
-      link: "#",
-    },
-    {
-      id: 18,
-      title: "Life's Imbalance ",
-      basePrice: 7499,
-      image: Img20,
-      wallImage: Img21,
-      hoverImage: Img21,
-      link: "#",
-    },
-    {
-      id: 19,
-      title: "Gift Of A New Day ",
-      basePrice: 7499,
-      image: Img55,
-      link: "#",
-    },
-    {
-      id: 20,
-      title: "Pop Goes The Orange ",
-      basePrice: 7499,
-      image: Img22,
-      wallImage: Img24,
-      link: "#",
-    },
-    {
-      id: 21,
-      title: "Living Life ",
-      basePrice: 7499,
-      image: Img23,
-      wallImage: Img25,
-      link: "#",
-    },
+  {
+    id: 9,
+    title: "Moonlight Reverie ",
+    basePrice: 7999,
+    image: Img1,
+    link: "#",
+  },
+  {
+    id: 10,
+    title: "Wings And Woods ",
+    basePrice: 6499,
+    image: Img2,
+    wallImage: Img19,
+    hoverImage: Img19,
+    link: "#",
+  },
+  {
+    id: 11,
+    title: "Serenity ",
+    basePrice: 7299,
+    image: Img3,
+    wallImage: Img18,
+    hoverImage: Img18,
+    link: "#",
+  },
+
+  {
+    id: 12,
+    title: "Luna Femme ",
+    basePrice: 6799,
+    image: Img10,
+    wallImage: Img15,
+    hoverImage: Img15, // <-- hover image for id 5
+    link: "#",
+  },
+  {
+    id: 13,
+    title: "Silvara ",
+    basePrice: 7399,
+    image: Img11,
+    wallImage: Img16,
+    hoverImage: Img16,
+    link: "#",
+  },
+  {
+    id: 14,
+    title: "Trinity Of Grace  ",
+    basePrice: 8599,
+    image: Img7,
+    wallImage: Img17,
+    hoverImage: Img17,
+    link: "#",
+  },
+  {
+    id: 15,
+    title: "Vyom  ",
+    basePrice: 8599,
+    image: Img13,
+    link: "#",
+  },
+
+  {
+    id: 16,
+    title: "Beyond The Veil",
+    basePrice: 7499,
+    image: Img12,
+    link: "#",
+  },
+  {
+    id: 17,
+    title: "The Tangerine ",
+    basePrice: 7499,
+    wallImage: Img44,
+    link: "#",
+  },
+  {
+    id: 18,
+    title: "Life's Imbalance ",
+    basePrice: 7499,
+    image: Img20,
+    wallImage: Img21,
+    hoverImage: Img21,
+    link: "#",
+  },
+  {
+    id: 19,
+    title: "Gift Of A New Day ",
+    basePrice: 7499,
+    image: Img55,
+    link: "#",
+  },
+  {
+    id: 20,
+    title: "Pop Goes The Orange ",
+    basePrice: 7499,
+    image: Img22,
+    wallImage: Img24,
+    link: "#",
+  },
+  {
+    id: 21,
+    title: "Living Life ",
+    basePrice: 7499,
+    image: Img23,
+    wallImage: Img25,
+    link: "#",
+  },
+  {
+    id: 22,
+    title: "Chirps on the wall(Set of 16)",
+    basePrice: 13500,
+    wallImage: Img26,
+    link: "#",
+    handmadeOption: true,
+    paintingOption: false,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 23,
+    title: "Beige and Boujee(Set of 9)",
+    basePrice: 13500,
+    wallImage: Img27,
+    link: "#",
+     paintFixPrice : 6000,
+    handmadeFixPrice : 15000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 24,
+    title: "Leaflets (Set of 4)",
+    basePrice: 13500,
+    wallImage: Img28,
+    link: "#",
+    paintFixPrice : 3000,
+    handmadeFixPrice : 6000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 25,
+    title: "Between Two Worlds(Set of 3)",
+    basePrice: 13500,
+    wallImage: Img29,
+    link: "#",
+    paintFixPrice : 4000,
+    handmadeFixPrice : 13500,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 26,
+    title: "Stillness (Set of 6)",
+    basePrice: 13500,
+    wallImage: Img30,
+    link: "#",
+    paintFixPrice : 5000,
+    handmadeFixPrice : 13000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 27,
+    title: "Desert Bloom(Set of 2)",
+    basePrice: 13500,
+    wallImage: Img31,
+    link: "#",
+      paintFixPrice : 4000,
+    handmadeFixPrice : 11000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 28,
+    title: "Euphoria",
+    basePrice: 13500,
+    wallImage: Img32,
+    link: "#",
+  },
+  {
+    id: 29,
+    title: "Trilogue (Set of 3 )",
+    basePrice: 13500,
+    image: Img33,
+    wallImage: Img34,
+    link: "#",
+      paintFixPrice : 6000,
+    handmadeFixPrice : 16500,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 30,
+    title: "Timeless Peaks (Set of 3)",
+    basePrice: 13500,
+    wallImage: Img35,
+    link: "#",
+      paintFixPrice : 6000,
+    handmadeFixPrice : 16000,
+    resizeOption: false,
+    frameOption: false,
+  },
 ];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
-
-
 
 const Aestheticspremi = ({ cart, setCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -260,7 +360,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
         item.price === product?.price &&
         item.image === product?.image &&
         item.width === product?.width &&
-        item.height === product?.height  &&
+        item.height === product?.height &&
         item.media === product?.media &&
         item.selectedFrame === product?.selectedFrame
     );
@@ -295,7 +395,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
           className="text-5xl md:text-7xl font-[Amita] text-white leading-tight tracking-wider"
         >
           <span className="block w-20 h-1 mx-auto mb-3 md:mb-6 bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 rounded-full"></span>
-         Aesthetic Corner 
+          Aesthetic Corner
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -304,7 +404,8 @@ const Aestheticspremi = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-300 mt-6 text-lg md:text-2xl font-light"
         >
-          Explore the authentic soul of art, handwoven by our finest creators.
+          -As the name suggests… Everything Classy, Elegant and Aesthetic!
+          Welcome,to the world of luxury and taste.
         </motion.p>
       </div>
 
@@ -320,32 +421,10 @@ const Aestheticspremi = ({ cart, setCart }) => {
             transition={{ delay: index * 0.3 }}
           >
             <TiltCard>
-              <Card product={product} onClick={() => setSelectedProduct(product)} />
-              {/* <a
-                href={product?.link}
+              <Card
+                product={product}
                 onClick={() => setSelectedProduct(product)}
-                className="group block bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl md:rounded-3xl overflow-hidden hover:shadow-[0_0_30px_#00ffc3] transition-all duration-700 p-2 md:p-5"
-              >
-                <div className="overflow-hidden rounded-2xl">
-                  <motion.img
-                    src={product?.image || product?.wallImage}
-                    alt={product?.title}
-                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out "
-                    whileHover={{ scale: 1.1 }}
-                  />
-                </div>
-                <div className="pt-4 text-center">
-                  <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
-                    {product?.title}
-                  </h3>
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    className=" inline-flex text-[12px] md:text-[20px] items-center gap-2 text-white bg-gray-800 px-5 py-2.5 rounded-full shadow hover:bg-black transition-colors"
-                  >
-                    Buy Now <ArrowRight size={16} />
-                  </motion.button>
-                </div>
-              </a> */}
+              />
             </TiltCard>
           </motion.div>
         ))}

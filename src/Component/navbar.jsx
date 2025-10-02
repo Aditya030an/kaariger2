@@ -1,21 +1,22 @@
 import { useState } from "react";
-import { FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
+import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "./photos/logo.jpeg";
+// import logo from "./photos/logo.jpeg";
+import logo from "./photos/logo_1.png";
 import Jua from "./photos/Jua.jpg";
-import Img1 from "./photos/pencil.jpeg";
 import Madira from "./photos/madira1.png";
-// import music from "./photos/music.png";
-import cinema from "./photos/cinema.jpg";
-import baklol from "./photos/baklol.png";
+import Img20 from "./photos/artifacts23.jpg";
 import canvas from "./photos/bg1.jpeg";
 import Img4 from "./photos/motor3.png";
+
+import logotext from "./photos/kaarigarText.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
+  { name: " Artifacts ", image: Madira, link: "/Artifacts" },
+  { name: " Furniture ", image: Img20, link: "/Furniture" },
   { name: "Paintings", image: Jua, link: "/Painting" },
   { name: "Posters", image: Img4, link: "/Poster" },
-  { name: " Artifacts & Furniture Pieces", image: Madira, link: "/Artifacts" },
 ];
 
 const Navbar = ({ cart }) => {
@@ -51,10 +52,12 @@ const Navbar = ({ cart }) => {
 
           {/* Brand Name */}
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-sm sm:text-2xl md:text-4xl lg:text-5xl font-[Amita] font-semibold tracking-widest uppercase">
-              Kaarigar & Co.
-            </h1>
-            <p className="text-xs font-[Amita] tracking-wider">
+            <img
+              src={logotext}
+              alt="Kaarigar & Co"
+              className="h-10 w-32 sm:h-12 sm:w-40 md:h-14 md:w-48 lg:h-16 lg:w-56 xl:h-20 xl:w-64 bg-transparent object-contain"
+            />
+            <p className="text-[10px] sm:text-xs md:text-sm lg:text-base font-[Amita] tracking-wider mt-2">
               Timeless . Heartfelt . Kaarigar
             </p>
           </div>
@@ -147,7 +150,11 @@ const Navbar = ({ cart }) => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="flex flex-col px-6 py-4 space-y-4 bg-white font-[Amita] md:hidden">
-            <Link to="/" onClick={()=>setMobileMenuOpen(false)} className="cursor-pointer hover:underline">
+            <Link
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="cursor-pointer hover:underline"
+            >
               Home
             </Link>
             <div>
@@ -190,7 +197,10 @@ const Navbar = ({ cart }) => {
             </a>
 
             <button
-              onClick={() => {navigate("/cart"); setMobileMenuOpen(false)}}
+              onClick={() => {
+                navigate("/cart");
+                setMobileMenuOpen(false);
+              }}
               className="relative cursor-pointer flex items-center justify-between"
             >
               <p>Cart</p>

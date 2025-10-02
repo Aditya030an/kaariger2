@@ -4,91 +4,189 @@ import cinema from "./photos/cinema.jpg";
 import music from "./photos/music.png";
 import canvas from "./photos/canvas.png";
 
+import img1 from "./photos/Artifacts2.jpg";
+import img2 from "./photos/img2.jpg";
+import img3 from "./photos/img11.jpg";
+import Img26 from "./photos/artifacts31.jpg";
+import ProductCart from "./ProductCard";
+import { useState } from "react";
+
 const newReleases = [
   {
-    title: "DIY Rainbow Wall Clock",
+    id:1,
+    title: "The Ring Master",
     category: "Canvas Craft",
+      basePrice: 2500,
+    subCategory: "handmade",
     image: jua,
     snippet: "Add a burst of color and personality to your studio wall.",
+    height: 25,
+    width: 25,
   },
   {
-    title: "Printable Spring Party Hats",
+    id:2,
+    title: "A Deep Breath ",
     category: "Art Printables",
+    subCategory: "handmade",
+      basePrice: 1400,
     image: cinema,
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
+    height: 25,
+    width: 20,
   },
   {
+    id:3,
     title: "Ikea Storage Cube Covers",
     category: "Textile & Design",
+      basePrice: 2200,
+    subCategory: "artifacts",
     image: music,
     snippet: "Textile makeover meets utility and charm.",
   },
   {
+    id:4,
     title: "Vintage Poster Wall Kit",
     category: "Decor Prints",
+      basePrice: 1200,
     image: canvas,
     snippet: "Bring your walls to life with nostalgic charm.",
   },
   {
-    title: "Floral Sketch Frame",
+    id:5,
+    title: "A Deep Breath ",
     category: "Sketch Art",
     image: cinema,
+      basePrice: 7590,
     snippet: "Minimalist and floral, perfect for modern spaces.",
+    height: 25,
+    width: 20,
   },
   {
-    title: "Modern Boho Macrame",
+    id:6,
+    title: "The Ring Master",
     category: "Home Decor",
+      basePrice: 2000,
+    subCategory: "handmade",
     image: jua,
     snippet: "Textured wall art that speaks volumes.",
+    height: 25,
+    width: 25,
+  },
+  {
+    id:7,
+    title: "Mr. Funny  Pants 3pc Set (Clay)",
+    category: "Clay Art",
+    subCategory: "artifacts",
+    basePrice: 7500,
+    image: Img26,
+    snippet: "A quirky clay figure that adds humor and charm to any space.",
+  },
+  {
+    id:8,
+    title: "Samurai Incense Holder (Clay)",
+    category: "Clay Art",
+    subCategory: "artifacts",
+    basePrice: 2000,
+    image: img1,
+    snippet: "Bold shapes and colors for a contemporary look.",
+  },
+  {
+    id:9,
+    title: "Sombra",
+    category: "Painting",
+    subCategory: "handmade",
+    image: img2,
+    basePrice: 13500,
+    snippet: "Bold shapes and colors for a contemporary look.",
+  },
+  {
+    id:10,
+    title: "Timeless Peaks (Set of 3)",
+    category: "Aesthetic",
+    subCategory: "aestheticspremi",
+    wallImage: img3,
+    snippet: "Bold shapes and colors for a contemporary look.",
+    basePrice: 13500,
+    link: "#",
+    paintFixPrice: 6000,
+    handmadeFixPrice: 16000,
+    resizeOption: false,
+    frameOption: false,
   },
 ];
 
-export default function NewReleases() {
+export default function NewReleases({ cart, setCart }) {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleAddToCart = (product) => {
+    const existing = cart.find(
+      (item) =>
+        item.id === product?.id &&
+        item.artType === product?.artType &&
+        item.basePrice === product?.basePrice &&
+        item.price === product?.price &&
+        item.image === product?.image &&
+        item.width === product?.width &&
+        item.height === product?.height &&
+        item.media === product?.media &&
+        item.selectedFrame === product?.selectedFrame
+    );
+    if (existing) {
+      const updated = cart.map((item) =>
+        item === existing ? { ...item, quantity: item.quantity + 1 } : item
+      );
+      setCart(updated);
+    } else {
+      setCart([...cart, { ...product, quantity: 1 }]);
+    }
+  };
+
   return (
-    <section className="py-10 md:py-20 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6]">
-      <div className="w-full md:max-w-6xl mx-auto px-3 md:px-6 ">
-        <h2 className="text-3xl md:text-5xl font-bold font-[Amita] text-center text-[#3a2e1f] mb-7 md:mb-14">
+    <section className="py-10 md:py-6 bg-[url('/canvas.png')] bg-repeat bg-[#fdfaf6]">
+      <div className="w-full md:max-w-6xl mx-auto px-3 ">
+        <h2 className="text-3xl md:text-5xl font-bold font-[Amita] text-center text-[#3a2e1f] mb-7">
           ‘ताज़ा माल’ – Our Fresh Releases
         </h2>
 
         {/* Horizontal Scroll Container */}
-        <div className="overflow-x-auto ">
+        <div className="overflow-x-auto no-scrollbar">
           <div className="flex gap-2 md:gap-10 w-max  md:pr-6">
-            {newReleases.map((item, index) => (
+            {newReleases.map((product, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="relative bg-[#fff9f2] border-4 border-[#d2b48c] rounded-[2rem] shadow-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-all min-w-[250px] md:min-w-[340px] max-w-[250px] md:max-w-[340px]"
+                className="relative bg-[#fff9f2] border-4 border-[#d2b48c] rounded-[20px] shadow-lg overflow-hidden hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-all min-w-[250px] md:min-w-[340px] max-w-[250px] md:max-w-[340px]"
               >
                 <img
                   src="/brushstroke.svg"
                   className="absolute top-0 right-0 w-20 opacity-30 pointer-events-none"
                   alt=""
                 />
-                <div className="h-40 md:h-80 w-full overflow-hidden rounded-t-[1.6rem] border-b-4 border-[#d2b48c] relative">
+                <div className="h-40 md:h-80 w-full overflow-hidden  border-b-4 border-[#d2b48c] relative">
                   <img
-                    src={item.image}
-                    alt={item.title}
-                    className="object-contain h-full w-full"
+                    src={product?.image || product?.wallImage}
+                    alt={product?.title}
+                    className="object-fill h-full w-full"
                   />
                   <div className="absolute bottom-4 left-4 bg-[#f4e2d8] text-[#513d2c] font-mono text-xs px-3 py-1 rounded-full shadow">
-                    {item.category}
+                    {product?.category}
                   </div>
                 </div>
-                <div className="p-3 md:p-6">
+                <div className="p-3">
                   <h3 className="text-xl md:text-2xl font-serif font-bold text-[#3e2c1b] md:mb-2">
-                    {item.title}
+                    {product?.title}
                   </h3>
                   <p className="text-sm text-[#5c4631] leading-relaxed">
-                    {item.snippet}
+                    {product?.snippet}
                   </p>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-2 inline-block bg-[#6a4e3a] text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-[#5a4031] transition-all duration-300"
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                    onClick={() => setSelectedProduct(product)}
                   >
                     {/* Explore Piece → */}
                     Buy Now →
@@ -99,6 +197,16 @@ export default function NewReleases() {
           </div>
         </div>
       </div>
+
+      {/* Product Modal */}
+      {selectedProduct && (
+        <ProductCart
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          onAddToCart={handleAddToCart}
+          category={selectedProduct?.subCategory}
+        />
+      )}
     </section>
   );
 }
