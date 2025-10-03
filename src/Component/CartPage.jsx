@@ -113,7 +113,7 @@ const CartPage = ({ cart, setCart }) => {
                             Size: {item?.width}" x {item?.height}" |
                           </p>
                         )}
-                      {item?.category !== "artifacts" && (
+                      {item?.category !== "artifacts" && (item?.handmadeOption === false && item?.paintingOption === false) && (
                         <p className="text-gray-700">
                           Type: {item?.artType}
                         </p>

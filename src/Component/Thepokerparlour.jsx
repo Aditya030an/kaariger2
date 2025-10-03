@@ -97,8 +97,8 @@ const originals = [
     basePrice: 6499,
     image: Img9,
     link: "#",
-    height: 40,
-    width: 25,
+    height: 35,
+    width: 35,
   },
 ];
 

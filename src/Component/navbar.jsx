@@ -51,7 +51,7 @@ const Navbar = ({ cart }) => {
           </div>
 
           {/* Brand Name */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center md:pr-20">
             <img
               src={logotext}
               alt="Kaarigar & Co"

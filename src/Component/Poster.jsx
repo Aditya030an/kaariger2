@@ -125,6 +125,8 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 2,
@@ -132,6 +134,8 @@ const originals = [
     basePrice: 6499,
     image: kaarigar2,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 4,
@@ -139,6 +143,8 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 5,
@@ -146,6 +152,8 @@ const originals = [
     basePrice: 7399,
     image: Img4,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 6,
@@ -153,6 +161,8 @@ const originals = [
     basePrice: 8599,
     image: Img5,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 7,
@@ -160,6 +170,8 @@ const originals = [
     basePrice: 7399,
     image: Img6,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 8,
@@ -167,13 +179,17 @@ const originals = [
     basePrice: 8599,
     image: Img7,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 9,
-    title: "Crimson Threads ",
+    title: "Sojourn",
     basePrice: 7999,
     image: Img8,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 10,
@@ -181,6 +197,8 @@ const originals = [
     basePrice: 7499,
     image: Img9,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 11,
@@ -188,6 +206,8 @@ const originals = [
     basePrice: 8599,
     image: Img11,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 12,
@@ -195,6 +215,8 @@ const originals = [
     basePrice: 7299,
     image: Img13,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 13,
@@ -202,6 +224,8 @@ const originals = [
     basePrice: 7399,
     image: Img14,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 14,
@@ -209,6 +233,8 @@ const originals = [
     basePrice: 8599,
     image: Img15,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 15,
@@ -216,6 +242,8 @@ const originals = [
     basePrice: 7399,
     image: Img16,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 16,
@@ -223,13 +251,17 @@ const originals = [
     basePrice: 8599,
     image: Img17,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 17,
-    title: "Crimson Threads ",
+    title: "Sojourn",
     basePrice: 7999,
     image: Img18,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 18,
@@ -237,6 +269,8 @@ const originals = [
     basePrice: 7499,
     image: Img19,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 19,
@@ -244,6 +278,8 @@ const originals = [
     basePrice: 7399,
     image: Img20,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 20,
@@ -251,6 +287,8 @@ const originals = [
     basePrice: 8599,
     image: Img21,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 21,
@@ -258,6 +296,8 @@ const originals = [
     basePrice: 7399,
     image: Img22,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 22,
@@ -265,6 +305,8 @@ const originals = [
     basePrice: 8599,
     image: Img23,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 23,
@@ -272,6 +314,8 @@ const originals = [
     basePrice: 8599,
     image: Img24,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 24,
@@ -279,6 +323,8 @@ const originals = [
     basePrice: 7399,
     image: Img25,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 25,
@@ -286,6 +332,8 @@ const originals = [
     basePrice: 8599,
     image: Img26,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 51,
@@ -449,8 +497,8 @@ const originals = [
     image: motor55,
     wallImage: motor5,
     link: "#",
-     height:36,
-    width:25,
+    height: 36,
+    width: 25,
   },
 
   {
@@ -459,13 +507,25 @@ const originals = [
     image: motor10,
     wallImage: motor12,
     link: "#",
-      height:20,
-    width:15,
+    height: 20,
+    width: 15,
   },
-  { id: 59, title: "⁠Pouring Stories ", image: Aesthetics7, link: "#" , height: 36,
-    width: 25, },
-  { id: 65, title: "Face Down, Crown Up", image: jua6, link: "#" ,   height: 40,
-    width: 25, },
+  {
+    id: 59,
+    title: "⁠Pouring Stories ",
+    image: Aesthetics7,
+    link: "#",
+    height: 36,
+    width: 25,
+  },
+  {
+    id: 65,
+    title: "Face Down, Crown Up",
+    image: jua6,
+    link: "#",
+    height: 40,
+    width: 25,
+  },
 
   {
     id: 41,
@@ -473,33 +533,82 @@ const originals = [
     image: pencil1,
     wallImage: pencil2,
     link: "#",
-    height:30,
-    width:20
+    height: 30,
+    width: 20,
   },
 
-  { id: 28, title: "The Final Lap", image: motor3, link: "#" ,  height: 25,
-    width: 25, },
+  {
+    id: 28,
+    title: "The Final Lap",
+    image: motor3,
+    link: "#",
+    height: 25,
+    width: 25,
+  },
 
-  { id: 55, title: "Old Men's Friend", image: Aesthetics3, link: "#" , height: 20,
-    width: 15, },
+  {
+    id: 55,
+    title: "Old Men's Friend",
+    image: Aesthetics3,
+    link: "#",
+    height: 20,
+    width: 15,
+  },
 
-  { id: 49, title: "The Evening Sip ", image: pencil9, link: "#" ,  height: 25,
-    width: 20, },
-  { id: 58, title: "Colours of The Mind", image: Aesthetics6, link: "#" ,  height: 25,
-    width: 18, },
+  {
+    id: 49,
+    title: "The Evening Sip ",
+    image: pencil9,
+    link: "#",
+    height: 25,
+    width: 20,
+  },
+  {
+    id: 58,
+    title: "Colours of The Mind",
+    image: Aesthetics6,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
 
   // { id: 64, title: "Jua Collection", image: jua5, link: "#" },
 
-  { id: 36, title: "Noir Elan", image: motor11, link: "#" ,  height: 30,
-    width: 20, },
+  {
+    id: 36,
+    title: "Noir Elan",
+    image: motor11,
+    link: "#",
+    height: 30,
+    width: 20,
+  },
 
-  { id: 37, title: "The Midnight Cadillac", image: motor112, link: "#" , height:25 , width:25, },
+  {
+    id: 37,
+    title: "The Midnight Cadillac",
+    image: motor112,
+    link: "#",
+    height: 25,
+    width: 25,
+  },
 
-  { id: 48, title: "The Morning Street", image: pencil8, link: "#" , height: 35,
-    width: 20, },
+  {
+    id: 48,
+    title: "The Morning Street",
+    image: pencil8,
+    link: "#",
+    height: 35,
+    width: 20,
+  },
 
-  { id: 32, title: "Scarlet Velocity", image: motor7, link: "#" , height: 30,
-    width: 18, },
+  {
+    id: 32,
+    title: "Scarlet Velocity",
+    image: motor7,
+    link: "#",
+    height: 30,
+    width: 18,
+  },
 
   {
     id: 47,
@@ -507,23 +616,52 @@ const originals = [
     image: pencil7,
     wallImage: pencil13,
     link: "#",
-     height: 30,
+    height: 30,
     width: 20,
   },
-  { id: 63, title: "Your Majesty ", image: jua4, link: "#",   height: 30,
-    width: 25, },
+  {
+    id: 63,
+    title: "Your Majesty ",
+    image: jua4,
+    link: "#",
+    height: 30,
+    width: 25,
+  },
 
-  { id: 34, title: "Vroom Town", image: motor9, link: "#" ,  height: 35,
-    width: 20, },
-
-  { id: 70, title: "Into The Pour ", image: madira3, link: "#" ,  height: 30,
+  {
+    id: 34,
+    title: "Vroom Town",
+    image: motor9,
+    link: "#",
+    height: 35,
     width: 20,
- },
-  { id: 57, title: "Mrs. Bijou", image: Aesthetics5, link: "#" ,   height: 25,
-    width: 18, },
+  },
 
-  { id: 60, title: "The Last Bet", image: jua1, link: "#" ,  height: 40,
-    width: 30, },
+  {
+    id: 70,
+    title: "Into The Pour ",
+    image: madira3,
+    link: "#",
+    height: 30,
+    width: 20,
+  },
+  {
+    id: 57,
+    title: "Mrs. Bijou",
+    image: Aesthetics5,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
+
+  {
+    id: 60,
+    title: "The Last Bet",
+    image: jua1,
+    link: "#",
+    height: 40,
+    width: 30,
+  },
 ];
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },

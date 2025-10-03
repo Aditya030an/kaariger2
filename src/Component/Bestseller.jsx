@@ -9,6 +9,9 @@ import Img3 from "./photos/luxe23.jpg";
 import Img_3 from "./photos/luxe25.png";
 import Img4 from "./photos/madira1.png";
 import Img5 from "./photos/artifacts30.png";
+import Img6 from "./photos/artifacts46.jpg";
+import Img7 from "./photos/artifacts47.png";
+import Img8 from "./photos/artifacts48.png";
 
 import ProductCart from "./ProductCard";
 
@@ -20,6 +23,8 @@ const images = [
     basePrice: 7499,
     image: Img1,
     link: "#",
+    height: 25,
+    width: 18,
   },
   {
     id: 2,
@@ -37,6 +42,8 @@ const images = [
     image: Img3,
     wallImage: Img_3,
     link: "#",
+    height:35,
+    width:25,
   },
   {
     id: 4,
@@ -54,6 +61,17 @@ const images = [
     category: "artifacts",
     basePrice: 25000,
     image: Img5,
+    link: "#",
+  },
+
+  {
+    id: 6,
+    title: "Modern Relic",
+    category: "artifacts",
+    image: Img6,
+    wallImage: Img7,
+    moreImage: Img8,
+    basePrice: 16000,
     link: "#",
   },
 ];

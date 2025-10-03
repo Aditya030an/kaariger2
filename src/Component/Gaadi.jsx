@@ -54,8 +54,8 @@ const originals = [
     wallImage: kaarigar1,
     hoverImage: kaarigar1,
     link: "#",
-    height:25,
-    width:25,
+    height: 25,
+    width: 25,
   },
   {
     id: 2,
@@ -65,8 +65,8 @@ const originals = [
     wallImage: kaarigar2,
     hoverImage: kaarigar2,
     link: "#",
-    height:35,
-    width:18,
+    height: 35,
+    width: 18,
   },
   {
     id: 3,
@@ -74,8 +74,8 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
-    height:25,
-    width:25,
+    height: 25,
+    width: 25,
   },
   {
     id: 4,
@@ -83,10 +83,10 @@ const originals = [
     basePrice: 8199,
     image: Img44,
     wallImage: Img4,
-    hoverImage: Img4, 
+    hoverImage: Img4,
     link: "#",
-    height:30,
-    width:20,
+    height: 30,
+    width: 20,
   },
   {
     id: 5,
@@ -96,8 +96,8 @@ const originals = [
     wallImage: Img5,
     hoverImage: Img5, // <-- hover image for id 5
     link: "#",
-    height:36,
-    width:25,
+    height: 36,
+    width: 25,
   },
   // {
   //   id: 6,
@@ -112,12 +112,12 @@ const originals = [
     basePrice: 8599,
     image: Img7,
     link: "#",
-    height:30,
-    width:18,
+    height: 30,
+    width: 18,
   },
   // {
   //   id: 8,
-  //   title: "Crimson Threads ",
+  //   title: "Sojourn",
   //   basePrice: 7999,
   //   image: Img8,
   //   link: "#",
@@ -128,18 +128,18 @@ const originals = [
     basePrice: 7499,
     image: Img9,
     link: "#",
-    height:35,
-    width:20,
+    height: 35,
+    width: 20,
   },
   {
     id: 10,
     title: "Born Reckless ",
     basePrice: 7399,
     image: Img10,
-    wallImage:Img14,
+    wallImage: Img14,
     link: "#",
-    height:20,
-    width:15,
+    height: 20,
+    width: 15,
   },
   {
     id: 11,
@@ -147,15 +147,17 @@ const originals = [
     basePrice: 8599,
     image: Img11,
     link: "#",
-    height:30,
-    width:20,
+    height: 30,
+    width: 20,
   },
   {
     id: 12,
-    title: "Crimson Threads ",
+    title: "Sojourn",
     basePrice: 7999,
     image: Img12,
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 13,
@@ -163,8 +165,8 @@ const originals = [
     basePrice: 7499,
     image: Img13,
     link: "#",
-    height:40,
-    width:25,
+    height: 40,
+    width: 25,
   },
 ];
 
@@ -273,14 +275,14 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                   <motion.button
-                                      whileHover={{ scale: 1.05 }}
-                                      whileTap={{ scale: 0.95 }}
-                                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
-                                    >
-                                      {/* Explore Piece → */}
-                                      Buy Now →
-                                    </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                  >
+                    {/* Explore Piece → */}
+                    Buy Now →
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

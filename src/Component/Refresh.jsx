@@ -8,6 +8,10 @@ import img1 from "./photos/Artifacts2.jpg";
 import img2 from "./photos/img2.jpg";
 import img3 from "./photos/img11.jpg";
 import Img26 from "./photos/artifacts31.jpg";
+import Img27 from "./photos/artifacts46.jpg";
+import Img28 from "./photos/artifacts47.png";
+import Img29 from "./photos/artifacts48.png";
+
 import ProductCart from "./ProductCard";
 import { useState } from "react";
 
@@ -32,7 +36,7 @@ const newReleases = [
     image: cinema,
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
     height: 25,
-    width: 20,
+    width: 18,
   },
   {
     id:3,
@@ -58,8 +62,8 @@ const newReleases = [
     image: cinema,
       basePrice: 7590,
     snippet: "Minimalist and floral, perfect for modern spaces.",
-    height: 25,
-    width: 20,
+   height: 25,
+    width: 18,
   },
   {
     id:6,
@@ -98,6 +102,8 @@ const newReleases = [
     image: img2,
     basePrice: 13500,
     snippet: "Bold shapes and colors for a contemporary look.",
+    height:40,
+    width:35,
   },
   {
     id:10,
@@ -113,6 +119,17 @@ const newReleases = [
     resizeOption: false,
     frameOption: false,
   },
+  {
+    id:11,
+    title: "Modern Relic",
+    category: "Furniture",
+    subCategory: "artifacts",
+        image: Img27,
+        wallImage:Img28,
+        moreImage:Img29,
+        basePrice: 16000,
+        link: "#",
+  }
 ];
 
 export default function NewReleases({ cart, setCart }) {

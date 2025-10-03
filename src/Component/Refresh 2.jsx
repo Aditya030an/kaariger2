@@ -21,6 +21,8 @@ const newReleases = [
     category: "Art Printables",
     image: cinema,
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
+    height: 25,
+    width: 18,
   },
   {
     title: "Ikea Storage Cube Covers",
@@ -39,6 +41,8 @@ const newReleases = [
     category: "Sketch Art",
     image: cinema,
     snippet: "Minimalist and floral, perfect for modern spaces.",
+    height: 25,
+    width: 18,
   },
   {
     title: "Modern Boho Macrame",

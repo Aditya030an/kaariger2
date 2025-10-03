@@ -1,36 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import bgImg from "./photos/Artifacts2.jpg";
-import { ArrowRight } from "lucide-react";
 
 import Img1 from "./photos/Artifacts.jpg";
 import Img3 from "./photos/Artifacts1.jpg";
 import Img4 from "./photos/Artifacts2.jpg";
-import Img5 from "./photos/Artifact3.png";
 import Img6 from "./photos/Artifacts4.png";
 import Img7 from "./photos/Artifacts5.png";
 import Img8 from "./photos/Artifacts6.jpg";
-
-import Img9 from "./photos/Artifacts7.jpg";
 import Img10 from "./photos/Artifacts8.jpg";
-import Img11 from "./photos/Artifacts9.jpeg";
-import Img12 from "./photos/Artifacts10.jpg";
-import Img13 from "./photos/Artifacts11.jpg";
 import Img14 from "./photos/Artifacts12.jpg";
-
-import Img16 from "./photos/Artifacts14.jpg";
-import Img17 from "./photos/Artifacts15.jpg";
-import Img18 from "./photos/Artifacts16.jpg";
 import Img19 from "./photos/artifacts22.jpg";
-import Img20 from "./photos/artifacts23.jpg";
 import Img21 from "./photos/artifacts24.jpg";
-import Img22 from "./photos/artifacts25.jpg";
-import Img23 from "./photos/artifacts26.jpg";
-import Img24 from "./photos/artifacts29.png";
-import Img25 from "./photos/artifacts30.png";
 import Img26 from "./photos/artifacts31.jpg";
-import Img27 from "./photos/artifacts34.png";
 import Img28 from "./photos/artifacts35.jpg";
 import Img29 from "./photos/artifacts36.png";
 import Img30 from "./photos/artifacts39.jpg";
@@ -52,7 +35,7 @@ import Img43 from "./photos/artifacts48.png";
 
 
 
-import music from "./photos/music.png";
+
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -104,13 +87,6 @@ const originals = [
     link: "#",
   },
   {
-    id: 4,
-    title: "Ace Centre Table ",
-    image: Img5,
-    basePrice: 30000,
-    link: "#",
-  },
-  {
     id: 5,
     title: "⁠ ⁠Cards Wall Clock",
     image: Img6,
@@ -133,54 +109,18 @@ const originals = [
   },
 
   {
-    id: 8,
-    title: " ⁠Grande Arena",
-    image: Img9,
-    basePrice: 50000,
-    link: "#",
-  },
-
-  {
     id: 9,
     title: "⁠⁠Giveth-Taketh Incense Holder (Clay)",
     image: Img10,
     basePrice: 3000,
     link: "#",
   },
-  {
-    id: 10,
-    title: "Laundy Basket Ball Hoop",
-    image: Img11,
-    basePrice: 6000,
-    link: "#",
-  },
-  {
-    id: 11,
-    title: "Laundry Basketball Bin",
-    image: Img12,
-    basePrice: 4000,
-    link: "#",
-  },
-  {
-    id: 12,
-    title: "F1 Fender Stand Wooden",
-    image: Img13,
-    basePrice: 10000,
-    link: "#",
-  },
+
   {
     id: 13,
     title: "Chakhna Pallete 1pc",
     image: Img14,
     basePrice: 1000,
-    link: "#",
-  },
-
-  {
-    id: 14,
-    title: "Casettee Centre Table",
-    image: Img16,
-    basePrice: 40000,
     link: "#",
   },
   {
@@ -191,13 +131,6 @@ const originals = [
       moreImage:Img31,
       basePrice: 35000,
       link: "#",
-  },
-  {
-    id: 16,
-    title: " ⁠⁠Boombox Shelf Table ",
-    image: music,
-    basePrice: 30000,
-    link: "#",
   },
   {
     id: 17,
@@ -227,28 +160,11 @@ const originals = [
     basePrice: 30000,
     link: "#",
   },
-
-  {
-    id: 19,
-    title: "Humané Centre Table",
-    image: Img20,
-    basePrice: 30000,
-    link: "#",
-  },
   {
     id: 20,
     title: "Glitch Clock (Clay)",
     image: Img21,
     basePrice: 2500,
-    link: "#",
-  },
-
-  {
-    id: 21,
-    title: "Retrovision Table Centre",
-    image: Img25,
-    wallImage: Img27,
-    basePrice: 25000,
     link: "#",
   },
   {

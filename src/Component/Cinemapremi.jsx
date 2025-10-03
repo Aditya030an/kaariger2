@@ -61,6 +61,8 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 2,
@@ -68,6 +70,8 @@ const originals = [
     basePrice: 6499,
     image: kaarigar2,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 3,
@@ -75,6 +79,8 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 4,
@@ -82,6 +88,8 @@ const originals = [
     basePrice: 7399,
     image: Img4,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 5,
@@ -89,6 +97,8 @@ const originals = [
     basePrice: 8599,
     image: Img5,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 6,
@@ -96,6 +106,8 @@ const originals = [
     basePrice: 7399,
     image: Img6,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 7,
@@ -103,13 +115,17 @@ const originals = [
     basePrice: 8599,
     image: Img7,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 8,
-    title: "Crimson Threads ",
+    title: "Sojourn",
     basePrice: 7999,
     image: Img8,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 9,
@@ -117,6 +133,8 @@ const originals = [
     basePrice: 7499,
     image: Img9,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 10,
@@ -124,6 +142,8 @@ const originals = [
     basePrice: 7399,
     image: Img10,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 11,
@@ -131,6 +151,8 @@ const originals = [
     basePrice: 8599,
     image: Img11,
     link: "#",
+    height: 12,
+    width: 18,
   },
 
   {
@@ -139,6 +161,8 @@ const originals = [
     basePrice: 7299,
     image: Img13,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 14,
@@ -146,6 +170,8 @@ const originals = [
     basePrice: 7399,
     image: Img14,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 15,
@@ -153,6 +179,8 @@ const originals = [
     basePrice: 8599,
     image: Img15,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 16,
@@ -160,6 +188,8 @@ const originals = [
     basePrice: 7399,
     image: Img16,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 17,
@@ -167,13 +197,17 @@ const originals = [
     basePrice: 8599,
     image: Img17,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 18,
-    title: "Crimson Threads ",
+    title: "Sojourn",
     basePrice: 7999,
     image: Img18,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 19,
@@ -181,6 +215,8 @@ const originals = [
     basePrice: 7499,
     image: Img19,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 20,
@@ -188,6 +224,8 @@ const originals = [
     basePrice: 7399,
     image: Img20,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 21,
@@ -195,6 +233,8 @@ const originals = [
     basePrice: 8599,
     image: Img21,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 22,
@@ -202,6 +242,8 @@ const originals = [
     basePrice: 7399,
     image: Img22,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 23,
@@ -209,6 +251,8 @@ const originals = [
     basePrice: 8599,
     image: Img23,
     link: "#",
+    height: 12,
+    width: 18,
   },
   {
     id: 24,
@@ -216,6 +260,8 @@ const originals = [
     basePrice: 8599,
     image: Img24,
     link: "#",
+    height: 12,
+    width: 18,
   },
 ];
 
@@ -280,7 +326,8 @@ const Cinemapremi = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-600 mt-6 font-[Amita] text-lg md:text-2xl font-light"
         >
-          -Fellow Movie buffs find a huge variety of posters to redefine your spaces and visit your favourite movies every day!
+          -Fellow Movie buffs find a huge variety of posters to redefine your
+          spaces and visit your favourite movies every day!
         </motion.p>
       </div>
 

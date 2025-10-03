@@ -35,6 +35,10 @@ import Img29 from "./photos/img11.jpg";
 import Img30 from "./photos/artifacts46.jpg";
 import Img31 from "./photos/artifacts47.png";
 import Img32 from "./photos/artifacts48.png";
+import Img33 from "./photos/artifacts39.jpg";
+import Img34 from "./photos/artifacts37.png";
+import Img35 from "./photos/artifacts38.png";
+import Img36 from "./photos/cinema.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -68,15 +72,21 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
+    height: 36,
+    width: 25,
   },
   {
     id: 2,
-    title: "Wings And Woods",
-    basePrice: 6499,
+    title: "Wings And Woods set of 4",
+    basePrice: 10000,
     image: kaarigar2,
     wallImage: Img19,
     hoverImage: Img19,
     link: "#",
+    handmadeOption: false,
+    paintingOption: false,
+    resizeOption: false,
+    frameOption: true,
   },
   {
     id: 3,
@@ -86,6 +96,8 @@ const originals = [
     wallImage: Img18,
     hoverImage: Img18,
     link: "#",
+    height: 40,
+    width: 25,
   },
 
   {
@@ -96,6 +108,8 @@ const originals = [
     wallImage: Img15,
     hoverImage: Img15, // <-- hover image for id 5
     link: "#",
+    height: 25,
+    width: 25,
   },
   {
     id: 6,
@@ -105,6 +119,8 @@ const originals = [
     wallImage: Img16,
     hoverImage: Img16,
     link: "#",
+    height: 40,
+    width: 25,
   },
   {
     id: 7,
@@ -114,10 +130,12 @@ const originals = [
     wallImage: Img17,
     hoverImage: Img17,
     link: "#",
+    height: 40,
+    width: 25,
   },
   // {
   //   id: 8,
-  //   title: "Crimson Threads ",
+  //   title: "Sojourn",
   //   basePrice: 7999,
   //   image: Img8,
   //   link: "#",
@@ -136,6 +154,8 @@ const originals = [
     basePrice: 8599,
     image: Img11,
     link: "#",
+    height: 40,
+    width: 25,
   },
 
   {
@@ -144,6 +164,8 @@ const originals = [
     basePrice: 7499,
     image: Img12,
     link: "#",
+    height: 35,
+    width: 35,
   },
   {
     id: 14,
@@ -151,6 +173,8 @@ const originals = [
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
+    height: 35,
+    width: 35,
   },
   {
     id: 15,
@@ -160,6 +184,8 @@ const originals = [
     wallImage: Img21,
     hoverImage: Img21,
     link: "#",
+    height: 40,
+    width: 30,
   },
   {
     id: 16,
@@ -167,22 +193,28 @@ const originals = [
     basePrice: 7499,
     image: Img55,
     link: "#",
+    height: 35,
+    width: 25,
   },
   {
     id: 17,
     title: "Pop Goes The Orange ",
     basePrice: 7499,
     image: Img22,
-    wallImage:Img24,
+    wallImage: Img24,
     link: "#",
+    height: 35,
+    width: 25,
   },
   {
     id: 18,
     title: "Living Life",
     basePrice: 7499,
     image: Img23,
-    wallImage:Img25,
+    wallImage: Img25,
     link: "#",
+    height: 40,
+    width: 40,
   },
   {
     id: 19,
@@ -190,6 +222,8 @@ const originals = [
     basePrice: 7499,
     wallImage: Img26,
     link: "#",
+    height: 35,
+    width: 35,
   },
   {
     id: 20,
@@ -198,8 +232,8 @@ const originals = [
     image: Img27,
     wallImage: Img28,
     link: "#",
-      paintFixPrice : 6000,
-    handmadeFixPrice : 16500,
+    paintFixPrice: 6000,
+    handmadeFixPrice: 16500,
     resizeOption: false,
     frameOption: false,
   },
@@ -209,22 +243,42 @@ const originals = [
     basePrice: 7499,
     wallImage: Img29,
     link: "#",
-      paintFixPrice : 6000,
-    handmadeFixPrice : 16000,
+    paintFixPrice: 6000,
+    handmadeFixPrice: 16000,
     resizeOption: false,
     frameOption: false,
   },
-   {
-      id: 28,
-      title: "Modern Relic",
-      image: Img30,
-      wallImage:Img31,
-      moreImage:Img32,
-      basePrice: 16000,
-      link: "#",
-       resizeOption: false,
+  {
+    id: 28,
+    title: "Modern Relic",
+    image: Img30,
+    wallImage: Img31,
+    moreImage: Img32,
+    basePrice: 16000,
+    link: "#",
+    resizeOption: false,
     frameOption: false,
-    },
+  },
+  {
+    id: 29,
+    title: "Eclipsera Pole (Clay)",
+    basePrice: 35000,
+    image: Img33,
+    wallImage: Img34,
+    moreImage: Img35,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 30,
+    title: "A Deep Breath ",
+    basePrice: 7499,
+    image: Img36,
+    link: "#",
+    height: 25,
+    width: 18,
+  },
 ];
 
 const fadeInUp = {
@@ -331,14 +385,14 @@ const Gaadi = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                   <motion.button
-                                      whileHover={{ scale: 1.05 }}
-                                      whileTap={{ scale: 0.95 }}
-                                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
-                                    >
-                                      {/* Explore Piece → */}
-                                      Buy Now →
-                                    </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                  >
+                    {/* Explore Piece → */}
+                    Buy Now →
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

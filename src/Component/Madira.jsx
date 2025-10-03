@@ -44,6 +44,8 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
+    height:35,
+    width:25,
   },
   {
     id: 2,
@@ -61,6 +63,8 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
+     height:35,
+    width:25,
   },
   {
     id: 4,
@@ -78,6 +82,8 @@ const originals = [
     basePrice: 7299,
     image: Img7,
     link: "#",
+    height:40,
+    width:35,
   },
 ];
 

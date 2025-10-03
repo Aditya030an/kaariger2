@@ -220,7 +220,7 @@ const originals = [
     image: Img245,
     link: "#",
     height: 25,
-    width: 20,
+    width: 18,
   },
   {
     id: 15,
@@ -395,8 +395,8 @@ const originals = [
     basePrice: 7399,
     image: jua8,
     link: "#",
-    height: 40,
-    width: 25,
+    height: 35,
+    width: 35,
   },
 
   {
@@ -405,6 +405,8 @@ const originals = [
     basePrice: 7999,
     image: madira1,
     link: "#",
+    height:35,
+    width:25,
   },
   {
     id: 34,
@@ -510,6 +512,8 @@ const originals = [
     basePrice: 13500,
     wallImage: Img27,
     link: "#",
+    height:40,
+    width:35,
   },
   {
     id: 47,

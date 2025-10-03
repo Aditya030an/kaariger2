@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import carsoul from "./photos/slide.png";
 import carsoul1 from "./photos/slide6.png";
 // import carsoul2 from "./photos/slide2.png";
-import carsoul2 from "./photos/slide2.jpg";
+// import carsoul2 from "./photos/slide2.jpg";
 // import carsoul2 from "./photos/slide_2.png";
 import carsoul3 from "./photos/slide4.png";
 import carsoul4 from "./photos/slide3.jpeg";
@@ -58,14 +58,14 @@ const items = [
 ];
 const images = [
   carsoul8,
+  carsoul7,
   carsoul,
   carsoul1,
-  carsoul2,
+  // carsoul2,
   carsoul6,
   carsoul4,
   carsoul5,
   carsoul3,
-  carsoul7,
 ];
 
 const Home = ({cart , setCart}) => {

@@ -45,6 +45,9 @@ import Img32 from "./photos/img8.jpg";
 import Img33 from "./photos/img9.jpg";
 import Img34 from "./photos/img10.jpg";
 import Img35 from "./photos/img11.jpg";
+import Img36 from "./photos/artifacts39.jpg";
+import Img37 from "./photos/artifacts37.png";
+import Img38 from "./photos/artifacts38.png";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -144,15 +147,21 @@ const originals = [
     basePrice: 7999,
     image: Img1,
     link: "#",
+    height:36,
+    width:25,
   },
   {
     id: 10,
-    title: "Wings And Woods ",
-    basePrice: 6499,
+    title: "Wings And Woods set of 4",
+    basePrice: 10000,
     image: Img2,
     wallImage: Img19,
     hoverImage: Img19,
     link: "#",
+      handmadeOption: false,
+    paintingOption: false,
+    resizeOption: false,
+    frameOption: true,
   },
   {
     id: 11,
@@ -162,6 +171,8 @@ const originals = [
     wallImage: Img18,
     hoverImage: Img18,
     link: "#",
+    height:40,
+    width:25,
   },
 
   {
@@ -172,6 +183,8 @@ const originals = [
     wallImage: Img15,
     hoverImage: Img15, // <-- hover image for id 5
     link: "#",
+    height:25,
+    width:25,
   },
   {
     id: 13,
@@ -181,6 +194,8 @@ const originals = [
     wallImage: Img16,
     hoverImage: Img16,
     link: "#",
+    height:40,
+    width:25,
   },
   {
     id: 14,
@@ -190,6 +205,8 @@ const originals = [
     wallImage: Img17,
     hoverImage: Img17,
     link: "#",
+    height:40,
+    width:25,
   },
   {
     id: 15,
@@ -197,6 +214,8 @@ const originals = [
     basePrice: 8599,
     image: Img13,
     link: "#",
+    height:40,
+    width:25,
   },
 
   {
@@ -205,6 +224,8 @@ const originals = [
     basePrice: 7499,
     image: Img12,
     link: "#",
+    height:35,
+    width:35,
   },
   {
     id: 17,
@@ -212,6 +233,8 @@ const originals = [
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
+    height:35,
+    width:35,
   },
   {
     id: 18,
@@ -221,6 +244,8 @@ const originals = [
     wallImage: Img21,
     hoverImage: Img21,
     link: "#",
+    height:40,
+    width:30,
   },
   {
     id: 19,
@@ -228,6 +253,8 @@ const originals = [
     basePrice: 7499,
     image: Img55,
     link: "#",
+    height:35,
+    width:25,
   },
   {
     id: 20,
@@ -236,6 +263,8 @@ const originals = [
     image: Img22,
     wallImage: Img24,
     link: "#",
+    height:35,
+    width:25,
   },
   {
     id: 21,
@@ -244,6 +273,8 @@ const originals = [
     image: Img23,
     wallImage: Img25,
     link: "#",
+    height:40,
+    width:40,
   },
   {
     id: 22,
@@ -317,6 +348,8 @@ const originals = [
     basePrice: 13500,
     wallImage: Img32,
     link: "#",
+    height:35,
+    width:35,
   },
   {
     id: 29,
@@ -338,6 +371,17 @@ const originals = [
     link: "#",
       paintFixPrice : 6000,
     handmadeFixPrice : 16000,
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 31,
+    title: "Eclipsera Pole (Clay)",
+    basePrice: 35000,
+    image:Img36,
+    wallImage: Img37,
+    moreImage:Img38,
+    link: "#",
     resizeOption: false,
     frameOption: false,
   },
