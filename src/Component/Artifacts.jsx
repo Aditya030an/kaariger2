@@ -30,6 +30,10 @@ import Img40 from "./photos/artifacts45.png";
 import Img41 from "./photos/artifacts46.jpg";
 import Img42 from "./photos/artifacts47.png";
 import Img43 from "./photos/artifacts48.png";
+import Img44 from "./photos/artifacts49.jpg";
+import Img45 from "./photos/artifacts50.png";
+import Img46 from "./photos/Aestheticspremi10.jpg";
+
 
 
 
@@ -220,6 +224,23 @@ const originals = [
     basePrice: 16000,
     link: "#",
   },
+  {
+    id: 29,
+    title: "Timeless unity",
+    image: Img44,
+    wallImage:Img45,
+    basePrice: 82000,
+    link: "#",
+  },
+   {
+      id: 30,
+      title: "Kava Cups set of 2(Clay)",
+      basePrice: 3000,
+      image:Img46,
+      link: "#",
+      resizeOption: false,
+      frameOption: false,
+    },
   
 ];
 
@@ -299,7 +320,7 @@ const Painting = ({ cart, setCart }) => {
             transition={{ delay: index * 0.2 }}
           >
             <TiltCard>
-              <Card product={product} onClick={() => setSelectedProduct(product)} />
+              <Card product={product} category="artifacts" onClick={() => setSelectedProduct(product)} />
              
             </TiltCard>
           </motion.div>

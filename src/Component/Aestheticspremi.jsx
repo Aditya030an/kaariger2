@@ -10,6 +10,9 @@ import Img6 from "./photos/Aestheticspremi4.jpeg";
 
 import Img8 from "./photos/Aestheticspremi7.jpeg";
 import Img9 from "./photos/Aestheticspremi9.jpeg";
+import Img39 from "./photos/Aestheticspremi10.jpg";
+import Img40 from "./photos/Aestheticspremi11.jpg";
+import Img41 from "./photos/Aestheticspremi12.png";
 
 import Img1 from "./photos/luxe1.png";
 import Img2 from "./photos/luxe2.png";
@@ -385,6 +388,25 @@ const originals = [
     resizeOption: false,
     frameOption: false,
   },
+  {
+    id: 32,
+    title: "Kava Cups set of 2(Clay)",
+    basePrice: 3000,
+    image:Img39,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 33,
+    title: "The Third Seat (1pc) ",
+    basePrice: 30000,
+    image:Img40,
+    wallImage:Img41,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+  },
 ];
 
 const fadeInUp = {
@@ -467,6 +489,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
             <TiltCard>
               <Card
                 product={product}
+                category="aestheticspremi"
                 onClick={() => setSelectedProduct(product)}
               />
             </TiltCard>

@@ -11,7 +11,9 @@ import carsoul4 from "./photos/slide3.jpeg";
 import carsoul5 from "./photos/slide7.png";
 import carsoul6 from "./photos/slide8.png";
 import carsoul8 from "./photos/slidenew1.png";
-import carsoul7 from "./photos/slide9.png";
+// import carsoul7 from "./photos/slide9.png";
+// import carsoul7 from "./photos/slide_9.jpg";
+import carsoul7 from "./photos/slide_10.jpg";
 
 import madira1 from "./photos/madira2.png";
 // import jua from "./photos/jua2.png";
@@ -75,7 +77,7 @@ const Home = ({cart , setCart}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -126,7 +128,7 @@ const Home = ({cart , setCart}) => {
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full sm:h-[60vh] md:h-[80vh] object-contain sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
+                className="w-full sm:h-[60vh] md:h-[80vh] object-fill sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
@@ -190,7 +192,7 @@ const Home = ({cart , setCart}) => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-fill bg-gray-100 transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 

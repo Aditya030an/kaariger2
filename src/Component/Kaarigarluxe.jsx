@@ -39,6 +39,11 @@ import Img33 from "./photos/artifacts39.jpg";
 import Img34 from "./photos/artifacts37.png";
 import Img35 from "./photos/artifacts38.png";
 import Img36 from "./photos/cinema.jpg";
+import Img37 from "./photos/artifacts49.jpg";
+import Img38 from "./photos/artifacts50.png";
+
+import Img39 from "./photos/Aestheticspremi11.jpg";
+import Img40 from "./photos/Aestheticspremi12.png";
 
 import ProductCart from "./ProductCard";
 
@@ -278,6 +283,26 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
+  },
+  {
+    id: 31,
+    title: "Timeless unity",
+    basePrice: 82000,
+    image: Img37,
+    wallImage: Img38,
+    link: "#",
+    resizeOption:false,
+    frameOption: false,
+  },
+  {
+    id: 32,
+    title: "The Third Seat (1pc) ",
+    basePrice: 30000,
+    image:Img39,
+    wallImage:Img40,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
   },
 ];
 

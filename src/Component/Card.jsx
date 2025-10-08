@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const Card = ({ product, onClick }) => {
+const Card = ({ product, onClick , category }) => {
   return (
     <a
       href={product?.link}
@@ -23,6 +23,12 @@ const Card = ({ product, onClick }) => {
         <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-black mb-2">
           {product?.title}
         </h3>
+        {
+          category === "artifacts" &&
+        <h3 className="text-[16px] md:text-xl font-[Amita] font-medium md:font-semibold text-black mb-2">
+          {product?.basePrice}
+        </h3>
+        }
         <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

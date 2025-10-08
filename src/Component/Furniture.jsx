@@ -13,6 +13,9 @@ import Img20 from "./photos/artifacts23.jpg";
 import Img25 from "./photos/artifacts30.png";
 import Img27 from "./photos/artifacts34.png";
 
+import Img2 from "./photos/Aestheticspremi11.jpg";
+import Img3 from "./photos/Aestheticspremi12.png";
+
 import music from "./photos/music.png";
 
 import ProductCart from "./ProductCard";
@@ -109,6 +112,16 @@ const originals = [
     basePrice: 25000,
     link: "#",
   },
+  {
+      id: 10,
+      title: "The Third Seat (1pc) ",
+      basePrice: 30000,
+      image:Img2,
+      wallImage:Img3,
+      link: "#",
+      resizeOption: false,
+      frameOption: false,
+    },
 ];
 
 const fadeInUp = {
@@ -189,6 +202,7 @@ const Painting = ({ cart, setCart }) => {
             <TiltCard>
               <Card
                 product={product}
+                category="artifacts"
                 onClick={() => setSelectedProduct(product)}
               />
             </TiltCard>
