@@ -186,7 +186,7 @@ export default function NewReleases({ cart, setCart }) {
                   <img
                     src={product?.image || product?.wallImage}
                     alt={product?.title}
-                    className="object-fill h-full w-full"
+                    className="object-contain h-full w-full"
                   />
                   <div className="absolute bottom-4 left-4 bg-[#f4e2d8] text-[#513d2c] font-mono text-xs px-3 py-1 rounded-full shadow">
                     {product?.category}

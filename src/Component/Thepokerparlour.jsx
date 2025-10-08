@@ -190,7 +190,7 @@ const Thepokerparlour = ({ cart, setCart }) => {
                   <motion.img
                     src={product?.image}
                     alt={product?.title}
-                    className="w-full h-48 md:h-72 object-fill group-hover:scale-110 transition-transform duration-700 ease-out"
+                    className="w-full h-48 md:h-72 object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
                     whileHover={{ scale: 1.1 }}
                   />
                 </div>

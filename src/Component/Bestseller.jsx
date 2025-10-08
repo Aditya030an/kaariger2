@@ -182,7 +182,7 @@ const Bestseller = ({ cart, setCart }) => {
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-[200px] md:h-[250px] object-fill"
+                className="w-full h-[200px] md:h-[250px] object-contain"
               />
               <div className="p-2 text-center">
                 <h3 className="text-xl md:text-2xl font-[Amita] font-semibold mb-1 text-gray-800">

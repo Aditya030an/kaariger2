@@ -245,7 +245,7 @@ const Home = ({cart , setCart}) => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-52 sm:h-72 md:h-80 lg:h-96 object-fill"
+                  className="w-full h-52 sm:h-72 md:h-80 lg:h-96 object-contain"
                 />
               </div>
               <h3 className="text-center font-[Amita] py-2  text-[18px] sm:text-lg md:text-xl lg:text-2xl font-medium  tracking-wide text-gray-800">
