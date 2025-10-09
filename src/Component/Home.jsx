@@ -77,7 +77,7 @@ const Home = ({cart , setCart}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 30000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
