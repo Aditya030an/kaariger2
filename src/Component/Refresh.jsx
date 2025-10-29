@@ -12,72 +12,70 @@ import Img27 from "./photos/artifacts46.jpg";
 import Img28 from "./photos/artifacts47.png";
 import Img29 from "./photos/artifacts48.png";
 
+import Img30 from "./photos/Aestheticspremi11.jpg";
+import Img31 from "./photos/Aestheticspremi12.png";
+import Img32 from "./photos/Aestheticspremi10.jpg";
+
 import ProductCart from "./ProductCard";
 import { useState } from "react";
 
 const newReleases = [
   {
-    id:1,
+    id: 1,
     title: "The Ring Master",
     category: "Canvas Craft",
-      basePrice: 2500,
+    basePrice: 2500,
     subCategory: "handmade",
     image: jua,
     snippet: "Add a burst of color and personality to your studio wall.",
     height: 25,
     width: 25,
+    description:"A close-up view of a roulette wheel captures the thrilling tension of chance — the ball suspended between fate and fortune. Rich textures and muted colors evoke the timeless allure of the casino floor, where every spin feels like a performance led by an unseen master of luck.",
   },
   {
-    id:2,
+    id: 2,
     title: "A Deep Breath ",
     category: "Art Printables",
     subCategory: "handmade",
-      basePrice: 1400,
+    basePrice: 1400,
     image: cinema,
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
     height: 25,
     width: 18,
+    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
-    id:3,
-    title: "Ikea Storage Cube Covers",
+    id: 3,
+    title: " ⁠⁠Boombox Shelf Table ",
     category: "Textile & Design",
-      basePrice: 2200,
+
+    basePrice: 30000,
     subCategory: "artifacts",
     image: music,
     snippet: "Textile makeover meets utility and charm.",
   },
   {
-    id:4,
+    id: 4,
     title: "Vintage Poster Wall Kit",
     category: "Decor Prints",
-      basePrice: 1200,
+    basePrice: 1200,
     image: canvas,
     snippet: "Bring your walls to life with nostalgic charm.",
   },
+
   {
-    id:5,
-    title: "A Deep Breath ",
-    category: "Sketch Art",
-    image: cinema,
-      basePrice: 7590,
-    snippet: "Minimalist and floral, perfect for modern spaces.",
-   height: 25,
-    width: 18,
+    id: 10,
+    title: "The Third Seat (1pc) ",
+    basePrice: 30000,
+    image: Img30,
+    wallImage: Img31,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
   },
+
   {
-    id:6,
-    title: "The Ring Master",
-    category: "Home Decor",
-      basePrice: 2000,
-    subCategory: "handmade",
-    image: jua,
-    snippet: "Textured wall art that speaks volumes.",
-    height: 25,
-    width: 25,
-  },
-  {
-    id:7,
+    id: 7,
     title: "Mr. Funny  Pants 3pc Set (Clay)",
     category: "Clay Art",
     subCategory: "artifacts",
@@ -86,27 +84,38 @@ const newReleases = [
     snippet: "A quirky clay figure that adds humor and charm to any space.",
   },
   {
-    id:8,
+    id: 8,
     title: "Samurai Incense Holder (Clay)",
     category: "Clay Art",
     subCategory: "artifacts",
     basePrice: 2000,
     image: img1,
     snippet: "Bold shapes and colors for a contemporary look.",
+    description:"Elegance meets serenity in this handcrafted ceramic incense holder — two minimalist warriors frozen in graceful motion, embodying calm and discipline. As the incense burns, gentle trails of smoke rise between them, creating a tranquil dance of aroma and artistry. Perfect for elevating your space with Zen sophistication and timeless charm.",
   },
   {
-    id:9,
+    id: 9,
     title: "Sombra",
     category: "Painting",
     subCategory: "handmade",
     image: img2,
     basePrice: 13500,
     snippet: "Bold shapes and colors for a contemporary look.",
-    height:40,
-    width:35,
+    height: 40,
+    width: 35,
+    description:"“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
   },
   {
-    id:10,
+      id: 32,
+      title: "Kava Cups set of 2(Clay)",
+      basePrice: 3000,
+      image:Img32,
+      link: "#",
+      resizeOption: false,
+      frameOption: false,
+    },
+  {
+    id: 10,
     title: "Timeless Peaks (Set of 3)",
     category: "Aesthetic",
     subCategory: "aestheticspremi",
@@ -120,16 +129,16 @@ const newReleases = [
     frameOption: false,
   },
   {
-    id:11,
+    id: 11,
     title: "Modern Relic",
     category: "Furniture",
     subCategory: "artifacts",
-        image: Img27,
-        wallImage:Img28,
-        moreImage:Img29,
-        basePrice: 16000,
-        link: "#",
-  }
+    image: Img27,
+    wallImage: Img28,
+    moreImage: Img29,
+    basePrice: 16000,
+    link: "#",
+  },
 ];
 
 export default function NewReleases({ cart, setCart }) {

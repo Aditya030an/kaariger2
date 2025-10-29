@@ -97,6 +97,7 @@ const originals = [
     link: "#",
     height: 30,
     width: 25,
+        description:"“Sweet Solitude” captures a tender moment of self-indulgence and peace — a woman savoring grapes under the soft daylight. The delicate hand and serene expression symbolize quiet pleasure and mindful presence. The play of light and shadow adds a poetic warmth, celebrating simplicity, beauty, and stillness within oneself.",
   },
   {
     id: 4,
@@ -106,6 +107,7 @@ const originals = [
     link: "#",
     height: 20,
     width: 15,
+    description:"“Old Man’s Friend” beautifully captures the bond between a man and his loyal camel. The aged man, weathered by time and sun, gently holds the camel’s chain with quiet affection. Warm desert tones and golden light evoke companionship, endurance, and trust — a timeless friendship shaped by the sands of life.",
   },
   {
     id: 5,
@@ -115,6 +117,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
+    description:"A mesmerizing blend of hues pours into the cup, symbolizing the vibrant energy that coffee awakens within us. Each color swirl mirrors the burst of creativity and warmth that caffeine ignites. The rich tones flow together like a morning ritual — bold, lively, and irresistibly alive.",
   },
   {
     id: 6,
@@ -124,6 +127,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
+    description:"“Mrs. Bijou” portrays the quiet grace of a traditional Indian woman, adorned in elegant gold jewelry and a rich earthy saree. Her poised expression reflects strength, dignity, and timeless beauty. The muted tones and delicate detailing capture both cultural depth and feminine sophistication, celebrating heritage with a modern artistic touch.",
   },
 
   {
@@ -134,6 +138,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
+        description:"“Colours Of The Mind” captures the vivid interplay of thoughts and emotions through bold strokes and layered hues. Each colour seems to echo a different state of mind — calm blues of reflection, fiery reds of passion, and golden tones of clarity. The abstract composition feels alive, portraying the ever-changing landscape of human consciousness.",
   },
   {
     id: 8,
@@ -143,6 +148,7 @@ const originals = [
     link: "#",
     height: 36,
     width: 25,
+        description:"“Pouring Stories” depicts a man mid-motion, gracefully pouring chai — a moment rich with warmth and nostalgia. The painting celebrates the humble ritual that connects people, places, and conversations. Through earthy tones and fluid strokes, it transforms an everyday act into a poetic symbol of shared stories and timeless bonds.",
   },
   {
     id: 9,
@@ -152,6 +158,7 @@ const originals = [
     link: "#",
     height:36,
     width:25,
+    description:"This artwork captures a dreamy harmony between nature and celestial beauty. The glowing orange moons rise over misty mountains, bathing the trees and autumn leaves in warm, surreal light. A blend of stillness and imagination, it evokes the feeling of wandering through a peaceful twilight dream where earth and sky quietly merge.",
   },
   {
     id: 10,
@@ -165,6 +172,7 @@ const originals = [
     paintingOption: false,
     resizeOption: false,
     frameOption: true,
+    description:"“Wings and Wood” beautifully captures the harmony between nature and freedom. The series portrays silhouettes of trees and birds against bold orange suns, symbolizing the cycle of life and connection between earth and sky. The minimalist composition evokes calmness, balance, and the eternal rhythm of nature’s transitions.",
   },
   {
     id: 11,
@@ -176,6 +184,7 @@ const originals = [
     link: "#",
     height:40,
     width:25,
+        description:"A serene landscape unfolds beneath a glowing orange sun, where a crystal-clear stream winds through valleys painted with hues of red, yellow, and blue. The contrast between the warm autumn tones and cool mountain shades evokes balance and peace. Each brushstroke captures the quiet harmony of nature, inviting the viewer into a moment of calm reflection.",
   },
 
   {
@@ -188,6 +197,7 @@ const originals = [
     link: "#",
     height:25,
     width:25,
+    description:"“Luna Femme” captures the serene strength of a woman intertwined with the calm rhythm of nature. Flowing lines and soft hues of gold and blue mirror the ocean’s waves and moonlit skies, symbolizing balance, grace, and empowerment. The geometric patterns add a modern elegance, while the floral elements breathe harmony into her celestial aura.",
   },
   {
     id: 13,
@@ -199,6 +209,7 @@ const originals = [
     link: "#",
     height:40,
     width:25,
+    description:"“Silvara” is a captivating blend of minimalism and abstraction, portraying a bird formed from smooth, flowing ribbons of color. The elegant curves and retro tones of orange, green, and white create a rhythmic balance of movement and stillness. It symbolizes grace, continuity, and the effortless harmony between nature and design.",
   },
   {
     id: 14,
@@ -210,6 +221,7 @@ const originals = [
     link: "#",
     height:40,
     width:25,
+    description:"“Trinity of Grace” celebrates the strength, beauty, and unity of womanhood through three elegant silhouettes adorned in vibrant geometric patterns. The artwork harmoniously blends cultural motifs with modern abstraction, symbolizing resilience, pride, and sisterhood. Bold colors of red, gold, and turquoise evoke power and warmth, creating a rhythm of elegance and empowerment.",
   },
   {
     id: 15,
@@ -219,6 +231,7 @@ const originals = [
     link: "#",
     height:40,
     width:25,
+    description:"“Vyom” portrays the cosmic connection between human consciousness and celestial balance. The deep teal and black tones reflect inner depth, while the vibrant orange bird symbolizes freedom and spiritual awakening. The geometric patterns and moon element above the figure evoke harmony between the earthly and the divine, making it a striking blend of surrealism and symbolism",
   },
 
   {
@@ -229,15 +242,17 @@ const originals = [
     link: "#",
     height:35,
     width:35,
+    description:"This artwork explores the tension between concealment and revelation. The flowing vertical lines resemble draped fabric, symbolizing the layers that separate perception from reality. The deep navy and beige tones evoke mystery and depth, inviting the viewer to look past the surface. It’s a poetic reminder that what lies beyond the visible often holds the truest form of beauty.",
   },
   {
     id: 17,
-    title: "The Tangerine ",
+    title: "The Mood Tangerine ",
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
     height:35,
     width:35,
+    description:"Bold and vibrant, Mood Tangerine captures a striking balance between confidence and calm. The artwork portrays a poised figure wrapped in oversized shapes of orange and blush, symbolizing warmth, individuality, and playful elegance. With its minimalist lines and rich earthy tones, it evokes a sense of self-assured serenity and artistic charm.",
   },
   {
     id: 18,
@@ -289,6 +304,7 @@ const originals = [
     paintingOption: false,
     resizeOption: false,
     frameOption: false,
+    description:"This artwork celebrates the beauty of freedom and simplicity through a harmonious collection of tiny canvases, each portraying a bird in motion. The varied colors and patterns reflect different moods of nature — calm, vibrant, and melodic. Together, they create a visual symphony of songbirds, symbolizing joy, connection, and the art of finding peace in little moments.",
   },
   {
     id: 23,
@@ -300,6 +316,7 @@ const originals = [
     handmadeFixPrice : 15000,
     resizeOption: false,
     frameOption: false,
+    description:"A harmonious blend of geometry and nature, Beige and Boujee captures the essence of minimalism through warm earthy tones. Each frame tells a story of balance — circles, leaves, and lines merging in perfect rhythm. The muted beige palette brings calm sophistication, making it a timeless piece for modern interiors.",
   },
   {
     id: 24,
@@ -311,6 +328,7 @@ const originals = [
     handmadeFixPrice : 6000,
     resizeOption: false,
     frameOption: false,
+    description:"“Leaflets” is a minimalist set of four botanical paintings blending simplicity and warmth. Each canvas features elegant black line art of leaves against soft, earthy backgrounds of terracotta, beige, and blush tones. The composition captures harmony, nature, and balance — a soothing reflection of organic beauty and modern design.",
   },
   {
     id: 25,
@@ -322,6 +340,7 @@ const originals = [
     handmadeFixPrice : 13500,
     resizeOption: false,
     frameOption: false,
+    description:"This artwork beautifully captures the harmony between tradition and modernity through bold patterns and warm earthy tones. The central figure, adorned in cultural motifs, stands as a bridge between heritage and contemporary expression. The surrounding abstract forms symbolize balance, identity, and the journey of embracing two worlds with grace and confidence.",
   },
   {
     id: 26,
@@ -333,6 +352,7 @@ const originals = [
     handmadeFixPrice : 13000,
     resizeOption: false,
     frameOption: false,
+    description:"“Stillness” captures the serene harmony of nature through soft earthy tones and balanced geometric forms. Each panel evokes calm and mindfulness, blending organic leaves and abstract shapes into a meditative rhythm. The muted colors and minimalist design invite quiet reflection — a visual pause in the rush of modern life.",
   },
   {
     id: 27,
@@ -344,6 +364,7 @@ const originals = [
     handmadeFixPrice : 11000,
     resizeOption: false,
     frameOption: false,
+    description:"A serene portrayal of the desert’s dual personality — one basking in the warmth of the setting sun, the other resting under a tranquil night sky. The minimal forms of cacti and layered dunes capture the rhythm of nature’s quiet transformation. Desert Bloom reflects balance, stillness, and the timeless beauty of shifting light across arid landscapes.",
   },
   {
     id: 28,
@@ -387,6 +408,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+      description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
   },
   {
     id: 32,

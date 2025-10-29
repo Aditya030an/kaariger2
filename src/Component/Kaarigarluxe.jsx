@@ -79,6 +79,7 @@ const originals = [
     link: "#",
     height: 36,
     width: 25,
+    description:"This artwork captures a dreamy harmony between nature and celestial beauty. The glowing orange moons rise over misty mountains, bathing the trees and autumn leaves in warm, surreal light. A blend of stillness and imagination, it evokes the feeling of wandering through a peaceful twilight dream where earth and sky quietly merge.",
   },
   {
     id: 2,
@@ -92,6 +93,7 @@ const originals = [
     paintingOption: false,
     resizeOption: false,
     frameOption: true,
+    description:"“Wings and Wood” beautifully captures the harmony between nature and freedom. The series portrays silhouettes of trees and birds against bold orange suns, symbolizing the cycle of life and connection between earth and sky. The minimalist composition evokes calmness, balance, and the eternal rhythm of nature’s transitions.",
   },
   {
     id: 3,
@@ -103,6 +105,7 @@ const originals = [
     link: "#",
     height: 40,
     width: 25,
+    description:"A serene landscape unfolds beneath a glowing orange sun, where a crystal-clear stream winds through valleys painted with hues of red, yellow, and blue. The contrast between the warm autumn tones and cool mountain shades evokes balance and peace. Each brushstroke captures the quiet harmony of nature, inviting the viewer into a moment of calm reflection.",
   },
 
   {
@@ -115,6 +118,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 25,
+    description:"“Luna Femme” captures the serene strength of a woman intertwined with the calm rhythm of nature. Flowing lines and soft hues of gold and blue mirror the ocean’s waves and moonlit skies, symbolizing balance, grace, and empowerment. The geometric patterns add a modern elegance, while the floral elements breathe harmony into her celestial aura.",
   },
   {
     id: 6,
@@ -126,6 +130,7 @@ const originals = [
     link: "#",
     height: 40,
     width: 25,
+    description:"“Silvara” is a captivating blend of minimalism and abstraction, portraying a bird formed from smooth, flowing ribbons of color. The elegant curves and retro tones of orange, green, and white create a rhythmic balance of movement and stillness. It symbolizes grace, continuity, and the effortless harmony between nature and design.",
   },
   {
     id: 7,
@@ -137,6 +142,7 @@ const originals = [
     link: "#",
     height: 40,
     width: 25,
+    description:"“Trinity of Grace” celebrates the strength, beauty, and unity of womanhood through three elegant silhouettes adorned in vibrant geometric patterns. The artwork harmoniously blends cultural motifs with modern abstraction, symbolizing resilience, pride, and sisterhood. Bold colors of red, gold, and turquoise evoke power and warmth, creating a rhythm of elegance and empowerment.",
   },
   // {
   //   id: 8,
@@ -161,6 +167,7 @@ const originals = [
     link: "#",
     height: 40,
     width: 25,
+    description:"“Vyom” portrays the cosmic connection between human consciousness and celestial balance. The deep teal and black tones reflect inner depth, while the vibrant orange bird symbolizes freedom and spiritual awakening. The geometric patterns and moon element above the figure evoke harmony between the earthly and the divine, making it a striking blend of surrealism and symbolism",
   },
 
   {
@@ -171,15 +178,17 @@ const originals = [
     link: "#",
     height: 35,
     width: 35,
+    description:"This artwork explores the tension between concealment and revelation. The flowing vertical lines resemble draped fabric, symbolizing the layers that separate perception from reality. The deep navy and beige tones evoke mystery and depth, inviting the viewer to look past the surface. It’s a poetic reminder that what lies beyond the visible often holds the truest form of beauty.",
   },
   {
     id: 14,
-    title: "The Tangerine ",
+    title: "The Mood Tangerine ",
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
     height: 35,
     width: 35,
+    description:"Bold and vibrant, Mood Tangerine captures a striking balance between confidence and calm. The artwork portrays a poised figure wrapped in oversized shapes of orange and blush, symbolizing warmth, individuality, and playful elegance. With its minimalist lines and rich earthy tones, it evokes a sense of self-assured serenity and artistic charm.",
   },
   {
     id: 15,
@@ -274,6 +283,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+    description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
   },
   {
     id: 30,
@@ -283,6 +293,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
+    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
     id: 31,

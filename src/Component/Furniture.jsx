@@ -12,6 +12,8 @@ import Img16 from "./photos/Artifacts14.jpg";
 import Img20 from "./photos/artifacts23.jpg";
 import Img25 from "./photos/artifacts30.png";
 import Img27 from "./photos/artifacts34.png";
+import Img28 from "./photos/artifacts35.jpg";
+import Img29 from "./photos/artifacts36.png";
 
 import Img2 from "./photos/Aestheticspremi11.jpg";
 import Img3 from "./photos/Aestheticspremi12.png";
@@ -51,6 +53,7 @@ const originals = [
     image: Img1,
     basePrice: 30000,
     link: "#",
+    description:"A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space."
   },
   {
     id: 2,
@@ -58,6 +61,7 @@ const originals = [
     image: Img9,
     basePrice: 50000,
     link: "#",
+    description:"The Stadium Coffee Table. Grande Arena is a masterpiece of modern design — a coffee table that brings the thrill of football right into your living room. Crafted from rich natural wood and topped with a sleek glass surface, it features a stunning miniature stadium beneath, complete with players, turf, and cheering crowds. This unique piece blends artistry, craftsmanship, and passion for the game — a true collector’s dream for sports lovers and design enthusiasts alike."
   },
   {
     id: 3,
@@ -65,6 +69,7 @@ const originals = [
     image: Img11,
     basePrice: 6000,
     link: "#",
+    description:"Turn laundry time into game time! 🏀 This Laundry Basketball Hoop adds fun and functionality to your room — just toss your clothes in and score! Made with a sturdy backboard and breathable mesh bag, it keeps your space tidy while making chores feel like a slam dunk. Perfect for bedrooms, dorms, or kids’ rooms!"
   },
   {
     id: 4,
@@ -72,6 +77,7 @@ const originals = [
     image: Img12,
     basePrice: 4000,
     link: "#",
+    description:"Turn your daily chores into a fun game! This Laundry Basketball Bin combines play and practicality — just shoot your clothes through the hoop and score a clean room every time. Perfect for kids, teens, and sports lovers who want to make laundry time exciting while keeping the space tidy and stylish"
   },
   {
     id: 5,
@@ -79,6 +85,7 @@ const originals = [
     image: Img13,
     basePrice: 10000,
     link: "#",
+    description:"Bring home the spirit of Formula 1 with this stunning F1 Fender Stand Wooden. Crafted with precision and designed to resemble a real F1 car fender, it adds a bold, sporty vibe to your space. Perfect as a display shelf or wall décor for motorsport enthusiasts, this piece combines craftsmanship, style, and speed in one iconic design.",
   },
 
   {
@@ -87,6 +94,7 @@ const originals = [
     image: Img16,
     basePrice: 40000,
     link: "#",
+    description:"The Cassette Centre Table is a nostalgic fusion of retro charm and modern design. Crafted from premium wood, it replicates the classic audio cassette look, turning a vintage icon into a functional centerpiece. Its sturdy build and detailed craftsmanship make it perfect for living rooms, cafes, or creative studios. A true conversation starter that blends art, utility, and timeless style."
   },
   {
     id: 7,
@@ -94,6 +102,7 @@ const originals = [
     image: music,
     basePrice: 30000,
     link: "#",
+    description:"A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
   },
 
   {
@@ -102,6 +111,7 @@ const originals = [
     image: Img20,
     basePrice: 30000,
     link: "#",
+    description:"A sculptural masterpiece that brings art and functionality together. The Humane Centre Table features a finely crafted human face base, symbolizing serenity and depth, topped with a sleek glass surface. Perfect for modern living spaces, it adds a touch of minimalism, sophistication, and soulful character to any room.",
   },
 
   {
@@ -111,17 +121,26 @@ const originals = [
     wallImage: Img27,
     basePrice: 25000,
     link: "#",
+    description:"A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
   },
   {
-      id: 10,
-      title: "The Third Seat (1pc) ",
-      basePrice: 30000,
-      image:Img2,
-      wallImage:Img3,
-      link: "#",
-      resizeOption: false,
-      frameOption: false,
-    },
+    id: 10,
+    title: "The Third Seat (1pc) ",
+    basePrice: 30000,
+    image: Img2,
+    wallImage: Img3,
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+  },
+  {
+    id: 11,
+    title: "Mr. Nook",
+    image: Img28,
+    wallImage: Img29,
+    basePrice: 25000,
+    link: "#",
+  },
 ];
 
 const fadeInUp = {

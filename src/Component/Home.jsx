@@ -12,8 +12,8 @@ import carsoul5 from "./photos/slide7.png";
 import carsoul6 from "./photos/slide8.png";
 import carsoul8 from "./photos/slidenew1.png";
 // import carsoul7 from "./photos/slide9.png";
-// import carsoul7 from "./photos/slide_9.jpg";
-import carsoul7 from "./photos/slide_10.jpg";
+import carsoul7 from "./photos/slide_9.png";
+// import carsoul7 from "./photos/slide_10.jpg";
 
 import madira1 from "./photos/madira2.png";
 // import jua from "./photos/jua2.png";
@@ -176,7 +176,7 @@ const Home = ({cart , setCart}) => {
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-8 sm:mb-16 tracking-tight">
           <span className="text-gray-700 font-[Amita]">
             {" "}
-            – Watchu Looking For?
+            –Watchu Looking For?–
           </span>
         </h2>
 

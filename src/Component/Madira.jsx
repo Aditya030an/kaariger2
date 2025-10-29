@@ -46,6 +46,7 @@ const originals = [
     link: "#",
     height:35,
     width:25,
+    description:"A stunning two-part artwork capturing the elegant chaos of red wine in motion. The first frame shows a graceful pour from a dark bottle, while the second bursts with energy as the wine splashes into a glass, freezing that perfect moment of fluid art. Together, they celebrate indulgence, movement, and the beauty found in everyday elegance.",
   },
   {
     id: 2,
@@ -56,6 +57,7 @@ const originals = [
     link: "#",
     height:30,
     width:30,
+    description:"A mesmerizing play of light and color, The Spirit of Life captures the warmth and energy of a shared drink under vibrant reflections. The glowing oranges and luminous glass forms radiate vitality, symbolizing joy, renewal, and the essence of living fully. Each brushstroke dances with movement, breathing emotion into stillness.",
   },
   {
     id: 3,
@@ -74,6 +76,7 @@ const originals = [
     link: "#",
     height:25,
     width:18,
+        description:"“The Cheers Edition” captures a timeless toast set against the backdrop of an aged transcript, where history meets celebration. The two clinking glasses symbolize connection, memory, and shared moments that transcend time. With its warm tones and nostalgic texture, the painting feels like a tribute to stories told over every pour.",
   },
 
   {
@@ -84,6 +87,7 @@ const originals = [
     link: "#",
     height:40,
     width:35,
+    description:"“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
   },
 ];
 

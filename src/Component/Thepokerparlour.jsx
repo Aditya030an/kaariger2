@@ -46,6 +46,7 @@ const originals = [
     link: "#",
     height:40,
     width:30,
+    description:"“The Last Bet” captures the tension of a final poker hand — a dimly lit table scattered with cards, cigars, wine glasses, and stacks of money. The smoky atmosphere  evoke suspense, temptation, and the thrill of risk. Every detail reflects the quiet chaos before fate is sealed — one final move, one last gamble.",
   },
 
   {
@@ -56,6 +57,7 @@ const originals = [
     link: "#",
     height:25,
     width:25,
+    description:"A close-up view of a roulette wheel captures the thrilling tension of chance — the ball suspended between fate and fortune. Rich textures and muted colors evoke the timeless allure of the casino floor, where every spin feels like a performance led by an unseen master of luck.",
   },
   {
     id: 5,
@@ -65,6 +67,7 @@ const originals = [
     link: "#",
     height:30,
     width:25,
+    description:"A bold reinterpretation of the King of Hearts, blending geometric precision with royal elegance. The rich red and gold tones symbolize passion and power united in harmony. Modern minimalism meets timeless royalty — the heart of the deck reborn.",
   },
   // {
   //   id: 6,
@@ -81,6 +84,7 @@ const originals = [
     link: "#",
      height:40,
     width:25,
+    description:"A captivating play of chance and control — where countless cards lie face down, yet one reigns above them all. The Queen of Hearts emerges boldly, symbolizing confidence, power, and grace amidst chaos. This artwork reminds us that true strength stands out, even when surrounded by uncertainty.",
   },
   {
     id: 8,
@@ -90,6 +94,7 @@ const originals = [
     link: "#",
     height:35,
     width:35,
+    description:"This painting titled The Parliament portrays a lively gathering around a grand roulette table, symbolizing debate, decision, and chance. Each player appears deeply engaged, representing diverse voices and opinions converging in one circle. Through its rich vintage tones and dynamic composition, it mirrors the energy, tension, and unity found in every great assembly of minds.",
   },
   {
     id: 9,
@@ -99,6 +104,7 @@ const originals = [
     link: "#",
     height: 35,
     width: 35,
+    description:"A captivating painting featuring a beautiful girl in a checkered shirt gracefully holding a set of cards. Her confident gaze and poised demeanor capture the allure of mystery and risk. With soft, velvety tones and subtle lighting, the artwork blends elegance and suspense — embodying the charm of a high-stakes moment frozen in time.",
   },
 ];
 

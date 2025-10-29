@@ -52,6 +52,7 @@ const originals = [
     link: "#",
     height:25,
     width:20,
+    description:"“Guardians of the Green” depicts a tranquil forest scene in striking black and white tones. A group of graceful deer stands beneath tall trees, their forms illuminated by soft beams of light filtering through the canopy. The contrast between shadow and radiance captures nature’s quiet majesty — a moment where stillness feels sacred and the forest breathes with life.",
   },
 
   {
@@ -64,6 +65,7 @@ const originals = [
     link: "#",
     height:30,
     width:20,
+    description:"“The Monochrome Lady” portrays a beautiful woman bathed in shades of black and white, where light and shadow dance across her features. The absence of color heightens her grace, emotion, and timeless elegance. Every contour and gaze speaks in silence — a poetic blend of mystery and sophistication.",
   },
   {
     id: 5,
@@ -75,6 +77,7 @@ const originals = [
     link: "#",
     height:35,
     width:18,
+    description:"A moody monochrome cityscape captures the rhythm of urban life under a veil of rain. Cars move through glistening streets as towering buildings fade into mist, reflecting both chaos and calm. The scene beautifully blends motion and stillness, embodying the poetry hidden in everyday rush.",
   },
   {
     id: 7,
@@ -85,6 +88,7 @@ const originals = [
     link: "#",
     height:30,
     width:20,
+    description:"“The Many” is a captivating black-and-white composition featuring three eyes aligned vertically, each with a distinct gaze. The layered eyes symbolize perception, depth, and the unseen dimensions of consciousness. Through minimalist contrast and repetition, the painting evokes mystery — a silent exploration of how we see, and how we are seen.",
   },
   {
     id: 8,
@@ -94,6 +98,7 @@ const originals = [
     link: "#",
     height:35,
     width:20,
+    description:"This monochrome painting captures the quiet soul of an old Indian street at dawn. The soft mist and diffused light blend into the aged architecture, where silhouettes of people begin their daily chores. The sweeping figure in the foreground symbolizes simplicity and rhythm in everyday life — a gentle harmony between man, light, and the timeless city.",
   },
   {
     id: 9,
@@ -103,6 +108,7 @@ const originals = [
     link: "#",
     height:25,
     width:20,
+    description:"“The Evening Sip” is a hyper-realistic sketch capturing the quiet luxury of unwinding. Whiskey glasses glisten with melting ice cubes, their textures rendered in exquisite detail. The monochrome tones highlight light and reflection, evoking warmth, sophistication, and the calm ritual of a perfect evening.",
   },
   {
     id: 10,
@@ -112,6 +118,7 @@ const originals = [
     link: "#",
      height:25,
     width:18,
+    description:"A moment frozen in motion, The Intentional Splash captures the precise instant an ice cube meets water — chaos turned into elegance. Each ripple and droplet tells a story of controlled spontaneity, where stillness and energy coexist. The artwork celebrates simplicity, precision, and the beauty hidden in everyday motion.",
   },
   {
     id: 11,
@@ -121,6 +128,7 @@ const originals = [
     link: "#",
     height:30,
     width:25,
+    description:"A powerful sketch of a crushed Ace of Spades — symbolizing both victory and defeat in a single frame. The rough lines and broken edges reflect the fragile balance between luck and fate, where even the strongest card can fall under pressure.",
   },
 ];
 

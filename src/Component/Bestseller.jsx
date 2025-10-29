@@ -12,10 +12,30 @@ import Img5 from "./photos/artifacts30.png";
 import Img6 from "./photos/artifacts46.jpg";
 import Img7 from "./photos/artifacts47.png";
 import Img8 from "./photos/artifacts48.png";
+import Img9 from "./photos/artifacts49.jpg";
+import Img10 from "./photos/artifacts50.png";
 
 import ProductCart from "./ProductCard";
 
 const images = [
+  {
+    id: 6,
+    title: "Modern Relic",
+    category: "artifacts",
+    image: Img6,
+    wallImage: Img7,
+    moreImage: Img8,
+    basePrice: 16000,
+    link: "#",
+  },
+   {
+      id: 7,
+      title: "Timeless unity",
+      image: Img9,
+      wallImage:Img10,
+      basePrice: 82000,
+      link: "#",
+    },
   {
     id: 1,
     title: "A Deep Breath ",
@@ -25,6 +45,7 @@ const images = [
     link: "#",
     height: 25,
     width: 18,
+    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
     id: 2,
@@ -54,6 +75,7 @@ const images = [
     link: "#",
     height: 35,
     width: 25,
+    description:"A stunning two-part artwork capturing the elegant chaos of red wine in motion. The first frame shows a graceful pour from a dark bottle, while the second bursts with energy as the wine splashes into a glass, freezing that perfect moment of fluid art. Together, they celebrate indulgence, movement, and the beauty found in everyday elegance.",
   },
   {
     id: 5,
@@ -64,16 +86,7 @@ const images = [
     link: "#",
   },
 
-  {
-    id: 6,
-    title: "Modern Relic",
-    category: "artifacts",
-    image: Img6,
-    wallImage: Img7,
-    moreImage: Img8,
-    basePrice: 16000,
-    link: "#",
-  },
+  
 ];
 
 const Bestseller = ({ cart, setCart }) => {

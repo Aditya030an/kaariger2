@@ -74,6 +74,7 @@ const originals = [
     image: Img1,
     basePrice: 2000,
     link: "#",
+    description:"A finely crafted designer sculpture depicting a fisherman seated in a minimalist boat, gently holding an incense stick. This elegant piece blends traditional symbolism with contemporary artistry, evoking calmness, reflection, and spiritual balance—ideal for refined interior décor or meditative spaces.",
   },
 
   {
@@ -82,6 +83,7 @@ const originals = [
     image: Img3,
     basePrice: 3500,
     link: "#",
+    description:"Unleash luxury with this bold Bulldog Storage Companion! Crafted in matte black with golden accents, it’s not just décor — it’s attitude. Drop your keys, coins, or accessories straight into its jaws of style — where function meets fierce sophistication.",
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ const originals = [
     image: Img4,
     basePrice: 2000,
     link: "#",
+    description:"Elegance meets serenity in this handcrafted ceramic incense holder — two minimalist warriors frozen in graceful motion, embodying calm and discipline. As the incense burns, gentle trails of smoke rise between them, creating a tranquil dance of aroma and artistry. Perfect for elevating your space with Zen sophistication and timeless charm.",
   },
   {
     id: 5,
@@ -96,6 +99,7 @@ const originals = [
     image: Img6,
     basePrice: 1500,
     link: "#",
+    description:"Time just got a royal twist. This wall clock isn’t just about ticking seconds — it’s a deck of destiny in motion. With playing cards swirling inside, every glance feels like a high-stakes game between fate and fortune. A perfect blend of bold design and rebellious elegance — where every hour is a winning hand.",
   },
   {
     id: 6,
@@ -103,6 +107,7 @@ const originals = [
     image: Img7,
     basePrice: 3000,
     link: "#",
+    description:"A royal twist to your serveware — these card-shaped bowls bring the thrill of the game to your table. Each piece is sculpted with precision, blending luxury gold trims with the bold charm of hearts, spades, clubs, and diamonds. Perfect for nuts, snacks, or style — this set isn’t just dinnerware, it’s a statement of play, class, and indulgence. Deal your snacks in style.",
   },
   {
     id: 7,
@@ -110,6 +115,7 @@ const originals = [
     image: Img8,
     basePrice: 2500,
     link: "#",
+    description:"Where art meets indulgence — this wall-mounted liquor display turns your bar into a statement of sophistication. Industrial steel pipes fuse with rich wood tones, pouring character as smoothly as your finest spirit. It’s not just a dispenser — it’s a scene-stealer.",
   },
 
   {
@@ -118,6 +124,7 @@ const originals = [
     image: Img10,
     basePrice: 3000,
     link: "#",
+    description:"Ash meets aura — one hand gathers what’s gone, the other releases what remains. The incense burns slow, tracing smoke like a secret prayer between stillness and chaos. It’s not just ritual — it’s rebellion wrapped in calm.",
   },
 
   {
@@ -126,6 +133,7 @@ const originals = [
     image: Img14,
     basePrice: 1000,
     link: "#",
+    description:"Where the buzz meets the bite — these chakhna palettes aren’t just plates, they’re mood boards for madness. Crafted around iconic alcohol bottles, they turn every sip into a scene and every snack into a statement. Because real flavor deserves a little attitude.",
   },
   {
       id: 15,
@@ -135,6 +143,7 @@ const originals = [
       moreImage:Img31,
       basePrice: 35000,
       link: "#",
+      description: "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
   },
   {
     id: 17,
@@ -142,6 +151,7 @@ const originals = [
     image: Img38,
     basePrice: 10000,
     link: "#",
+    description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
   {
     id: 28,
@@ -149,6 +159,7 @@ const originals = [
     image: Img39,
     basePrice: 10000,
     link: "#",
+        description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
   {
     id: 29,
@@ -156,6 +167,7 @@ const originals = [
     image: Img40,
     basePrice: 10000,
     link: "#",
+        description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
   {
     id: 18,
@@ -163,6 +175,7 @@ const originals = [
     image: Img19,
     basePrice: 30000,
     link: "#",
+        description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
   {
     id: 20,
@@ -170,21 +183,16 @@ const originals = [
     image: Img21,
     basePrice: 2500,
     link: "#",
+    description:"Time, redefined — this abstract wall clock isn’t here to just tell hours; it’s here to steal them. A fusion of art and attitude, it turns every second into a visual story. Bold shapes, unexpected lines, and a vibe that says “time doesn’t control me — I style it.",
   },
-  {
-    id: 22,
-    title: "Mr. Nook",
-    image: Img28,
-    wallImage: Img29,
-    basePrice: 25000,
-    link: "#",
-  },
+ 
   {
     id: 23,
     title: "Mr. Funny  Pants 3pc Set (Clay)",
     image: Img26,
     basePrice: 7500,
     link: "#",
+    description:"-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
   {
     id: 24,
@@ -192,6 +200,7 @@ const originals = [
     image: Img35,
     basePrice: 2500,
     link: "#",
+    description:"-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
   {
     id: 25,
@@ -199,6 +208,7 @@ const originals = [
     image: Img36,
     basePrice: 2500,
     link: "#",
+    description:"-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
   {
     id: 26,
@@ -206,6 +216,7 @@ const originals = [
     image: Img37,
     basePrice: 2500,
     link: "#",
+    description:"-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
   {
     id: 27,
@@ -214,6 +225,7 @@ const originals = [
     wallImage:Img34,
     basePrice: 27000,
     link: "#",
+    description:"When play meets purpose — this Playing Card Table turns imagination into furniture! Built like a “House of Cards” yet sturdy enough to hold your coffee conversations, it’s a playful nod to classic casino charm and creative design. The glossy red-and-white finish adds a pop of fun to any room, making it a perfect centerpiece for your living space, lounge, or café corner.",
   },
   {
     id: 28,
@@ -223,6 +235,7 @@ const originals = [
     moreImage:Img43,
     basePrice: 16000,
     link: "#",
+    description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
   {
     id: 29,
@@ -231,6 +244,7 @@ const originals = [
     wallImage:Img45,
     basePrice: 82000,
     link: "#",
+    description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
   },
    {
       id: 30,
@@ -240,6 +254,7 @@ const originals = [
       link: "#",
       resizeOption: false,
       frameOption: false,
+      description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
     },
   
 ];

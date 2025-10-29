@@ -148,7 +148,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-white w-screen h-screen overflow-y-auto ">
-      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col  gap-4">
+      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col  gap-2">
         <button
           onClick={onClose}
           className="text-[22px] font-medium text-black flex items-center gap-1"
@@ -217,6 +217,10 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                 />
               </div>
             </div>
+
+            {
+              product?.description && category !== "artifacts" && <div className="text-[12px]">{product?.description}</div>
+            }
 
             {category !== "artifacts" &&
               (product?.resizeOption !== undefined
@@ -383,6 +387,11 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                     )}
                   </div>
                 )}
+
+            {/* Add the description */}
+            {
+              product?.description && category === "artifacts"  && <div className="">{product?.description}</div>
+            }
 
             {/* Add to Cart */}
             {category !== "artifacts" && product?.resizeOption !== false && (

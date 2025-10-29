@@ -56,6 +56,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 25,
+    description:"“Beyond Miles” evokes the quiet freedom of a journey unfolding on open roads. Painted in soft watercolour tones, it captures the rear view of a rider lost in motion — where distance fades and dreams take the lead. The artwork celebrates wanderlust, solitude, and the poetry of endless horizons.",
   },
   {
     id: 2,
@@ -67,6 +68,7 @@ const originals = [
     link: "#",
     height: 35,
     width: 18,
+    description:"A lone rider speeds through a rain-kissed mountain road, chasing freedom between sky and earth. The sunlight pierces through drifting clouds, illuminating the winding path ahead. Every droplet, every turn, captures the essence of motion and peace — the pure joy of riding at the edge of nature’s beauty.",
   },
   {
     id: 3,
@@ -76,6 +78,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 25,
+    description:"“The Final Lap” captures the raw intensity and thrill of an F1 car in its ultimate sprint toward victory. With dynamic motion and streaks of colour, the painting freezes a heartbeat of speed, focus, and adrenaline. It embodies the spirit of competition — where precision meets passion in the race against time.",
   },
   {
     id: 4,
@@ -87,6 +90,7 @@ const originals = [
     link: "#",
     height: 30,
     width: 20,
+    description:"“Claws of Velocity” captures the fierce grip of speed as an F1 car tears through the track from a striking aerial view. The sweeping lines and blurred motion evoke both power and precision, like claws raking through time itself. It’s a visual symphony of control, chaos, and the unrelenting hunger for victory.",
   },
   {
     id: 5,
@@ -98,6 +102,7 @@ const originals = [
     link: "#",
     height: 36,
     width: 25,
+        description:"“Metre Down” captures the pulse of urban India through vibrant, abstract lines that mirror the rhythm of city streets. At its heart, an Indian auto rickshaw speeds ahead — bold, lively, and full of character. The painting celebrates motion, colour, and the everyday chaos that fuels life on the go.",
   },
   // {
   //   id: 6,
@@ -114,6 +119,7 @@ const originals = [
     link: "#",
     height: 30,
     width: 18,
+    description:"“Scarlet Velocity” captures the raw power and elegance of a speeding motorcycle head-on. The front view reveals gleaming chrome details, blazing red paint that symbolizes passion and speed, and light reflections that seem to blur into motion. The artwork evokes the thrill of racing, the pulse of freedom, and the spirit of unstoppable momentum.",
   },
   // {
   //   id: 8,
@@ -130,6 +136,7 @@ const originals = [
     link: "#",
     height: 35,
     width: 20,
+    description:"A thrilling depiction of vintage race cars hurtling through a vibrant track, capturing the essence of speed and competition. The bold colors and dynamic lines create a sense of motion and adrenaline. The artwork celebrates the golden age of racing — where precision, passion, and velocity ruled the road.",
   },
   {
     id: 10,
@@ -140,6 +147,7 @@ const originals = [
     link: "#",
     height: 20,
     width: 15,
+    description:"“Born Reckless” portrays a dirt bike head-on, coated in dust and adrenaline. The front view bursts with rugged energy — mud splashes, roaring tires, and a fearless rider’s silhouette behind the handlebars. Bold strokes and earthy tones capture the wild spirit of adventure, rebellion, and the raw thrill of off-road freedom.",
   },
   {
     id: 11,
@@ -149,6 +157,7 @@ const originals = [
     link: "#",
     height: 30,
     width: 20,
+    description:"“Noir Élan” portrays a striking supercar parked gracefully in a vintage town under a bright, sunlit sky. The polished surface reflects the charm of old architecture around it, blending modern luxury with timeless elegance. The stillness of the scene captures quiet confidence — power at rest amid classic beauty.",
   },
   {
     id: 12,
@@ -167,6 +176,7 @@ const originals = [
     link: "#",
     height: 40,
     width: 25,
+    descripton:"A bold celebration of the golden age of automobiles, Retro Motion captures the spirit of speed and style in vivid geometric forms. The warm reds, oranges, and yellows reflect the energy of a bygone era, where craftsmanship met adventure. With its dynamic composition and art-deco flair, the painting radiates timeless elegance and forward momentum.",
   },
 ];
 

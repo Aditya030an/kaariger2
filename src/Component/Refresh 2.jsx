@@ -23,6 +23,7 @@ const newReleases = [
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
     height: 25,
     width: 18,
+    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
     title: "Ikea Storage Cube Covers",
@@ -43,6 +44,7 @@ const newReleases = [
     snippet: "Minimalist and floral, perfect for modern spaces.",
     height: 25,
     width: 18,
+    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
     title: "Modern Boho Macrame",
