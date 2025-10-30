@@ -148,7 +148,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-white w-screen h-screen overflow-y-auto ">
-      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col  gap-2">
+      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col justify-center gap-2">
         <button
           onClick={onClose}
           className="text-[22px] font-medium text-black flex items-center gap-1"
@@ -162,7 +162,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           </h4>
         )}
 
-        <div className="flex h-full flex-col md:flex-row items-center gap-8">
+        <div className="flex  flex-col md:flex-row items-center gap-8 ">
           {/* Left Side */}
           <div className="flex-1 flex flex-col items-center gap-6">
             {/* Preview Section */}

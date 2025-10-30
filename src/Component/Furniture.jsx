@@ -140,6 +140,7 @@ const originals = [
     wallImage: Img29,
     basePrice: 25000,
     link: "#",
+    description:"Mr. Nook — a compact fusion of charm and function. Crafted in rich wood, this minimal yet warm bedside table brings an earthy aesthetic to modern living. With a pull-down rattan shelf and soft ambient lighting, it’s perfect for cozy storage or displaying your favorite reads and decor. A true nook of comfort and sophistication for any corner."
   },
 ];
 
