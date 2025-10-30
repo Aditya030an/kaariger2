@@ -6,7 +6,6 @@ import {
   FaTwitter,
   FaDribbble,
 } from "react-icons/fa";
-// import logo from "./photos/logo.jpeg"; // Replace with your logo path
 import logo from "./photos/logo_1.png";
 
 const Footer = () => {
@@ -18,7 +17,7 @@ const Footer = () => {
       viewport={{ once: true }}
       className="relative w-full overflow-hidden bg-gradient-to-br from-[#fdfcfb] to-[#e2d1c3] text-gray-800 py-24 px-6 md:px-20"
     >
-      {/* Visual Layer: Floating SVG or Shapes */}
+      {/* Visual Layer */}
       <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden pointer-events-none">
         <div className="absolute w-[800px] h-[800px] bg-pink-200 rounded-full mix-blend-overlay opacity-20 blur-3xl left-[-200px] top-[-400px]"></div>
         <div className="absolute w-[700px] h-[700px] bg-blue-200 rounded-full mix-blend-overlay opacity-20 blur-2xl right-[-150px] bottom-[-300px]"></div>
@@ -51,7 +50,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation + Social */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Explore</h5>
             <ul className="text-sm space-y-2 text-gray-600">
@@ -83,6 +82,36 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
+            <h5 className="font-semibold text-base mb-3">Legal</h5>
+            <ul className="text-sm space-y-2 text-gray-600">
+              <li>
+                <a
+                  href="/terms-and-conditions"
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/privacy-policy"
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/refund-shipping-policy"
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Refund & Shipping Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Follow Us</h5>
             <div className="flex justify-center md:justify-start gap-5 text-lg text-gray-600">
               <a
@@ -93,7 +122,6 @@ const Footer = () => {
               >
                 <FaInstagram />
               </a>
-
               <a href="#" className="hover:text-black transition">
                 <FaFacebookF />
               </a>
@@ -108,7 +136,23 @@ const Footer = () => {
         </div>
 
         {/* Bottom Note */}
-        <div className="mt-20 text-center text-xs text-gray-500">
+        <div className="mt-20 text-center text-xs text-gray-500 space-y-2">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2">
+            <a
+              href="/terms-and-conditions"
+              className="hover:text-black transition"
+            >
+              Terms & Conditions
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a href="/privacy-policy" className="hover:text-black transition">
+              Privacy Policy
+            </a>
+            <span className="hidden sm:inline">•</span>
+            <a href="/refund-shipping-policy" className="hover:text-black transition">
+              Refund & Shipping Policy
+            </a>
+          </div>
           <span>
             © {new Date().getFullYear()} Kaarigar Studios · Crafted with Soul &
             Motion.

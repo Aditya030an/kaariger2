@@ -30,6 +30,9 @@ import Artifacts from './Component/Artifacts.jsx';
 import Furniture from './Component/Furniture.jsx';
 import ScrollToTopButton from "./Component/ScrollToTopButton.jsx"; 
 import WhatsAppButton from "./Component/WhatsAppButton"; 
+import TermsConditions from './Component/TermsAndConditions.jsx';
+import PrivacyPolicy from './Component/PrivacyPolicy .jsx';
+import RefundAndShippingPolicy from './Component/RefundAndShippingPolicy.jsx';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -83,6 +86,9 @@ const App = () => {
             <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} />
             <Route path="/Artifacts" element={<Artifacts cart={cart} setCart={setCart}/>} />
             <Route path="/Furniture" element={<Furniture cart={cart} setCart={setCart}/>} />
+            <Route path="/terms-and-conditions" element={<TermsConditions/>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+            <Route path="/refund-shipping-policy" element={<RefundAndShippingPolicy/>} />
           </Routes>
           <Footer />
           <WhatsAppButton/>
