@@ -161,6 +161,12 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
             {productName}
           </h4>
         )}
+        {category === "poster" && (
+          <h4 className="text-2xl font-serif font-bold text-center">
+            {/* Art Paint Decor Object Mixed Media Art Gallery Walls Custom Framing */}
+            The Posters
+          </h4>
+        )}
 
         <div className="flex  flex-col md:flex-row items-center gap-8 ">
           {/* Left Side */}
