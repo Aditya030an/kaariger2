@@ -264,6 +264,7 @@ const originals = [
     link: "#",
     height:40,
     width:30,
+    description:"This evocative artwork titled “Life’s Imbalance” portrays the strength and resilience of rural women, balancing heavy metal pots atop their heads with effortless grace. The vibrant colors and textured strokes bring out the contrast between the simplicity of life and the weight of responsibilities they carry daily. It symbolizes endurance, balance, and the quiet power within everyday struggles"
   },
   {
     id: 19,
@@ -273,6 +274,7 @@ const originals = [
     link: "#",
     height:35,
     width:25,
+    description:"Gift of a New Day captures the quiet miracle of dawn — two figures reaching across warm, sunrise skies toward a glowing sun. Their gentle gestures suggest hope, connection, and renewal. Soft, flowing forms and serene expressions remind us that each morning arrives with possibility, peace, and grace.",
   },
   {
     id: 20,
@@ -294,6 +296,7 @@ const originals = [
     link: "#",
     height:40,
     width:40,
+    description:"“Living Life” is a captivating painting that beautifully captures the essence of solitude and reflection. It portrays a man seated in quiet contemplation, gazing at a vast mountain under a dramatic sky filled with textured clouds. The striking contrast of the red carpet against the golden landscape adds depth and emotion, symbolizing the harmony between human existence and nature’s grandeur. This artwork invites viewers to pause, breathe, and truly live life in the moment.",
   },
   {
     id: 22,
@@ -375,6 +378,7 @@ const originals = [
     link: "#",
     height:35,
     width:35,
+    description:"Immerse yourself in the vivid energy of Euphoria — a captivating abstract artwork that radiates motion, depth, and emotion. Bursting with rich teal, gold, and crimson hues, it symbolizes the explosion of joy and creative freedom. Perfect for modern interiors, this premium canvas transforms any wall into a statement of elegance and inspiration.",
   },
   {
     id: 29,
@@ -387,6 +391,7 @@ const originals = [
     handmadeFixPrice : 16500,
     resizeOption: false,
     frameOption: false,
+    description:"“Trialogue” is a modern abstract triptych that captures the harmony of architecture, culture, and conversation. The earthy tones of terracotta, beige, and navy symbolize warmth, depth, and balance, while geometric stairways and vases evoke stories of connection between spaces and souls. This artwork transforms simplicity into dialogue — where every shape speaks to the other in visual rhythm and unity.",
   },
   {
     id: 30,
@@ -398,6 +403,7 @@ const originals = [
     handmadeFixPrice : 16000,
     resizeOption: false,
     frameOption: false,
+    description:"This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
   },
   {
     id: 31,
@@ -430,6 +436,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+    description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
 ];
 

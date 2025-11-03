@@ -61,12 +61,14 @@ const originals = [
   },
   {
     id: 3,
-    title: "Into The Pure ",
+    title: "Into The Pour ",
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
      height:35,
     width:25,
+     description:"“Into the Pour” playfully blurs the line between indulgence and imagination. The painting depicts people diving into oversized wine glasses, surrendering to waves of rich crimson hues. With its surreal charm and fluid motion, it celebrates the joy of letting go — an ode to passion, pleasure, and the art of escape.",
+
   },
   {
     id: 4,

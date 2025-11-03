@@ -63,6 +63,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 2,
@@ -72,6 +74,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 3,
@@ -81,6 +85,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 4,
@@ -90,6 +96,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 5,
@@ -99,6 +107,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 6,
@@ -108,6 +118,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 7,
@@ -117,6 +129,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 8,
@@ -126,6 +140,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 9,
@@ -135,6 +151,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 10,
@@ -144,6 +162,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 11,
@@ -153,6 +173,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
 
   {
@@ -163,6 +185,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 14,
@@ -172,6 +196,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 15,
@@ -181,6 +207,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 16,
@@ -190,6 +218,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 17,
@@ -199,6 +229,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 18,
@@ -208,6 +240,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 19,
@@ -217,6 +251,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 20,
@@ -226,6 +262,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 21,
@@ -235,6 +273,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 22,
@@ -244,6 +284,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 23,
@@ -253,6 +295,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
   {
     id: 24,
@@ -262,6 +306,8 @@ const originals = [
     link: "#",
     height: 12,
     width: 18,
+    description:
+      "This premium-quality poster is printed on durable, high-grade material that ensures long-lasting color and clarity. With sharp details and a smooth matte finish, it adds a touch of elegance to any space. Perfect for art lovers, collectors, or anyone looking to elevate their interior with timeless style.",
   },
 ];
 

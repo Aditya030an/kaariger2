@@ -72,7 +72,9 @@ const newReleases = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+    description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
+
 
   {
     id: 7,
@@ -128,6 +130,7 @@ const newReleases = [
     handmadeFixPrice: 16000,
     resizeOption: false,
     frameOption: false,
+    description:"This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
   },
   {
     id: 11,
