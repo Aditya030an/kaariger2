@@ -233,7 +233,6 @@ const PrivacyPolicy = () => {
               support@kaarigarandco.com
             </a>
           </p>
-          <p className="text-slate-700">📍 [Insert Business Address]</p>
           <p className="text-slate-700">
             🌐{" "}
             <a

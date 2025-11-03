@@ -282,6 +282,7 @@ const originals = [
     link: "#",
     height: 25,
     width: 25,
+    description:"Whispers of Bloom evokes the delicate poetry of nature awakening in silence. Soft petals and gentle hues seem to breathe life into the canvas, as though flowers are sharing secrets with the morning light. It is a quiet celebration of growth, grace, and the beauty found in moments that blossom softly and unseen.",
   },
   {
     id: 19,
