@@ -84,6 +84,7 @@ const products = [
     link: "#",
     height: 35,
     width: 25,
+    escription:"“Pop Goes the Orange” beautifully captures the contrast between stillness and motion. Bright oranges scattered across a cracked black-and-white tiled floor bring vibrancy and life to an otherwise structured setting. The play of light, shadow, and geometry makes this simple moment feel both spontaneous and artistic."
   },
   {
     id: 4,

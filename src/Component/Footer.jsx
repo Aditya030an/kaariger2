@@ -54,14 +54,14 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Explore</h5>
             <ul className="text-sm space-y-2 text-gray-600">
-              <li>
+              {/* <li>
                 <a
                   href=""
                   className="hover:text-black cursor-pointer transition"
                 >
                   Gallery
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="/Bestsellerpage "
@@ -70,14 +70,14 @@ const Footer = () => {
                   Best Sellers
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href=""
                   className="hover:text-black cursor-pointer transition"
                 >
                   Custom Orders
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

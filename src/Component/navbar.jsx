@@ -134,6 +134,10 @@ const Navbar = ({ cart }) => {
               )}
             </div>
 
+            <a href="/Original" className="cursor-pointer hover:underline">
+              Kaarigar Original
+            </a>
+
             <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
               Kaarigar Luxe
             </a>
@@ -189,8 +193,8 @@ const Navbar = ({ cart }) => {
               Kaarigar Original
             </a>
 
-            <a href="/Journey" className="cursor-pointer hover:underline">
-              The Journey
+            <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
+              Kaarigar Luxe
             </a>
             <a href="/Contact" className="cursor-pointer hover:underline">
               Contact
