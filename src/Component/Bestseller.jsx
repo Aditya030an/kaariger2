@@ -115,6 +115,16 @@ const Bestseller = ({ cart, setCart }) => {
     };
   }, []);
 
+  useEffect(() => {
+  const el = cardRefs.current[currentIndex];
+  if (el && carouselRef.current) {
+    const container = carouselRef.current;
+    const offsetLeft = el.offsetLeft - container.offsetLeft - container.clientWidth / 2 + el.clientWidth / 2;
+    container.scrollTo({ left: offsetLeft, behavior: "smooth" });
+  }
+}, [currentIndex]);
+
+
   // ⏱️ Auto-slide only when section is visible
   useEffect(() => {
     if (!isVisible) return;
@@ -185,6 +195,7 @@ const Bestseller = ({ cart, setCart }) => {
         <div
           ref={carouselRef}
           className="flex items-center gap-3 py-8 px-4 overflow-x-auto scroll-smooth no-scrollbar"
+            style={{ overflowY: "hidden" }}
         >
           {images.map((product, idx) => (
             <div

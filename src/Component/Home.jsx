@@ -73,6 +73,12 @@ const images = [
 const Home = ({cart , setCart}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  
+  // Inside Home.jsx
+useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "instant" });
+}, []);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
