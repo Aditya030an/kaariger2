@@ -418,6 +418,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+        description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
   },
   {
     id: 33,

@@ -567,6 +567,7 @@ const originals = [
     link: "#",
     height: 20,
     width: 15,
+    description:"“Old Man’s Friend” beautifully captures the bond between a man and his loyal camel. The aged man, weathered by time and sun, gently holds the camel’s chain with quiet affection. Warm desert tones and golden light evoke companionship, endurance, and trust — a timeless friendship shaped by the sands of life."
   },
 
   {
@@ -617,6 +618,7 @@ const originals = [
     link: "#",
     height: 35,
     width: 20,
+    description:"This monochrome painting captures the quiet soul of an old Indian street at dawn. The soft mist and diffused light blend into the aged architecture, where silhouettes of people begin their daily chores. The sweeping figure in the foreground symbolizes simplicity and rhythm in everyday life — a gentle harmony between man, light, and the timeless city.",
   },
 
   {

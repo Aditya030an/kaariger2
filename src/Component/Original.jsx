@@ -93,17 +93,19 @@ const originals = [
   },
   {
     id: 8,
-    title: "Soulful Symphony ",
-    basePrice: 6499,
+    title: "⁠Boombox Shelf Table ",
+     basePrice: 30000,
     image: Img8,
     link: "#",
+        description:"A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
   },
   {
     id: 9,
     title: "Ace Centre Table ",
-    basePrice: 7299,
+    basePrice: 30000,
     image: Img9,
     link: "#",
+     description:"A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space."
   },
 ];
 
@@ -232,7 +234,7 @@ const KaarigarOriginal = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="original"
+          category={selectedProduct?.id == 8 || selectedProduct?.id == 9 ? "artifacts": "original"}
         />
       )}
     </section>

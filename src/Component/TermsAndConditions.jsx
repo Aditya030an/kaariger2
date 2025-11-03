@@ -8,9 +8,9 @@ const TermsConditions = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-center text-[#19273A] mb-2">
           Terms & Conditions
         </h1>
-        <p className="text-center text-sm text-slate-500 mb-8">
+        {/* <p className="text-center text-sm text-slate-500 mb-8">
           Effective Date: [Insert Date]
-        </p>
+        </p> */}
 
         <p className="mb-8 text-base leading-relaxed">
           Welcome to <span className="font-semibold">Kaarigar & Co.</span> By
@@ -24,7 +24,9 @@ const TermsConditions = () => {
             www.kaarigarandco.com
           </a>
           , you agree to the following Terms and Conditions. Please read them
-          carefully before using our services.
+          carefully before using our services. These terms are managed and
+          maintained under the supervision of{" "}
+          <span className="font-semibold">Gautam Soneja</span>.
         </p>
 
         {/* 1. General Information */}
@@ -49,8 +51,8 @@ const TermsConditions = () => {
           <ul className="list-disc ml-6 text-slate-700 space-y-2">
             <li>
               All our products are handcrafted, and minor variations in color,
-              shape, or texture may occur. This reflects the unique craftsmanship
-              of our artisans and is not considered a defect.
+              shape, or texture may occur. This reflects the unique
+              craftsmanship of our artisans and is not considered a defect.
             </li>
             <li>
               Product descriptions, images, and pricing are subject to change
@@ -105,8 +107,8 @@ const TermsConditions = () => {
               logistics partners or unforeseen events.
             </li>
             <li>
-              Customers will receive tracking information once the order has been
-              shipped.
+              Customers will receive tracking information once the order has
+              been shipped.
             </li>
           </ul>
         </div>
@@ -129,12 +131,12 @@ const TermsConditions = () => {
           </h2>
           <ul className="list-disc ml-6 text-slate-700 space-y-2">
             <li>
-              Any indirect, incidental, or consequential damages arising from the
-              use or inability to use our products or website.
+              Any indirect, incidental, or consequential damages arising from
+              the use or inability to use our products or website.
             </li>
             <li>
-              Delays, losses, or damage caused by third-party shipping or payment
-              providers.
+              Delays, losses, or damage caused by third-party shipping or
+              payment providers.
             </li>
             <li>
               Minor variations in handcrafted products as described above.
@@ -185,8 +187,8 @@ const TermsConditions = () => {
           </h2>
           <p className="text-slate-700 leading-relaxed">
             These Terms & Conditions are governed by the laws of India. Any
-            disputes shall be subject to the exclusive jurisdiction of the courts
-            in Indore, India.
+            disputes shall be subject to the exclusive jurisdiction of the
+            courts in Indore, India.
           </p>
         </div>
 
@@ -196,7 +198,10 @@ const TermsConditions = () => {
             11. Contact Information
           </h2>
           <p className="text-slate-700 leading-relaxed mb-2">
-            For questions, feedback, or concerns, please contact us at:
+            For questions, feedback, or concerns, please contact:
+          </p>
+          <p className="text-slate-700 mb-1">
+            👤 <span className="font-semibold">Gautam Soneja</span>
           </p>
           <p className="text-slate-700">
             📧{" "}

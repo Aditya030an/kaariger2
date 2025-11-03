@@ -8,9 +8,9 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-center text-[#19273A] mb-2">
           Privacy Policy
         </h1>
-        <p className="text-center text-sm text-slate-500 mb-8">
+        {/* <p className="text-center text-sm text-slate-500 mb-8">
           Effective Date: [Insert Date]
-        </p>
+        </p> */}
 
         <p className="mb-8 text-base leading-relaxed">
           At <span className="font-semibold">Kaarigar & Co.</span>, we value your

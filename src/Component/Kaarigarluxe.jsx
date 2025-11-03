@@ -272,6 +272,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+        description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
   {
     id: 29,
@@ -304,6 +305,7 @@ const originals = [
     link: "#",
     resizeOption:false,
     frameOption: false,
+        description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
   },
   {
     id: 32,

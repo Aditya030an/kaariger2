@@ -54,14 +54,29 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Explore</h5>
             <ul className="text-sm space-y-2 text-gray-600">
-              <li className="hover:text-black cursor-pointer transition">
-                Gallery
+              <li>
+                <a
+                  href=""
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Gallery
+                </a>
               </li>
-              <li className="hover:text-black cursor-pointer transition">
-                Best Sellers
+              <li>
+                <a
+                  href="/Bestsellerpage "
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Best Sellers
+                </a>
               </li>
-              <li className="hover:text-black cursor-pointer transition">
-                Custom Orders
+              <li>
+                <a
+                  href=""
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  Custom Orders
+                </a>
               </li>
             </ul>
           </div>
@@ -69,14 +84,13 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h5 className="font-semibold text-base mb-3">Company</h5>
             <ul className="text-sm space-y-2 text-gray-600">
-              <li className="hover:text-black cursor-pointer transition">
-                About Us
-              </li>
-              <li className="hover:text-black cursor-pointer transition">
-                Careers
-              </li>
-              <li className="hover:text-black cursor-pointer transition">
-                Press
+              <li>
+                <a
+                  href="/About"
+                  className="hover:text-black cursor-pointer transition"
+                >
+                  About Us
+                </a>
               </li>
             </ul>
           </div>
@@ -149,7 +163,10 @@ const Footer = () => {
               Privacy Policy
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="/refund-shipping-policy" className="hover:text-black transition">
+            <a
+              href="/refund-shipping-policy"
+              className="hover:text-black transition"
+            >
               Refund & Shipping Policy
             </a>
           </div>

@@ -13,7 +13,7 @@ const RefundAndShippingPolicy = () => {
 
       <h2 className="text-xl font-semibold mb-3">1. Order Processing</h2>
       <ul className="list-disc ml-6 mb-6 space-y-2">
-        <li>All confirmed orders are processed within <strong>3–5 business days</strong> after payment confirmation.</li>
+        <li>Order will be processed in <strong>8-10 days</strong>  and delivered in 3-4 business days post production.</li>
         <li>Since our products are handmade, please allow <strong>10–12 days</strong> for shipping and delivery after your order is placed.</li>
         <li>You’ll receive a tracking ID once your order has been dispatched via email or WhatsApp.</li>
       </ul>
@@ -48,9 +48,6 @@ const RefundAndShippingPolicy = () => {
         <li>You receive a damaged or incorrect product, and</li>
         <li>You contact us within <strong>48 hours</strong> of delivery with unboxing video proof and product photos.</li>
       </ul>
-      <p className="mb-6">
-        After verification, we may offer a replacement or store credit — solely at our discretion.
-      </p>
 
       <hr className="my-8 border-gray-300" />
 

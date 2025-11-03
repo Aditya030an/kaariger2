@@ -113,6 +113,7 @@ const newReleases = [
       link: "#",
       resizeOption: false,
       frameOption: false,
+          description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
     },
   {
     id: 10,
@@ -138,6 +139,7 @@ const newReleases = [
     moreImage: Img29,
     basePrice: 16000,
     link: "#",
+        description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
 ];
 

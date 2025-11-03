@@ -27,6 +27,7 @@ const images = [
     moreImage: Img8,
     basePrice: 16000,
     link: "#",
+        description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
    {
       id: 7,
@@ -35,6 +36,7 @@ const images = [
       wallImage:Img10,
       basePrice: 82000,
       link: "#",
+          description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
     },
   {
     id: 1,
@@ -54,6 +56,7 @@ const images = [
     basePrice: 30000,
     image: Img2,
     link: "#",
+      description:"A sculptural masterpiece that brings art and functionality together. The Humane Centre Table features a finely crafted human face base, symbolizing serenity and depth, topped with a sleek glass surface. Perfect for modern living spaces, it adds a touch of minimalism, sophistication, and soulful character to any room.",
   },
   {
     id: 3,
@@ -84,6 +87,7 @@ const images = [
     basePrice: 25000,
     image: Img5,
     link: "#",
+        description:"A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
   },
 
   
