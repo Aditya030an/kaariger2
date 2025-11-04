@@ -43,18 +43,13 @@ const RefundAndShippingPolicy = () => {
         All products at <strong>Kaarigar & Co.</strong> are handcrafted with individual attention, and therefore, all sales are final.<br />
         We do not accept returns, exchanges, or refunds once an order is placed.
       </p>
-      <p className="mb-4">Exceptions apply only if:</p>
-      <ul className="list-disc ml-6 mb-6 space-y-2">
-        <li>You receive a damaged or incorrect product, and</li>
-        <li>You contact us within <strong>48 hours</strong> of delivery with unboxing video proof and product photos.</li>
-      </ul>
 
       <hr className="my-8 border-gray-300" />
 
       <h2 className="text-xl font-semibold mb-3">5. Order Cancellations</h2>
       <ul className="list-disc ml-6 mb-6 space-y-2">
         <li>Orders cannot be cancelled once they are processed or dispatched.</li>
-        <li>Cancellation requests within <strong>24 hours</strong> of placing the order may be accepted if production or packing has not yet begun.</li>
+        {/* <li>Cancellation requests within <strong>24 hours</strong> of placing the order may be accepted if production or packing has not yet begun.</li> */}
       </ul>
 
       <hr className="my-8 border-gray-300" />
