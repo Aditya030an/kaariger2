@@ -33,8 +33,10 @@ import WhatsAppButton from "./Component/WhatsAppButton";
 import TermsConditions from './Component/TermsAndConditions.jsx';
 import PrivacyPolicy from './Component/PrivacyPolicy .jsx';
 import RefundAndShippingPolicy from './Component/RefundAndShippingPolicy.jsx';
-// import CheckoutPage from './Component/CheckoutPage.jsx';
-// import SuccessPage from './Component/SuccessPage.jsx';
+import CheckoutPage from './Component/CheckoutPage.jsx';
+import PaymentStatus from './Component/PaymentStatus.jsx';
+import PaymentFailed from './Component/PaymentFailed.jsx';
+import PaymentSuccess from './Component/PaymentSuccess.jsx';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -74,8 +76,11 @@ const App = () => {
             
             <Route path="/Bestsellerpage" element={<Bestsellerpage cart={cart} setCart={setCart} />} />
             <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
-            {/* <Route path="/checkout" element={<CheckoutPage />} />
-            <Route path="/success" element={<SuccessPage />} /> */}
+            <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
+            <Route path="/payment-status" element={<PaymentStatus />} />
+            <Route path="/failed" element={<PaymentFailed />} />
+            <Route path="/success" element={<PaymentSuccess />} />
+
 
 
             <Route path="/Original" element={<Original cart={cart} setCart={setCart} />} />

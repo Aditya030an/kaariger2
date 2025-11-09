@@ -240,7 +240,7 @@ const CartPage = ({ cart, setCart }) => {
               >
                 Clear All
               </button>
-              {/* <button
+              <button
                 onClick={() =>
                   navigate("/checkout", {
                     state: {
@@ -254,12 +254,12 @@ const CartPage = ({ cart, setCart }) => {
                 className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto"
               >
                 Proceed to Checkout
-              </button> */}
-              <button
+              </button>
+              {/* <button
                 className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto"
               >
                 Proceed to Checkout
-              </button>
+              </button> */}
               
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoArrowBack, IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const pricingPerInch = {
   // frame: 45,
@@ -403,28 +404,26 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
             {/* Add to Cart */}
             {category !== "artifacts" && product?.resizeOption !== false && (
-  <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 text-base mb-5">
-    {/* Add to Cart Button */}
-    <button
-      onClick={handleAdd}
-      disabled={!customWidth || !customHeight}
-      className="w-full md:w-[48%] bg-zinc-700 text-white py-2 rounded-lg hover:bg-zinc-800 disabled:bg-gray-300 transition-all duration-200"
-    >
-      {!customWidth || !customHeight
-        ? "Please enter custom dimensions"
-        : "Add to Cart"}
-    </button>
+              <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 text-base mb-5">
+                {/* Add to Cart Button */}
+                <button
+                  onClick={handleAdd}
+                  disabled={!customWidth || !customHeight}
+                  className="w-full md:w-[48%] bg-zinc-700 text-white py-2 rounded-lg hover:bg-zinc-800 disabled:bg-gray-300 transition-all duration-200"
+                >
+                  {!customWidth || !customHeight
+                    ? "Please enter custom dimensions"
+                    : "Add to Cart"}
+                </button>
 
-    {/* Proceed to Checkout Button */}
-    {customHeight && customWidth && (
-      <button
-        className="w-full md:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200"
-      >
-        Proceed to Checkout
-      </button>
-    )}
-  </div>
-)}
+                {/* Proceed to Checkout Button */}
+                {customHeight && customWidth && (
+                  <Link to="/checkout" className="w-full md:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
+                    Proceed to Checkout
+                  </Link>
+                )}
+              </div>
+            )}
 
             {(category === "artifacts" || product?.resizeOption === false) && (
               <div className="w-full">
@@ -446,9 +445,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   </button>
 
                   {/* Proceed to Checkout button */}
-                  <button className="w-full sm:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
+                  <Link to="/checkout" className="w-full sm:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
                     Proceed to Checkout
-                  </button>
+                  </Link>
                 </div>
               </div>
             )}
