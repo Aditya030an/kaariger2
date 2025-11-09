@@ -1,10 +1,14 @@
 // src/pages/CheckoutPage.jsx
 import React, { useState } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-const CheckoutPage = ({ cart }) => {
+const CheckoutPage = () => {
+  const location = useLocation();
+  const totalFromNav = location.state?.total || 0;
+
   const [loading, setLoading] = useState(false);
   const [couponCode, setCouponCode] = useState("");
   const [discount, setDiscount] = useState(0);
@@ -12,15 +16,12 @@ const CheckoutPage = ({ cart }) => {
   const [errorMsg, setErrorMsg] = useState("");
 
   // calculate total price before discount
-  const totalAmount = cart.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+  const totalAmount = totalFromNav;
 
   // Apply coupon
   const handleApplyCoupon = () => {
-    if (couponCode.trim() === "KAAREGAR20") {
-      const discountAmount = totalAmount * 0.2;
+    if (couponCode.trim() === "KAARIGAR20") {
+      const discountAmount = totalFromNav * 0.2;
       setDiscount(discountAmount);
       setIsCouponApplied(true);
       setErrorMsg("");

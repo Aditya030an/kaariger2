@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoArrowBack, IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const pricingPerInch = {
   // frame: 45,
@@ -29,6 +29,7 @@ const categoryPrice = {
 const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   console.log("product", product);
   console.log("category", category);
+  const navigate = useNavigate();
   const productName = product?.title;
   const [artType, setArtType] = useState("print");
   const [price, setPrice] = useState(0);
@@ -418,9 +419,18 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
                 {/* Proceed to Checkout Button */}
                 {customHeight && customWidth && (
-                  <Link to="/checkout" className="w-full md:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
+                  <button
+                      onClick={() =>
+                      navigate("/checkout", {
+                        state: {
+                          total: price,
+                        },
+                      })
+                    }
+                    className="w-full md:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200"
+                  >
                     Proceed to Checkout
-                  </Link>
+                  </button>
                 )}
               </div>
             )}
@@ -445,9 +455,18 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   </button>
 
                   {/* Proceed to Checkout button */}
-                  <Link to="/checkout" className="w-full sm:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
+                  <button
+                    onClick={() =>
+                      navigate("/checkout", {
+                        state: {
+                          total: price,
+                        },
+                      })
+                    }
+                    className="w-full text-center sm:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200"
+                  >
                     Proceed to Checkout
-                  </Link>
+                  </button>
                 </div>
               </div>
             )}
