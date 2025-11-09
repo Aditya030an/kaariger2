@@ -52,6 +52,7 @@ const products = [
     wallImage: Img10,
     basePrice: 82000,
     link: "#",
+    category: "artifacts",
         description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
   },
   {

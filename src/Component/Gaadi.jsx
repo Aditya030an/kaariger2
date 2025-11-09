@@ -17,6 +17,7 @@ import Img14 from "./photos/motor13.png";
 import Img11 from "./photos/motor10.jpeg";
 import Img12 from "./photos/motor11.jpeg";
 import Img13 from "./photos/motor12.jpeg";
+import Img15 from "./photos/Artifacts11.jpg";
 import Img44 from "./photos/motor32.jpeg";
 import Img55 from "./photos/motor44.jpeg";
 
@@ -178,6 +179,15 @@ const originals = [
     width: 25,
     descripton:"A bold celebration of the golden age of automobiles, Retro Motion captures the spirit of speed and style in vivid geometric forms. The warm reds, oranges, and yellows reflect the energy of a bygone era, where craftsmanship met adventure. With its dynamic composition and art-deco flair, the painting radiates timeless elegance and forward momentum.",
   },
+   {
+      id: 14,
+      title: "F1 Fender Stand Wooden",
+      image: Img15,
+      basePrice: 10000,
+      link: "#",
+      category: "artifacts",
+      description:"Bring home the spirit of Formula 1 with this stunning F1 Fender Stand Wooden. Crafted with precision and designed to resemble a real F1 car fender, it adds a bold, sporty vibe to your space. Perfect as a display shelf or wall décor for motorsport enthusiasts, this piece combines craftsmanship, style, and speed in one iconic design.",
+    },
 ];
 
 const fadeInUp = {
@@ -315,7 +325,7 @@ const Gaadi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="gaadi"
+          category={selectedProduct?.category || "gaadi"}
         />
       )}
     </section>

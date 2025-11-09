@@ -143,6 +143,8 @@ const originals = [
       moreImage:Img31,
       basePrice: 35000,
       link: "#",
+        resizeOption: false,
+    frameOption: false,
       description: "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
   },
   {
@@ -325,7 +327,7 @@ const Painting = ({ cart, setCart }) => {
 
       {/* Product Cards Grid */}
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7 sm:gap-10 lg:gap-14">
-        {originals.map((product, index) => (
+        {originals.toReversed().map((product, index) => (
           <motion.div
             key={product?.id}
             variants={fadeInUp}

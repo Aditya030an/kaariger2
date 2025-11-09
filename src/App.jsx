@@ -33,6 +33,8 @@ import WhatsAppButton from "./Component/WhatsAppButton";
 import TermsConditions from './Component/TermsAndConditions.jsx';
 import PrivacyPolicy from './Component/PrivacyPolicy .jsx';
 import RefundAndShippingPolicy from './Component/RefundAndShippingPolicy.jsx';
+// import CheckoutPage from './Component/CheckoutPage.jsx';
+// import SuccessPage from './Component/SuccessPage.jsx';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -72,6 +74,10 @@ const App = () => {
             
             <Route path="/Bestsellerpage" element={<Bestsellerpage cart={cart} setCart={setCart} />} />
             <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
+            {/* <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/success" element={<SuccessPage />} /> */}
+
+
             <Route path="/Original" element={<Original cart={cart} setCart={setCart} />} />
             <Route path="/Gaadi" element={<Gaadi cart={cart} setCart={setCart} />} />
             <Route path="/Thepokerparlour" element={<Thepokerparlour cart={cart} setCart={setCart}/>} />

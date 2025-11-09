@@ -279,6 +279,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+    category:"artifacts",
         description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
   {
@@ -291,6 +292,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+    category:"artifacts",
     description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
   },
   {
@@ -312,6 +314,7 @@ const originals = [
     link: "#",
     resizeOption:false,
     frameOption: false,
+    category:"artifacts",
         description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
   },
   {
@@ -323,6 +326,7 @@ const originals = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+     category:"artifacts",
     description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination."
   },
 ];
@@ -461,7 +465,7 @@ const Gaadi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="kaarigarluxe"
+          category={selectedProduct?.category || "kaarigarluxe"}
         />
       )}
     </section>

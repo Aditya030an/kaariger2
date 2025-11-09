@@ -203,14 +203,14 @@ useEffect(() => {
               </div>
 
               <div className="p-3 lg:p-6">
-                <h3 className="text-[18px] lg:text-[24px] font-semibold font-serif text-gray-900 leading-snug whitespace-nowrap">
+                <h3 className="text-xl md:text-2xl font-bold font-serif text-[#3e2c1b] leading-snug whitespace-nowrap">
                   {item.title}
                 </h3>
                 <Link to={item.link}>
                   <motion.button
                     whileTap={{ scale: 0.95 }}
                     // className="mt-2 inline-flex items-center gap-2 text-white bg-gray-800 px-2 md:px-5 py-2 text-[8px] md:text-[12px] font-semibold rounded-lg shadow hover:bg-black transition-colors"
-                    className="mt-2 inline-flex items-center justify-center w-full gap-2 text-black hover:text-white bg-white border-2 border-solid border-gray-800 px-2 md:px-5 py-2 text-[10px] lg:text-[12px] font-semibold rounded-lg shadow hover:bg-gray-800 transition-colors"
+                    className="mt-2 inline-flex items-center justify-center w-full gap-2 text-black hover:text-white bg-white border-2 border-solid border-gray-800 px-2 md:px-5 py-2 text-sm font-semibold rounded-lg shadow hover:bg-gray-800 transition-colors"
                   >
                     Explore <ArrowRight size={12} />
                   </motion.button>

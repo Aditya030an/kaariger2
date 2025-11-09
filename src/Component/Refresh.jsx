@@ -72,6 +72,7 @@ const newReleases = [
     link: "#",
     resizeOption: false,
     frameOption: false,
+     category:"artifacts",
     description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
 
@@ -113,6 +114,7 @@ const newReleases = [
       basePrice: 3000,
       image:Img32,
       link: "#",
+       subCategory:"artifacts",
       resizeOption: false,
       frameOption: false,
           description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
@@ -202,9 +204,9 @@ export default function NewReleases({ cart, setCart }) {
                     alt={product?.title}
                     className="object-contain h-full w-full"
                   />
-                  <div className="absolute bottom-4 left-4 bg-[#f4e2d8] text-[#513d2c] font-mono text-xs px-3 py-1 rounded-full shadow">
+                  {/* <div className="absolute bottom-4 left-4 bg-[#f4e2d8] text-[#513d2c] font-mono text-xs px-3 py-1 rounded-full shadow">
                     {product?.category}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="p-3">
                   <h3 className="text-xl md:text-2xl font-serif font-bold text-[#3e2c1b] md:mb-2">

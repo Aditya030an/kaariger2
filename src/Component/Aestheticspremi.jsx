@@ -10,9 +10,6 @@ import Img6 from "./photos/Aestheticspremi4.jpeg";
 
 import Img8 from "./photos/Aestheticspremi7.jpeg";
 import Img9 from "./photos/Aestheticspremi9.jpeg";
-import Img39 from "./photos/Aestheticspremi10.jpg";
-import Img40 from "./photos/Aestheticspremi11.jpg";
-import Img41 from "./photos/Aestheticspremi12.png";
 
 import Img1 from "./photos/luxe1.png";
 import Img2 from "./photos/luxe2.png";
@@ -51,6 +48,38 @@ import Img35 from "./photos/img11.jpg";
 import Img36 from "./photos/artifacts39.jpg";
 import Img37 from "./photos/artifacts37.png";
 import Img38 from "./photos/artifacts38.png";
+import Img39 from "./photos/Aestheticspremi10.jpg";
+import Img42 from "./photos/Artifact3.png";
+import Img43 from "./photos/Artifacts7.jpg";
+import Img45 from "./photos/Artifacts9.jpeg";
+import Img46 from "./photos/Artifacts10.jpg";
+import Img47 from "./photos/Artifacts14.jpg";
+import Img48 from "./photos/music.png";
+import Img49 from "./photos/artifacts23.jpg";
+import Img50 from "./photos/artifacts30.png";
+import Img51 from "./photos/artifacts34.png";
+import Img52 from "./photos/Aestheticspremi11.jpg";
+import Img53 from "./photos/Aestheticspremi12.png";
+import Img54 from "./photos/artifacts35.jpg";
+import Img56 from "./photos/artifacts36.png";
+import Img57 from "./photos/Artifacts.jpg";
+import Img58 from "./photos/Artifacts1.jpg";
+import Img59 from "./photos/Artifacts2.jpg";
+import Img60 from "./photos/Artifacts4.png";
+import Img61 from "./photos/Artifacts8.jpg";
+
+import Img65 from "./photos/artifacts24.jpg";
+import Img66 from "./photos/artifacts31.jpg";
+import Img67 from "./photos/artifacts40.png";
+import Img68 from "./photos/artifacts41.png";
+import Img69 from "./photos/artifacts42.png";
+import Img70 from "./photos/artifacts28.png";
+import Img71 from "./photos/artifacts27.png";
+import Img72 from "./photos/artifacts46.jpg";
+import Img73 from "./photos/artifacts47.png";
+import Img74 from "./photos/artifacts48.png";
+import Img75 from "./photos/artifacts49.jpg";
+import Img76 from "./photos/artifacts50.png";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -97,7 +126,8 @@ const originals = [
     link: "#",
     height: 30,
     width: 25,
-        description:"“Sweet Solitude” captures a tender moment of self-indulgence and peace — a woman savoring grapes under the soft daylight. The delicate hand and serene expression symbolize quiet pleasure and mindful presence. The play of light and shadow adds a poetic warmth, celebrating simplicity, beauty, and stillness within oneself.",
+    description:
+      "“Sweet Solitude” captures a tender moment of self-indulgence and peace — a woman savoring grapes under the soft daylight. The delicate hand and serene expression symbolize quiet pleasure and mindful presence. The play of light and shadow adds a poetic warmth, celebrating simplicity, beauty, and stillness within oneself.",
   },
   {
     id: 4,
@@ -107,7 +137,8 @@ const originals = [
     link: "#",
     height: 20,
     width: 15,
-    description:"“Old Man’s Friend” beautifully captures the bond between a man and his loyal camel. The aged man, weathered by time and sun, gently holds the camel’s chain with quiet affection. Warm desert tones and golden light evoke companionship, endurance, and trust — a timeless friendship shaped by the sands of life.",
+    description:
+      "“Old Man’s Friend” beautifully captures the bond between a man and his loyal camel. The aged man, weathered by time and sun, gently holds the camel’s chain with quiet affection. Warm desert tones and golden light evoke companionship, endurance, and trust — a timeless friendship shaped by the sands of life.",
   },
   {
     id: 5,
@@ -117,7 +148,8 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
-    description:"A mesmerizing blend of hues pours into the cup, symbolizing the vibrant energy that coffee awakens within us. Each color swirl mirrors the burst of creativity and warmth that caffeine ignites. The rich tones flow together like a morning ritual — bold, lively, and irresistibly alive.",
+    description:
+      "A mesmerizing blend of hues pours into the cup, symbolizing the vibrant energy that coffee awakens within us. Each color swirl mirrors the burst of creativity and warmth that caffeine ignites. The rich tones flow together like a morning ritual — bold, lively, and irresistibly alive.",
   },
   {
     id: 6,
@@ -127,7 +159,8 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
-    description:"“Mrs. Bijou” portrays the quiet grace of a traditional Indian woman, adorned in elegant gold jewelry and a rich earthy saree. Her poised expression reflects strength, dignity, and timeless beauty. The muted tones and delicate detailing capture both cultural depth and feminine sophistication, celebrating heritage with a modern artistic touch.",
+    description:
+      "“Mrs. Bijou” portrays the quiet grace of a traditional Indian woman, adorned in elegant gold jewelry and a rich earthy saree. Her poised expression reflects strength, dignity, and timeless beauty. The muted tones and delicate detailing capture both cultural depth and feminine sophistication, celebrating heritage with a modern artistic touch.",
   },
 
   {
@@ -138,7 +171,8 @@ const originals = [
     link: "#",
     height: 25,
     width: 18,
-        description:"“Colours Of The Mind” captures the vivid interplay of thoughts and emotions through bold strokes and layered hues. Each colour seems to echo a different state of mind — calm blues of reflection, fiery reds of passion, and golden tones of clarity. The abstract composition feels alive, portraying the ever-changing landscape of human consciousness.",
+    description:
+      "“Colours Of The Mind” captures the vivid interplay of thoughts and emotions through bold strokes and layered hues. Each colour seems to echo a different state of mind — calm blues of reflection, fiery reds of passion, and golden tones of clarity. The abstract composition feels alive, portraying the ever-changing landscape of human consciousness.",
   },
   {
     id: 8,
@@ -148,7 +182,8 @@ const originals = [
     link: "#",
     height: 36,
     width: 25,
-        description:"“Pouring Stories” depicts a man mid-motion, gracefully pouring chai — a moment rich with warmth and nostalgia. The painting celebrates the humble ritual that connects people, places, and conversations. Through earthy tones and fluid strokes, it transforms an everyday act into a poetic symbol of shared stories and timeless bonds.",
+    description:
+      "“Pouring Stories” depicts a man mid-motion, gracefully pouring chai — a moment rich with warmth and nostalgia. The painting celebrates the humble ritual that connects people, places, and conversations. Through earthy tones and fluid strokes, it transforms an everyday act into a poetic symbol of shared stories and timeless bonds.",
   },
   {
     id: 9,
@@ -156,9 +191,10 @@ const originals = [
     basePrice: 7999,
     image: Img1,
     link: "#",
-    height:36,
-    width:25,
-    description:"This artwork captures a dreamy harmony between nature and celestial beauty. The glowing orange moons rise over misty mountains, bathing the trees and autumn leaves in warm, surreal light. A blend of stillness and imagination, it evokes the feeling of wandering through a peaceful twilight dream where earth and sky quietly merge.",
+    height: 36,
+    width: 25,
+    description:
+      "This artwork captures a dreamy harmony between nature and celestial beauty. The glowing orange moons rise over misty mountains, bathing the trees and autumn leaves in warm, surreal light. A blend of stillness and imagination, it evokes the feeling of wandering through a peaceful twilight dream where earth and sky quietly merge.",
   },
   {
     id: 10,
@@ -168,11 +204,12 @@ const originals = [
     wallImage: Img19,
     hoverImage: Img19,
     link: "#",
-      handmadeOption: false,
+    handmadeOption: false,
     paintingOption: false,
     resizeOption: false,
     frameOption: true,
-    description:"“Wings and Wood” beautifully captures the harmony between nature and freedom. The series portrays silhouettes of trees and birds against bold orange suns, symbolizing the cycle of life and connection between earth and sky. The minimalist composition evokes calmness, balance, and the eternal rhythm of nature’s transitions.",
+    description:
+      "“Wings and Wood” beautifully captures the harmony between nature and freedom. The series portrays silhouettes of trees and birds against bold orange suns, symbolizing the cycle of life and connection between earth and sky. The minimalist composition evokes calmness, balance, and the eternal rhythm of nature’s transitions.",
   },
   {
     id: 11,
@@ -182,9 +219,10 @@ const originals = [
     wallImage: Img18,
     hoverImage: Img18,
     link: "#",
-    height:40,
-    width:25,
-        description:"A serene landscape unfolds beneath a glowing orange sun, where a crystal-clear stream winds through valleys painted with hues of red, yellow, and blue. The contrast between the warm autumn tones and cool mountain shades evokes balance and peace. Each brushstroke captures the quiet harmony of nature, inviting the viewer into a moment of calm reflection.",
+    height: 40,
+    width: 25,
+    description:
+      "A serene landscape unfolds beneath a glowing orange sun, where a crystal-clear stream winds through valleys painted with hues of red, yellow, and blue. The contrast between the warm autumn tones and cool mountain shades evokes balance and peace. Each brushstroke captures the quiet harmony of nature, inviting the viewer into a moment of calm reflection.",
   },
 
   {
@@ -195,9 +233,10 @@ const originals = [
     wallImage: Img15,
     hoverImage: Img15, // <-- hover image for id 5
     link: "#",
-    height:25,
-    width:25,
-    description:"“Luna Femme” captures the serene strength of a woman intertwined with the calm rhythm of nature. Flowing lines and soft hues of gold and blue mirror the ocean’s waves and moonlit skies, symbolizing balance, grace, and empowerment. The geometric patterns add a modern elegance, while the floral elements breathe harmony into her celestial aura.",
+    height: 25,
+    width: 25,
+    description:
+      "“Luna Femme” captures the serene strength of a woman intertwined with the calm rhythm of nature. Flowing lines and soft hues of gold and blue mirror the ocean’s waves and moonlit skies, symbolizing balance, grace, and empowerment. The geometric patterns add a modern elegance, while the floral elements breathe harmony into her celestial aura.",
   },
   {
     id: 13,
@@ -207,9 +246,10 @@ const originals = [
     wallImage: Img16,
     hoverImage: Img16,
     link: "#",
-    height:40,
-    width:25,
-    description:"“Silvara” is a captivating blend of minimalism and abstraction, portraying a bird formed from smooth, flowing ribbons of color. The elegant curves and retro tones of orange, green, and white create a rhythmic balance of movement and stillness. It symbolizes grace, continuity, and the effortless harmony between nature and design.",
+    height: 40,
+    width: 25,
+    description:
+      "“Silvara” is a captivating blend of minimalism and abstraction, portraying a bird formed from smooth, flowing ribbons of color. The elegant curves and retro tones of orange, green, and white create a rhythmic balance of movement and stillness. It symbolizes grace, continuity, and the effortless harmony between nature and design.",
   },
   {
     id: 14,
@@ -219,9 +259,10 @@ const originals = [
     wallImage: Img17,
     hoverImage: Img17,
     link: "#",
-    height:40,
-    width:25,
-    description:"“Trinity of Grace” celebrates the strength, beauty, and unity of womanhood through three elegant silhouettes adorned in vibrant geometric patterns. The artwork harmoniously blends cultural motifs with modern abstraction, symbolizing resilience, pride, and sisterhood. Bold colors of red, gold, and turquoise evoke power and warmth, creating a rhythm of elegance and empowerment.",
+    height: 40,
+    width: 25,
+    description:
+      "“Trinity of Grace” celebrates the strength, beauty, and unity of womanhood through three elegant silhouettes adorned in vibrant geometric patterns. The artwork harmoniously blends cultural motifs with modern abstraction, symbolizing resilience, pride, and sisterhood. Bold colors of red, gold, and turquoise evoke power and warmth, creating a rhythm of elegance and empowerment.",
   },
   {
     id: 15,
@@ -229,9 +270,10 @@ const originals = [
     basePrice: 8599,
     image: Img13,
     link: "#",
-    height:40,
-    width:25,
-    description:"“Vyom” portrays the cosmic connection between human consciousness and celestial balance. The deep teal and black tones reflect inner depth, while the vibrant orange bird symbolizes freedom and spiritual awakening. The geometric patterns and moon element above the figure evoke harmony between the earthly and the divine, making it a striking blend of surrealism and symbolism",
+    height: 40,
+    width: 25,
+    description:
+      "“Vyom” portrays the cosmic connection between human consciousness and celestial balance. The deep teal and black tones reflect inner depth, while the vibrant orange bird symbolizes freedom and spiritual awakening. The geometric patterns and moon element above the figure evoke harmony between the earthly and the divine, making it a striking blend of surrealism and symbolism",
   },
 
   {
@@ -240,9 +282,10 @@ const originals = [
     basePrice: 7499,
     image: Img12,
     link: "#",
-    height:35,
-    width:35,
-    description:"This artwork explores the tension between concealment and revelation. The flowing vertical lines resemble draped fabric, symbolizing the layers that separate perception from reality. The deep navy and beige tones evoke mystery and depth, inviting the viewer to look past the surface. It’s a poetic reminder that what lies beyond the visible often holds the truest form of beauty.",
+    height: 35,
+    width: 35,
+    description:
+      "This artwork explores the tension between concealment and revelation. The flowing vertical lines resemble draped fabric, symbolizing the layers that separate perception from reality. The deep navy and beige tones evoke mystery and depth, inviting the viewer to look past the surface. It’s a poetic reminder that what lies beyond the visible often holds the truest form of beauty.",
   },
   {
     id: 17,
@@ -250,9 +293,10 @@ const originals = [
     basePrice: 7499,
     wallImage: Img44,
     link: "#",
-    height:35,
-    width:35,
-    description:"Bold and vibrant, Mood Tangerine captures a striking balance between confidence and calm. The artwork portrays a poised figure wrapped in oversized shapes of orange and blush, symbolizing warmth, individuality, and playful elegance. With its minimalist lines and rich earthy tones, it evokes a sense of self-assured serenity and artistic charm.",
+    height: 35,
+    width: 35,
+    description:
+      "Bold and vibrant, Mood Tangerine captures a striking balance between confidence and calm. The artwork portrays a poised figure wrapped in oversized shapes of orange and blush, symbolizing warmth, individuality, and playful elegance. With its minimalist lines and rich earthy tones, it evokes a sense of self-assured serenity and artistic charm.",
   },
   {
     id: 18,
@@ -262,9 +306,10 @@ const originals = [
     wallImage: Img21,
     hoverImage: Img21,
     link: "#",
-    height:40,
-    width:30,
-    description:"This evocative artwork titled “Life’s Imbalance” portrays the strength and resilience of rural women, balancing heavy metal pots atop their heads with effortless grace. The vibrant colors and textured strokes bring out the contrast between the simplicity of life and the weight of responsibilities they carry daily. It symbolizes endurance, balance, and the quiet power within everyday struggles"
+    height: 40,
+    width: 30,
+    description:
+      "This evocative artwork titled “Life’s Imbalance” portrays the strength and resilience of rural women, balancing heavy metal pots atop their heads with effortless grace. The vibrant colors and textured strokes bring out the contrast between the simplicity of life and the weight of responsibilities they carry daily. It symbolizes endurance, balance, and the quiet power within everyday struggles",
   },
   {
     id: 19,
@@ -272,9 +317,10 @@ const originals = [
     basePrice: 7499,
     image: Img55,
     link: "#",
-    height:35,
-    width:25,
-    description:"Gift of a New Day captures the quiet miracle of dawn — two figures reaching across warm, sunrise skies toward a glowing sun. Their gentle gestures suggest hope, connection, and renewal. Soft, flowing forms and serene expressions remind us that each morning arrives with possibility, peace, and grace.",
+    height: 35,
+    width: 25,
+    description:
+      "Gift of a New Day captures the quiet miracle of dawn — two figures reaching across warm, sunrise skies toward a glowing sun. Their gentle gestures suggest hope, connection, and renewal. Soft, flowing forms and serene expressions remind us that each morning arrives with possibility, peace, and grace.",
   },
   {
     id: 20,
@@ -283,9 +329,10 @@ const originals = [
     image: Img22,
     wallImage: Img24,
     link: "#",
-    height:35,
-    width:25,
-    description:"“Pop Goes the Orange” beautifully captures the contrast between stillness and motion. Bright oranges scattered across a cracked black-and-white tiled floor bring vibrancy and life to an otherwise structured setting. The play of light, shadow, and geometry makes this simple moment feel both spontaneous and artistic."
+    height: 35,
+    width: 25,
+    description:
+      "“Pop Goes the Orange” beautifully captures the contrast between stillness and motion. Bright oranges scattered across a cracked black-and-white tiled floor bring vibrancy and life to an otherwise structured setting. The play of light, shadow, and geometry makes this simple moment feel both spontaneous and artistic.",
   },
   {
     id: 21,
@@ -294,9 +341,10 @@ const originals = [
     image: Img23,
     wallImage: Img25,
     link: "#",
-    height:40,
-    width:40,
-    description:"“Living Life” is a captivating painting that beautifully captures the essence of solitude and reflection. It portrays a man seated in quiet contemplation, gazing at a vast mountain under a dramatic sky filled with textured clouds. The striking contrast of the red carpet against the golden landscape adds depth and emotion, symbolizing the harmony between human existence and nature’s grandeur. This artwork invites viewers to pause, breathe, and truly live life in the moment.",
+    height: 40,
+    width: 40,
+    description:
+      "“Living Life” is a captivating painting that beautifully captures the essence of solitude and reflection. It portrays a man seated in quiet contemplation, gazing at a vast mountain under a dramatic sky filled with textured clouds. The striking contrast of the red carpet against the golden landscape adds depth and emotion, symbolizing the harmony between human existence and nature’s grandeur. This artwork invites viewers to pause, breathe, and truly live life in the moment.",
   },
   {
     id: 22,
@@ -308,7 +356,8 @@ const originals = [
     paintingOption: false,
     resizeOption: false,
     frameOption: false,
-    description:"This artwork celebrates the beauty of freedom and simplicity through a harmonious collection of tiny canvases, each portraying a bird in motion. The varied colors and patterns reflect different moods of nature — calm, vibrant, and melodic. Together, they create a visual symphony of songbirds, symbolizing joy, connection, and the art of finding peace in little moments.",
+    description:
+      "This artwork celebrates the beauty of freedom and simplicity through a harmonious collection of tiny canvases, each portraying a bird in motion. The varied colors and patterns reflect different moods of nature — calm, vibrant, and melodic. Together, they create a visual symphony of songbirds, symbolizing joy, connection, and the art of finding peace in little moments.",
   },
   {
     id: 23,
@@ -316,11 +365,12 @@ const originals = [
     basePrice: 13500,
     wallImage: Img27,
     link: "#",
-     paintFixPrice : 6000,
-    handmadeFixPrice : 15000,
+    paintFixPrice: 6000,
+    handmadeFixPrice: 15000,
     resizeOption: false,
     frameOption: false,
-    description:"A harmonious blend of geometry and nature, Beige and Boujee captures the essence of minimalism through warm earthy tones. Each frame tells a story of balance — circles, leaves, and lines merging in perfect rhythm. The muted beige palette brings calm sophistication, making it a timeless piece for modern interiors.",
+    description:
+      "A harmonious blend of geometry and nature, Beige and Boujee captures the essence of minimalism through warm earthy tones. Each frame tells a story of balance — circles, leaves, and lines merging in perfect rhythm. The muted beige palette brings calm sophistication, making it a timeless piece for modern interiors.",
   },
   {
     id: 24,
@@ -328,11 +378,12 @@ const originals = [
     basePrice: 13500,
     wallImage: Img28,
     link: "#",
-    paintFixPrice : 3000,
-    handmadeFixPrice : 6000,
+    paintFixPrice: 3000,
+    handmadeFixPrice: 6000,
     resizeOption: false,
     frameOption: false,
-    description:"“Leaflets” is a minimalist set of four botanical paintings blending simplicity and warmth. Each canvas features elegant black line art of leaves against soft, earthy backgrounds of terracotta, beige, and blush tones. The composition captures harmony, nature, and balance — a soothing reflection of organic beauty and modern design.",
+    description:
+      "“Leaflets” is a minimalist set of four botanical paintings blending simplicity and warmth. Each canvas features elegant black line art of leaves against soft, earthy backgrounds of terracotta, beige, and blush tones. The composition captures harmony, nature, and balance — a soothing reflection of organic beauty and modern design.",
   },
   {
     id: 25,
@@ -340,11 +391,12 @@ const originals = [
     basePrice: 13500,
     wallImage: Img29,
     link: "#",
-    paintFixPrice : 4000,
-    handmadeFixPrice : 13500,
+    paintFixPrice: 4000,
+    handmadeFixPrice: 13500,
     resizeOption: false,
     frameOption: false,
-    description:"This artwork beautifully captures the harmony between tradition and modernity through bold patterns and warm earthy tones. The central figure, adorned in cultural motifs, stands as a bridge between heritage and contemporary expression. The surrounding abstract forms symbolize balance, identity, and the journey of embracing two worlds with grace and confidence.",
+    description:
+      "This artwork beautifully captures the harmony between tradition and modernity through bold patterns and warm earthy tones. The central figure, adorned in cultural motifs, stands as a bridge between heritage and contemporary expression. The surrounding abstract forms symbolize balance, identity, and the journey of embracing two worlds with grace and confidence.",
   },
   {
     id: 26,
@@ -352,11 +404,12 @@ const originals = [
     basePrice: 13500,
     wallImage: Img30,
     link: "#",
-    paintFixPrice : 5000,
-    handmadeFixPrice : 13000,
+    paintFixPrice: 5000,
+    handmadeFixPrice: 13000,
     resizeOption: false,
     frameOption: false,
-    description:"“Stillness” captures the serene harmony of nature through soft earthy tones and balanced geometric forms. Each panel evokes calm and mindfulness, blending organic leaves and abstract shapes into a meditative rhythm. The muted colors and minimalist design invite quiet reflection — a visual pause in the rush of modern life.",
+    description:
+      "“Stillness” captures the serene harmony of nature through soft earthy tones and balanced geometric forms. Each panel evokes calm and mindfulness, blending organic leaves and abstract shapes into a meditative rhythm. The muted colors and minimalist design invite quiet reflection — a visual pause in the rush of modern life.",
   },
   {
     id: 27,
@@ -364,11 +417,12 @@ const originals = [
     basePrice: 13500,
     wallImage: Img31,
     link: "#",
-      paintFixPrice : 4000,
-    handmadeFixPrice : 11000,
+    paintFixPrice: 4000,
+    handmadeFixPrice: 11000,
     resizeOption: false,
     frameOption: false,
-    description:"A serene portrayal of the desert’s dual personality — one basking in the warmth of the setting sun, the other resting under a tranquil night sky. The minimal forms of cacti and layered dunes capture the rhythm of nature’s quiet transformation. Desert Bloom reflects balance, stillness, and the timeless beauty of shifting light across arid landscapes.",
+    description:
+      "A serene portrayal of the desert’s dual personality — one basking in the warmth of the setting sun, the other resting under a tranquil night sky. The minimal forms of cacti and layered dunes capture the rhythm of nature’s quiet transformation. Desert Bloom reflects balance, stillness, and the timeless beauty of shifting light across arid landscapes.",
   },
   {
     id: 28,
@@ -376,9 +430,10 @@ const originals = [
     basePrice: 13500,
     wallImage: Img32,
     link: "#",
-    height:35,
-    width:35,
-    description:"Immerse yourself in the vivid energy of Euphoria — a captivating abstract artwork that radiates motion, depth, and emotion. Bursting with rich teal, gold, and crimson hues, it symbolizes the explosion of joy and creative freedom. Perfect for modern interiors, this premium canvas transforms any wall into a statement of elegance and inspiration.",
+    height: 35,
+    width: 35,
+    description:
+      "Immerse yourself in the vivid energy of Euphoria — a captivating abstract artwork that radiates motion, depth, and emotion. Bursting with rich teal, gold, and crimson hues, it symbolizes the explosion of joy and creative freedom. Perfect for modern interiors, this premium canvas transforms any wall into a statement of elegance and inspiration.",
   },
   {
     id: 29,
@@ -387,11 +442,12 @@ const originals = [
     image: Img33,
     wallImage: Img34,
     link: "#",
-      paintFixPrice : 6000,
-    handmadeFixPrice : 16500,
+    paintFixPrice: 6000,
+    handmadeFixPrice: 16500,
     resizeOption: false,
     frameOption: false,
-    description:"“Trialogue” is a modern abstract triptych that captures the harmony of architecture, culture, and conversation. The earthy tones of terracotta, beige, and navy symbolize warmth, depth, and balance, while geometric stairways and vases evoke stories of connection between spaces and souls. This artwork transforms simplicity into dialogue — where every shape speaks to the other in visual rhythm and unity.",
+    description:
+      "“Trialogue” is a modern abstract triptych that captures the harmony of architecture, culture, and conversation. The earthy tones of terracotta, beige, and navy symbolize warmth, depth, and balance, while geometric stairways and vases evoke stories of connection between spaces and souls. This artwork transforms simplicity into dialogue — where every shape speaks to the other in visual rhythm and unity.",
   },
   {
     id: 30,
@@ -399,44 +455,306 @@ const originals = [
     basePrice: 13500,
     wallImage: Img35,
     link: "#",
-      paintFixPrice : 6000,
-    handmadeFixPrice : 16000,
+    paintFixPrice: 6000,
+    handmadeFixPrice: 16000,
     resizeOption: false,
     frameOption: false,
-    description:"This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
+    description:
+      "This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
   },
   {
     id: 31,
     title: "Eclipsera Pole (Clay)",
     basePrice: 35000,
-    image:Img36,
+    image: Img36,
     wallImage: Img37,
-    moreImage:Img38,
+    moreImage: Img38,
     link: "#",
     resizeOption: false,
     frameOption: false,
-      description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
+    category: "artifacts",
+    description:
+      "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
   },
   {
     id: 32,
     title: "Kava Cups set of 2(Clay)",
     basePrice: 3000,
-    image:Img39,
+    image: Img39,
     link: "#",
     resizeOption: false,
     frameOption: false,
-        description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
+    category: "artifacts",
+    description:
+      "These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
+  },
+  // {
+  //   id: 33,
+  //   title: "The Third Seat (1pc) ",
+  //   basePrice: 30000,
+  //   image: Img40,
+  //   wallImage: Img41,
+  //   link: "#",
+  //   resizeOption: false,
+  //   frameOption: false,
+  //   description:
+  //     "A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
+  // },
+  {
+    id: 34,
+    title: "Ace Centre Table ",
+    image: Img42,
+    basePrice: 30000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space.",
   },
   {
-    id: 33,
+    id: 35,
+    title: " ⁠Grande Arena",
+    image: Img43,
+    basePrice: 50000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "The Stadium Coffee Table. Grande Arena is a masterpiece of modern design — a coffee table that brings the thrill of football right into your living room. Crafted from rich natural wood and topped with a sleek glass surface, it features a stunning miniature stadium beneath, complete with players, turf, and cheering crowds. This unique piece blends artistry, craftsmanship, and passion for the game — a true collector’s dream for sports lovers and design enthusiasts alike.",
+  },
+  {
+    id: 36,
+    title: "Laundy Basket Ball Hoop",
+    image: Img45,
+    basePrice: 6000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Turn laundry time into game time! 🏀 This Laundry Basketball Hoop adds fun and functionality to your room — just toss your clothes in and score! Made with a sturdy backboard and breathable mesh bag, it keeps your space tidy while making chores feel like a slam dunk. Perfect for bedrooms, dorms, or kids’ rooms!",
+  },
+  {
+    id: 37,
+    title: "Laundry Basketball Bin",
+    image: Img46,
+    basePrice: 4000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Turn your daily chores into a fun game! This Laundry Basketball Bin combines play and practicality — just shoot your clothes through the hoop and score a clean room every time. Perfect for kids, teens, and sports lovers who want to make laundry time exciting while keeping the space tidy and stylish",
+  },
+  {
+    id: 38,
+    title: "Casettee Centre Table",
+    image: Img47,
+    basePrice: 40000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "The Cassette Centre Table is a nostalgic fusion of retro charm and modern design. Crafted from premium wood, it replicates the classic audio cassette look, turning a vintage icon into a functional centerpiece. Its sturdy build and detailed craftsmanship make it perfect for living rooms, cafes, or creative studios. A true conversation starter that blends art, utility, and timeless style.",
+  },
+  {
+    id: 39,
+    title: " ⁠⁠Boombox Shelf Table ",
+    image: Img48,
+    basePrice: 30000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
+  },
+
+  {
+    id: 40,
+    title: "Humané Centre Table",
+    image: Img49,
+    basePrice: 30000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A sculptural masterpiece that brings art and functionality together. The Humane Centre Table features a finely crafted human face base, symbolizing serenity and depth, topped with a sleek glass surface. Perfect for modern living spaces, it adds a touch of minimalism, sophistication, and soulful character to any room.",
+  },
+  {
+    id: 41,
+    title: "Retrovision Table Centre",
+    image: Img50,
+    wallImage: Img51,
+    basePrice: 25000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
+  },
+  {
+    id: 42,
     title: "The Third Seat (1pc) ",
     basePrice: 30000,
-    image:Img40,
-    wallImage:Img41,
+    image: Img52,
+    wallImage: Img53,
     link: "#",
     resizeOption: false,
     frameOption: false,
-    description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
+    category: "artifacts",
+    description:
+      "A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
+  },
+  {
+    id: 43,
+    title: "Mr. Nook",
+    image: Img54,
+    wallImage: Img56,
+    basePrice: 25000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Mr. Nook — a compact fusion of charm and function. Crafted in rich wood, this minimal yet warm bedside table brings an earthy aesthetic to modern living. With a pull-down rattan shelf and soft ambient lighting, it’s perfect for cozy storage or displaying your favorite reads and decor. A true nook of comfort and sophistication for any corner.",
+  },
+  {
+    id: 44,
+    title: "Fisherman Incense Holder (Clay) ",
+    image: Img57,
+    basePrice: 2000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A finely crafted designer sculpture depicting a fisherman seated in a minimalist boat, gently holding an incense stick. This elegant piece blends traditional symbolism with contemporary artistry, evoking calmness, reflection, and spiritual balance—ideal for refined interior décor or meditative spaces.",
+  },
+
+  {
+    id: 45,
+    title: "Hip Doggy Jewellery /Key Pot (Clay)",
+    image: Img58,
+    basePrice: 3500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Unleash luxury with this bold Bulldog Storage Companion! Crafted in matte black with golden accents, it’s not just décor — it’s attitude. Drop your keys, coins, or accessories straight into its jaws of style — where function meets fierce sophistication.",
+  },
+  {
+    id: 46,
+    title: "Samurai Incense Holder (Clay)",
+    image: Img59,
+    basePrice: 2000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Elegance meets serenity in this handcrafted ceramic incense holder — two minimalist warriors frozen in graceful motion, embodying calm and discipline. As the incense burns, gentle trails of smoke rise between them, creating a tranquil dance of aroma and artistry. Perfect for elevating your space with Zen sophistication and timeless charm.",
+  },
+  {
+    id: 47,
+    title: "⁠ ⁠Cards Wall Clock",
+    image: Img60,
+    basePrice: 1500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Time just got a royal twist. This wall clock isn’t just about ticking seconds — it’s a deck of destiny in motion. With playing cards swirling inside, every glance feels like a high-stakes game between fate and fortune. A perfect blend of bold design and rebellious elegance — where every hour is a winning hand.",
+  },
+  {
+    id: 48,
+    title: "⁠⁠Giveth-Taketh Incense Holder (Clay)",
+    image: Img61,
+    basePrice: 3000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Ash meets aura — one hand gathers what’s gone, the other releases what remains. The incense burns slow, tracing smoke like a secret prayer between stillness and chaos. It’s not just ritual — it’s rebellion wrapped in calm.",
+  },
+  // {
+  //   id: 49,
+  //   title: "Eclipsera Pole (Clay)",
+  //   image: Img62,
+  //   wallImage: Img64,
+  //   moreImage: Img63,
+  //   basePrice: 35000,
+  //   link: "#",
+  //   resizeOption: false,
+  //   frameOption: false,
+  //   category: "artifacts",
+  //   description:
+  //     "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
+  // },
+  {
+    id: 50,
+    title: "Glitch Clock (Clay)",
+    image: Img65,
+    basePrice: 2500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Time, redefined — this abstract wall clock isn’t here to just tell hours; it’s here to steal them. A fusion of art and attitude, it turns every second into a visual story. Bold shapes, unexpected lines, and a vibe that says “time doesn’t control me — I style it.",
+  },
+
+  {
+    id: 51,
+    title: "Mr. Funny  Pants 3pc Set (Clay)",
+    image: Img66,
+    basePrice: 7500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  },
+  {
+    id: 52,
+    title: "Mr. Funny  Pants 1pc Set (Clay)",
+    image: Img67,
+    basePrice: 2500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  },
+  {
+    id: 53,
+    title: "Mr. Funny  Pants 1pc Set (Clay)",
+    image: Img68,
+    basePrice: 2500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  },
+  {
+    id: 54,
+    title: "Mr. Funny  Pants 1pc Set (Clay)",
+    image: Img69,
+    basePrice: 2500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  },
+  {
+    id: 55,
+    title: "The Cardenza Coffee Table",
+    image: Img70,
+    wallImage: Img71,
+    basePrice: 27000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "When play meets purpose — this Playing Card Table turns imagination into furniture! Built like a “House of Cards” yet sturdy enough to hold your coffee conversations, it’s a playful nod to classic casino charm and creative design. The glossy red-and-white finish adds a pop of fun to any room, making it a perfect centerpiece for your living space, lounge, or café corner.",
+  },
+  {
+    id: 56,
+    title: "Modern Relic",
+    image: Img72,
+    wallImage: Img73,
+    moreImage: Img74,
+    basePrice: 16000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
+  },
+  {
+    id: 57,
+    title: "Timeless unity",
+    image: Img75,
+    wallImage: Img76,
+    basePrice: 82000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
   },
 ];
 
@@ -542,7 +860,7 @@ const Aestheticspremi = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="aestheticspremi"
+          category={ selectedProduct?.category || "aestheticspremi"}
         />
       )}
     </section>

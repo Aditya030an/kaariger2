@@ -10,7 +10,13 @@ import Img4 from "./photos/madira4.png";
 
 import Img6 from "./photos/madira5.png";
 import Img7 from "./photos/img2.jpg";
-
+import Img8 from "./photos/Artifacts6.jpg";
+import Img9 from "./photos/Artifacts5.png";
+import Img10 from "./photos/Artifacts12.jpg";
+import Img11 from "./photos/artifacts43.png";
+import Img12 from "./photos/artifacts44.png";
+import Img13 from "./photos/artifacts45.png";
+import Img14 from "./photos/artifacts22.jpg";
 import ProductCart from "./ProductCard";
 
 // TiltCard
@@ -91,6 +97,68 @@ const originals = [
     width:35,
     description:"“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
   },
+    {
+      id: 7,
+      title: "Neat Tap ",
+      image: Img8,
+      basePrice: 2500,
+      link: "#",
+      category:"artifacts",
+      description:"Where art meets indulgence — this wall-mounted liquor display turns your bar into a statement of sophistication. Industrial steel pipes fuse with rich wood tones, pouring character as smoothly as your finest spirit. It’s not just a dispenser — it’s a scene-stealer.",
+    },
+     {
+        id: 8,
+        title: "⁠⁠Suits Serving Platters (Clay)",
+        image: Img9,
+        basePrice: 3000,
+        link: "#",
+         category:"artifacts",
+        description:"A royal twist to your serveware — these card-shaped bowls bring the thrill of the game to your table. Each piece is sculpted with precision, blending luxury gold trims with the bold charm of hearts, spades, clubs, and diamonds. Perfect for nuts, snacks, or style — this set isn’t just dinnerware, it’s a statement of play, class, and indulgence. Deal your snacks in style.",
+      },
+        {
+          id: 9,
+          title: "Chakhna Pallete 1pc",
+          image: Img10,
+          basePrice: 1000,
+          link: "#",
+          category:"artifacts",
+          description:"Where the buzz meets the bite — these chakhna palettes aren’t just plates, they’re mood boards for madness. Crafted around iconic alcohol bottles, they turn every sip into a scene and every snack into a statement. Because real flavor deserves a little attitude.",
+        },
+        {    id: 10,
+            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+            image: Img11,
+            basePrice: 10000,
+            link: "#",
+            category:"artifacts",
+            description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+          },
+          {
+            id: 11,
+            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+            image: Img12,
+            basePrice: 10000,
+            link: "#",
+            category:"artifacts",
+                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+          },
+          {
+            id: 12,
+            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+            image: Img13,
+            basePrice: 10000,
+            link: "#",
+            category:"artifacts",
+                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+          },
+          {
+            id: 13,
+            title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
+            image: Img14,
+            basePrice: 30000,
+            link: "#",
+            category:"artifacts",
+                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+          },
 ];
 
 const fadeInUp = {
@@ -218,7 +286,7 @@ const Madira = ({ cart, setCart }) => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onAddToCart={handleAddToCart}
-          category="madira"
+          category={selectedProduct?.category || "madira"}
         />
       )}
     </section>

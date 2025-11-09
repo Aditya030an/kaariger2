@@ -9,7 +9,8 @@ import Img20 from "./photos/artifacts23.jpg";
 import canvas from "./photos/bg1.jpeg";
 import Img4 from "./photos/motor3.png";
 
-import logotext from "./photos/kaarigarText.png";
+// import logotext from "./photos/kaarigarText.png";
+import logotext from "./photos/kaarigarText_2.png";
 import { useNavigate } from "react-router-dom";
 
 const categories = [

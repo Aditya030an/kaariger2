@@ -175,7 +175,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
             <div className="flex flex-col-reverse md:flex-row w-full lg:gap-4">
               {/* Thumbnails List */}
               <div className="flex md:flex-col gap-3 w-40 md:w-20">
-                {[product?.image, product?.wallImage , product?.moreImage]
+                {[product?.image, product?.wallImage, product?.moreImage]
                   .filter(Boolean)
                   .map((img, index) => (
                     <img
@@ -205,8 +205,8 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                         ? "0px solid transparent"
                         : `${getFrameWidth()} solid ${getFrameBorderColor()}`,
                     borderRadius:
-                      mainImage === product?.wallImage || 
-                      mainImage === product?.moreImage || 
+                      mainImage === product?.wallImage ||
+                      mainImage === product?.moreImage ||
                       selectedFrame === "No Frame" ||
                       category === "artifacts"
                         ? "0px"
@@ -224,9 +224,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
               </div>
             </div>
 
-            {
-              product?.description && category !== "artifacts" && <div className="text-[12px]">{product?.description}</div>
-            }
+            {product?.description && category !== "artifacts" && (
+              <div className="text-[12px]">{product?.description}</div>
+            )}
 
             {category !== "artifacts" &&
               (product?.resizeOption !== undefined
@@ -311,30 +311,32 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   </div>
                 </div>
               )}
-            {category !== "artifacts" && mainImage !== product?.wallImage && mainImage !== product?.moreImage && (
-              <div>
-                <h3 className="text-xl font-serif font-bold">Frame Style</h3>
-                <p className="text-sm text-gray-500 mb-2">
-                  Selected Frame: {selectedFrame}
-                </p>
-                <div className="flex gap-3 flex-wrap">
-                  {frames.map((frame) => (
-                    <button
-                      key={frame?.name}
-                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 flex items-center justify-center
+            {category !== "artifacts" &&
+              mainImage !== product?.wallImage &&
+              mainImage !== product?.moreImage && (
+                <div>
+                  <h3 className="text-xl font-serif font-bold">Frame Style</h3>
+                  <p className="text-sm text-gray-500 mb-2">
+                    Selected Frame: {selectedFrame}
+                  </p>
+                  <div className="flex gap-3 flex-wrap">
+                    {frames.map((frame) => (
+                      <button
+                        key={frame?.name}
+                        className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 flex items-center justify-center
         ${frame?.color} 
         ${selectedFrame === frame?.name ? "ring-2 ring-black" : ""}`}
-                      onClick={() => setSelectedFrame(frame?.name)}
-                      title={frame?.name}
-                    >
-                      {frame?.name === "No Frame" && (
-                        <IoClose size={20} className="text-gray-600" />
-                      )}
-                    </button>
-                  ))}
+                        onClick={() => setSelectedFrame(frame?.name)}
+                        title={frame?.name}
+                      >
+                        {frame?.name === "No Frame" && (
+                          <IoClose size={20} className="text-gray-600" />
+                        )}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
             {product?.resizeOption === false
               ? null
@@ -395,22 +397,35 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                 )}
 
             {/* Add the description */}
-            {
-              product?.description && category === "artifacts"  && <div className="">{product?.description}</div>
-            }
+            {product?.description && category === "artifacts" && (
+              <div className="">{product?.description}</div>
+            )}
 
             {/* Add to Cart */}
             {category !== "artifacts" && product?.resizeOption !== false && (
-              <button
-                onClick={handleAdd}
-                disabled={!customWidth || !customHeight}
-                className="w-full bg-zinc-700 text-white py-3 rounded hover:bg-zinc-800 disabled:bg-gray-300"
-              >
-                {!customWidth || !customHeight
-                  ? "Please enter custom dimensions"
-                  : "Add to Cart"}
-              </button>
-            )}
+  <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 text-base mb-5">
+    {/* Add to Cart Button */}
+    <button
+      onClick={handleAdd}
+      disabled={!customWidth || !customHeight}
+      className="w-full md:w-[48%] bg-zinc-700 text-white py-2 rounded-lg hover:bg-zinc-800 disabled:bg-gray-300 transition-all duration-200"
+    >
+      {!customWidth || !customHeight
+        ? "Please enter custom dimensions"
+        : "Add to Cart"}
+    </button>
+
+    {/* Proceed to Checkout Button */}
+    {customHeight && customWidth && (
+      <button
+        className="w-full md:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200"
+      >
+        Proceed to Checkout
+      </button>
+    )}
+  </div>
+)}
+
             {(category === "artifacts" || product?.resizeOption === false) && (
               <div className="w-full">
                 <div className="w-full flex items-center justify-between gap-1 text-base mb-5">
@@ -421,12 +436,20 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                     ₹ {price}
                   </p>
                 </div>
-                <button
-                  onClick={handleAdd}
-                  className="w-full bg-zinc-700 text-white py-3 rounded hover:bg-zinc-800 disabled:bg-gray-300"
-                >
-                  Add to Cart
-                </button>
+                <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-base mb-5">
+                  {/* Add to Cart button */}
+                  <button
+                    onClick={handleAdd}
+                    className="w-full sm:w-[48%] bg-zinc-700 text-white py-2 rounded-lg hover:bg-zinc-800 disabled:bg-gray-300 transition-all duration-200"
+                  >
+                    Add to Cart
+                  </button>
+
+                  {/* Proceed to Checkout button */}
+                  <button className="w-full sm:w-[48%] bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-all duration-200">
+                    Proceed to Checkout
+                  </button>
+                </div>
               </div>
             )}
           </div>

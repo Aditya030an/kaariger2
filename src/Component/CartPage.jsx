@@ -14,7 +14,15 @@ const CartPage = ({ cart, setCart }) => {
   ];
 
   // Increase quantity
-  const increaseQty = (id, price, height, width, artType, selectedFrame, category) => {
+  const increaseQty = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    selectedFrame,
+    category
+  ) => {
     const updated = cart?.map((item) =>
       item?.id === id &&
       item?.price === price &&
@@ -30,7 +38,15 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Decrease quantity
-  const decreaseQty = (id, price, height, width, artType, selectedFrame, category) => {
+  const decreaseQty = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    selectedFrame,
+    category
+  ) => {
     const updated = cart
       ?.map((item) =>
         item?.id === id &&
@@ -48,7 +64,15 @@ const CartPage = ({ cart, setCart }) => {
   };
 
   // Remove item
-  const removeItem = (id, price, height, width, artType, selectedFrame, category) => {
+  const removeItem = (
+    id,
+    price,
+    height,
+    width,
+    artType,
+    selectedFrame,
+    category
+  ) => {
     const updated = cart?.filter(
       (item) =>
         !(
@@ -113,11 +137,11 @@ const CartPage = ({ cart, setCart }) => {
                             Size: {item?.width}" x {item?.height}" |
                           </p>
                         )}
-                      {item?.category !== "artifacts" && (item?.handmadeOption === false && item?.paintingOption === false) && (
-                        <p className="text-gray-700">
-                          Type: {item?.artType}
-                        </p>
-                      )}
+                      {item?.category !== "artifacts" &&
+                        item?.handmadeOption === false &&
+                        item?.paintingOption === false && (
+                          <p className="text-gray-700">Type: {item?.artType}</p>
+                        )}
                     </div>
                     {item?.category !== "artifacts" &&
                       item?.frameOption === undefined && (
@@ -216,9 +240,27 @@ const CartPage = ({ cart, setCart }) => {
               >
                 Clear All
               </button>
-              <button className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto">
+              {/* <button
+                onClick={() =>
+                  navigate("/checkout", {
+                    state: {
+                      total: cart.reduce(
+                        (total, item) => total + item.price * item.quantity,
+                        0
+                      ),
+                    },
+                  })
+                }
+                className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto"
+              >
+                Proceed to Checkout
+              </button> */}
+              <button
+                className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto"
+              >
                 Proceed to Checkout
               </button>
+              
             </div>
           </div>
         </>

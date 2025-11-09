@@ -211,7 +211,7 @@ const Painting = ({ cart, setCart }) => {
 
       {/* Product Cards Grid */}
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7 sm:gap-10 lg:gap-14">
-        {originals.map((product, index) => (
+        {originals.toReversed().map((product, index) => (
           <motion.div
             key={product?.id}
             variants={fadeInUp}

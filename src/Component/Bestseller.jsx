@@ -36,6 +36,7 @@ const images = [
       wallImage:Img10,
       basePrice: 82000,
       link: "#",
+      category:"artifacts",
           description:"Sleek. Minimal. Poetic.These handcrafted wooden sculptures redefine modern elegance — blending raw natural wood with bold black and white textures. Each figure stands tall with graceful symmetry, embodying calm presence and artistic balance. Perfect for contemporary homes that appreciate simplicity with soul.",
     },
   {
@@ -213,8 +214,8 @@ const Bestseller = ({ cart, setCart }) => {
                 alt={product.title}
                 className="w-full h-[200px] md:h-[250px] object-contain"
               />
-              <div className="p-2 text-center">
-                <h3 className="text-xl md:text-2xl font-[Amita] font-semibold mb-1 text-gray-800">
+              <div className="p-1 text-center">
+                <h3 className="text-xl md:text-xl font-serif font-bold text-[#3e2c1b] md:mb-2">
                   {product.title}
                 </h3>
                 <div className="text-center mt-1 md:mt-2">
@@ -227,7 +228,7 @@ const Bestseller = ({ cart, setCart }) => {
                     className="group relative inline-flex items-center justify-center px-4 md:px-6 py-1 md:py-2 font-[Amita] text-black border border-gray-800 rounded-lg overflow-hidden transition-all duration-300 hover:text-white"
                   >
                     <span className="absolute inset-0 w-full h-full bg-gray-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    <span className="relative z-10 flex text-[10px] lg:text-[16px] md:text-[16px] items-center gap-1 md:gap-4">
+                    <span className="relative z-10 flex text-sm items-center gap-1 md:gap-4">
                       Buy Now <ArrowRight size={16} />
                     </span>
                   </a>
