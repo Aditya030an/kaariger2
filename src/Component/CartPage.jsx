@@ -93,6 +93,7 @@ const CartPage = ({ cart, setCart }) => {
     setCart([]);
   };
 
+
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-6">
       <h1 className="text-xl md:text-3xl font-bold mb-6">🛒 Your Cart</h1>
@@ -255,12 +256,6 @@ const CartPage = ({ cart, setCart }) => {
               >
                 Proceed to Checkout
               </button>
-              {/* <button
-                className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full sm:w-auto"
-              >
-                Proceed to Checkout
-              </button> */}
-              
             </div>
           </div>
         </>

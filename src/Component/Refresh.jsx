@@ -55,15 +55,6 @@ const newReleases = [
     snippet: "Textile makeover meets utility and charm.",
   },
   {
-    id: 4,
-    title: "Vintage Poster Wall Kit",
-    category: "Decor Prints",
-    basePrice: 1200,
-    image: canvas,
-    snippet: "Bring your walls to life with nostalgic charm.",
-  },
-
-  {
     id: 10,
     title: "The Third Seat (1pc) ",
     basePrice: 30000,
@@ -72,7 +63,7 @@ const newReleases = [
     link: "#",
     resizeOption: false,
     frameOption: false,
-     category:"artifacts",
+     subCategory:"artifacts",
     description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
 
@@ -85,6 +76,8 @@ const newReleases = [
     basePrice: 7500,
     image: Img26,
     snippet: "A quirky clay figure that adds humor and charm to any space.",
+    description:
+      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
   {
     id: 8,

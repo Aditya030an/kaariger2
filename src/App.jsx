@@ -37,6 +37,7 @@ import CheckoutPage from './Component/CheckoutPage.jsx';
 import PaymentStatus from './Component/PaymentStatus.jsx';
 import PaymentFailed from './Component/PaymentFailed.jsx';
 import PaymentSuccess from './Component/PaymentSuccess.jsx';
+import OrdersPage from './Component/OrdersPage.jsx';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +45,15 @@ const App = () => {
     const savedCart = localStorage.getItem("cart");
     return savedCart ? JSON.parse(savedCart) : [];
   });
-
+  
+  const [orderData, setOrderData] = useState(() => {
+    const savedOrderData = localStorage.getItem("orderData");
+    return savedOrderData ? JSON.parse(savedOrderData) : [];
+  });
+  useEffect(() => {
+    localStorage.setItem("orderData", JSON.stringify(orderData));
+  }, [orderData]);
+  
   // Persist cart to localStorage on change
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -62,7 +71,7 @@ const App = () => {
       <Preload isVisible={isLoading} />
       {!isLoading && (
         <Router>
-          <Navbar cart={cart}/>
+          <Navbar cart={cart} orderData={orderData}/>
           <Routes>
             <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
             <Route path="/Bestseller" element={<Bestseller />} /> 
@@ -76,10 +85,12 @@ const App = () => {
             
             <Route path="/Bestsellerpage" element={<Bestsellerpage cart={cart} setCart={setCart} />} />
             <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
-            <Route path="/checkout" element={<CheckoutPage cart={cart} />} />
-            <Route path="/payment-status" element={<PaymentStatus />} />
+            <Route path="/checkout" element={<CheckoutPage cart={cart} setCart={setCart} orderData={orderData} setOrderData={setOrderData}/>} />
+            <Route path="/payment-status" element={<PaymentStatus cart={cart} setCart={setCart} orderData={orderData} setOrderData={setOrderData}/>} />
             <Route path="/failed" element={<PaymentFailed />} />
             <Route path="/success" element={<PaymentSuccess />} />
+            <Route path="/order_data" element={<OrdersPage orderData={orderData} />} />
+
 
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
+import { FaShoppingCart, FaBars, FaTimes, FaBox } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import logo from "./photos/logo.jpeg";
 import logo from "./photos/logo_1.png";
@@ -20,7 +20,7 @@ const categories = [
   { name: "Posters", image: Img4, link: "/Poster" },
 ];
 
-const Navbar = ({ cart }) => {
+const Navbar = ({ cart, orderData }) => {
   const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -66,6 +66,18 @@ const Navbar = ({ cart }) => {
           {/* Icons + Hamburger */}
           <div className="flex items-center gap-4 text-xl">
             <div className="hidden md:flex gap-4">
+              {/* Orders Icon - Only show when orders.length > 0 */}
+              {orderData?.length > 0 && (
+                <button
+                  onClick={() => navigate("/order_data")}
+                  className="relative cursor-pointer"
+                >
+                  <FaBox />
+                  <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                    {orderData?.length}
+                  </span>
+                </button>
+              )}
               <button
                 onClick={() => navigate("/cart")}
                 className="relative cursor-pointer"
@@ -135,8 +147,6 @@ const Navbar = ({ cart }) => {
               )}
             </div>
 
-           
-
             <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
               Kaarigar Luxe
             </a>
@@ -188,7 +198,6 @@ const Navbar = ({ cart }) => {
                 </div>
               )}
             </div>
-           
 
             <a href="/Kaarigarluxe" className="cursor-pointer hover:underline">
               Kaarigar Luxe
@@ -196,6 +205,22 @@ const Navbar = ({ cart }) => {
             <a href="/Contact" className="cursor-pointer hover:underline">
               Contact
             </a>
+
+            {orderData?.length > 0 && (
+              <button
+                onClick={() => {
+                  navigate("/order_data");
+                  setMobileMenuOpen(false);
+                }}
+                className="relative cursor-pointer flex items-center justify-between"
+              >
+                <p>Orders</p>
+                <FaBox />
+                <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                  {orderData?.length}
+                </span>
+              </button>
+            )}
 
             <button
               onClick={() => {

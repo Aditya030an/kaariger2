@@ -31,11 +31,11 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   console.log("category", category);
   const navigate = useNavigate();
   const productName = product?.title;
-  const [artType, setArtType] = useState("print");
+  const [artType, setArtType] = useState( category === "poster" ? "print" : "handMade");
   const [price, setPrice] = useState(0);
   const [selectedFrame, setSelectedFrame] = useState("Matte Black");
-  const [customWidth, setCustomWidth] = useState(product?.height || "");
-  const [customHeight, setCustomHeight] = useState(product?.width || "");
+  const [customWidth, setCustomWidth] = useState(product?.width || "");
+  const [customHeight, setCustomHeight] = useState(product?.height || "");
   const [mainImage, setMainImage] = useState(
     product?.image || product?.wallImage
   );
@@ -86,6 +86,8 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           rate = 7;
         }
       }
+
+      
 
       setPrice(area * rate);
     } else if (category === "artifacts" || product?.resizeOption === false) {
@@ -150,7 +152,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-white w-screen h-full md:h-screen  overflow-y-auto ">
-      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col xl:justify-center gap-2">
+      <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col 2xl:justify-center gap-2">
         <button
           onClick={onClose}
           className="text-[22px] font-medium text-black flex items-center gap-1"
@@ -174,9 +176,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           {/* Left Side */}
           <div className="flex-1 flex flex-col items-center gap-6">
             {/* Preview Section */}
-            <div className="flex flex-col-reverse md:flex-row w-full lg:gap-4">
+            <div className="flex flex-col-reverse md:flex-row  w-full lg:gap-4">
               {/* Thumbnails List */}
-              <div className="flex md:flex-col gap-3 w-40 md:w-20">
+              <div className="flex justify-center  md:flex-col md:justify-start md:items-center gap-3 w-full md:w-20">
                 {[product?.image, product?.wallImage, product?.moreImage]
                   .filter(Boolean)
                   .map((img, index) => (
@@ -193,11 +195,11 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
               </div>
 
               {/* Main Preview */}
-              <div className="flex-1 flex items-center justify-center  rounded-md p-4">
+              <div className="flex items-center justify-center rounded-md p-4">
                 <img
                   src={mainImage}
                   alt="Main Preview"
-                  className="w-[250px] h-[250px] sm:w-full sm:h-[400px] object-contain border-2 border-solid border-red-800"
+                  className="w-auto max-w-[75%] max-h-[75vh] object-contain"
                   style={{
                     border:
                       mainImage === product?.wallImage ||
@@ -420,7 +422,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                 {/* Proceed to Checkout Button */}
                 {customHeight && customWidth && (
                   <button
-                      onClick={() =>
+                    onClick={() =>
                       navigate("/checkout", {
                         state: {
                           total: price,
