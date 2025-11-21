@@ -121,7 +121,7 @@ useEffect(() => {
         }}
       />
 
-      <div className="relative w-full sm:h-[60vh] md:h-[80vh] overflow-hidden bg-black">
+      <div className="relative w-full sm:h-[40vh] tablet:h-[40vh] md:h-[80vh] overflow-hidden bg-black ">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -129,12 +129,12 @@ useEffect(() => {
           {images.map((src, index) => (
             <div
               key={index}
-              className="w-full sm:h-[60vh] md:h-[80vh] flex-none flex items-center justify-center"
+              className="w-full sm:h-[40vh] tablet:h-[40vh] md:h-[80vh]  flex-none flex items-center justify-center"
             >
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full sm:h-[60vh] md:h-[80vh] object-fill sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
+                className="w-full sm:h-[40vh]  tablet:h-[40vh] md:h-[80vh] object-fill sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
@@ -186,7 +186,7 @@ useEffect(() => {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 lg:gap-5 max-w-7xl mx-auto">
           {items.map((item, index) => (
             <motion.div
               key={index}
@@ -202,8 +202,8 @@ useEffect(() => {
                 />
               </div>
 
-              <div className="p-3 lg:p-6">
-                <h3 className="text-xl md:text-2xl font-bold font-serif text-[#3e2c1b] leading-snug whitespace-nowrap">
+              <div className="p-3 md:p-6 lg:p-2 xl:p-6 whitespace-nowrap">
+                <h3 className="text-xl md:text-2xl lg:text-[20px] font-bold font-serif text-[#3e2c1b] leading-snug whitespace-nowrap">
                   {item.title}
                 </h3>
                 <Link to={item.link}>

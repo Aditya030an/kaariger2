@@ -750,7 +750,7 @@ const originals = [
     title: "Timeless unity",
     image: Img75,
     wallImage: Img76,
-    basePrice: 82000,
+    basePrice: 70000,
     link: "#",
     category: "artifacts",
     description:
