@@ -17,7 +17,7 @@ const categories = [
   { name: " Artifacts ", image: Madira, link: "/Artifacts" },
   { name: " Furniture ", image: Img20, link: "/Furniture" },
   { name: "Paintings", image: Jua, link: "/Painting" },
-  { name: "Posters", image: Img4, link: "/Poster" },
+  // { name: "Posters", image: Img4, link: "/Poster" },
 ];
 
 const Navbar = ({ cart, orderData }) => {

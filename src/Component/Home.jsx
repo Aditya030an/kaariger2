@@ -52,11 +52,11 @@ const items = [
     image: cinema,
     link: "/Painting", 
   },
-  {
-    title: "Posters",
-    image: Cinema,
-    link: "/Poster", 
-  },
+  // {
+  //   title: "Posters",
+  //   image: Cinema,
+  //   link: "/Poster", 
+  // },
 ];
 const images = [
   carsoul8,
@@ -100,10 +100,7 @@ useEffect(() => {
     { title: "The Poker Parlour", image: Img9, link: "/Juapremi" },
     { title: "Aesthetic Corner", image: cinema, link: "/Aestheticspremi" },
     { title: "Pencil Poetry", image: pencil, link: "/Pencilpremi" },
-    { title: "Cinema Solace",
-      // title: "Baklol Premi",
-      
-      image: Img24, link: "/Cinemapremi" },
+    // { title: "Cinema Solace",image: Img24, link: "/Cinemapremi" },
     { title: "Burnout Boulevard", image:Img12, link: "/Gaadi" },
   ];
 
@@ -121,7 +118,7 @@ useEffect(() => {
         }}
       />
 
-      <div className="relative w-full sm:h-[40vh] tablet:h-[40vh] md:h-[80vh] overflow-hidden bg-black ">
+      <div className="relative w-full sm:h-[40vh] md:h-[80vh] ipadMini:h-[40vh] ipadAir:h-[40vh] ipadPro:h-[40vh] overflow-hidden bg-black ">
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -129,12 +126,12 @@ useEffect(() => {
           {images.map((src, index) => (
             <div
               key={index}
-              className="w-full sm:h-[40vh] tablet:h-[40vh] md:h-[80vh]  flex-none flex items-center justify-center"
+              className="w-full sm:h-[40vh] md:h-[80vh] ipadMini:h-[40vh] ipadAir:h-[40vh] ipadPro:h-[40vh]  flex-none flex items-center justify-center"
             >
               <img
                 src={src}
                 alt={`slide-${index}`}
-                className="w-full sm:h-[40vh]  tablet:h-[40vh] md:h-[80vh] object-fill sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
+                className="w-full sm:h-[40vh]  md:h-[80vh] ipadMini:h-[40vh] ipadAir:h-[40vh] ipadPro:h-[40vh] object-fill sm:object-fill md:object-fill transition-transform duration-700 ease-in-out"
               />
             </div>
           ))}
@@ -240,7 +237,7 @@ useEffect(() => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-8 ">
           {collections.map((item, index) => (
             <a
               key={index}

@@ -101,11 +101,11 @@ const App = () => {
             <Route path="/Madira" element={<Madira cart={cart} setCart={setCart}/>} />
             <Route path="/Aestheticspremi" element={<Aestheticspremi cart={cart} setCart={setCart}/>} />
             <Route path="/Pencilpremi" element={<Pencilpremi cart={cart} setCart={setCart}/>} />
-            <Route path="/Cinemapremi" element={<Cinemapremi cart={cart} setCart={setCart}/>} />
+            {/* <Route path="/Cinemapremi" element={<Cinemapremi cart={cart} setCart={setCart}/>} /> */}
             <Route path="/Kaarigarluxe" element={<Kaarigarluxe cart={cart} setCart={setCart}/>} />
 
             <Route path="/Painting" element={<Painting cart={cart} setCart={setCart} />} />
-            <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} />
+            {/* <Route path="/Poster" element={<Poster cart={cart} setCart={setCart}/>} /> */}
             <Route path="/Artifacts" element={<Artifacts cart={cart} setCart={setCart}/>} />
             <Route path="/Furniture" element={<Furniture cart={cart} setCart={setCart}/>} />
             <Route path="/terms-and-conditions" element={<TermsConditions/>} />
