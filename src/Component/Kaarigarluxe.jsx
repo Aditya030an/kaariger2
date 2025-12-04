@@ -44,6 +44,9 @@ import Img38 from "./photos/artifacts50.png";
 
 import Img39 from "./photos/Aestheticspremi11.jpg";
 import Img40 from "./photos/Aestheticspremi12.png";
+import Img41 from "./photos/Aestheticspremi13.jpg";
+import Img42 from "./photos/Aestheticspremi14.jpg";
+import Img43 from "./photos/Aestheticspremi15.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -323,6 +326,7 @@ const originals = [
     basePrice: 30000,
     image:Img39,
     wallImage:Img40,
+    moreImg:[Img41 , Img42 , Img43],
     link: "#",
     resizeOption: false,
     frameOption: false,

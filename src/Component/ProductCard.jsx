@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoArrowBack, IoClose } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
+import FullScreenImageViewer from "./FullScreenImageViewer";
 
 const pricingPerInch = {
   // frame: 45,
@@ -31,7 +32,9 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   console.log("category", category);
   const navigate = useNavigate();
   const productName = product?.title;
-  const [artType, setArtType] = useState( category === "poster" ? "print" : "handMade");
+  const [artType, setArtType] = useState(
+    category === "poster" ? "print" : "handMade"
+  );
   const [price, setPrice] = useState(0);
   const [selectedFrame, setSelectedFrame] = useState("Matte Black");
   const [customWidth, setCustomWidth] = useState(product?.width || "");
@@ -39,6 +42,18 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
   const [mainImage, setMainImage] = useState(
     product?.image || product?.wallImage
   );
+
+  const [showViewer, setShowViewer] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Combine all images into one list
+  const images = [product.image, product.wallImage, ...(product.moreImg ?? [])];
+
+  const openViewer = (index) => {
+    setActiveIndex(index);
+    setShowViewer(true);
+    console.log("set show view", showViewer);
+  };
 
   const frames = [
     { name: "Matte Black", color: "bg-black", borderColor: "#000000" },
@@ -87,8 +102,6 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
         }
       }
 
-      
-
       setPrice(area * rate);
     } else if (category === "artifacts" || product?.resizeOption === false) {
       setPrice(product?.basePrice || 24000);
@@ -114,11 +127,11 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
     }
 
     if (category === "artifacts") {
-      setPrice(product?.basePrice || 24000);
+      setPrice(product?.basePrice * 0.8 || 24000);
     }
 
     if (product?.resizeOption === false) {
-      setPrice(product?.basePrice);
+      setPrice(product?.basePrice * 0.8);
     }
 
     const width = parseFloat(customWidth) || 0;
@@ -130,7 +143,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
       height,
       artType,
       selectedFrame,
-      price,
+      price ,
       isCustomSize: true,
       category,
     };
@@ -149,7 +162,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
     if (selectedFrame === "No Frame") return "0px";
     return "10px";
   };
-
+  console.log("product?.moreImg", product?.moreImg);
   return (
     <div className="fixed inset-0 z-50 bg-white w-screen h-full md:h-screen  overflow-y-auto ">
       <div className="max-w-[1200px] w-full h-full mx-auto px-4 py-2 flex flex-col 2xl:justify-center gap-2">
@@ -174,86 +187,145 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
 
         <div className="flex  flex-col md:flex-row items-center gap-8 ">
           {/* Left Side */}
-          <div className="flex-1 flex flex-col items-center gap-6">
-            {/* Preview Section */}
-            <div className="flex flex-col-reverse md:flex-row  w-full lg:gap-4">
-              {/* Thumbnails List */}
-              <div className="flex justify-center  md:flex-col md:justify-start md:items-center gap-3 w-full md:w-20">
-                {[product?.image, product?.wallImage, product?.moreImage]
-                  .filter(Boolean)
-                  .map((img, index) => (
-                    <img
-                      key={index}
-                      src={img}
-                      alt={`Thumbnail ${index + 1}`}
-                      className={`w-16 h-16 object-contain rounded border cursor-pointer ${
-                        img === mainImage ? "border-2 border-black" : "border"
-                      }`}
-                      onClick={() => setMainImage(img)}
-                    />
-                  ))}
-              </div>
-
-              {/* Main Preview */}
-              <div className="flex items-center justify-center rounded-md p-4">
+          {/* Preview Section */}
+          {product?.moreImg ? (
+            <div className="grid grid-cols-2 gap-3 md:w-1/2">
+              {/* Main Image */}
+              <div className="overflow-hidden w-full rounded-xl cursor-zoom-in">
                 <img
-                  src={mainImage}
-                  alt="Main Preview"
-                  className="w-auto max-w-[75%] max-h-[75vh] object-contain"
-                  style={{
-                    border:
-                      mainImage === product?.wallImage ||
-                      mainImage === product?.moreImage ||
-                      selectedFrame === "No Frame" ||
-                      category === "artifacts"
-                        ? "0px solid transparent"
-                        : `${getFrameWidth()} solid ${getFrameBorderColor()}`,
-                    borderRadius:
-                      mainImage === product?.wallImage ||
-                      mainImage === product?.moreImage ||
-                      selectedFrame === "No Frame" ||
-                      category === "artifacts"
-                        ? "0px"
-                        : "4px",
-                    boxShadow:
-                      mainImage === product?.wallImage ||
-                      mainImage === product?.moreImage ||
-                      selectedFrame === "No Frame" ||
-                      category === "artifacts"
-                        ? "none"
-                        : "0 4px 12px rgba(0,0,0,0.15)",
-                    transition: "all 0.3s ease",
-                  }}
+                  src={product.image}
+                  alt={product.title}
+                  onClick={() => openViewer(0)}
+                  className="w-full h-56 object-contain hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
-            </div>
 
-            {product?.description && category !== "artifacts" && (
-              <div className="text-[12px]">{product?.description}</div>
-            )}
-
-            {category !== "artifacts" &&
-              (product?.resizeOption !== undefined
-                ? product.resizeOption === true
-                : true) && (
-                <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-2">
-                  <div className="w-full flex items-center justify-between gap-1 text-base">
-                    <span className="font-medium text-lg">
-                      Price After Size Selection:
-                    </span>
-                    <p className="text-xl  font-semibold text-center">
-                      ₹{" "}
-                      {product?.resizeOption === false
-                        ? product?.basePrice?.toLocaleString()
-                        : null}
-                      {category === "artifacts"
-                        ? product?.basePrice?.toLocaleString() || 24000
-                        : price?.toLocaleString()}
-                    </p>
-                  </div>
+              {/* Wall Image */}
+              {product?.wallImage && (
+                <div className="overflow-hidden w-full rounded-xl cursor-zoom-in">
+                  <img
+                    src={product.wallImage}
+                    alt="Wall Preview"
+                    onClick={() => openViewer(1)}
+                    className="w-full h-56 hover:scale-105 transition-transform duration-700 ease-out object-contain"
+                  />
                 </div>
               )}
-          </div>
+
+              {(product.moreImg ?? [])?.map((img, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden w-full rounded-xl cursor-zoom-in"
+                >
+                  <img
+                    src={img}
+                    alt={"More Image " + index}
+                    onClick={() => openViewer(index + 2)}
+                    className="w-full h-56 object-contain hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="flex-1 flex flex-col items-center gap-6">
+              <div className="flex flex-col-reverse md:flex-row  w-full lg:gap-4">
+                {/* Thumbnails List */}
+                <div className="flex justify-center  md:flex-col md:justify-start md:items-center gap-3 w-full md:w-20">
+                  {[product?.image, product?.wallImage, product?.moreImage]
+                    .filter(Boolean)
+                    .map((img, index) => (
+                      <img
+                        key={index}
+                        src={img}
+                        alt={`Thumbnail ${index + 1}`}
+                        className={`w-16 h-16 object-contain rounded border cursor-pointer ${
+                          img === mainImage ? "border-2 border-black" : "border"
+                        }`}
+                        onClick={() => setMainImage(img)}
+                      />
+                    ))}
+                </div>
+
+                {/* Main Preview */}
+                <div className="flex items-center justify-center rounded-md p-4">
+                  <img
+                    src={mainImage}
+                    alt="Main Preview"
+                    className="w-auto max-w-[75%] max-h-[75vh] object-contain"
+                    style={{
+                      border:
+                        mainImage === product?.wallImage ||
+                        mainImage === product?.moreImage ||
+                        selectedFrame === "No Frame" ||
+                        category === "artifacts"
+                          ? "0px solid transparent"
+                          : `${getFrameWidth()} solid ${getFrameBorderColor()}`,
+                      borderRadius:
+                        mainImage === product?.wallImage ||
+                        mainImage === product?.moreImage ||
+                        selectedFrame === "No Frame" ||
+                        category === "artifacts"
+                          ? "0px"
+                          : "4px",
+                      boxShadow:
+                        mainImage === product?.wallImage ||
+                        mainImage === product?.moreImage ||
+                        selectedFrame === "No Frame" ||
+                        category === "artifacts"
+                          ? "none"
+                          : "0 4px 12px rgba(0,0,0,0.15)",
+                      transition: "all 0.3s ease",
+                    }}
+                  />
+                </div>
+              </div>
+              {product?.description && category !== "artifacts" && (
+                <div className="text-[12px]">{product?.description}</div>
+              )}
+
+              {category !== "artifacts" &&
+                (product?.resizeOption !== undefined
+                  ? product.resizeOption === true
+                  : true) && (
+                  <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-0 px-2">
+                    <div className="w-full flex items-center justify-between gap-1 text-base">
+                      <span className="font-medium text-lg">
+                        Price After Size Selection:
+                      </span>
+
+                      <p className="text-xl font-semibold text-center">
+                        {(() => {
+                          // 1️⃣ Get original price (default product price)
+                          let originalPrice;
+
+                          if (product?.resizeOption === false) {
+                            originalPrice = product?.basePrice;
+                          } else if (category === "artifacts") {
+                            originalPrice = product?.basePrice || 24000;
+                          } else {
+                            originalPrice = price;
+                          }
+
+                          // 2️⃣ Calculate discount price (20% OFF)
+                          const finalPrice = originalPrice * 0.8; // 20% discount
+
+                          return (
+                            <>
+                              <span className="line-through text-gray-500 mr-2">
+                                ₹ {originalPrice?.toLocaleString()}
+                              </span>
+                              <span className="text-green-600">
+                                ₹ {finalPrice?.toLocaleString()}
+                              </span>
+                            </>
+                          );
+                        })()}
+                      </p>
+                    </div>
+                  </div>
+                )}
+            </div>
+          )}
 
           {/* Right Side */}
           <div className="flex-1 flex flex-col gap-6">
@@ -443,10 +515,29 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                   <span className="font-medium text-lg">
                     Price Of Artifact:
                   </span>
-                  <p className="text-xl  font-semibold text-center">
-                    ₹ {price}
+
+                  <p className="text-xl font-semibold text-center">
+                    {(() => {
+                      // 1️⃣ Original artifact price
+                      const originalPrice = price;
+
+                      // 2️⃣ Discounted price (20% off)
+                      const finalPrice = originalPrice * 0.8;
+
+                      return (
+                        <>
+                          <span className="line-through text-gray-500 mr-2">
+                            ₹ {originalPrice?.toLocaleString()}
+                          </span>
+                          <span className="text-green-600">
+                            ₹ {finalPrice?.toLocaleString()}
+                          </span>
+                        </>
+                      );
+                    })()}
                   </p>
                 </div>
+
                 <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-base mb-5">
                   {/* Add to Cart button */}
                   <button
@@ -461,7 +552,7 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
                     onClick={() =>
                       navigate("/checkout", {
                         state: {
-                          total: price,
+                          total: price * 0.8,
                         },
                       })
                     }
@@ -475,6 +566,15 @@ const ProductCart = ({ product, onClose, onAddToCart, category }) => {
           </div>
         </div>
       </div>
+      {/* FULL SCREEN VIEWER */}
+      {showViewer && (
+        <FullScreenImageViewer
+          images={images}
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+          onClose={() => setShowViewer(false)}
+        />
+      )}
     </div>
   );
 };

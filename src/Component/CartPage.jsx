@@ -93,7 +93,6 @@ const CartPage = ({ cart, setCart }) => {
     setCart([]);
   };
 
-
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-6">
       <h1 className="text-xl md:text-3xl font-bold mb-6">🛒 Your Cart</h1>
@@ -157,8 +156,14 @@ const CartPage = ({ cart, setCart }) => {
                         </p>
                       )}
 
-                    <p className="text-sm text-gray-500">
-                      Final Price: ₹{item?.price?.toLocaleString()}
+                    <p className="text-sm text-gray-500 flex items-center gap-2">
+                      Final Price:{" "}
+                      <span className="line-through text-gray-400">
+                        ₹{item?.price?.toLocaleString()}
+                      </span>
+                      <span className="text-green-600 font-semibold">
+                        ₹{(item?.price * 0.8).toLocaleString()}
+                      </span>
                     </p>
 
                     {/* Qty Controls */}
@@ -199,7 +204,8 @@ const CartPage = ({ cart, setCart }) => {
                     </div>
 
                     <p className="mt-2 text-teal-600 font-semibold">
-                      Subtotal: ₹{(item.price * item.quantity).toLocaleString()}
+                      Subtotal: ₹
+                      {(item.price * 0.8 * item.quantity).toLocaleString()}
                     </p>
                   </div>
                 </div>
@@ -227,11 +233,24 @@ const CartPage = ({ cart, setCart }) => {
 
           {/* Cart Summary */}
           <div className="mt-8 flex flex-col md:flex-row items-center md:justify-between gap-4">
-            <h3 className="text-lg md:text-xl font-semibold">
+            <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
               Total: ₹
-              {cart
-                .reduce((total, item) => total + item.price * item.quantity, 0)
-                .toLocaleString()}
+              <span className="line-through text-gray-400">
+                {cart
+                  .reduce(
+                    (total, item) => total + item.price * item.quantity,
+                    0
+                  )
+                  .toLocaleString()}
+              </span>
+              <span className="text-green-600 font-semibold">
+                {cart
+                  .reduce(
+                    (total, item) => total + item.price * 0.8 * item.quantity,
+                    0
+                  )
+                  .toLocaleString()}
+              </span>
             </h3>
 
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -246,7 +265,7 @@ const CartPage = ({ cart, setCart }) => {
                   navigate("/checkout", {
                     state: {
                       total: cart.reduce(
-                        (total, item) => total + item.price * item.quantity,
+                        (total, item) => total + item.price  * item.quantity,
                         0
                       ),
                     },

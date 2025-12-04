@@ -17,8 +17,28 @@ import Img29 from "./photos/artifacts36.png";
 
 import Img2 from "./photos/Aestheticspremi11.jpg";
 import Img3 from "./photos/Aestheticspremi12.png";
+import Img30 from "./photos/Aestheticspremi13.jpg";
+import Img31 from "./photos/Aestheticspremi14.jpg";
+import Img32 from "./photos/Aestheticspremi15.jpg";
 
 import music from "./photos/music.png";
+import Img33 from "./photos/artifacts55.jpg";
+import Img34 from "./photos/artifacts56.jpg";
+import Img35 from "./photos/artifacts57.jpg";
+import Img36 from "./photos/artifacts58.jpg";
+import Img37 from "./photos/artifacts59.jpg";
+import Img38 from "./photos/artifacts60.jpg";
+import Img39 from "./photos/artifacts61.jpg";
+import Img40 from "./photos/artifacts62.jpg";
+import Img41 from "./photos/artifacts63.jpg";
+import Img42 from "./photos/artifacts64.jpg";
+import Img43 from "./photos/artifacts65.jpg";
+import Img44 from "./photos/artifacts66.jpg";
+import Img45 from "./photos/artifacts67.jpg";
+import Img46 from "./photos/artifacts68.png";
+import Img47 from "./photos/artifacts69.png";
+import Img48 from "./photos/artifacts51.jpg";
+import Img49 from "./photos/artifacts52.jpg";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -59,6 +79,7 @@ const originals = [
     id: 2,
     title: " ⁠Grande Arena",
     image: Img9,
+    moreImg:[Img44 , Img45 , Img46 , Img47],
     basePrice: 50000,
     link: "#",
     description:"The Stadium Coffee Table. Grande Arena is a masterpiece of modern design — a coffee table that brings the thrill of football right into your living room. Crafted from rich natural wood and topped with a sleek glass surface, it features a stunning miniature stadium beneath, complete with players, turf, and cheering crowds. This unique piece blends artistry, craftsmanship, and passion for the game — a true collector’s dream for sports lovers and design enthusiasts alike."
@@ -83,6 +104,7 @@ const originals = [
     id: 5,
     title: "F1 Fender Stand Wooden",
     image: Img13,
+    moreImg:[Img42 , Img43],
     basePrice: 10000,
     link: "#",
     description:"Bring home the spirit of Formula 1 with this stunning F1 Fender Stand Wooden. Crafted with precision and designed to resemble a real F1 car fender, it adds a bold, sporty vibe to your space. Perfect as a display shelf or wall décor for motorsport enthusiasts, this piece combines craftsmanship, style, and speed in one iconic design.",
@@ -90,8 +112,9 @@ const originals = [
 
   {
     id: 6,
-    title: "Casettee Centre Table",
+    title: "Cassette Centre Table",
     image: Img16,
+    moreImg:[Img39 , Img40 , Img41],
     basePrice: 40000,
     link: "#",
     description:"The Cassette Centre Table is a nostalgic fusion of retro charm and modern design. Crafted from premium wood, it replicates the classic audio cassette look, turning a vintage icon into a functional centerpiece. Its sturdy build and detailed craftsmanship make it perfect for living rooms, cafes, or creative studios. A true conversation starter that blends art, utility, and timeless style."
@@ -100,6 +123,7 @@ const originals = [
     id: 7,
     title: " ⁠⁠Boombox Shelf Table ",
     image: music,
+    moreImg:[Img33 , Img34],
     basePrice: 30000,
     link: "#",
     description:"A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
@@ -119,6 +143,7 @@ const originals = [
     title: "Retrovision Table Centre",
     image: Img25,
     wallImage: Img27,
+    moreImg:[Img35 , Img36 , Img37 , Img38],
     basePrice: 25000,
     link: "#",
     description:"A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
@@ -129,6 +154,7 @@ const originals = [
     basePrice: 30000,
     image: Img2,
     wallImage: Img3,
+    moreImg:[Img30 , Img31 , Img32],
     link: "#",
     resizeOption: false,
     frameOption: false,
@@ -139,6 +165,7 @@ const originals = [
     title: "Mr. Nook",
     image: Img28,
     wallImage: Img29,
+    moreImg:[Img48 , Img49],
     basePrice: 25000,
     link: "#",
     description:"Mr. Nook — a compact fusion of charm and function. Crafted in rich wood, this minimal yet warm bedside table brings an earthy aesthetic to modern living. With a pull-down rattan shelf and soft ambient lighting, it’s perfect for cozy storage or displaying your favorite reads and decor. A true nook of comfort and sophistication for any corner."

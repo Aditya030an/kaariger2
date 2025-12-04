@@ -80,6 +80,26 @@ import Img73 from "./photos/artifacts47.png";
 import Img74 from "./photos/artifacts48.png";
 import Img75 from "./photos/artifacts49.jpg";
 import Img76 from "./photos/artifacts50.png";
+import Img77 from "./photos/artifacts51.jpg";
+import Img78 from "./photos/artifacts52.jpg";
+import Img79 from "./photos/Aestheticspremi13.jpg";
+import Img80 from "./photos/Aestheticspremi14.jpg";
+import Img81 from "./photos/Aestheticspremi15.jpg";
+import Img82 from "./photos/artifacts55.jpg";
+import Img83 from "./photos/artifacts56.jpg";
+import Img84 from "./photos/artifacts57.jpg";
+import Img85 from "./photos/artifacts58.jpg";
+import Img86 from "./photos/artifacts59.jpg";
+import Img87 from "./photos/artifacts60.jpg";
+import Img88 from "./photos/artifacts61.jpg";
+import Img89 from "./photos/artifacts62.jpg";
+import Img90 from "./photos/artifacts63.jpg";
+import Img91 from "./photos/artifacts66.jpg";
+import Img92 from "./photos/artifacts67.jpg";
+import Img93 from "./photos/artifacts68.png";
+import Img94 from "./photos/artifacts69.png";
+
+
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -514,6 +534,7 @@ const originals = [
     id: 35,
     title: " ⁠Grande Arena",
     image: Img43,
+    moreImg:[Img91 , Img92 , Img93 , Img94],
     basePrice: 50000,
     link: "#",
     category: "artifacts",
@@ -544,6 +565,7 @@ const originals = [
     id: 38,
     title: "Casettee Centre Table",
     image: Img47,
+    moreImg:[Img88, Img89 , Img90],
     basePrice: 40000,
     link: "#",
     category: "artifacts",
@@ -554,6 +576,7 @@ const originals = [
     id: 39,
     title: " ⁠⁠Boombox Shelf Table ",
     image: Img48,
+    moreImg:[Img82 , Img83],
     basePrice: 30000,
     link: "#",
     category: "artifacts",
@@ -576,6 +599,7 @@ const originals = [
     title: "Retrovision Table Centre",
     image: Img50,
     wallImage: Img51,
+    moreImg:[Img84 , Img85 , Img86 , Img87],
     basePrice: 25000,
     link: "#",
     category: "artifacts",
@@ -588,6 +612,7 @@ const originals = [
     basePrice: 30000,
     image: Img52,
     wallImage: Img53,
+    moreImg:[Img79 , Img80 , Img81],
     link: "#",
     resizeOption: false,
     frameOption: false,
@@ -600,6 +625,7 @@ const originals = [
     title: "Mr. Nook",
     image: Img54,
     wallImage: Img56,
+    moreImg:[Img77 , Img78],
     basePrice: 25000,
     link: "#",
     category: "artifacts",

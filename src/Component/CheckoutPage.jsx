@@ -124,7 +124,10 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const CheckoutPage = ({ cart, setCart, orderData, setOrderData }) => {
   const location = useLocation();
-  const totalFromNav = location.state?.total || JSON.parse(localStorage.getItem("price_data")).itemsTotal || 0;
+  const totalFromNav =
+    location.state?.total ||
+    JSON.parse(localStorage.getItem("price_data")).itemsTotal ||
+    0;
 
   const [loading, setLoading] = useState(false);
 
@@ -164,7 +167,7 @@ const CheckoutPage = ({ cart, setCart, orderData, setOrderData }) => {
     }
   };
 
-  const finalAmount = totalAmount - discount;
+  const finalAmount = totalAmount * 0.8;
 
   // Add Address
   const handleAddAddress = () => {
@@ -197,21 +200,21 @@ const CheckoutPage = ({ cart, setCart, orderData, setOrderData }) => {
       setLoading(true);
 
       // Save order details in localStorage before redirect
-      
 
-      const userData ={
+      const userData = {
         name,
         email,
-        phone, selectedAddress,
+        phone,
+        selectedAddress,
       };
 
-      const priceData={
+      const priceData = {
         itemsTotal: totalAmount,
         discount,
         finalAmount,
         couponCode,
-        isCouponApplied
-      }
+        isCouponApplied,
+      };
 
       localStorage.setItem("user_data", JSON.stringify(userData));
       localStorage.setItem("price_data", JSON.stringify(priceData));
@@ -307,12 +310,18 @@ const CheckoutPage = ({ cart, setCart, orderData, setOrderData }) => {
         </div>
 
         {/* TOTAL */}
-        <h3 className="font-bold text-xl mb-2">
-          Total: ₹{totalAmount.toLocaleString()}
+        <h3 className="font-bold text-xl mb-2 flex items-center gap-2">
+          Total: 
+          <span className="line-through text-gray-400">
+            ₹{totalAmount?.toLocaleString()}
+          </span>
+          <span className="text-green-600 font-semibold">
+            ₹{(totalAmount* 0.8).toLocaleString()}
+          </span>
         </h3>
 
         {/* Coupon */}
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <input
             type="text"
             placeholder="Enter coupon"
@@ -329,7 +338,7 @@ const CheckoutPage = ({ cart, setCart, orderData, setOrderData }) => {
             {isCouponApplied ? "Coupon Applied" : "Apply Coupon"}
           </button>
           {errorMsg && <p className="text-red-500">{errorMsg}</p>}
-        </div>
+        </div> */}
 
         {isCouponApplied && (
           <div className="mb-4">

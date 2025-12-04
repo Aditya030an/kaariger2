@@ -13,6 +13,10 @@ import Img7 from "./photos/artifacts47.png";
 import Img8 from "./photos/artifacts48.png";
 import Img9 from "./photos/artifacts49.jpg";
 import Img10 from "./photos/artifacts50.png";
+import Img11 from "./photos/artifacts57.jpg";
+import Img12 from "./photos/artifacts58.jpg";
+import Img13 from "./photos/artifacts59.jpg";
+import Img14 from "./photos/artifacts60.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -104,6 +108,7 @@ const products = [
     category: "artifacts",
     basePrice: 25000,
     image: Img5,
+    moreImg:[Img11 , Img12 , Img13 , Img14],
     link: "#",
         description:"A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
   },

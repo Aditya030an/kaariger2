@@ -54,7 +54,7 @@ const Cart = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+                  <p className="text-xl font-semibold">₹ {(item.price * item.quantity).toFixed(2)}</p>
                   <button className="text-red-400 hover:text-red-600 mt-2 transition">
                     <X className="w-5 h-5 inline" /> Remove
                   </button>
@@ -74,7 +74,7 @@ const Cart = () => {
             <h2 className="text-2xl font-bold mb-6">Summary</h2>
             <div className="flex justify-between mb-4 text-gray-700">
               <span>Subtotal</span>
-              <span>${totalPrice.toFixed(2)}</span>
+              <span>₹ {totalPrice.toFixed(2)}</span>
             </div>
             <div className="flex justify-between mb-4 text-gray-700">
               <span>Shipping</span>
@@ -83,7 +83,7 @@ const Cart = () => {
             <hr className="my-4" />
             <div className="flex justify-between text-xl font-semibold">
               <span>Total</span>
-              <span>${totalPrice.toFixed(2)}</span>
+              <span>₹{totalPrice.toFixed(2)}</span>
             </div>
             <button className="w-full mt-6 bg-black text-white py-3 rounded-xl hover:opacity-90 transition">
               Checkout

@@ -26,7 +26,7 @@ const Card = ({ product, onClick , category }) => {
         {
           category === "artifacts" &&
         <h3 className="text-[16px] md:text-xl font-[Amita] font-medium md:font-semibold text-black mb-2">
-          {product?.basePrice.toLocaleString()}
+          ₹ {product?.basePrice.toLocaleString()}
         </h3>
         }
         <motion.button

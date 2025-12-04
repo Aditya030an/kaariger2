@@ -761,7 +761,7 @@ const Painting = ({ cart, setCart }) => {
                     {product?.title}
                   </h3>
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-medium md:font-semibold text-black mb-2">
-                    {(product?.height * product?.width * 25).toLocaleString()}
+                     ₹ {(product?.height * product?.width * 25).toLocaleString()}
                   </h3>
                   <motion.button
                     whileHover={{ scale: 1.05 }}

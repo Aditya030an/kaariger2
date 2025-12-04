@@ -13,11 +13,13 @@ import Img7 from "./photos/motor6.jpeg";
 import Img8 from "./photos/motor7.jpeg";
 import Img9 from "./photos/motor8.jpeg";
 import Img10 from "./photos/motor9.jpeg";
-import Img14 from "./photos/motor13.png";
 import Img11 from "./photos/motor10.jpeg";
 import Img12 from "./photos/motor11.jpeg";
 import Img13 from "./photos/motor12.jpeg";
+import Img14 from "./photos/motor13.png";
 import Img15 from "./photos/Artifacts11.jpg";
+import Img16 from "./photos/artifacts64.jpg";
+import Img17 from "./photos/artifacts65.jpg";
 import Img44 from "./photos/motor32.jpeg";
 import Img55 from "./photos/motor44.jpeg";
 
@@ -183,6 +185,7 @@ const originals = [
       id: 14,
       title: "F1 Fender Stand Wooden",
       image: Img15,
+      moreImg:[Img16 , Img17],
       basePrice: 10000,
       link: "#",
       category: "artifacts",

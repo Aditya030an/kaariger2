@@ -12,6 +12,8 @@ import Img6 from "./photos/best6.jpeg";
 import Img7 from "./photos/best7.jpeg";
 import Img8 from "./photos/best8.png";
 import Img9 from "./photos/best9.png";
+import Img10 from "./photos/artifacts55.jpg";
+import Img11 from "./photos/artifacts56.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -95,6 +97,7 @@ const originals = [
     id: 8,
     title: "⁠Boombox Shelf Table ",
      basePrice: 30000,
+     moreImg:[Img10 , Img11],
     image: Img8,
     link: "#",
         description:"A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",

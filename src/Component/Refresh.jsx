@@ -15,6 +15,11 @@ import Img29 from "./photos/artifacts48.png";
 import Img30 from "./photos/Aestheticspremi11.jpg";
 import Img31 from "./photos/Aestheticspremi12.png";
 import Img32 from "./photos/Aestheticspremi10.jpg";
+import Img33 from "./photos/Aestheticspremi13.jpg";
+import Img34 from "./photos/Aestheticspremi14.jpg";
+import Img35 from "./photos/Aestheticspremi15.jpg";
+import Img36 from "./photos/artifacts55.jpg";
+import Img37 from "./photos/artifacts56.jpg";
 
 import ProductCart from "./ProductCard";
 import { useState } from "react";
@@ -48,7 +53,7 @@ const newReleases = [
     id: 3,
     title: " ⁠⁠Boombox Shelf Table ",
     category: "Textile & Design",
-
+    moreImg:[Img36 , Img37],
     basePrice: 30000,
     subCategory: "artifacts",
     image: music,
@@ -60,6 +65,7 @@ const newReleases = [
     basePrice: 30000,
     image: Img30,
     wallImage: Img31,
+    moreImg:[Img33 , Img34 , Img35],
     link: "#",
     resizeOption: false,
     frameOption: false,
