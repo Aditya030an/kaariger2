@@ -760,8 +760,23 @@ const Painting = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-gray-800 mb-2">
                     {product?.title}
                   </h3>
-                  <h3 className="text-[16px] md:text-xl font-[Amita] font-medium md:font-semibold text-black mb-2">
-                     ₹ {(product?.height * product?.width * 25).toLocaleString()}
+                  {/* <h3 className="text-[16px] md:text-xl font-[Amita] font-medium md:font-semibold text-black mb-2">
+                    ₹ {(product?.height * product?.width * 25).toLocaleString()}
+                  </h3> */}
+                  <h3 className="text-[16px] md:text-xl flex flex-col items-center gap-0.5 font-[Amita] font-medium md:font-semibold text-black mb-2">
+                    <span className="line-through text-gray-400 text-sm">
+                      ₹{" "}
+                      {(product?.height * product?.width * 25).toLocaleString()}
+                    </span>
+                    <span className="text-black font-semibold">
+                      ₹{" "}
+                      {(
+                        product?.height *
+                        product?.width *
+                        25 *
+                        0.8
+                      ).toLocaleString()}
+                    </span>
                   </h3>
                   <motion.button
                     whileHover={{ scale: 1.05 }}

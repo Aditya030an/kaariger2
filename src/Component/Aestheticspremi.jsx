@@ -98,6 +98,11 @@ import Img91 from "./photos/artifacts66.jpg";
 import Img92 from "./photos/artifacts67.jpg";
 import Img93 from "./photos/artifacts68.png";
 import Img94 from "./photos/artifacts69.png";
+import Img95 from "./photos/artifacts70.jpg";
+import Img96 from "./photos/artifacts71.jpg";
+import Img97 from "./photos/Aestheticspremi16.jpg";
+import Img98 from "./photos/Aestheticspremi17.jpg";
+import Img99 from "./photos/Aestheticspremi18.jpg";
 
 
 
@@ -501,6 +506,7 @@ const originals = [
     title: "Kava Cups set of 2(Clay)",
     basePrice: 3000,
     image: Img39,
+    moreImg:[Img97 , Img98 , Img99],
     link: "#",
     resizeOption: false,
     frameOption: false,
@@ -524,6 +530,7 @@ const originals = [
     id: 34,
     title: "Ace Centre Table ",
     image: Img42,
+    moreImg:[Img95 , Img96],
     basePrice: 30000,
     link: "#",
     category: "artifacts",

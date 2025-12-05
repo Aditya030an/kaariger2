@@ -39,6 +39,8 @@ import Img46 from "./photos/artifacts68.png";
 import Img47 from "./photos/artifacts69.png";
 import Img48 from "./photos/artifacts51.jpg";
 import Img49 from "./photos/artifacts52.jpg";
+import Img50 from "./photos/artifacts70.jpg";
+import Img51 from "./photos/artifacts71.jpg";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -71,6 +73,7 @@ const originals = [
     id: 1,
     title: "Ace Centre Table ",
     image: Img1,
+    moreImg:[Img50 , Img51],
     basePrice: 30000,
     link: "#",
     description:"A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space."

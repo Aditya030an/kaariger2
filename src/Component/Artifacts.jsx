@@ -33,12 +33,9 @@ import Img43 from "./photos/artifacts48.png";
 import Img44 from "./photos/artifacts49.jpg";
 import Img45 from "./photos/artifacts50.png";
 import Img46 from "./photos/Aestheticspremi10.jpg";
-
-
-
-
-
-
+import Img47 from "./photos/Aestheticspremi16.jpg";
+import Img48 from "./photos/Aestheticspremi17.jpg";
+import Img49 from "./photos/Aestheticspremi18.jpg";
 
 
 import ProductCart from "./ProductCard";
@@ -151,7 +148,7 @@ const originals = [
     id: 17,
     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
     image: Img38,
-    basePrice: 10000,
+    basePrice: 1000,
     link: "#",
     description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
@@ -159,7 +156,7 @@ const originals = [
     id: 28,
     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
     image: Img39,
-    basePrice: 10000,
+    basePrice: 1000,
     link: "#",
         description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
@@ -167,7 +164,7 @@ const originals = [
     id: 29,
     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
     image: Img40,
-    basePrice: 10000,
+    basePrice: 1000,
     link: "#",
         description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
@@ -175,7 +172,7 @@ const originals = [
     id: 18,
     title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
     image: Img19,
-    basePrice: 30000,
+    basePrice: 3000,
     link: "#",
         description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
   },
@@ -253,6 +250,7 @@ const originals = [
       title: "Kava Cups set of 2(Clay)",
       basePrice: 3000,
       image:Img46,
+      moreImg:[Img47 , Img48 , Img49],
       link: "#",
       resizeOption: false,
       frameOption: false,

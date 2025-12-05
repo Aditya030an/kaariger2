@@ -20,6 +20,9 @@ import Img34 from "./photos/Aestheticspremi14.jpg";
 import Img35 from "./photos/Aestheticspremi15.jpg";
 import Img36 from "./photos/artifacts55.jpg";
 import Img37 from "./photos/artifacts56.jpg";
+import Img38 from "./photos/Aestheticspremi16.jpg";
+import Img39 from "./photos/Aestheticspremi17.jpg";
+import Img40 from "./photos/Aestheticspremi18.jpg";
 
 import ProductCart from "./ProductCard";
 import { useState } from "react";
@@ -112,6 +115,7 @@ const newReleases = [
       title: "Kava Cups set of 2(Clay)",
       basePrice: 3000,
       image:Img32,
+      moreImg:[Img38 , Img39 , Img40],
       link: "#",
        subCategory:"artifacts",
       resizeOption: false,
