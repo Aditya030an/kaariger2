@@ -28,11 +28,11 @@ const Navbar = ({ cart, orderData }) => {
   return (
     <div>
       {/* Offer Bar */}
-      <div className="w-full bg-slate-300 text-black text-sm font-semibold py-2 overflow-hidden relative z-50">
+      {/* <div className="w-full bg-slate-300 text-black text-sm font-semibold py-2 overflow-hidden relative z-50">
         <div className="animate-marquee whitespace-nowrap px-6">
           🔥 Flat 20% OFF on all items! Use code: <strong>KAARIGAR20</strong>
         </div>
-      </div>
+      </div> */}
 
       <nav
         className="w-full font-serif text-[#2E2B28] relative z-50 bg-cover bg-center"
