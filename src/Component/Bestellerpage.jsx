@@ -17,6 +17,10 @@ import Img11 from "./photos/artifacts57.jpg";
 import Img12 from "./photos/artifacts58.jpg";
 import Img13 from "./photos/artifacts59.jpg";
 import Img14 from "./photos/artifacts60.jpg";
+import Img15 from "./photos/artifacts72.jpg";
+import Img16 from "./photos/artifacts73.jpg";
+import Img17 from "./photos/artifacts74.jpg";
+import Img18 from "./photos/artifacts75.jpg";
 
 import ProductCart from "./ProductCard";
 
@@ -45,6 +49,7 @@ const products = [
     image: Img6,
     wallImage: Img7,
     moreImage: Img8,
+    moreImg:[Img8 ,Img15, Img16, Img17, Img18],
     basePrice: 16000,
     link: "#",
         description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",

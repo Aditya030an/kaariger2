@@ -48,6 +48,14 @@ import Img41 from "./photos/Aestheticspremi13.jpg";
 import Img42 from "./photos/Aestheticspremi14.jpg";
 import Img43 from "./photos/Aestheticspremi15.jpg";
 
+import Img45 from "./photos/artifacts72.jpg";
+import Img46 from "./photos/artifacts73.jpg";
+import Img47 from "./photos/artifacts74.jpg";
+import Img48 from "./photos/artifacts75.jpg";
+import Img49 from "./photos/artifacts78.jpg";
+import Img50 from "./photos/artifacts79.jpg";
+import Img51 from "./photos/artifacts80.jpg";
+
 import ProductCart from "./ProductCard";
 
 // TiltCard component
@@ -277,7 +285,7 @@ const originals = [
     title: "Modern Relic",
     image: Img30,
     wallImage: Img31,
-    moreImage: Img32,
+    moreImg: [Img32 , Img45, Img46, Img47 , Img48],
     basePrice: 16000,
     link: "#",
     resizeOption: false,
@@ -291,7 +299,7 @@ const originals = [
     basePrice: 35000,
     image: Img33,
     wallImage: Img34,
-    moreImage: Img35,
+    moreImg: [Img35 ,Img49 ,  Img50 , Img51],
     link: "#",
     resizeOption: false,
     frameOption: false,

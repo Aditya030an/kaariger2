@@ -24,6 +24,11 @@ import Img38 from "./photos/Aestheticspremi16.jpg";
 import Img39 from "./photos/Aestheticspremi17.jpg";
 import Img40 from "./photos/Aestheticspremi18.jpg";
 
+import Img41 from "./photos/artifacts72.jpg";
+import Img42 from "./photos/artifacts73.jpg";
+import Img43 from "./photos/artifacts74.jpg";
+import Img44 from "./photos/artifacts75.jpg";
+
 import ProductCart from "./ProductCard";
 import { useState } from "react";
 
@@ -144,7 +149,7 @@ const newReleases = [
     subCategory: "artifacts",
     image: Img27,
     wallImage: Img28,
-    moreImage: Img29,
+    moreImg: [Img29 ,Img41 , Img42 , Img43 , Img44],
     basePrice: 16000,
     link: "#",
         description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",

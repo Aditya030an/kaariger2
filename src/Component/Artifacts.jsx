@@ -36,6 +36,18 @@ import Img46 from "./photos/Aestheticspremi10.jpg";
 import Img47 from "./photos/Aestheticspremi16.jpg";
 import Img48 from "./photos/Aestheticspremi17.jpg";
 import Img49 from "./photos/Aestheticspremi18.jpg";
+import Img50 from "./photos/artifacts72.jpg";
+import Img51 from "./photos/artifacts73.jpg";
+import Img52 from "./photos/artifacts74.jpg";
+import Img53 from "./photos/artifacts75.jpg";
+import Img54 from "./photos/artifacts76.jpg";
+import Img55 from "./photos/artifacts77.jpg";
+import Img56 from "./photos/artifacts78.jpg";
+import Img57 from "./photos/artifacts79.jpg";
+import Img58 from "./photos/artifacts80.jpg";
+import Img59 from "./photos/artifacts81.jpg";
+import Img60 from "./photos/artifacts82.jpg";
+import Img61 from "./photos/artifacts83.jpg";
 
 
 import ProductCart from "./ProductCard";
@@ -69,6 +81,7 @@ const originals = [
     id: 1,
     title: "Fisherman Incense Holder (Clay) ",
     image: Img1,
+    moreImg:[Img59 , Img60 , Img61],
     basePrice: 2000,
     link: "#",
     description:"A finely crafted designer sculpture depicting a fisherman seated in a minimalist boat, gently holding an incense stick. This elegant piece blends traditional symbolism with contemporary artistry, evoking calmness, reflection, and spiritual balance—ideal for refined interior décor or meditative spaces.",
@@ -137,7 +150,7 @@ const originals = [
       title: "Eclipsera Pole (Clay)",
       image: Img30,
       wallImage:Img32,
-      moreImage:Img31,
+      moreImg:[Img31 , Img56 , Img57 , Img58],
       basePrice: 35000,
       link: "#",
         resizeOption: false,
@@ -222,6 +235,7 @@ const originals = [
     title: "The Cardenza Coffee Table",
     image: Img33,
     wallImage:Img34,
+    moreImg:[Img54 , Img55],
     basePrice: 27000,
     link: "#",
     description:"When play meets purpose — this Playing Card Table turns imagination into furniture! Built like a “House of Cards” yet sturdy enough to hold your coffee conversations, it’s a playful nod to classic casino charm and creative design. The glossy red-and-white finish adds a pop of fun to any room, making it a perfect centerpiece for your living space, lounge, or café corner.",
@@ -232,6 +246,7 @@ const originals = [
     image: Img41,
     wallImage:Img42,
     moreImage:Img43,
+    moreImg:[Img43 , Img50, Img51, Img52, Img53],
     basePrice: 16000,
     link: "#",
     description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",

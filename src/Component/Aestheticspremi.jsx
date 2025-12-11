@@ -103,6 +103,18 @@ import Img96 from "./photos/artifacts71.jpg";
 import Img97 from "./photos/Aestheticspremi16.jpg";
 import Img98 from "./photos/Aestheticspremi17.jpg";
 import Img99 from "./photos/Aestheticspremi18.jpg";
+import Img100 from "./photos/artifacts72.jpg";
+import Img101 from "./photos/artifacts73.jpg";
+import Img102 from "./photos/artifacts74.jpg";
+import Img103 from "./photos/artifacts75.jpg";
+import Img104 from "./photos/artifacts76.jpg";
+import Img105 from "./photos/artifacts77.jpg";
+import Img106 from "./photos/artifacts78.jpg";
+import Img107 from "./photos/artifacts79.jpg";
+import Img108 from "./photos/artifacts80.jpg";
+import Img109 from "./photos/artifacts81.jpg";
+import Img110 from "./photos/artifacts82.jpg";
+import Img111 from "./photos/artifacts83.jpg";
 
 
 
@@ -493,7 +505,7 @@ const originals = [
     basePrice: 35000,
     image: Img36,
     wallImage: Img37,
-    moreImage: Img38,
+    moreImg: [Img38 ,Img106 , Img107 , Img108 ],
     link: "#",
     resizeOption: false,
     frameOption: false,
@@ -643,6 +655,7 @@ const originals = [
     id: 44,
     title: "Fisherman Incense Holder (Clay) ",
     image: Img57,
+    moreImg:[Img109 , Img110 , Img111],
     basePrice: 2000,
     link: "#",
     category: "artifacts",
@@ -760,6 +773,7 @@ const originals = [
     title: "The Cardenza Coffee Table",
     image: Img70,
     wallImage: Img71,
+    moreImg:[Img104 , Img105],
     basePrice: 27000,
     link: "#",
     category: "artifacts",
@@ -771,7 +785,8 @@ const originals = [
     title: "Modern Relic",
     image: Img72,
     wallImage: Img73,
-    moreImage: Img74,
+    // moreImage: Img74,
+    moreImg:[Img74 ,Img100, Img101, Img102, Img103],
     basePrice: 16000,
     link: "#",
     category: "artifacts",
