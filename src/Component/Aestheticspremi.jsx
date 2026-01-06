@@ -147,6 +147,20 @@ function TiltCard({ children }) {
 // Products
 const originals = [
   {
+    id: 31,
+    title: "Eclipsera Pole (Clay)",
+    basePrice: 35000,
+    image: Img36,
+    wallImage: Img37,
+    moreImg: [Img38 ,Img106 , Img107 , Img108 ],
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+    category: "artifacts",
+    description:
+      "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
+  },
+  {
     id: 2,
     title: "Secrets Of India ",
     basePrice: 6499,
@@ -499,20 +513,7 @@ const originals = [
     description:
       "This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
   },
-  {
-    id: 31,
-    title: "Eclipsera Pole (Clay)",
-    basePrice: 35000,
-    image: Img36,
-    wallImage: Img37,
-    moreImg: [Img38 ,Img106 , Img107 , Img108 ],
-    link: "#",
-    resizeOption: false,
-    frameOption: false,
-    category: "artifacts",
-    description:
-      "A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces.",
-  },
+  
   {
     id: 32,
     title: "Kava Cups set of 2(Clay)",

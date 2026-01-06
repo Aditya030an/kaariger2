@@ -50,9 +50,10 @@ const originals = [
     basePrice: 7999,
     image: kaarigar1,
     link: "#",
-    height:35,
-    width:25,
-    description:"A stunning two-part artwork capturing the elegant chaos of red wine in motion. The first frame shows a graceful pour from a dark bottle, while the second bursts with energy as the wine splashes into a glass, freezing that perfect moment of fluid art. Together, they celebrate indulgence, movement, and the beauty found in everyday elegance.",
+    height: 35,
+    width: 25,
+    description:
+      "A stunning two-part artwork capturing the elegant chaos of red wine in motion. The first frame shows a graceful pour from a dark bottle, while the second bursts with energy as the wine splashes into a glass, freezing that perfect moment of fluid art. Together, they celebrate indulgence, movement, and the beauty found in everyday elegance.",
   },
   {
     id: 2,
@@ -61,9 +62,10 @@ const originals = [
     image: kaarigar2,
     wallImage: Img6,
     link: "#",
-    height:30,
-    width:30,
-    description:"A mesmerizing play of light and color, The Spirit of Life captures the warmth and energy of a shared drink under vibrant reflections. The glowing oranges and luminous glass forms radiate vitality, symbolizing joy, renewal, and the essence of living fully. Each brushstroke dances with movement, breathing emotion into stillness.",
+    height: 30,
+    width: 30,
+    description:
+      "A mesmerizing play of light and color, The Spirit of Life captures the warmth and energy of a shared drink under vibrant reflections. The glowing oranges and luminous glass forms radiate vitality, symbolizing joy, renewal, and the essence of living fully. Each brushstroke dances with movement, breathing emotion into stillness.",
   },
   {
     id: 3,
@@ -71,10 +73,10 @@ const originals = [
     basePrice: 7299,
     image: kaarigar3,
     link: "#",
-     height:35,
-    width:25,
-     description:"“Into the Pour” playfully blurs the line between indulgence and imagination. The painting depicts people diving into oversized wine glasses, surrendering to waves of rich crimson hues. With its surreal charm and fluid motion, it celebrates the joy of letting go — an ode to passion, pleasure, and the art of escape.",
-
+    height: 35,
+    width: 25,
+    description:
+      "“Into the Pour” playfully blurs the line between indulgence and imagination. The painting depicts people diving into oversized wine glasses, surrendering to waves of rich crimson hues. With its surreal charm and fluid motion, it celebrates the joy of letting go — an ode to passion, pleasure, and the art of escape.",
   },
   {
     id: 4,
@@ -82,9 +84,10 @@ const originals = [
     basePrice: 7999,
     image: Img4,
     link: "#",
-    height:25,
-    width:18,
-        description:"“The Cheers Edition” captures a timeless toast set against the backdrop of an aged transcript, where history meets celebration. The two clinking glasses symbolize connection, memory, and shared moments that transcend time. With its warm tones and nostalgic texture, the painting feels like a tribute to stories told over every pour.",
+    height: 25,
+    width: 18,
+    description:
+      "“The Cheers Edition” captures a timeless toast set against the backdrop of an aged transcript, where history meets celebration. The two clinking glasses symbolize connection, memory, and shared moments that transcend time. With its warm tones and nostalgic texture, the painting feels like a tribute to stories told over every pour.",
   },
 
   {
@@ -93,72 +96,77 @@ const originals = [
     basePrice: 7299,
     image: Img7,
     link: "#",
-    height:40,
-    width:35,
-    description:"“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
+    height: 40,
+    width: 35,
+    description:
+      "“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
   },
-    {
-      id: 7,
-      title: "Neat Tap ",
-      image: Img8,
-      basePrice: 2500,
-      link: "#",
-      category:"artifacts",
-      description:"Where art meets indulgence — this wall-mounted liquor display turns your bar into a statement of sophistication. Industrial steel pipes fuse with rich wood tones, pouring character as smoothly as your finest spirit. It’s not just a dispenser — it’s a scene-stealer.",
-    },
-     {
-        id: 8,
-        title: "⁠⁠Suits Serving Platters (Clay)",
-        image: Img9,
-        basePrice: 3000,
-        link: "#",
-         category:"artifacts",
-        description:"A royal twist to your serveware — these card-shaped bowls bring the thrill of the game to your table. Each piece is sculpted with precision, blending luxury gold trims with the bold charm of hearts, spades, clubs, and diamonds. Perfect for nuts, snacks, or style — this set isn’t just dinnerware, it’s a statement of play, class, and indulgence. Deal your snacks in style.",
-      },
-        {
-          id: 9,
-          title: "Chakhna Pallete 1pc",
-          image: Img10,
-          basePrice: 1000,
-          link: "#",
-          category:"artifacts",
-          description:"Where the buzz meets the bite — these chakhna palettes aren’t just plates, they’re mood boards for madness. Crafted around iconic alcohol bottles, they turn every sip into a scene and every snack into a statement. Because real flavor deserves a little attitude.",
-        },
-        {    id: 10,
-            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-            image: Img11,
-            basePrice: 1000,
-            link: "#",
-            category:"artifacts",
-            description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
-          },
-          {
-            id: 11,
-            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-            image: Img12,
-            basePrice: 1000,
-            link: "#",
-            category:"artifacts",
-                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
-          },
-          {
-            id: 12,
-            title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
-            image: Img13,
-            basePrice: 1000,
-            link: "#",
-            category:"artifacts",
-                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
-          },
-          {
-            id: 13,
-            title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
-            image: Img14,
-            basePrice: 3000,
-            link: "#",
-            category:"artifacts",
-                description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
-          },
+  {
+    id: 7,
+    title: "Neat Tap ",
+    image: Img8,
+    basePrice: 2500,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Where art meets indulgence — this wall-mounted liquor display turns your bar into a statement of sophistication. Industrial steel pipes fuse with rich wood tones, pouring character as smoothly as your finest spirit. It’s not just a dispenser — it’s a scene-stealer.",
+  },
+  {
+    id: 8,
+    title: "⁠⁠Suits Serving Platters (Clay)",
+    image: Img9,
+    basePrice: 3000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "A royal twist to your serveware — these card-shaped bowls bring the thrill of the game to your table. Each piece is sculpted with precision, blending luxury gold trims with the bold charm of hearts, spades, clubs, and diamonds. Perfect for nuts, snacks, or style — this set isn’t just dinnerware, it’s a statement of play, class, and indulgence. Deal your snacks in style.",
+  },
+  {
+    id: 9,
+    title: "Chakhna Pallete 1pc",
+    image: Img10,
+    basePrice: 1000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Where the buzz meets the bite — these chakhna palettes aren’t just plates, they’re mood boards for madness. Crafted around iconic alcohol bottles, they turn every sip into a scene and every snack into a statement. Because real flavor deserves a little attitude.",
+  },
+  // {    id: 10,
+  //     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+  //     image: Img11,
+  //     basePrice: 1000,
+  //     link: "#",
+  //     category:"artifacts",
+  //     description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+  //   },
+  //   {
+  //     id: 11,
+  //     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+  //     image: Img12,
+  //     basePrice: 1000,
+  //     link: "#",
+  //     category:"artifacts",
+  //         description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+  //   },
+  //   {
+  //     id: 12,
+  //     title: "⁠⁠Faceoff Serving Platter 1pc (Clay) ",
+  //     image: Img13,
+  //     basePrice: 1000,
+  //     link: "#",
+  //     category:"artifacts",
+  //         description:"Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+  //   },
+  {
+    id: 13,
+    title: "⁠⁠Faceoff Serving Platter 3pc (Clay) ",
+    image: Img14,
+    basePrice: 3000,
+    link: "#",
+    category: "artifacts",
+    description:
+      "Who said plates have to behave? These weird-face platters turn dining into an art of expression — bold, bizarre, and unapologetically fun. Each face carries its own attitude, serving your food with a side of chaos and creativity. Because ordinary was never on the menu.",
+  },
 ];
 
 const fadeInUp = {
@@ -223,7 +231,8 @@ const Madira = ({ cart, setCart }) => {
           viewport={{ once: true }}
           className="text-gray-300 mt-6 text-lg md:text-2xl font-light"
         >
-          -For the Madira lovers, an exquisite collection of paintings and artifacts to express your love and passion.
+          -For the Madira lovers, an exquisite collection of paintings and
+          artifacts to express your love and passion.
         </motion.p>
       </div>
 
@@ -256,15 +265,15 @@ const Madira = ({ cart, setCart }) => {
                   <h3 className="text-[16px] md:text-xl font-[Amita] font-semibold md:font-bold text-white mb-2">
                     {product?.title}
                   </h3>
-                 
-                   <motion.button
-                                      whileHover={{ scale: 1.05 }}
-                                      whileTap={{ scale: 0.95 }}
-                                      className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
-                                    >
-                                      {/* Explore Piece → */}
-                                      Buy Now →
-                                    </motion.button>
+
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                  >
+                    {/* Explore Piece → */}
+                    Buy Now →
+                  </motion.button>
                 </div>
               </a>
             </TiltCard>

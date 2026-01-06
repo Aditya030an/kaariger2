@@ -83,6 +83,19 @@ function TiltCard({ children }) {
 
 const originals = [
   {
+    id: 29,
+    title: "Eclipsera Pole (Clay)",
+    basePrice: 35000,
+    image: Img33,
+    wallImage: Img34,
+    moreImg: [Img35 ,Img49 ,  Img50 , Img51],
+    link: "#",
+    resizeOption: false,
+    frameOption: false,
+    category:"artifacts",
+    description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
+  },
+  {
     id: 1,
     title: "Moonlight Reverie",
     basePrice: 7999,
@@ -293,19 +306,7 @@ const originals = [
     category:"artifacts",
         description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
-  {
-    id: 29,
-    title: "Eclipsera Pole (Clay)",
-    basePrice: 35000,
-    image: Img33,
-    wallImage: Img34,
-    moreImg: [Img35 ,Img49 ,  Img50 , Img51],
-    link: "#",
-    resizeOption: false,
-    frameOption: false,
-    category:"artifacts",
-    description:"A striking designer art piece featuring a vertical series of handcrafted ceramic forms gracefully aligned on a slender metal stand. The contrast of monochrome tones and flowing curves creates a sculptural statement of balance, movement, and modern sophistication—perfect for contemporary interiors or gallery-style spaces."
-  },
+  
   {
     id: 30,
     title: "A Deep Breath ",

@@ -43,7 +43,8 @@ const newReleases = [
     snippet: "Add a burst of color and personality to your studio wall.",
     height: 25,
     width: 25,
-    description:"A close-up view of a roulette wheel captures the thrilling tension of chance — the ball suspended between fate and fortune. Rich textures and muted colors evoke the timeless allure of the casino floor, where every spin feels like a performance led by an unseen master of luck.",
+    description:
+      "A close-up view of a roulette wheel captures the thrilling tension of chance — the ball suspended between fate and fortune. Rich textures and muted colors evoke the timeless allure of the casino floor, where every spin feels like a performance led by an unseen master of luck.",
   },
   {
     id: 2,
@@ -55,13 +56,14 @@ const newReleases = [
     snippet: "Celebrate art in every form with custom cutouts and patterns.",
     height: 25,
     width: 18,
-    description:"“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
+    description:
+      "“The Deep Breath” portrays an abstract, serene face captured in the moment of inhaling peace. Soft, flowing brushstrokes merge hues of blue, gold, and white — symbolizing calm, clarity, and release. The contours dissolve into airy patterns, evoking a sense of stillness and renewal — as if the entire canvas itself exhales tranquility.",
   },
   {
     id: 3,
     title: " ⁠⁠Boombox Shelf Table ",
     category: "Textile & Design",
-    moreImg:[Img36 , Img37],
+    moreImg: [Img36, Img37],
     basePrice: 30000,
     subCategory: "artifacts",
     image: music,
@@ -73,14 +75,14 @@ const newReleases = [
     basePrice: 30000,
     image: Img30,
     wallImage: Img31,
-    moreImg:[Img33 , Img34 , Img35],
+    moreImg: [Img33, Img34, Img35],
     link: "#",
     resizeOption: false,
     frameOption: false,
-     subCategory:"artifacts",
-    description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
+    subCategory: "artifacts",
+    description:
+      "A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
-
 
   {
     id: 7,
@@ -101,7 +103,8 @@ const newReleases = [
     basePrice: 2000,
     image: img1,
     snippet: "Bold shapes and colors for a contemporary look.",
-    description:"Elegance meets serenity in this handcrafted ceramic incense holder — two minimalist warriors frozen in graceful motion, embodying calm and discipline. As the incense burns, gentle trails of smoke rise between them, creating a tranquil dance of aroma and artistry. Perfect for elevating your space with Zen sophistication and timeless charm.",
+    description:
+      "Elegance meets serenity in this handcrafted ceramic incense holder — two minimalist warriors frozen in graceful motion, embodying calm and discipline. As the incense burns, gentle trails of smoke rise between them, creating a tranquil dance of aroma and artistry. Perfect for elevating your space with Zen sophistication and timeless charm.",
   },
   {
     id: 9,
@@ -113,20 +116,22 @@ const newReleases = [
     snippet: "Bold shapes and colors for a contemporary look.",
     height: 40,
     width: 35,
-    description:"“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
+    description:
+      "“Sombra” captures the serene poetry of light and shadow. A simple wine bottle and delicate branch come alive through their golden reflection, blurring the line between reality and illusion. The soft glow through the window evokes calmness, stillness, and the quiet elegance of everyday beauty frozen in time.",
   },
   {
-      id: 32,
-      title: "Kava Cups set of 2(Clay)",
-      basePrice: 3000,
-      image:Img32,
-      moreImg:[Img38 , Img39 , Img40],
-      link: "#",
-       subCategory:"artifacts",
-      resizeOption: false,
-      frameOption: false,
-          description:"These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
-    },
+    id: 32,
+    title: "Kava Cups set of 2(Clay)",
+    basePrice: 3000,
+    image: Img32,
+    moreImg: [Img38, Img39, Img40],
+    link: "#",
+    subCategory: "artifacts",
+    resizeOption: false,
+    frameOption: false,
+    description:
+      "These handcrafted clay cone cups redefine the ritual — elegant, earthy, and unapologetically different. Set atop sculpted cube stands, they blend minimalism with a touch of rebellion, turning every sip into a quiet statement of style.",
+  },
   {
     id: 10,
     title: "Timeless Peaks (Set of 3)",
@@ -140,7 +145,8 @@ const newReleases = [
     handmadeFixPrice: 16000,
     resizeOption: false,
     frameOption: false,
-    description:"This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
+    description:
+      "This artwork captures the serene harmony of nature — where rust-toned mountains meet deep pine silhouettes under a tranquil sky. The triptych design evokes the rhythm of time, as the sun and moon dance across changing horizons. With its minimal yet soulful palette, Timeless Peaks celebrates the quiet beauty of mountains standing tall through every dawn and dusk.",
   },
   {
     id: 11,
@@ -149,10 +155,11 @@ const newReleases = [
     subCategory: "artifacts",
     image: Img27,
     wallImage: Img28,
-    moreImg: [Img29 ,Img41 , Img42 , Img43 , Img44],
+    moreImg: [Img29, Img41, Img42, Img43, Img44],
     basePrice: 16000,
     link: "#",
-        description:"A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
+    description:
+      "A contemporary sculpture featuring interlocking abstract shapes in earthy tones of brown, beige, and gray. Crafted with smooth matte textures, it adds a sense of balance, depth, and modern artistry to the space.",
   },
 ];
 
@@ -216,20 +223,26 @@ export default function NewReleases({ cart, setCart }) {
                     {product?.category}
                   </div> */}
                 </div>
-                <div className="p-3">
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-[#3e2c1b] md:mb-2">
-                    {product?.title}
-                  </h3>
-                  <p className="text-sm text-[#5c4631] leading-relaxed">
-                    {product?.snippet}
-                  </p>
+                <div className="p-3 h-56 flex flex-col justify-between text-start">
+                  <div>
+                    <h3 className="text-xl md:text-[22px] font-serif font-bold text-[#3e2c1b] mb-2">
+                      {product?.title}
+                    </h3>
+
+                    <p
+                      className="text-sm text-[#5c4631] leading-relaxed text-center 
+                line-clamp-4 overflow-hidden flex-1"
+                    >
+                      {product?.description ?? product?.snippet}
+                    </p>
+                  </div>
+
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className=" inline-block bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
+                    className="w-40 mt-4 bg-gray-800 text-white px-6 py-2 rounded-lg font-semibold text-sm shadow-md hover:bg-black transition-all duration-300"
                     onClick={() => setSelectedProduct(product)}
                   >
-                    {/* Explore Piece → */}
                     Buy Now →
                   </motion.button>
                 </div>
