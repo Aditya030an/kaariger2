@@ -739,36 +739,36 @@ const originals = [
     description:
       "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
   },
-  {
-    id: 52,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img67,
-    basePrice: 2500,
-    link: "#",
-    category: "artifacts",
-    description:
-      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
-  },
-  {
-    id: 53,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img68,
-    basePrice: 2500,
-    link: "#",
-    category: "artifacts",
-    description:
-      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
-  },
-  {
-    id: 54,
-    title: "Mr. Funny  Pants 1pc Set (Clay)",
-    image: Img69,
-    basePrice: 2500,
-    link: "#",
-    category: "artifacts",
-    description:
-      "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
-  },
+  // {
+  //   id: 52,
+  //   title: "Mr. Funny  Pants 1pc Set (Clay)",
+  //   image: Img67,
+  //   basePrice: 2500,
+  //   link: "#",
+  //   category: "artifacts",
+  //   description:
+  //     "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  // },
+  // {
+  //   id: 53,
+  //   title: "Mr. Funny  Pants 1pc Set (Clay)",
+  //   image: Img68,
+  //   basePrice: 2500,
+  //   link: "#",
+  //   category: "artifacts",
+  //   description:
+  //     "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  // },
+  // {
+  //   id: 54,
+  //   title: "Mr. Funny  Pants 1pc Set (Clay)",
+  //   image: Img69,
+  //   basePrice: 2500,
+  //   link: "#",
+  //   category: "artifacts",
+  //   description:
+  //     "-Quirky, bold, and full of character — these walking pots bring life to any corner. Each pair of ceramic legs tells a story of motion, style, and humor. Where art meets attitude — your plants just got a personality upgrade.",
+  // },
   {
     id: 55,
     title: "The Cardenza Coffee Table",

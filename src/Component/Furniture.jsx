@@ -41,6 +41,10 @@ import Img48 from "./photos/artifacts51.jpg";
 import Img49 from "./photos/artifacts52.jpg";
 import Img50 from "./photos/artifacts70.jpg";
 import Img51 from "./photos/artifacts71.jpg";
+import Img52 from "./photos/artifacts28.png";
+import Img53 from "./photos/artifacts27.png";
+import Img54 from "./photos/artifacts76.jpg";
+import Img55 from "./photos/artifacts77.jpg";
 
 import ProductCart from "./ProductCard";
 import Card from "./Card";
@@ -73,19 +77,21 @@ const originals = [
     id: 1,
     title: "Ace Centre Table ",
     image: Img1,
-    moreImg:[Img50 , Img51],
+    moreImg: [Img50, Img51],
     basePrice: 30000,
     link: "#",
-    description:"A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space."
+    description:
+      "A bold fusion of creativity and craftsmanship, this table transforms a simple wooden pallet into a statement piece. Featuring a striking Ace of Spades design in black and white, it adds a playful yet classy touch to any modern living space.",
   },
   {
     id: 2,
     title: " ⁠Grande Arena",
     image: Img9,
-    moreImg:[Img44 , Img45 , Img46 , Img47],
+    moreImg: [Img44, Img45, Img46, Img47],
     basePrice: 50000,
     link: "#",
-    description:"The Stadium Coffee Table. Grande Arena is a masterpiece of modern design — a coffee table that brings the thrill of football right into your living room. Crafted from rich natural wood and topped with a sleek glass surface, it features a stunning miniature stadium beneath, complete with players, turf, and cheering crowds. This unique piece blends artistry, craftsmanship, and passion for the game — a true collector’s dream for sports lovers and design enthusiasts alike."
+    description:
+      "The Stadium Coffee Table. Grande Arena is a masterpiece of modern design — a coffee table that brings the thrill of football right into your living room. Crafted from rich natural wood and topped with a sleek glass surface, it features a stunning miniature stadium beneath, complete with players, turf, and cheering crowds. This unique piece blends artistry, craftsmanship, and passion for the game — a true collector’s dream for sports lovers and design enthusiasts alike.",
   },
   {
     id: 3,
@@ -93,7 +99,8 @@ const originals = [
     image: Img11,
     basePrice: 6000,
     link: "#",
-    description:"Turn laundry time into game time! 🏀 This Laundry Basketball Hoop adds fun and functionality to your room — just toss your clothes in and score! Made with a sturdy backboard and breathable mesh bag, it keeps your space tidy while making chores feel like a slam dunk. Perfect for bedrooms, dorms, or kids’ rooms!"
+    description:
+      "Turn laundry time into game time! 🏀 This Laundry Basketball Hoop adds fun and functionality to your room — just toss your clothes in and score! Made with a sturdy backboard and breathable mesh bag, it keeps your space tidy while making chores feel like a slam dunk. Perfect for bedrooms, dorms, or kids’ rooms!",
   },
   {
     id: 4,
@@ -101,35 +108,39 @@ const originals = [
     image: Img12,
     basePrice: 4000,
     link: "#",
-    description:"Turn your daily chores into a fun game! This Laundry Basketball Bin combines play and practicality — just shoot your clothes through the hoop and score a clean room every time. Perfect for kids, teens, and sports lovers who want to make laundry time exciting while keeping the space tidy and stylish"
+    description:
+      "Turn your daily chores into a fun game! This Laundry Basketball Bin combines play and practicality — just shoot your clothes through the hoop and score a clean room every time. Perfect for kids, teens, and sports lovers who want to make laundry time exciting while keeping the space tidy and stylish",
   },
   {
     id: 5,
     title: "F1 Fender Stand Wooden",
     image: Img13,
-    moreImg:[Img42 , Img43],
+    moreImg: [Img42, Img43],
     basePrice: 10000,
     link: "#",
-    description:"Bring home the spirit of Formula 1 with this stunning F1 Fender Stand Wooden. Crafted with precision and designed to resemble a real F1 car fender, it adds a bold, sporty vibe to your space. Perfect as a display shelf or wall décor for motorsport enthusiasts, this piece combines craftsmanship, style, and speed in one iconic design.",
+    description:
+      "Bring home the spirit of Formula 1 with this stunning F1 Fender Stand Wooden. Crafted with precision and designed to resemble a real F1 car fender, it adds a bold, sporty vibe to your space. Perfect as a display shelf or wall décor for motorsport enthusiasts, this piece combines craftsmanship, style, and speed in one iconic design.",
   },
 
   {
     id: 6,
     title: "Cassette Centre Table",
     image: Img16,
-    moreImg:[Img39 , Img40 , Img41],
+    moreImg: [Img39, Img40, Img41],
     basePrice: 40000,
     link: "#",
-    description:"The Cassette Centre Table is a nostalgic fusion of retro charm and modern design. Crafted from premium wood, it replicates the classic audio cassette look, turning a vintage icon into a functional centerpiece. Its sturdy build and detailed craftsmanship make it perfect for living rooms, cafes, or creative studios. A true conversation starter that blends art, utility, and timeless style."
+    description:
+      "The Cassette Centre Table is a nostalgic fusion of retro charm and modern design. Crafted from premium wood, it replicates the classic audio cassette look, turning a vintage icon into a functional centerpiece. Its sturdy build and detailed craftsmanship make it perfect for living rooms, cafes, or creative studios. A true conversation starter that blends art, utility, and timeless style.",
   },
   {
     id: 7,
     title: " ⁠⁠Boombox Shelf Table ",
     image: music,
-    moreImg:[Img33 , Img34],
+    moreImg: [Img33, Img34],
     basePrice: 30000,
     link: "#",
-    description:"A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
+    description:
+      "A striking fusion of retro charm and modern design, the Boombox Shelf Centre Table reimagines classic cassette aesthetics into functional furniture. Crafted in sleek matte black with a bold red storage compartment, it’s both a nostalgic tribute and a contemporary statement piece. Perfect for creative spaces, studios, or living rooms that celebrate style with substance.",
   },
 
   {
@@ -138,7 +149,8 @@ const originals = [
     image: Img20,
     basePrice: 30000,
     link: "#",
-    description:"A sculptural masterpiece that brings art and functionality together. The Humane Centre Table features a finely crafted human face base, symbolizing serenity and depth, topped with a sleek glass surface. Perfect for modern living spaces, it adds a touch of minimalism, sophistication, and soulful character to any room.",
+    description:
+      "A sculptural masterpiece that brings art and functionality together. The Humane Centre Table features a finely crafted human face base, symbolizing serenity and depth, topped with a sleek glass surface. Perfect for modern living spaces, it adds a touch of minimalism, sophistication, and soulful character to any room.",
   },
 
   {
@@ -146,10 +158,11 @@ const originals = [
     title: "Retrovision Table Centre",
     image: Img25,
     wallImage: Img27,
-    moreImg:[Img35 , Img36 , Img37 , Img38],
+    moreImg: [Img35, Img36, Img37, Img38],
     basePrice: 25000,
     link: "#",
-    description:"A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
+    description:
+      "A perfect blend of nostalgia and modern design, the RetroVision Centre Table transforms a vintage TV frame into a stylish glass-top table. Crafted from rich wood with retro dials and metallic detailing, it brings a unique charm to your living space. Ideal for those who love timeless aesthetics with a creative twist.",
   },
   {
     id: 10,
@@ -157,21 +170,34 @@ const originals = [
     basePrice: 30000,
     image: Img2,
     wallImage: Img3,
-    moreImg:[Img30 , Img31 , Img32],
+    moreImg: [Img30, Img31, Img32],
     link: "#",
     resizeOption: false,
     frameOption: false,
-    description:"A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
+    description:
+      "A sculptural blend of geometry and comfort, The Third Seat transforms modern seating into an art form. With its bold triangular frame and soft cushioned core, it brings harmony between structure and serenity. Perfect for contemporary spaces, this chair is a statement of balance — where design meets imagination.",
   },
   {
     id: 11,
     title: "Mr. Nook",
     image: Img28,
     wallImage: Img29,
-    moreImg:[Img48 , Img49],
+    moreImg: [Img48, Img49],
     basePrice: 25000,
     link: "#",
-    description:"Mr. Nook — a compact fusion of charm and function. Crafted in rich wood, this minimal yet warm bedside table brings an earthy aesthetic to modern living. With a pull-down rattan shelf and soft ambient lighting, it’s perfect for cozy storage or displaying your favorite reads and decor. A true nook of comfort and sophistication for any corner."
+    description:
+      "Mr. Nook — a compact fusion of charm and function. Crafted in rich wood, this minimal yet warm bedside table brings an earthy aesthetic to modern living. With a pull-down rattan shelf and soft ambient lighting, it’s perfect for cozy storage or displaying your favorite reads and decor. A true nook of comfort and sophistication for any corner.",
+  },
+  {
+    id: 27,
+    title: "The Cardenza Coffee Table",
+    image: Img52,
+    wallImage: Img53,
+    moreImg: [Img54, Img55],
+    basePrice: 27000,
+    link: "#",
+    description:
+      "When play meets purpose — this Playing Card Table turns imagination into furniture! Built like a “House of Cards” yet sturdy enough to hold your coffee conversations, it’s a playful nod to classic casino charm and creative design. The glossy red-and-white finish adds a pop of fun to any room, making it a perfect centerpiece for your living space, lounge, or café corner.",
   },
 ];
 
